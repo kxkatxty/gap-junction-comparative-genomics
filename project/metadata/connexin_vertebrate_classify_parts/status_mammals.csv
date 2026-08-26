@@ -1,0 +1,6 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Mus musculus domesticus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Ovis aries,connexin,yes,no,annotated_family_member_found,high,GJA1,ncbi_gene,A,101122284,GJA1,gap junction protein alpha 1,29,0,"connexin[All Fields] AND ""Ovis aries""[Organism]"
+Sus scrofa,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,Q29101,GJA1,Gap junction alpha-1 protein,28,0,"organism_name:""Sus scrofa"" AND protein_name:connexin"
+Alexandromys fortis,connexin,yes,no,annotated_family_member_found,high,Gja1,ncbi_gene,A,126499060,Gja1,gap junction protein alpha 1,11,0,"GJA*[Gene Symbol] AND ""Alexandromys fortis""[Organism]"
+Antrozous pallidus,connexin,no,yes,related_or_family_like_entry_found,medium,gap junction,ncbi_protein,B,KAN7648070.1,gap,gap junction beta-3 protein [Antrozous pallidus],0,0,"""gap junction""[Title] AND ""Antrozous pallidus""[Organism]"

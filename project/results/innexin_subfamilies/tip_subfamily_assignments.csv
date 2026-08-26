@@ -1,0 +1,13 @@
+tip_key,gene,organism,subfamily_id,subfamily_label
+INX1_DROME,ogre,Drosophila melanogaster,SF2_Inx1_ogre,Inx1 / ogre clade
+INX2_DROME,Inx2,Drosophila melanogaster,SF4_Inx2_expansion,Inx2 / Inx4–6 insect expansion
+INX3_DROME,Inx3,Drosophila melanogaster,SF3_Inx3_Inx7_nematode,Inx3 + Inx7 + nematode innexins
+INX4_DROME,zpg,Drosophila melanogaster,SF4_Inx2_expansion,Inx2 / Inx4–6 insect expansion
+INX5_DROME,Inx5,Drosophila melanogaster,SF4_Inx2_expansion,Inx2 / Inx4–6 insect expansion
+INX6_DROME,Inx6,Drosophila melanogaster,SF4_Inx2_expansion,Inx2 / Inx4–6 insect expansion
+INX7_DROME,Inx7,Drosophila melanogaster,SF3_Inx3_Inx7_nematode,Inx3 + Inx7 + nematode innexins
+SHAKB_DROME,shakB,Drosophila melanogaster,SF1_shakB,shakB clade
+INX2_CAEEL,inx-2,Caenorhabditis elegans,SF3_Inx3_Inx7_nematode,Inx3 + Inx7 + nematode innexins
+INX3_CAEEL,inx-3,Caenorhabditis elegans,SF3_Inx3_Inx7_nematode,Inx3 + Inx7 + nematode innexins
+UNC9_CAEEL,unc-9,Caenorhabditis elegans,SF3_Inx3_Inx7_nematode,Inx3 + Inx7 + nematode innexins
+UNC7_CAEEL,unc-7,Caenorhabditis elegans,SF3_Inx3_Inx7_nematode,Inx3 + Inx7 + nematode innexins

@@ -1,0 +1,56 @@
+uniprot_accession,track,feature_id,feature_label,aa_start,aa_end,color,source
+A2VE67,pfam,PF00029,Connexin,2,214,#E67E22,interpro
+A6XKM2,disorder,disorder,Disordered,317,382,#BDC3C7,uniprot
+A6XKM2,pfam,PF00029,Connexin,3,232,#E67E22,interpro
+A6XKM2,pfam,PF03508,Gap junction alpha-1 protein (Cx43),283,361,#8E44AD,interpro
+O57474,disorder,disorder,Disordered,317,381,#BDC3C7,uniprot
+O57474,pfam,PF00029,Connexin,3,232,#E67E22,interpro
+O57474,pfam,PF03508,Gap junction alpha-1 protein (Cx43),283,359,#8E44AD,interpro
+P08050,disorder,disorder,Disordered,317,382,#BDC3C7,uniprot
+P08050,pfam,PF00029,Connexin,3,232,#E67E22,interpro
+P08050,pfam,PF03508,Gap junction alpha-1 protein (Cx43),283,361,#8E44AD,interpro
+P14154,disorder,disorder,Disordered,338,381,#BDC3C7,uniprot
+P14154,pfam,PF00029,Connexin,3,232,#E67E22,interpro
+P14154,pfam,PF03508,Gap junction alpha-1 protein (Cx43),282,360,#8E44AD,interpro
+P16863,disorder,disorder,Disordered,322,379,#BDC3C7,uniprot
+P16863,pfam,PF00029,Connexin,3,232,#E67E22,interpro
+P16863,pfam,PF03508,Gap junction alpha-1 protein (Cx43),280,358,#8E44AD,interpro
+P17302,disorder,disorder,Disordered,317,382,#BDC3C7,uniprot
+P17302,pfam,PF00029,Connexin,3,232,#E67E22,interpro
+P17302,pfam,PF03508,Gap junction alpha-1 protein (Cx43),283,361,#8E44AD,interpro
+P18246,disorder,disorder,Disordered,318,383,#BDC3C7,uniprot
+P18246,pfam,PF00029,Connexin,3,233,#E67E22,interpro
+P18246,pfam,PF03508,Gap junction alpha-1 protein (Cx43),284,362,#8E44AD,interpro
+P21994,pfam,PF00029,Connexin,2,214,#E67E22,interpro
+P23242,disorder,disorder,Disordered,317,382,#BDC3C7,uniprot
+P23242,pfam,PF00029,Connexin,3,232,#E67E22,interpro
+P23242,pfam,PF03508,Gap junction alpha-1 protein (Cx43),283,361,#8E44AD,interpro
+P29033,pfam,PF00029,Connexin,2,214,#E67E22,interpro
+P33085,pfam,PF00876,Innexin,20,353,#E67E22,interpro
+P46691,pfam,PF00029,Connexin,2,214,#E67E22,interpro
+Q00977,pfam,PF00029,Connexin,2,214,#E67E22,interpro
+Q1DH70,pfam,PF00876,Innexin,20,353,#E67E22,interpro
+Q29101,disorder,disorder,Disordered,317,382,#BDC3C7,uniprot
+Q29101,pfam,PF00029,Connexin,3,231,#E67E22,interpro
+Q29101,pfam,PF03508,Gap junction alpha-1 protein (Cx43),283,361,#8E44AD,interpro
+Q4R4S7,disorder,disorder,Disordered,279,300,#BDC3C7,uniprot
+Q4R4S7,disorder,disorder,Disordered,317,382,#BDC3C7,uniprot
+Q4R4S7,pfam,PF00029,Connexin,3,232,#E67E22,interpro
+Q4R4S7,pfam,PF03508,Gap junction alpha-1 protein (Cx43),283,361,#8E44AD,interpro
+Q6S9C0,disorder,disorder,Disordered,317,382,#BDC3C7,uniprot
+Q6S9C0,pfam,PF00029,Connexin,4,232,#E67E22,interpro
+Q6S9C0,pfam,PF03508,Gap junction alpha-1 protein (Cx43),283,361,#8E44AD,interpro
+Q6TYA7,disorder,disorder,Disordered,317,382,#BDC3C7,uniprot
+Q6TYA7,pfam,PF00029,Connexin,3,232,#E67E22,interpro
+Q6TYA7,pfam,PF03508,Gap junction alpha-1 protein (Cx43),283,361,#8E44AD,interpro
+Q6TYA8,disorder,disorder,Disordered,317,382,#BDC3C7,uniprot
+Q6TYA8,pfam,PF00029,Connexin,3,232,#E67E22,interpro
+Q6TYA8,pfam,PF03508,Gap junction alpha-1 protein (Cx43),283,361,#8E44AD,interpro
+Q6TYA9,disorder,disorder,Disordered,317,382,#BDC3C7,uniprot
+Q6TYA9,pfam,PF00029,Connexin,3,232,#E67E22,interpro
+Q6TYA9,pfam,PF03508,Gap junction alpha-1 protein (Cx43),283,361,#8E44AD,interpro
+Q7JGL3,pfam,PF00029,Connexin,2,214,#E67E22,interpro
+Q7PXN1,pfam,PF00876,Innexin,20,354,#E67E22,interpro
+Q8MHW5,pfam,PF00029,Connexin,2,214,#E67E22,interpro
+Q8MIT8,pfam,PF00029,Connexin,2,214,#E67E22,interpro
+Q8MIT9,pfam,PF00029,Connexin,2,214,#E67E22,interpro

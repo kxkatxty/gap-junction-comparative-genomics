@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pannexin Clade × Type Comparison</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Sora:wght@400;550;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#1c1917; --muted:#57534e; --ember:#c2410c; --deep:#7c2d12; --sand:#d4a017; --bg:#f7f3ef;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Sora,sans-serif;color:var(--ink);background:
+ radial-gradient(900px 420px at 0% 0%, rgba(194,65,12,.10), transparent 55%),
+ radial-gradient(800px 380px at 100% 10%, rgba(15,118,110,.10), transparent 50%),
+ linear-gradient(180deg,#faf6f1,var(--bg));line-height:1.55}
+.hero{min-height:72vh;display:grid;align-items:end;padding:clamp(1.4rem,4vw,3rem);color:#fff7ed;
+ background:linear-gradient(120deg,rgba(124,45,18,.94),rgba(194,65,12,.72) 55%,rgba(15,118,110,.45)),
+ radial-gradient(circle at 75% 25%,#ea580c,#7c2d12 60%)}
+.brand{font-family:Fraunces,serif;font-size:clamp(2.2rem,6vw,4.2rem);margin:0 0 .7rem;line-height:.95;letter-spacing:-.03em}
+.hero h1{font-size:clamp(1.05rem,2vw,1.3rem);font-weight:500;max-width:42ch;margin:0 0 .7rem}
+.hero p{max-width:54ch;opacity:.92;margin:0 0 1.4rem}
+.cta a{display:inline-block;text-decoration:none;background:#fff7ed;color:var(--deep);padding:.8rem 1.15rem;border-radius:999px;font-weight:700;margin-right:.5rem}
+.cta a.ghost{background:transparent;color:#fff7ed;border:1px solid rgba(255,247,237,.45)}
+.wrap{width:min(1160px,calc(100% - 2rem));margin:0 auto;padding:2rem 0 4rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;margin-top:-2rem;position:relative;z-index:2}
+.stat{background:rgba(255,255,255,.92);border:1px solid rgba(28,25,23,.08);border-radius:16px;padding:1rem;box-shadow:0 10px 28px rgba(28,25,23,.06)}
+.stat b{display:block;font-family:Fraunces,serif;font-size:1.8rem;color:var(--deep)}
+.stat span{color:var(--muted);font-size:.84rem}
+section{margin:2.4rem 0}
+h2{font-family:Fraunces,serif;font-size:1.7rem;margin:0 0 .6rem}
+.lead{color:var(--muted);max-width:70ch}
+.findings{background:#fff;border-radius:16px;padding:1.1rem 1.3rem;border-left:4px solid var(--sand);box-shadow:0 8px 24px rgba(28,25,23,.05)}
+.findings ol{margin:.4rem 0 0;padding-left:1.2rem}
+.findings li{margin:.35rem 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1rem}
+.card{background:rgba(255,255,255,.92);border:1px solid rgba(28,25,23,.08);border-radius:16px;padding:.85rem;box-shadow:0 8px 22px rgba(28,25,23,.05)}
+.card img{width:100%;border-radius:10px;cursor:zoom-in;background:#f8fafc}
+.card h3{font-size:.95rem;margin:.7rem 0 0;font-weight:600}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(28,25,23,.05);font-size:.88rem}
+th,td{padding:.55rem .7rem;border-bottom:1px solid #e7e5e4;text-align:left}
+th{background:#7c2d12;color:#fff7ed;font-weight:600}
+.links a{margin-right:1rem;color:var(--ember)}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:20;align-items:center;justify-content:center;padding:1.5rem;cursor:zoom-out}
+.modal.open{display:flex}
+.modal img{max-width:95vw;max-height:90vh;border-radius:8px}
+@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}.hero{min-height:62vh}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div>
+    <p class="brand">Clade × Pannexin</p>
+    <h1>PANX1 / PANX2 / PANX3 across vertebrates and early chordates</h1>
+    <p>Same shape as the connexin clade page: clade × type counts, copy number, lengths —
+    built from the curated UniProt panel.</p>
+    <div class="cta">
+      <a href="#figures">See diagrams</a>
+      <a class="ghost" href="../pannexin_annotation_status/index.html">Annotation status</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="stats">
+    <div class="stat"><b>49</b><span>panel proteins</span></div>
+    <div class="stat"><b>17</b><span>species</span></div>
+    <div class="stat"><b>9</b><span>clade bins</span></div>
+    <div class="stat"><b>3</b><span>type labels</span></div>
+  </div>
+
+  <section>
+    <h2>Key results</h2>
+    <div class="findings"><ol><li>Curated UniProt panel: 49 pannexin proteins in 17 species across 9 clade bins.</li><li>Type mix: PANX1=15, PANX2=18, PANX3=16.</li><li>12/17 panel species carry at least one named PANX1, PANX2 and PANX3.</li><li>Bottleneck species Branchiostoma floridae: 2 panel protein(s) (PANX2:1, PANX3:1).</li><li>Bottleneck species Petromyzon marinus: 1 panel protein(s) (PANX3:1).</li><li>Median length PANX1: 426 aa (n=15).</li><li>Median length PANX2: 668 aa (n=18).</li><li>Median length PANX3: 408 aa (n=16).</li><li>Ciona intestinalis: UniProt/NCBI status=related, panel proteins=0 (expect innexin, not pannexin).</li><li>Orthology caveat: LOC / weak UniProt labels (lancelet, lamprey) are best-effort types — confirm with the pannexin phylogeny page.</li></ol></div>
+    <p class="lead" style="margin-top:1rem">
+      Types come from UniProt gene / description labels via the same PANX1–3 classifier used in the panel builder.
+      Weak LOC names (lancelet, lamprey) need the phylogeny page for a second look.
+    </p>
+  </section>
+
+  <section id="figures">
+    <h2>Diagrams</h2>
+    <div class="grid">
+<article class="card">
+  <img src="figures/01_loci_by_clade.png" alt="Loci by clade" loading="lazy" onclick="openModal(this.src)">
+  <h3>Loci by clade</h3>
+</article>
+<article class="card">
+  <img src="figures/02_clade_type_heatmap.png" alt="Clade × type heatmap" loading="lazy" onclick="openModal(this.src)">
+  <h3>Clade × type heatmap</h3>
+</article>
+<article class="card">
+  <img src="figures/03_type_mix_stacked.png" alt="Type mix within clades" loading="lazy" onclick="openModal(this.src)">
+  <h3>Type mix within clades</h3>
+</article>
+<article class="card">
+  <img src="figures/04_length_by_type.png" alt="Length by PANX type" loading="lazy" onclick="openModal(this.src)">
+  <h3>Length by PANX type</h3>
+</article>
+<article class="card">
+  <img src="figures/05_length_by_clade.png" alt="Length by clade" loading="lazy" onclick="openModal(this.src)">
+  <h3>Length by clade</h3>
+</article>
+<article class="card">
+  <img src="figures/06_species_copy_number.png" alt="Copy number per species" loading="lazy" onclick="openModal(this.src)">
+  <h3>Copy number per species</h3>
+</article>
+<article class="card">
+  <img src="figures/07_bottleneck_focus.png" alt="Lancelet / lamprey bottleneck check" loading="lazy" onclick="openModal(this.src)">
+  <h3>Lancelet / lamprey bottleneck check</h3>
+</article>
+<article class="card">
+  <img src="figures/08_cys_by_type.png" alt="Cys count by type" loading="lazy" onclick="openModal(this.src)">
+  <h3>Cys count by type</h3>
+</article></div>
+  </section>
+
+  <section>
+    <h2>Clade summary</h2>
+    <table><tr><th>Clade</th><th>Loci</th><th>Species</th><th>PANX1</th><th>PANX2</th><th>PANX3</th><th>other</th><th>Median aa</th></tr><tr><td>Mammal</td><td>15</td><td>5</td><td>5</td><td>5</td><td>5</td><td>0</td><td>426</td></tr><tr><td>Amphibian</td><td>8</td><td>2</td><td>2</td><td>3</td><td>3</td><td>0</td><td>428</td></tr><tr><td>Ray-finned fish</td><td>7</td><td>3</td><td>2</td><td>4</td><td>1</td><td>0</td><td>604</td></tr><tr><td>Reptile</td><td>6</td><td>2</td><td>2</td><td>2</td><td>2</td><td>0</td><td>434</td></tr><tr><td>Cartilaginous fish</td><td>4</td><td>1</td><td>2</td><td>1</td><td>1</td><td>0</td><td>426</td></tr><tr><td>Bird</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>433</td></tr><tr><td>Lobe-finned fish</td><td>3</td><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>428</td></tr><tr><td>Tunicate / lancelet</td><td>2</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>430</td></tr><tr><td>Jawless vertebrate</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>453</td></tr></table>
+  </section>
+
+  <section>
+    <h2>Copy number (bottleneck automation)</h2>
+    <p class="lead">Per-species PANX1/2/3 counts. Early-chordate rows are flagged for the literature bottleneck check.</p>
+    <table><tr><th>Species</th><th>Clade</th><th>n</th><th>1/2/3</th><th>full triplet?</th><th>bottleneck?</th></tr><tr><td>Xenopus laevis</td><td>Amphibian</td><td>5</td><td>1/2/2</td><td>yes</td><td>no</td></tr><tr><td>Xenopus tropicalis</td><td>Amphibian</td><td>3</td><td>1/1/1</td><td>yes</td><td>no</td></tr><tr><td>Gallus gallus</td><td>Bird</td><td>3</td><td>1/1/1</td><td>yes</td><td>no</td></tr><tr><td>Callorhinchus milii</td><td>Cartilaginous fish</td><td>4</td><td>2/1/1</td><td>yes</td><td>no</td></tr><tr><td>Petromyzon marinus</td><td>Jawless vertebrate</td><td>1</td><td>0/0/1</td><td>no</td><td>yes</td></tr><tr><td>Latimeria chalumnae</td><td>Lobe-finned fish</td><td>3</td><td>1/1/1</td><td>yes</td><td>no</td></tr><tr><td>Bos taurus</td><td>Mammal</td><td>3</td><td>1/1/1</td><td>yes</td><td>no</td></tr><tr><td>Homo sapiens</td><td>Mammal</td><td>3</td><td>1/1/1</td><td>yes</td><td>no</td></tr><tr><td>Mus musculus</td><td>Mammal</td><td>3</td><td>1/1/1</td><td>yes</td><td>no</td></tr><tr><td>Rattus norvegicus</td><td>Mammal</td><td>3</td><td>1/1/1</td><td>yes</td><td>no</td></tr><tr><td>Sus scrofa</td><td>Mammal</td><td>3</td><td>1/1/1</td><td>yes</td><td>no</td></tr><tr><td>Danio rerio</td><td>Ray-finned fish</td><td>3</td><td>2/1/0</td><td>no</td><td>no</td></tr><tr><td>Lepisosteus oculatus</td><td>Ray-finned fish</td><td>1</td><td>0/1/0</td><td>no</td><td>no</td></tr><tr><td>Takifugu rubripes</td><td>Ray-finned fish</td><td>3</td><td>0/2/1</td><td>no</td><td>no</td></tr><tr><td>Anolis carolinensis</td><td>Reptile</td><td>3</td><td>1/1/1</td><td>yes</td><td>no</td></tr><tr><td>Podarcis muralis</td><td>Reptile</td><td>3</td><td>1/1/1</td><td>yes</td><td>no</td></tr><tr><td>Branchiostoma floridae</td><td>Tunicate / lancelet</td><td>2</td><td>0/1/1</td><td>no</td><td>yes</td></tr></table>
+  </section>
+
+  <section class="links">
+    <p>
+      <a href="../pannexin_annotation_status/index.html">Annotation status</a>
+      <a href="../pannexin_similarity/index.html">Similarity</a>
+      <a href="../pannexin_phylogeny/index.html">Phylogeny</a>
+      <a href="../panx_vs_inx/index.html">× innexin</a>
+      <a href="../pannexin_path/index.html">Path</a>
+      <a href="../pannexin_curator/index.html">Gaps</a>
+    </p>
+  </section>
+</main>
+<div class="modal" id="modal" onclick="this.classList.remove('open')"><img id="modal-img" alt=""></div>
+<script>
+function openModal(src) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('modal').classList.add('open');
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('modal').classList.remove('open');
+});
+</script>
+</body>
+</html>

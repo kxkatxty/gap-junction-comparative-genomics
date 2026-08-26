@@ -1,0 +1,26 @@
+clade,organism,assembly_accession,assembly_level,assembly_source,has_gff_annotation,innexin_annotation_status,connexin_annotation_status,pannexin_annotation_status,already_checked,innexin_discovery_run,model_species,priority_score,priority_tier,recommended_pipeline,clade_priority,notes
+Amphibians,Ambystoma mexicanum,GCF_040938575.1,Chromosome,RefSeq,yes,,,,no,no,no,100,high,classify_then_discovery,2,frogs salamanders caecilians
+Amphibians,Anomaloglossus baeobatrachus,GCF_048569485.1,Chromosome,RefSeq,yes,,,,no,no,no,100,high,classify_then_discovery,2,frogs salamanders caecilians
+Amphibians,Aquarana catesbeiana,GCF_042186555.1,Chromosome,RefSeq,yes,,,,no,no,no,100,high,classify_then_discovery,2,frogs salamanders caecilians
+Amphibians,Ascaphus truei,GCF_040206685.1,Chromosome,RefSeq,yes,,,,no,no,no,100,high,classify_then_discovery,2,frogs salamanders caecilians
+Amphibians,Bombina bombina,GCF_027579735.1,Chromosome,RefSeq,yes,,,,no,no,no,100,high,classify_then_discovery,2,frogs salamanders caecilians
+Birds,Anas platyrhynchos,GCA_056880675.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,4,aves
+Birds,Butorides sundevalli,GCA_057816225.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,4,aves
+Birds,Cecropis daurica,GCA_057381115.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,4,aves
+Birds,Dumetella carolinensis,GCA_057427935.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,4,aves
+Birds,Emberiza tahapisi,GCA_058130095.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,4,aves
+Fishes,Acanthopagrus latus,GCA_058130895.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,1,ray-finned and cartilaginous fishes excluding tetrapods
+Fishes,Arapaima gigas,GCA_054883375.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,1,ray-finned and cartilaginous fishes excluding tetrapods
+Fishes,Bajacalifornia burragei,GCA_978802825.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,1,ray-finned and cartilaginous fishes excluding tetrapods
+Fishes,Hemibarbus labeo,GCA_056632655.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,1,ray-finned and cartilaginous fishes excluding tetrapods
+Fishes,Hucho bleekeri,GCA_057318875.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,1,ray-finned and cartilaginous fishes excluding tetrapods
+Mammals,Mus musculus domesticus,GCA_056825265.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,5,mammalia
+Mammals,Ovis aries,GCA_057332225.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,5,mammalia
+Mammals,Sus scrofa,GCA_057782405.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,5,mammalia
+Mammals,Alexandromys fortis,GCA_056956815.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,5,mammalia
+Mammals,Antrozous pallidus,GCA_027563665.2,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,5,mammalia
+Reptiles,Aldabrachelys gigantea,GCA_026122505.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,3,squamates turtles crocodilians excluding birds
+Reptiles,Apalone spinifera,GCA_055691355.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,3,squamates turtles crocodilians excluding birds
+Reptiles,Caretta caretta,GCF_965140235.1,Chromosome,RefSeq,yes,,,,no,no,no,100,high,classify_then_discovery,3,squamates turtles crocodilians excluding birds
+Reptiles,Carettochelys insculpta,GCF_033958435.1,Chromosome,RefSeq,yes,,,,no,no,no,100,high,classify_then_discovery,3,squamates turtles crocodilians excluding birds
+Reptiles,Chelonia mydas,GCF_015237465.2,Chromosome,RefSeq,yes,,,,no,no,no,100,high,classify_then_discovery,3,squamates turtles crocodilians excluding birds

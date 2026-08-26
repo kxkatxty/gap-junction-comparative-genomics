@@ -1,0 +1,134 @@
+family,organism,fasta_path,uniprot_accession,reference_gene_symbol,protein_name,matched_gene_id,match_method,status
+innexin,Aedes aegypti,project/data/references/innexins/Aedes_aegypti/shakB__Q1DH70.fasta,Q1DH70,shakB,SHAKB_AEDAE Innexin shaking-B,gene-LOC5566218,transcript_product:shakB,matched
+innexin,Anopheles gambiae,project/data/references/innexins/Anopheles_gambiae/ZPG__Q7Q5R9.fasta,Q7Q5R9,ZPG,INX4_ANOGA Innexin inx4,gene-LOC1276902,gene_symbol:inx4,matched
+innexin,Anopheles gambiae,project/data/references/innexins/Anopheles_gambiae/shakB__Q7PXN1.fasta,Q7PXN1,shakB,SHAKB_ANOGA Innexin shaking-B,gene-LOC1272246,gene_symbol:shakB,matched
+innexin,Caenorhabditis briggsae,project/data/references/innexins/Caenorhabditis_briggsae/inx-19__A8WVX4.fasta,A8WVX4,inx-19,INX19_CAEBR Innexin-19,gene-CBG_03987,gene_symbol:inx-19,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/eat-5__Q27295.fasta,Q27295,eat-5,EAT5_CAEEL Innexin eat-5,gene-CELE_F13G3.8,gene_symbol:eat-5,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/inx-10__Q22549.fasta,Q22549,inx-10,INX10_CAEEL Innexin-10,gene-CELE_Y48G1C.10,gene_symbol:inx-10,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/inx-11__Q23157.fasta,Q23157,inx-11,INX11_CAEEL Innexin-11,gene-CELE_F53G12.1,gene_symbol:inx-11,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/inx-12__O01634.fasta,O01634,inx-12,INX12_CAEEL Innexin-12,gene-CELE_ZK770.3,gene_symbol:inx-12,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/inx-14__O62136.fasta,O62136,inx-14,INX14_CAEEL Innexin-14,gene-CELE_Y48G1A.4,gene_symbol:inx-14,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/inx-16__O61787.fasta,O61787,inx-16,INX16_CAEEL Innexin-16,gene-CELE_Y65B4BR.6,gene_symbol:inx-16,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/inx-17__O61788.fasta,O61788,inx-17,INX17_CAEEL Innexin-17,gene-CELE_C54G6.5,gene_symbol:inx-17,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/inx-19__O61715.fasta,O61715,inx-19,INX19_CAEEL Innexin-19,gene-CELE_T16H5.1,gene_symbol:inx-19,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/inx-2__Q9U3K5.fasta,Q9U3K5,inx-2,INX2_CAEEL Innexin-2,gene-CELE_F08G12.10,gene_symbol:inx-2,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/inx-3__Q19746.fasta,Q19746,inx-3,INX3_CAEEL Innexin-3,gene-CELE_F22F4.2,gene_symbol:inx-3,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/inx-5__Q23027.fasta,Q23027,inx-5,INX5_CAEEL Innexin-5,gene-CELE_R09F10.4,gene_symbol:inx-5,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/inx-6__Q9U3N4.fasta,Q9U3N4,inx-6,INX6_CAEEL Innexin-6,gene-CELE_C36H8.2,gene_symbol:inx-6,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/inx-7__Q21123.fasta,Q21123,inx-7,INX7_CAEEL Innexin-7,gene-CELE_K02B2.4,gene_symbol:inx-7,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/inx-8__Q23593.fasta,Q23593,inx-8,INX8_CAEEL Innexin-8,gene-CELE_ZK792.2,gene_symbol:inx-8,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/unc-7__Q03412.fasta,Q03412,unc-7,UNC7_CAEEL Innexin unc-7,gene-CELE_Y74C9A.1,gene_symbol:unc-7,matched
+innexin,Caenorhabditis elegans,project/data/references/innexins/Caenorhabditis_elegans/unc-9__O01393.fasta,O01393,unc-9,UNC9_CAEEL Innexin unc-9,gene-CELE_R12H7.1,gene_symbol:unc-9,matched
+innexin,Drosophila melanogaster,project/data/references/innexins/Drosophila_melanogaster/Inx2__Q9V427.fasta,Q9V427,Inx2,INX2_DROME Innexin inx2,gene-Dmel_CG4590,gene_symbol:Inx2,matched
+innexin,Drosophila melanogaster,project/data/references/innexins/Drosophila_melanogaster/Inx3__Q9VAS7.fasta,Q9VAS7,Inx3,INX3_DROME Innexin inx3,gene-Dmel_CG1448,gene_symbol:Inx3,matched
+innexin,Drosophila melanogaster,project/data/references/innexins/Drosophila_melanogaster/Inx5__Q9VWL5.fasta,Q9VWL5,Inx5,INX5_DROME Innexin inx5,gene-Dmel_CG7537,gene_symbol:Inx5,matched
+innexin,Drosophila melanogaster,project/data/references/innexins/Drosophila_melanogaster/Inx6__Q9VR82.fasta,Q9VR82,Inx6,INX6_DROME Innexin inx6,gene-Dmel_CG17063,gene_symbol:Inx6,matched
+innexin,Drosophila melanogaster,project/data/references/innexins/Drosophila_melanogaster/Inx7__Q9V3W6.fasta,Q9V3W6,Inx7,INX7_DROME Innexin inx7,gene-Dmel_CG2977,gene_symbol:Inx7,matched
+innexin,Drosophila melanogaster,project/data/references/innexins/Drosophila_melanogaster/ogre__P27716.fasta,P27716,ogre,INX1_DROME Innexin inx1,gene-Dmel_CG3039,gene_symbol:ogre,matched
+innexin,Drosophila melanogaster,project/data/references/innexins/Drosophila_melanogaster/shakB__P33085.fasta,P33085,shakB,SHAKB_DROME Innexin shaking-B,gene-Dmel_CG3827,gene_symbol:shakB,matched
+innexin,Drosophila melanogaster,project/data/references/innexins/Drosophila_melanogaster/zpg__Q9VRX6.fasta,Q9VRX6,zpg,INX4_DROME Innexin inx4,gene-Dmel_CG10125,gene_symbol:zpg,matched
+innexin,Schistocerca americana,project/data/references/innexins/Schistocerca_americana/inx1__Q9XYN0.fasta,Q9XYN0,inx1,INX1_SCHAM Innexin inx1,gene-LOC124554761,transcript_product:inx1,matched
+innexin,Schistocerca americana,project/data/references/innexins/Schistocerca_americana/inx2__Q9XYN1.fasta,Q9XYN1,inx2,INX2_SCHAM Innexin inx2,gene-LOC124594079,transcript_product:inx2,matched
+connexin,Bos taurus,project/data/references/connexins/Bos_taurus/GJA1__P18246.fasta,P18246,GJA1,CXA1_BOVIN Gap junction alpha-1 protein,gene-GJA1,gene_symbol:GJA1,matched
+connexin,Bos taurus,project/data/references/connexins/Bos_taurus/GJA3__P41987.fasta,P41987,GJA3,CXA3_BOVIN Gap junction alpha-3 protein,gene-GJA3,gene_symbol:GJA3,matched
+connexin,Bos taurus,project/data/references/connexins/Bos_taurus/GJA4__A4IFL1.fasta,A4IFL1,GJA4,CXA4_BOVIN Gap junction alpha-4 protein,gene-GJA4,gene_symbol:GJA4,matched
+connexin,Bos taurus,project/data/references/connexins/Bos_taurus/GJA5__Q0VCR2.fasta,Q0VCR2,GJA5,CXA5_BOVIN Gap junction alpha-5 protein,gene-GJA5,gene_symbol:GJA5,matched
+connexin,Bos taurus,project/data/references/connexins/Bos_taurus/GJB1__O18968.fasta,O18968,GJB1,CXB1_BOVIN Gap junction beta-1 protein,gene-GJB1,gene_symbol:GJB1,matched
+connexin,Bos taurus,project/data/references/connexins/Bos_taurus/GJB2__A2VE67.fasta,A2VE67,GJB2,CXB2_BOVIN Gap junction beta-2 protein,gene-KCNE2,gene_symbol:GJB2,matched
+connexin,Bos taurus,project/data/references/connexins/Bos_taurus/GJB3__Q58D78.fasta,Q58D78,GJB3,CXB3_BOVIN Gap junction beta-3 protein,gene-GJB3,gene_symbol:GJB3,matched
+connexin,Bos taurus,project/data/references/connexins/Bos_taurus/GJD2__Q866T7.fasta,Q866T7,GJD2,CXD2_BOVIN Gap junction delta-2 protein,gene-KCNE2,gene_symbol:GJD2,matched
+connexin,Canis lupus familiaris,project/data/references/connexins/Canis_lupus_familiaris/GJA1__Q6S9C0.fasta,Q6S9C0,GJA1,CXA1_CANLF Gap junction alpha-1 protein,gene-GJA1,gene_symbol:GJA1,matched
+connexin,Canis lupus familiaris,project/data/references/connexins/Canis_lupus_familiaris/GJA5__P33725.fasta,P33725,GJA5,CXA5_CANLF Gap junction alpha-5 protein,gene-GJA5,gene_symbol:GJA5,matched
+connexin,Canis lupus familiaris,project/data/references/connexins/Canis_lupus_familiaris/GJC1__P28228.fasta,P28228,GJC1,CXG1_CANLF Gap junction gamma-1 protein,gene-GJC1,gene_symbol:GJC1,matched
+connexin,Chlorocebus sabaeus,project/data/references/connexins/Chlorocebus_sabaeus/GJA1__Q6TYA9.fasta,Q6TYA9,GJA1,CXA1_CHLAE Gap junction alpha-1 protein,gene-GJA1,gene_symbol:GJA1,matched
+connexin,Cricetulus griseus,project/data/references/connexins/Cricetulus_griseus/GJC1__Q6R4A8.fasta,Q6R4A8,GJC1,CXG1_CRIGR Gap junction gamma-1 protein,gene-Gjc1,gene_symbol:GJC1,matched
+connexin,Danio rerio,project/data/references/connexins/Danio_rerio/cx23__U3JA75.fasta,U3JA75,cx23,CXE1_DANRE Gap junction epsilon-1 protein,gene-rad23aa,gene_symbol:cx23,matched
+connexin,Danio rerio,project/data/references/connexins/Danio_rerio/cx32.2__Q7T047.fasta,Q7T047,cx32.2,CX32_DANRE Gap junction Cx32.2 protein,gene-gja13.2,gene_symbol:cx32.2,matched
+connexin,Danio rerio,project/data/references/connexins/Danio_rerio/gja1__O57474.fasta,O57474,gja1,CXA1_DANRE Gap junction alpha-1 protein,gene-gja1b,gene_symbol:gja1,matched
+connexin,Danio rerio,project/data/references/connexins/Danio_rerio/gjc1__Q92052.fasta,Q92052,gjc1,CXG1_DANRE Gap junction gamma-1 protein,gene-gjc1,gene_symbol:gjc1,matched
+connexin,Equus caballus,project/data/references/connexins/Equus_caballus/GJB1__Q6WGK6.fasta,Q6WGK6,GJB1,CXB1_HORSE Gap junction beta-1 protein,gene-GJB1,gene_symbol:GJB1,matched
+connexin,Erinaceus europaeus,project/data/references/connexins/Erinaceus_europaeus/GJA1__Q6TYA8.fasta,Q6TYA8,GJA1,CXA1_ERIEU Gap junction alpha-1 protein,gene-GJA1,gene_symbol:GJA1,matched
+connexin,Gallus gallus,project/data/references/connexins/Gallus_gallus/GJA1__P14154.fasta,P14154,GJA1,CXA1_CHICK Gap junction alpha-1 protein,gene-GJA1,gene_symbol:GJA1,matched
+connexin,Gallus gallus,project/data/references/connexins/Gallus_gallus/GJA3__P29415.fasta,P29415,GJA3,CXA3_CHICK Gap junction alpha-3 protein,gene-GJA3,gene_symbol:GJA3,matched
+connexin,Gallus gallus,project/data/references/connexins/Gallus_gallus/GJA5__P18860.fasta,P18860,GJA5,CXA5_CHICK Gap junction alpha-5 protein,gene-GJA5,gene_symbol:GJA5,matched
+connexin,Gallus gallus,project/data/references/connexins/Gallus_gallus/GJA8__P36381.fasta,P36381,GJA8,CXA8_CHICK Gap junction alpha-8 protein,gene-GJA8,gene_symbol:GJA8,matched
+connexin,Gallus gallus,project/data/references/connexins/Gallus_gallus/GJB6__O93533.fasta,O93533,GJB6,CXB6_CHICK Gap junction beta-6 protein,gene-GJB6,gene_symbol:GJB6,matched
+connexin,Gallus gallus,project/data/references/connexins/Gallus_gallus/GJC1__P18861.fasta,P18861,GJC1,CXG1_CHICK Gap junction gamma-1 protein,gene-GJC3,gene_symbol:GJC1,matched
+connexin,Gorilla gorilla gorilla,project/data/references/connexins/Gorilla_gorilla_gorilla/GJB2__Q8MHW5.fasta,Q8MHW5,GJB2,CXB2_GORGO Gap junction beta-2 protein,gene-LOC101144634,gene_symbol:GJB2,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJA10__Q969M2.fasta,Q969M2,GJA10,CXA10_HUMAN Gap junction alpha-10 protein,gene-GJA9,gene_symbol:GJA10,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJA1__P17302.fasta,P17302,GJA1,CXA1_HUMAN Gap junction alpha-1 protein,gene-GJA1,gene_symbol:GJA1,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJA3__Q9Y6H8.fasta,Q9Y6H8,GJA3,CXA3_HUMAN Gap junction alpha-3 protein,gene-GJA3,gene_symbol:GJA3,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJA4__P35212.fasta,P35212,GJA4,CXA4_HUMAN Gap junction alpha-4 protein,gene-GJA4,gene_symbol:GJA4,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJA5__P36382.fasta,P36382,GJA5,CXA5_HUMAN Gap junction alpha-5 protein,gene-GJA5,gene_symbol:GJA5,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJA8__P48165.fasta,P48165,GJA8,CXA8_HUMAN Gap junction alpha-8 protein,gene-GJA8,gene_symbol:GJA8,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJA9__P57773.fasta,P57773,GJA9,CXA9_HUMAN Gap junction alpha-9 protein,gene-GJA9,gene_symbol:GJA9,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJB1__P08034.fasta,P08034,GJB1,CXB1_HUMAN Gap junction beta-1 protein,gene-GJB1,gene_symbol:GJB1,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJB2__P29033.fasta,P29033,GJB2,CXB2_HUMAN Gap junction beta-2 protein,gene-NOC2L,gene_symbol:GJB2,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJB3__O75712.fasta,O75712,GJB3,CXB3_HUMAN Gap junction beta-3 protein,gene-GJB3,gene_symbol:GJB3,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJB4__Q9NTQ9.fasta,Q9NTQ9,GJB4,CXB4_HUMAN Gap junction beta-4 protein,gene-GJB4,gene_symbol:GJB4,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJB5__O95377.fasta,O95377,GJB5,CXB5_HUMAN Gap junction beta-5 protein,gene-OR4F5,gene_symbol:GJB5,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJB6__O95452.fasta,O95452,GJB6,CXB6_HUMAN Gap junction beta-6 protein,gene-GJB6,gene_symbol:GJB6,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJB7__Q6PEY0.fasta,Q6PEY0,GJB7,CXB7_HUMAN Gap junction beta-7 protein,gene-GJB7,gene_symbol:GJB7,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJC1__P36383.fasta,P36383,GJC1,CXG1_HUMAN Gap junction gamma-1 protein,gene-GJD3,gene_symbol:GJC1,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJC2__Q5T442.fasta,Q5T442,GJC2,CXG2_HUMAN Gap junction gamma-2 protein,gene-NOC2L,gene_symbol:GJC2,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJC3__Q8NFK1.fasta,Q8NFK1,GJC3,CXG3_HUMAN Gap junction gamma-3 protein,gene-GJC3,gene_symbol:GJC3,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJD2__Q9UKL4.fasta,Q9UKL4,GJD2,CXD2_HUMAN Gap junction delta-2 protein,gene-NOC2L,gene_symbol:GJD2,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJD3__Q8N144.fasta,Q8N144,GJD3,CXD3_HUMAN Gap junction delta-3 protein,gene-ACAP3,gene_symbol:GJD3,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJD4__Q96KN9.fasta,Q96KN9,GJD4,CXD4_HUMAN Gap junction delta-4 protein,gene-GJD4,gene_symbol:GJD4,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/GJE1__A6NN92.fasta,A6NN92,GJE1,CXE1_HUMAN Gap junction epsilon-1 protein,gene-GJE1,gene_symbol:GJE1,matched
+connexin,Homo sapiens,project/data/references/connexins/Homo_sapiens/RIC1__Q4ADV7.fasta,Q4ADV7,RIC1,RIC1_HUMAN Guanine nucleotide exchange factor subunit RIC1,gene-LOC124901373,gene_symbol:RIC1,matched
+connexin,Hylobates moloch,project/data/references/connexins/Hylobates_moloch/GJB2__Q7JGL3.fasta,Q7JGL3,GJB2,CXB2_HYLLA Gap junction beta-2 protein,gene-GAL3ST2,gene_symbol:GJB2,matched
+connexin,Leucoraja erinaceus,project/data/references/connexins/Leucoraja_erinaceus/P69998__P69998.fasta,P69998,,CXD2_LEUER Gap junction delta-2 protein,gene-foxi2,gene_symbol:CXD2,matched
+connexin,Macaca fascicularis,project/data/references/connexins/Macaca_fascicularis/GJA1__Q4R4S7.fasta,Q4R4S7,GJA1,CXA1_MACFA Gap junction alpha-1 protein,gene-GJA1,gene_symbol:GJA1,matched
+connexin,Macaca fascicularis,project/data/references/connexins/Macaca_fascicularis/GJB1__Q60HF7.fasta,Q60HF7,GJB1,CXB1_MACFA Gap junction beta-1 protein,gene-GJB1,gene_symbol:GJB1,matched
+connexin,Macaca fascicularis,project/data/references/connexins/Macaca_fascicularis/GJD4__Q9N0B3.fasta,Q9N0B3,GJD4,CXD4_MACFA Gap junction delta-4 protein,gene-GJD4,gene_symbol:GJD4,matched
+connexin,Macaca mulatta,project/data/references/connexins/Macaca_mulatta/GJB2__Q8MIT8.fasta,Q8MIT8,GJB2,CXB2_MACMU Gap junction beta-2 protein,gene-PGBD2,gene_symbol:GJB2,matched
+connexin,Mesocricetus auratus,project/data/references/connexins/Mesocricetus_auratus/GJC1__Q6PYT3.fasta,Q6PYT3,GJC1,CXG1_MESAU Gap junction gamma-1 protein,gene-Gjc1,gene_symbol:GJC1,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gja10__Q9WUS4.fasta,Q9WUS4,Gja10,CXA10_MOUSE Gap junction alpha-10 protein,gene-Gja10,gene_symbol:Gja10,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gja1__P23242.fasta,P23242,Gja1,CXA1_MOUSE Gap junction alpha-1 protein,gene-Gja1,gene_symbol:Gja1,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gja3__Q64448.fasta,Q64448,Gja3,CXA3_MOUSE Gap junction alpha-3 protein,gene-Gja3,gene_symbol:Gja3,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gja4__P28235.fasta,P28235,Gja4,CXA4_MOUSE Gap junction alpha-4 protein,gene-Gja4,gene_symbol:Gja4,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gja5__Q01231.fasta,Q01231,Gja5,CXA5_MOUSE Gap junction alpha-5 protein,gene-Gja5,gene_symbol:Gja5,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gja6__Q6S5G4.fasta,Q6S5G4,Gja6,CXA6_MOUSE Gap junction alpha-6 protein,gene-Gja6,gene_symbol:Gja6,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gja8__P28236.fasta,P28236,Gja8,CXA8_MOUSE Gap junction alpha-8 protein,gene-Gja8,gene_symbol:Gja8,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gjb1__P28230.fasta,P28230,Gjb1,CXB1_MOUSE Gap junction beta-1 protein,gene-Gjb1,gene_symbol:Gjb1,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gjb2__Q00977.fasta,Q00977,Gjb2,CXB2_MOUSE Gap junction beta-2 protein,gene-Oprk1,gene_symbol:Gjb2,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gjb3__P28231.fasta,P28231,Gjb3,CXB3_MOUSE Gap junction beta-3 protein,gene-Gjb3,gene_symbol:Gjb3,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gjb4__Q02738.fasta,Q02738,Gjb4,CXB4_MOUSE Gap junction beta-4 protein,gene-Gjb4,gene_symbol:Gjb4,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gjb5__Q02739.fasta,Q02739,Gjb5,CXB5_MOUSE Gap junction beta-5 protein,gene-Cops5,gene_symbol:Gjb5,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gjb6__P70689.fasta,P70689,Gjb6,CXB6_MOUSE Gap junction beta-6 protein,gene-Gjb6,gene_symbol:Gjb6,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gjc1__P28229.fasta,P28229,Gjc1,CXG1_MOUSE Gap junction gamma-1 protein,gene-Gjd3,gene_symbol:Gjc1,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gjc2__Q8BQU6.fasta,Q8BQU6,Gjc2,CXG2_MOUSE Gap junction gamma-2 protein,gene-Oprk1,gene_symbol:Gjc2,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gjc3__Q921C1.fasta,Q921C1,Gjc3,CXG3_MOUSE Gap junction gamma-3 protein,gene-Gjc3,gene_symbol:Gjc3,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gjd2__O54851.fasta,O54851,Gjd2,CXD2_MOUSE Gap junction delta-2 protein,gene-Oprk1,gene_symbol:Gjd2,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gjd3__Q91YD1.fasta,Q91YD1,Gjd3,CXD3_MOUSE Gap junction delta-3 protein,gene-Rp1,gene_symbol:Gjd3,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gjd4__Q8BSD4.fasta,Q8BSD4,Gjd4,CXD4_MOUSE Gap junction delta-4 protein,gene-Gjd4,gene_symbol:Gjd4,matched
+connexin,Mus musculus,project/data/references/connexins/Mus_musculus/Gje1__Q9CX92.fasta,Q9CX92,Gje1,CXE1_MOUSE Gap junction epsilon-1 protein,gene-Gjc3,gene_symbol:Gje1,matched
+connexin,Oryctolagus cuniculus,project/data/references/connexins/Oryctolagus_cuniculus/GJA1__Q6TYA7.fasta,Q6TYA7,GJA1,CXA1_RABIT Gap junction alpha-1 protein,gene-GJA1,gene_symbol:GJA1,matched
+connexin,Ovis aries,project/data/references/connexins/Ovis_aries/GJA3__Q9TU17.fasta,Q9TU17,GJA3,CXA3_SHEEP Gap junction alpha-3 protein,gene-GJA3,gene_symbol:GJA3,matched
+connexin,Ovis aries,project/data/references/connexins/Ovis_aries/GJA8__P55917.fasta,P55917,GJA8,CXA8_SHEEP Gap junction alpha-8 protein,gene-GJA8,gene_symbol:GJA8,matched
+connexin,Ovis aries,project/data/references/connexins/Ovis_aries/GJB2__P46691.fasta,P46691,GJB2,CXB2_SHEEP Gap junction beta-2 protein,gene-GAL3ST2,gene_symbol:GJB2,matched
+connexin,Pongo pygmaeus,project/data/references/connexins/Pongo_pygmaeus/GJB2__Q8MIT9.fasta,Q8MIT9,GJB2,CXB2_PONPY Gap junction beta-2 protein,gene-PGBD2,gene_symbol:GJB2,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gja1__P08050.fasta,P08050,Gja1,CXA1_RAT Gap junction alpha-1 protein,gene-Gja1,gene_symbol:Gja1,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gja3__P29414.fasta,P29414,Gja3,CXA3_RAT Gap junction alpha-3 protein,gene-Gja3,gene_symbol:Gja3,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gja4__Q03190.fasta,Q03190,Gja4,CXA4_RAT Gap junction alpha-4 protein,gene-Gja4,gene_symbol:Gja4,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gja5__P28234.fasta,P28234,Gja5,CXA5_RAT Gap junction alpha-5 protein,gene-Gja5,gene_symbol:Gja5,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gja6__P28233.fasta,P28233,Gja6,CXA6_RAT Gap junction alpha-6 protein,gene-Gja6,gene_symbol:Gja6,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gja8__Q8K4Q9.fasta,Q8K4Q9,Gja8,CXA8_RAT Gap junction alpha-8 protein,gene-Gja8,gene_symbol:Gja8,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gjb1__P08033.fasta,P08033,Gjb1,CXB1_RAT Gap junction beta-1 protein,gene-Gjb1,gene_symbol:Gjb1,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gjb2__P21994.fasta,P21994,Gjb2,CXB2_RAT Gap junction beta-2 protein,gene-Vom2r1,gene_symbol:Gjb2,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gjb3__P25305.fasta,P25305,Gjb3,CXB3_RAT Gap junction beta-3 protein,gene-Gjb3,gene_symbol:Gjb3,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gjb4__P36380.fasta,P36380,Gjb4,CXB4_RAT Gap junction beta-4 protein,gene-Gjb4,gene_symbol:Gjb4,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gjb5__P28232.fasta,P28232,Gjb5,CXB5_RAT Gap junction beta-5 protein,gene-Vom2r5,gene_symbol:Gjb5,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gjc1__A4GG66.fasta,A4GG66,Gjc1,CXG1_RAT Gap junction gamma-1 protein,gene-Gjc1,gene_symbol:Gjc1,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gjc2__Q80XF7.fasta,Q80XF7,Gjc2,CXG2_RAT Gap junction gamma-2 protein,gene-Vom2r1,gene_symbol:Gjc2,matched
+connexin,Rattus norvegicus,project/data/references/connexins/Rattus_norvegicus/Gjd2__O70610.fasta,O70610,Gjd2,CXD2_RAT Gap junction delta-2 protein,gene-Vom2r1,gene_symbol:Gjd2,matched
+connexin,Sus scrofa,project/data/references/connexins/Sus_scrofa/GJA1__Q29101.fasta,Q29101,GJA1,CXA1_PIG Gap junction alpha-1 protein,gene-GJA1,gene_symbol:GJA1,matched
+connexin,Sus scrofa,project/data/references/connexins/Sus_scrofa/GJA4__Q29559.fasta,Q29559,GJA4,CXA4_PIG Gap junction alpha-4 protein (Fragment),gene-GJA4,gene_symbol:GJA4,matched
+connexin,Sus scrofa,project/data/references/connexins/Sus_scrofa/GJC1__A4GVD1.fasta,A4GVD1,GJC1,CXG1_PIG Gap junction gamma-1 protein,gene-GJC1,gene_symbol:GJC1,matched
+connexin,Ursus americanus,project/data/references/connexins/Ursus_americanus/GJA1__A6XKM2.fasta,A6XKM2,GJA1,CXA1_URSAM Gap junction alpha-1 protein,gene-GJA1,gene_symbol:GJA1,matched
+connexin,Xenopus laevis,project/data/references/connexins/Xenopus_laevis/gja1__P16863.fasta,P16863,gja1,CXA1_XENLA Gap junction alpha-1 protein,gene-gja1.L,gene_symbol:gja1,matched
+connexin,Xenopus laevis,project/data/references/connexins/Xenopus_laevis/gja2__P16864.fasta,P16864,gja2,CXA2_XENLA Gap junction alpha-2 protein,gene-cx38.S,gene_symbol:gja2,matched
+connexin,Xenopus laevis,project/data/references/connexins/Xenopus_laevis/gja4__P51914.fasta,P51914,gja4,CXA4_XENLA Gap junction alpha-4 protein,gene-gja4.L,gene_symbol:gja4,matched
+connexin,Xenopus laevis,project/data/references/connexins/Xenopus_laevis/gjb1__P08983.fasta,P08983,gjb1,CXB1_XENLA Gap junction beta-1 protein,gene-gjb1.L,gene_symbol:gjb1,matched
+connexin,Xenopus tropicalis,project/data/references/connexins/Xenopus_tropicalis/gja4__Q0V990.fasta,Q0V990,gja4,CXA4_XENTR Gap junction alpha-4 protein,gene-gja4,gene_symbol:gja4,matched

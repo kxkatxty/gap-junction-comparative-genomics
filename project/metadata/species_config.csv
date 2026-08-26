@@ -1,0 +1,31 @@
+family,organism,reviewed_only
+innexin,Aedes aegypti,true
+innexin,Anopheles gambiae,true
+innexin,Caenorhabditis briggsae,true
+innexin,Caenorhabditis elegans,true
+innexin,Drosophila melanogaster,true
+innexin,Schistocerca americana,true
+connexin,Bos taurus,true
+connexin,Canis lupus familiaris,true
+connexin,Chlorocebus sabaeus,true
+connexin,Cricetulus griseus,true
+connexin,Danio rerio,true
+connexin,Equus caballus,true
+connexin,Erinaceus europaeus,true
+connexin,Gallus gallus,true
+connexin,Gorilla gorilla gorilla,true
+connexin,Homo sapiens,true
+connexin,Hylobates moloch,true
+connexin,Leucoraja erinaceus,true
+connexin,Macaca fascicularis,true
+connexin,Macaca mulatta,true
+connexin,Mesocricetus auratus,true
+connexin,Mus musculus,true
+connexin,Oryctolagus cuniculus,true
+connexin,Ovis aries,true
+connexin,Pongo pygmaeus,true
+connexin,Rattus norvegicus,true
+connexin,Sus scrofa,true
+connexin,Ursus americanus,true
+connexin,Xenopus laevis,true
+connexin,Xenopus tropicalis,true

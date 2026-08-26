@@ -1,0 +1,7 @@
+plot_group,family,reference_gene_symbol,uniprot_accession,organism,enabled,title_label,notes
+GJA1,connexin,GJA1,,,true,GJA1,Gap junction alpha-1 (Cx43) across species; empty accession/organism = all matches
+GJA1,connexin,gja1,,,true,GJA1,Lowercase gja1 symbols (zebrafish/xenopus filenames)
+GJA1,connexin,Gja1,,,true,GJA1,Mouse/rat Gja1 symbols
+shakB,innexin,shakB,,,true,shakB,Innexin shaking-B in insects
+GJA1_human,connexin,GJA1,P17302,Homo sapiens,true,GJA1,Human GJA1 only (single-species panel)
+GJB2,connexin,GJB2,,,true,GJB2,Gap junction beta-2 where present in dataset

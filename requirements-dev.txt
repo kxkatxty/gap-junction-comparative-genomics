@@ -1,0 +1,6 @@
+pytest>=8.0
+pandas>=2.0
+matplotlib>=3.8
+
+# Optional runtime dependency for discover_innexins.py:
+# conda install -c bioconda blast

@@ -1,0 +1,11 @@
+organism,ensembl_species,symbol,gene_id,n_coding_exons,status,panx_type
+Homo sapiens,human,PANX1,ENSG00000110218,21,ok,PANX1
+Homo sapiens,human,PANX2,ENSG00000073150,12,ok,PANX2
+Homo sapiens,human,PANX3,ENSG00000154143,4,ok,PANX3
+Mus musculus,mouse,Panx1,ENSMUSG00000031934,30,ok,PANX1
+Mus musculus,mouse,Panx2,ENSMUSG00000058441,30,ok,PANX2
+Mus musculus,mouse,Panx3,ENSMUSG00000011118,9,ok,PANX3
+Danio rerio,zebrafish,panx1a,,,not_found,PANX1
+Danio rerio,zebrafish,panx1b,,,not_found,PANX1
+Danio rerio,zebrafish,panx2,ENSDARG00000063019,11,ok,PANX2
+Danio rerio,zebrafish,panx3,ENSDARG00000004627,8,ok,PANX3

@@ -1,0 +1,6 @@
+clade,ncbi_search_term,notes,priority
+Chondrichthyes,txid7777[Organism:exp],cartilaginous fishes sharks rays chimaeras,1
+Actinopterygii,txid7898[Organism:exp] NOT txid32523[Organism:exp],ray-finned fishes excluding tetrapods,2
+Amphibia,Amphibia[Organism:exp],frogs salamanders caecilians,3
+Sauropsida,Sauropsida[Organism:exp],birds and reptiles turtles crocodilians squamates,4
+Mammalia,txid40674[Organism:exp],mammals,5

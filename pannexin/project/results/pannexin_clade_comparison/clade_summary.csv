@@ -1,0 +1,10 @@
+clade,n_loci,n_species,median_length_aa,n_panx1,n_panx2,n_panx3,n_other,species,bottleneck
+Mammal,15,5,426,5,5,5,0,Bos taurus; Homo sapiens; Mus musculus; Rattus norvegicus; Sus scrofa,no
+Amphibian,8,2,428,2,3,3,0,Xenopus laevis; Xenopus tropicalis,no
+Ray-finned fish,7,3,604,2,4,1,0,Danio rerio; Lepisosteus oculatus; Takifugu rubripes,no
+Reptile,6,2,434,2,2,2,0,Anolis carolinensis; Podarcis muralis,no
+Cartilaginous fish,4,1,426,2,1,1,0,Callorhinchus milii,no
+Bird,3,1,433,1,1,1,0,Gallus gallus,no
+Lobe-finned fish,3,1,428,1,1,1,0,Latimeria chalumnae,no
+Tunicate / lancelet,2,1,430,0,1,1,0,Branchiostoma floridae,yes
+Jawless vertebrate,1,1,453,0,0,1,0,Petromyzon marinus,yes

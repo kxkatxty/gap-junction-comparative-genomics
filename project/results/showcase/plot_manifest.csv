@@ -1,0 +1,51 @@
+section,title,path
+overview,Species panel composition,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/overview/01_panel_composition.png
+overview,Discovery funnel,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/overview/02_discovery_funnel.png
+overview,Annotation status,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/overview/04_annotation_status.png
+innexin,Innexin protein length by clade,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/innexin/01_length_by_clade.png
+innexin,Innexin exon count by organism,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/innexin/02_exon_by_organism.png
+innexin,Innexin gene span vs exons,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/innexin/03_gene_span_vs_exons.png
+connexin,Connexin protein length by clade,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/connexin/01_length_by_clade.png
+connexin,Connexin exon count by organism,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/connexin/02_exon_by_organism.png
+connexin,Connexin gene span vs exons,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/connexin/03_gene_span_vs_exons.png
+comparison,Protein length innexin vs connexin,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/comparison/01_protein_length_boxplot.png
+comparison,Discovery scatter length vs TM,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/comparison/02_discovery_scatter.png
+comparison,Rank score distribution,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/comparison/03_rank_scores.png
+comparison,Exon count comparison,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/comparison/04_exon_count_boxplot.png
+comparison,Exon vs TM in discovery,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/comparison/05_exon_vs_tm.png
+comparison,Acceptance rates,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/comparison/06_acceptance_rates.png
+comparison,Protein length histograms,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/comparison/07_length_histograms.png
+comparison,Intron architecture,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/comparison/08_intron_architecture.png
+innexin,Dmel innexin paralog lengths,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/innexin/04_dmel_paralog_lengths.png
+innexin,Innexin genes per species,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/innexin/05_genes_per_species.png
+connexin,Human connexin landscape,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/connexin/04_human_landscape.png
+connexin,Connexin genes per species,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/connexin/05_genes_per_species.png
+domains,Connexin Pfam monument valley,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/domains/domain_mv_pfam_connexin.png
+domains,TM topology coverage,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/domains/domain_mv_tm_topology.png
+domains,Disorder coverage,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/domains/domain_mv_disorder.png
+domains,Feature fraction heatmap,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/domains/05_feature_fraction_heatmap.png
+discovery,Validation by species,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/discovery/01_validation_by_species.png
+discovery,Innexin-only candidates,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/discovery/02_innexin_candidates.png
+phylogeny,Gap junction phylogeny (family-colored),/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/phylogeny/01_tree_colored.png
+phylogeny,Phylogenetic distance heatmap,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/phylogeny/02_distance_heatmap.png
+phylogeny,Innexin reference panel tree,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/phylogeny/03_innexin_reference_tree.png
+synteny,SynVoy job summary,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/synteny/01_job_summary.png
+synteny,SynVoy annotation yield,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/synteny/02_annotation_yield.png
+synteny,Reference panel SynVoy status,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/synteny/03_refpanel_status.png
+synteny,Case 1 Dmel cluster sharing,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/synteny/04_case1_cluster_sharing.png
+synteny,GOI annotation heatmap,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/synteny/05_goi_heatmap.png
+synteny,Flanking vs GOI counts,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/synteny/06_flanking_goi_scatter.png
+cross_clade,Case 3 insect vs nematode,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/cross_clade/01_case3_comparison.png
+cross_clade,Inx2 insect vs nematode bars,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/cross_clade/02_inx2_architecture.png
+ortholog,Case 2 ortholog support,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/ortholog/01_case2_support.png
+ortholog,Inx2/shakB ortholog panel,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/ortholog/02_inx2_panel.png
+ortholog,shakB insect comparison,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/ortholog/03_shakB_insects.png
+connexin,GJA1 ortholog trajectory,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/connexin/06_gja1_trajectory.png
+comparison,Reference vs discovery lengths,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/comparison/09_ref_vs_discovery.png
+comparison,Rank category breakdown,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/comparison/10_rank_breakdown.png
+comparison,Exon length distribution,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/comparison/11_exon_length_dist.png
+comparison,Transcript complexity,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/comparison/12_transcript_complexity.png
+innexin,Nematode innexin panel,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/innexin/06_nematode_panel.png
+domains,TM helices vs length,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/domains/06_tm_vs_length.png
+domains,Secondary structure fractions,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/domains/07_secstruct_fraction.png
+discovery,Connexin batch comparison,/Users/katerinamusienko/Documents/BachelorCursor/project/results/showcase/discovery/03_connexin_batches.png

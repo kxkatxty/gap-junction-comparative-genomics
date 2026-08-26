@@ -1,0 +1,36 @@
+source,species_dir,organism,clade,gene_label,reference_type,subfamily,seq_id,length
+reference_db,Aedes_aegypti,Aedes aegypti,Insecta,shakB,shakB,SF1_shakB,ref|Aedes_aegypti|shakB|Q1DH70,372
+reference_db,Anopheles_gambiae,Anopheles gambiae,Insecta,ZPG,Inx4/zpg,SF4_Inx2_expansion,ref|Anopheles_gambiae|ZPG|Q7Q5R9,386
+reference_db,Anopheles_gambiae,Anopheles gambiae,Insecta,shakB,shakB,SF1_shakB,ref|Anopheles_gambiae|shakB|Q7PXN1,373
+reference_db,Caenorhabditis_briggsae,Caenorhabditis briggsae,Nematoda,inx-19,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_briggsae|inx-19|A8WVX4,439
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,eat-5,other nematode,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|eat-5|Q27295,423
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-10,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|inx-10|Q22549,559
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-11,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|inx-11|Q23157,465
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-12,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|inx-12|O01634,408
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-14,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|inx-14|O62136,434
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-16,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|inx-16|O61787,372
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-17,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|inx-17|O61788,362
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-19,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|inx-19|O61715,454
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-2,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|inx-2|Q9U3K5,419
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-3,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|inx-3|Q19746,420
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-5,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|inx-5|Q23027,447
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-6,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|inx-6|Q9U3N4,389
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-7,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|inx-7|Q21123,556
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-8,other/unknown,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|inx-8|Q23593,382
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,unc-7,unc-7,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|unc-7|Q03412,522
+reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,unc-9,unc-9,SF3_Inx3_Inx7_nematode,ref|Caenorhabditis_elegans|unc-9|O01393,386
+reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,Inx2,Inx2,SF4_Inx2_expansion,ref|Drosophila_melanogaster|Inx2|Q9V427,367
+reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,Inx3,Inx3,SF3_Inx3_Inx7_nematode,ref|Drosophila_melanogaster|Inx3|Q9VAS7,395
+reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,Inx5,Inx5,SF4_Inx2_expansion,ref|Drosophila_melanogaster|Inx5|Q9VWL5,419
+reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,Inx6,Inx6,SF4_Inx2_expansion,ref|Drosophila_melanogaster|Inx6|Q9VR82,481
+reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,Inx7,Inx7,SF3_Inx3_Inx7_nematode,ref|Drosophila_melanogaster|Inx7|Q9V3W6,438
+reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,ogre,Inx1/ogre,SF2_Inx1_ogre,ref|Drosophila_melanogaster|ogre|P27716,362
+reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,shakB,shakB,SF1_shakB,ref|Drosophila_melanogaster|shakB|P33085,372
+reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,zpg,Inx4/zpg,SF4_Inx2_expansion,ref|Drosophila_melanogaster|zpg|Q9VRX6,367
+reference_db,Schistocerca_americana,Schistocerca americana,Insecta,inx1,Inx1/ogre,SF2_Inx1_ogre,ref|Schistocerca_americana|inx1|Q9XYN0,361
+reference_db,Schistocerca_americana,Schistocerca americana,Insecta,inx2,Inx2,SF4_Inx2_expansion,ref|Schistocerca_americana|inx2|Q9XYN1,359
+phylo_panel,Adineta_vaga,Adineta vaga,Rotifera,candidate_inx_008,other/unknown,unassigned,phylo|Adineta_vaga_candidate_inx_008_innexin,207
+phylo_panel,Adineta_vaga,Adineta vaga,Rotifera,candidate_inx_028,other/unknown,unassigned,phylo|Adineta_vaga_candidate_inx_028_innexin,376
+phylo_panel,Dryodora_glandiformis,Dryodora glandiformis,Ctenophora,candidate_inx_004,other/unknown,unassigned,phylo|Dryodora_glandiformis_candidate_inx_004_innexin,153
+phylo_panel,Eriophyidae_sp.,Eriophyidae sp.,Arthropoda (non-insect),candidate_inx_001,other/unknown,unassigned,phylo|Eriophyidae_sp._candidate_inx_001_innexin,552
+phylo_panel,Mnemiopsis_leidyi,Mnemiopsis leidyi,Ctenophora,candidate_inx_001,other/unknown,unassigned,phylo|Mnemiopsis_leidyi_candidate_inx_001_innexin,276

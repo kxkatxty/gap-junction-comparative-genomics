@@ -1,0 +1,10 @@
+metric,value
+n_innexin,174
+n_connexin,127
+median_length_innexin,367.0
+median_length_connexin,322.0
+cosine_inx_inx,0.3821
+cosine_cnx_cnx,0.4386
+cosine_inx_cnx,-0.3977
+homologous_hits,0
+fragment_hits,189

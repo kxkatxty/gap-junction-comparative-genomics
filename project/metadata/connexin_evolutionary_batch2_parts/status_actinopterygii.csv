@@ -1,0 +1,11 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Acanthopagrus latus,connexin,yes,no,annotated_family_member_found,high,gja10b,ncbi_gene,A,119012523,gja10b,gap junction protein alpha 10 b,11,0,"GJA*[Gene Symbol] AND ""Acanthopagrus latus""[Organism]"
+Arapaima gigas,connexin,yes,no,annotated_family_member_found,high,GJA10,uniprot,A,A0ACF8EAZ1,GJA10,Gap junction alpha-10 protein-like,12,0,"organism_name:""Arapaima gigas"" AND gene:GJA*"
+Micropterus salmoides,connexin,yes,no,annotated_family_member_found,high,gja10a,ncbi_gene,A,119910635,gja10a,gap junction protein alpha 10 a,14,0,"connexin[All Fields] AND ""Micropterus salmoides""[Organism]"
+Pungitius pungitius,connexin,yes,no,annotated_family_member_found,high,gja10a,ncbi_gene,A,119227910,gja10a,gap junction protein alpha 10 a,13,0,"GJA*[Gene Symbol] AND ""Pungitius pungitius""[Organism]"
+Scleropages jardinii,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Seriola dumerili,connexin,yes,no,annotated_family_member_found,high,GJA3,uniprot,A,A0A3B4UJL8,GJA3,Gap junction protein,14,0,"organism_name:""Seriola dumerili"" AND gene:GJA*"
+Triplophysa stolickai,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Abudefduf saxatilis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Acanthurus chirurgus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Acanthurus tractus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,

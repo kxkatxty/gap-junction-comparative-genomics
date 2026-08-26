@@ -1,0 +1,19 @@
+organism,clade,final_category,category_short,confidence,top_matching_term,source_db,n_panel_proteins,n_panx1,n_panx2,n_panx3,n_other,qc_note,bottleneck_flag
+Xenopus laevis,Amphibian,annotated_family_member_found,annotated,high,pannexin,uniprot,5,1,2,2,0,,no
+Xenopus tropicalis,Amphibian,annotated_family_member_found,annotated,high,pannexin,uniprot,3,1,1,1,0,,no
+Gallus gallus,Bird,annotated_family_member_found,annotated,high,pannexin,uniprot,3,1,1,1,0,,no
+Callorhinchus milii,Cartilaginous fish,annotated_family_member_found,annotated,high,pannexin,uniprot,4,2,1,1,0,,no
+Petromyzon marinus,Jawless vertebrate,annotated_family_member_found,annotated,high,pannexin,uniprot,1,0,0,1,0,,yes
+Latimeria chalumnae,Lobe-finned fish,annotated_family_member_found,annotated,high,pannexin,uniprot,3,1,1,1,0,,no
+Bos taurus,Mammal,annotated_family_member_found,annotated,high,pannexin,uniprot,3,1,1,1,0,,no
+Homo sapiens,Mammal,annotated_family_member_found,annotated,high,pannexin,uniprot,3,1,1,1,0,,no
+Mus musculus,Mammal,annotated_family_member_found,annotated,high,pannexin,uniprot,3,1,1,1,0,,no
+Rattus norvegicus,Mammal,annotated_family_member_found,annotated,high,pannexin,uniprot,3,1,1,1,0,,no
+Sus scrofa,Mammal,annotated_family_member_found,annotated,high,pannexin,uniprot,3,1,1,1,0,,no
+Danio rerio,Ray-finned fish,annotated_family_member_found,annotated,high,panel_curated_pannexin,uniprot,3,2,1,0,0,classifier top hit filtered (pknox2),no
+Lepisosteus oculatus,Ray-finned fish,annotated_family_member_found,annotated,high,pannexin,uniprot,1,0,1,0,0,,no
+Takifugu rubripes,Ray-finned fish,annotated_family_member_found,annotated,high,pannexin,uniprot,3,0,2,1,0,,no
+Anolis carolinensis,Reptile,annotated_family_member_found,annotated,high,pannexin,uniprot,3,1,1,1,0,,no
+Podarcis muralis,Reptile,annotated_family_member_found,annotated,high,pannexin,uniprot,3,1,1,1,0,,no
+Branchiostoma floridae,Tunicate / lancelet,annotated_family_member_found,annotated,high,pannexin,uniprot,2,0,1,1,0,,yes
+Ciona intestinalis,Tunicate / lancelet,related_or_family_like_entry_found,related,medium,GRB10-interacting GYF protein 2,ncbi_gene,0,0,0,0,0,classifier top hit filtered (LOC100184186),yes

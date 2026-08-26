@@ -1,0 +1,128 @@
+source,species_dir,organism,clade,candidate_id,gene_label,reference_type,subfamily,protein_length,exon_count,tm_helix_count,reference_identity,best_reference_hit,rank_category,discovery_batch,seq_id
+reference_db,Bos_taurus,Bos taurus,Mammal,GJA1__P18246,GJA1,GJA1,alpha_GJA,383,,,1.0,GJA1|P18246,reference,reference_db,ref__Bos_taurus__GJA1__P18246
+reference_db,Bos_taurus,Bos taurus,Mammal,GJA3__P41987,GJA3,GJA3,alpha_GJA,407,,,1.0,GJA3|P41987,reference,reference_db,ref__Bos_taurus__GJA3__P41987
+reference_db,Bos_taurus,Bos taurus,Mammal,GJA4__A4IFL1,GJA4,GJA4,alpha_GJA,333,,,1.0,GJA4|A4IFL1,reference,reference_db,ref__Bos_taurus__GJA4__A4IFL1
+reference_db,Bos_taurus,Bos taurus,Mammal,GJA5__Q0VCR2,GJA5,GJA5,alpha_GJA,359,,,1.0,GJA5|Q0VCR2,reference,reference_db,ref__Bos_taurus__GJA5__Q0VCR2
+reference_db,Bos_taurus,Bos taurus,Mammal,GJB1__O18968,GJB1,GJB1,beta_GJB,284,,,1.0,GJB1|O18968,reference,reference_db,ref__Bos_taurus__GJB1__O18968
+reference_db,Bos_taurus,Bos taurus,Mammal,GJB2__A2VE67,GJB2,GJB2,beta_GJB,226,,,1.0,GJB2|A2VE67,reference,reference_db,ref__Bos_taurus__GJB2__A2VE67
+reference_db,Bos_taurus,Bos taurus,Mammal,GJB3__Q58D78,GJB3,GJB3,beta_GJB,270,,,1.0,GJB3|Q58D78,reference,reference_db,ref__Bos_taurus__GJB3__Q58D78
+reference_db,Bos_taurus,Bos taurus,Mammal,GJD2__Q866T7,GJD2,GJD,delta_GJD,321,,,1.0,GJD2|Q866T7,reference,reference_db,ref__Bos_taurus__GJD2__Q866T7
+reference_db,Canis_lupus_familiaris,Canis lupus familiaris,Mammal,GJA1__Q6S9C0,GJA1,GJA1,alpha_GJA,382,,,1.0,GJA1|Q6S9C0,reference,reference_db,ref__Canis_lupus_familiaris__GJA1__Q6S9C0
+reference_db,Canis_lupus_familiaris,Canis lupus familiaris,Mammal,GJA5__P33725,GJA5,GJA5,alpha_GJA,358,,,1.0,GJA5|P33725,reference,reference_db,ref__Canis_lupus_familiaris__GJA5__P33725
+reference_db,Canis_lupus_familiaris,Canis lupus familiaris,Mammal,GJC1__P28228,GJC1,GJC,gamma_GJC,396,,,1.0,GJC1|P28228,reference,reference_db,ref__Canis_lupus_familiaris__GJC1__P28228
+reference_db,Chlorocebus_sabaeus,Chlorocebus sabaeus,Other vertebrate,GJA1__Q6TYA9,GJA1,GJA1,alpha_GJA,382,,,1.0,GJA1|Q6TYA9,reference,reference_db,ref__Chlorocebus_sabaeus__GJA1__Q6TYA9
+reference_db,Cricetulus_griseus,Cricetulus griseus,Other vertebrate,GJC1__Q6R4A8,GJC1,GJC,gamma_GJC,396,,,1.0,GJC1|Q6R4A8,reference,reference_db,ref__Cricetulus_griseus__GJC1__Q6R4A8
+reference_db,Danio_rerio,Danio rerio,Ray-finned fish,cx23__U3JA75,cx23,other/unknown,unassigned,207,,,1.0,cx23|U3JA75,reference,reference_db,ref__Danio_rerio__cx23__U3JA75
+reference_db,Danio_rerio,Danio rerio,Ray-finned fish,cx32.2__Q7T047,cx32.2,GJB1,beta_GJB,277,,,1.0,cx32.2|Q7T047,reference,reference_db,ref__Danio_rerio__cx32.2__Q7T047
+reference_db,Danio_rerio,Danio rerio,Ray-finned fish,gja1__O57474,gja1,GJA1,alpha_GJA,381,,,1.0,gja1|O57474,reference,reference_db,ref__Danio_rerio__gja1__O57474
+reference_db,Danio_rerio,Danio rerio,Ray-finned fish,gjc1__Q92052,gjc1,GJC,gamma_GJC,380,,,1.0,gjc1|Q92052,reference,reference_db,ref__Danio_rerio__gjc1__Q92052
+reference_db,Equus_caballus,Equus caballus,Mammal,GJB1__Q6WGK6,GJB1,GJB1,beta_GJB,283,,,1.0,GJB1|Q6WGK6,reference,reference_db,ref__Equus_caballus__GJB1__Q6WGK6
+reference_db,Erinaceus_europaeus,Erinaceus europaeus,Other vertebrate,GJA1__Q6TYA8,GJA1,GJA1,alpha_GJA,382,,,1.0,GJA1|Q6TYA8,reference,reference_db,ref__Erinaceus_europaeus__GJA1__Q6TYA8
+reference_db,Gallus_gallus,Gallus gallus,Bird,GJA1__P14154,GJA1,GJA1,alpha_GJA,381,,,1.0,GJA1|P14154,reference,reference_db,ref__Gallus_gallus__GJA1__P14154
+reference_db,Gallus_gallus,Gallus gallus,Bird,GJA3__P29415,GJA3,GJA3,alpha_GJA,511,,,1.0,GJA3|P29415,reference,reference_db,ref__Gallus_gallus__GJA3__P29415
+reference_db,Gallus_gallus,Gallus gallus,Bird,GJA5__P18860,GJA5,GJA5,alpha_GJA,369,,,1.0,GJA5|P18860,reference,reference_db,ref__Gallus_gallus__GJA5__P18860
+reference_db,Gallus_gallus,Gallus gallus,Bird,GJA8__P36381,GJA8,GJA8,alpha_GJA,400,,,1.0,GJA8|P36381,reference,reference_db,ref__Gallus_gallus__GJA8__P36381
+reference_db,Gallus_gallus,Gallus gallus,Bird,GJB6__O93533,GJB6,GJB6,beta_GJB,263,,,1.0,GJB6|O93533,reference,reference_db,ref__Gallus_gallus__GJB6__O93533
+reference_db,Gallus_gallus,Gallus gallus,Bird,GJC1__P18861,GJC1,GJC,gamma_GJC,394,,,1.0,GJC1|P18861,reference,reference_db,ref__Gallus_gallus__GJC1__P18861
+reference_db,Gorilla_gorilla_gorilla,Gorilla gorilla gorilla,Other vertebrate,GJB2__Q8MHW5,GJB2,GJB2,beta_GJB,226,,,1.0,GJB2|Q8MHW5,reference,reference_db,ref__Gorilla_gorilla_gorilla__GJB2__Q8MHW5
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJA10__Q969M2,GJA10,other GJA,alpha_GJA,543,,,1.0,GJA10|Q969M2,reference,reference_db,ref__Homo_sapiens__GJA10__Q969M2
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJA1__P17302,GJA1,GJA1,alpha_GJA,382,,,1.0,GJA1|P17302,reference,reference_db,ref__Homo_sapiens__GJA1__P17302
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJA3__Q9Y6H8,GJA3,GJA3,alpha_GJA,435,,,1.0,GJA3|Q9Y6H8,reference,reference_db,ref__Homo_sapiens__GJA3__Q9Y6H8
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJA4__P35212,GJA4,GJA4,alpha_GJA,333,,,1.0,GJA4|P35212,reference,reference_db,ref__Homo_sapiens__GJA4__P35212
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJA5__P36382,GJA5,GJA5,alpha_GJA,358,,,1.0,GJA5|P36382,reference,reference_db,ref__Homo_sapiens__GJA5__P36382
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJA8__P48165,GJA8,GJA8,alpha_GJA,433,,,1.0,GJA8|P48165,reference,reference_db,ref__Homo_sapiens__GJA8__P48165
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJA9__P57773,GJA9,other GJA,alpha_GJA,515,,,1.0,GJA9|P57773,reference,reference_db,ref__Homo_sapiens__GJA9__P57773
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJB1__P08034,GJB1,GJB1,beta_GJB,283,,,1.0,GJB1|P08034,reference,reference_db,ref__Homo_sapiens__GJB1__P08034
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJB2__P29033,GJB2,GJB2,beta_GJB,226,,,1.0,GJB2|P29033,reference,reference_db,ref__Homo_sapiens__GJB2__P29033
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJB3__O75712,GJB3,GJB3,beta_GJB,270,,,1.0,GJB3|O75712,reference,reference_db,ref__Homo_sapiens__GJB3__O75712
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJB4__Q9NTQ9,GJB4,other GJB,beta_GJB,266,,,1.0,GJB4|Q9NTQ9,reference,reference_db,ref__Homo_sapiens__GJB4__Q9NTQ9
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJB5__O95377,GJB5,other GJB,beta_GJB,273,,,1.0,GJB5|O95377,reference,reference_db,ref__Homo_sapiens__GJB5__O95377
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJB6__O95452,GJB6,GJB6,beta_GJB,261,,,1.0,GJB6|O95452,reference,reference_db,ref__Homo_sapiens__GJB6__O95452
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJB7__Q6PEY0,GJB7,other GJB,beta_GJB,223,,,1.0,GJB7|Q6PEY0,reference,reference_db,ref__Homo_sapiens__GJB7__Q6PEY0
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJC1__P36383,GJC1,GJC,gamma_GJC,396,,,1.0,GJC1|P36383,reference,reference_db,ref__Homo_sapiens__GJC1__P36383
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJC2__Q5T442,GJC2,GJC,gamma_GJC,439,,,1.0,GJC2|Q5T442,reference,reference_db,ref__Homo_sapiens__GJC2__Q5T442
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJC3__Q8NFK1,GJC3,GJC,gamma_GJC,279,,,1.0,GJC3|Q8NFK1,reference,reference_db,ref__Homo_sapiens__GJC3__Q8NFK1
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJD2__Q9UKL4,GJD2,GJD,delta_GJD,321,,,1.0,GJD2|Q9UKL4,reference,reference_db,ref__Homo_sapiens__GJD2__Q9UKL4
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJD3__Q8N144,GJD3,GJD,delta_GJD,294,,,1.0,GJD3|Q8N144,reference,reference_db,ref__Homo_sapiens__GJD3__Q8N144
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJD4__Q96KN9,GJD4,GJD,delta_GJD,370,,,1.0,GJD4|Q96KN9,reference,reference_db,ref__Homo_sapiens__GJD4__Q96KN9
+reference_db,Homo_sapiens,Homo sapiens,Mammal,GJE1__A6NN92,GJE1,GJE,epsilon_GJE,205,,,1.0,GJE1|A6NN92,reference,reference_db,ref__Homo_sapiens__GJE1__A6NN92
+reference_db,Homo_sapiens,Homo sapiens,Mammal,RIC1__Q4ADV7,RIC1,other/unknown,unassigned,1423,,,1.0,RIC1|Q4ADV7,reference,reference_db,ref__Homo_sapiens__RIC1__Q4ADV7
+reference_db,Hylobates_moloch,Hylobates moloch,Mammal,GJB2__Q7JGL3,GJB2,GJB2,beta_GJB,226,,,1.0,GJB2|Q7JGL3,reference,reference_db,ref__Hylobates_moloch__GJB2__Q7JGL3
+reference_db,Leucoraja_erinaceus,Leucoraja erinaceus,Cartilaginous fish,P69998__P69998,P69998,other/unknown,unassigned,302,,,1.0,P69998|P69998,reference,reference_db,ref__Leucoraja_erinaceus__P69998__P69998
+reference_db,Macaca_fascicularis,Macaca fascicularis,Mammal,GJA1__Q4R4S7,GJA1,GJA1,alpha_GJA,382,,,1.0,GJA1|Q4R4S7,reference,reference_db,ref__Macaca_fascicularis__GJA1__Q4R4S7
+reference_db,Macaca_fascicularis,Macaca fascicularis,Mammal,GJB1__Q60HF7,GJB1,GJB1,beta_GJB,283,,,1.0,GJB1|Q60HF7,reference,reference_db,ref__Macaca_fascicularis__GJB1__Q60HF7
+reference_db,Macaca_fascicularis,Macaca fascicularis,Mammal,GJD4__Q9N0B3,GJD4,GJD,delta_GJD,370,,,1.0,GJD4|Q9N0B3,reference,reference_db,ref__Macaca_fascicularis__GJD4__Q9N0B3
+reference_db,Macaca_mulatta,Macaca mulatta,Mammal,GJB2__Q8MIT8,GJB2,GJB2,beta_GJB,226,,,1.0,GJB2|Q8MIT8,reference,reference_db,ref__Macaca_mulatta__GJB2__Q8MIT8
+reference_db,Mesocricetus_auratus,Mesocricetus auratus,Mammal,GJC1__Q6PYT3,GJC1,GJC,gamma_GJC,396,,,1.0,GJC1|Q6PYT3,reference,reference_db,ref__Mesocricetus_auratus__GJC1__Q6PYT3
+reference_db,Mus_musculus,Mus musculus,Mammal,Gja10__Q9WUS4,Gja10,other GJA,alpha_GJA,505,,,1.0,Gja10|Q9WUS4,reference,reference_db,ref__Mus_musculus__Gja10__Q9WUS4
+reference_db,Mus_musculus,Mus musculus,Mammal,Gja1__P23242,Gja1,GJA1,alpha_GJA,382,,,1.0,Gja1|P23242,reference,reference_db,ref__Mus_musculus__Gja1__P23242
+reference_db,Mus_musculus,Mus musculus,Mammal,Gja3__Q64448,Gja3,GJA3,alpha_GJA,417,,,1.0,Gja3|Q64448,reference,reference_db,ref__Mus_musculus__Gja3__Q64448
+reference_db,Mus_musculus,Mus musculus,Mammal,Gja4__P28235,Gja4,GJA4,alpha_GJA,333,,,1.0,Gja4|P28235,reference,reference_db,ref__Mus_musculus__Gja4__P28235
+reference_db,Mus_musculus,Mus musculus,Mammal,Gja5__Q01231,Gja5,GJA5,alpha_GJA,358,,,1.0,Gja5|Q01231,reference,reference_db,ref__Mus_musculus__Gja5__Q01231
+reference_db,Mus_musculus,Mus musculus,Mammal,Gja6__Q6S5G4,Gja6,other GJA,alpha_GJA,283,,,1.0,Gja6|Q6S5G4,reference,reference_db,ref__Mus_musculus__Gja6__Q6S5G4
+reference_db,Mus_musculus,Mus musculus,Mammal,Gja8__P28236,Gja8,GJA8,alpha_GJA,440,,,1.0,Gja8|P28236,reference,reference_db,ref__Mus_musculus__Gja8__P28236
+reference_db,Mus_musculus,Mus musculus,Mammal,Gjb1__P28230,Gjb1,GJB1,beta_GJB,283,,,1.0,Gjb1|P28230,reference,reference_db,ref__Mus_musculus__Gjb1__P28230
+reference_db,Mus_musculus,Mus musculus,Mammal,Gjb2__Q00977,Gjb2,GJB2,beta_GJB,226,,,1.0,Gjb2|Q00977,reference,reference_db,ref__Mus_musculus__Gjb2__Q00977
+reference_db,Mus_musculus,Mus musculus,Mammal,Gjb3__P28231,Gjb3,GJB3,beta_GJB,270,,,1.0,Gjb3|P28231,reference,reference_db,ref__Mus_musculus__Gjb3__P28231
+reference_db,Mus_musculus,Mus musculus,Mammal,Gjb4__Q02738,Gjb4,other GJB,beta_GJB,266,,,1.0,Gjb4|Q02738,reference,reference_db,ref__Mus_musculus__Gjb4__Q02738
+reference_db,Mus_musculus,Mus musculus,Mammal,Gjb5__Q02739,Gjb5,other GJB,beta_GJB,271,,,1.0,Gjb5|Q02739,reference,reference_db,ref__Mus_musculus__Gjb5__Q02739
+reference_db,Mus_musculus,Mus musculus,Mammal,Gjb6__P70689,Gjb6,GJB6,beta_GJB,261,,,1.0,Gjb6|P70689,reference,reference_db,ref__Mus_musculus__Gjb6__P70689
+reference_db,Mus_musculus,Mus musculus,Mammal,Gjc1__P28229,Gjc1,GJC,gamma_GJC,396,,,1.0,Gjc1|P28229,reference,reference_db,ref__Mus_musculus__Gjc1__P28229
+reference_db,Mus_musculus,Mus musculus,Mammal,Gjc2__Q8BQU6,Gjc2,GJC,gamma_GJC,440,,,1.0,Gjc2|Q8BQU6,reference,reference_db,ref__Mus_musculus__Gjc2__Q8BQU6
+reference_db,Mus_musculus,Mus musculus,Mammal,Gjc3__Q921C1,Gjc3,GJC,gamma_GJC,269,,,1.0,Gjc3|Q921C1,reference,reference_db,ref__Mus_musculus__Gjc3__Q921C1
+reference_db,Mus_musculus,Mus musculus,Mammal,Gjd2__O54851,Gjd2,GJD,delta_GJD,321,,,1.0,Gjd2|O54851,reference,reference_db,ref__Mus_musculus__Gjd2__O54851
+reference_db,Mus_musculus,Mus musculus,Mammal,Gjd3__Q91YD1,Gjd3,GJD,delta_GJD,278,,,1.0,Gjd3|Q91YD1,reference,reference_db,ref__Mus_musculus__Gjd3__Q91YD1
+reference_db,Mus_musculus,Mus musculus,Mammal,Gjd4__Q8BSD4,Gjd4,GJD,delta_GJD,364,,,1.0,Gjd4|Q8BSD4,reference,reference_db,ref__Mus_musculus__Gjd4__Q8BSD4
+reference_db,Mus_musculus,Mus musculus,Mammal,Gje1__Q9CX92,Gje1,GJE,epsilon_GJE,205,,,1.0,Gje1|Q9CX92,reference,reference_db,ref__Mus_musculus__Gje1__Q9CX92
+reference_db,Oryctolagus_cuniculus,Oryctolagus cuniculus,Mammal,GJA1__Q6TYA7,GJA1,GJA1,alpha_GJA,382,,,1.0,GJA1|Q6TYA7,reference,reference_db,ref__Oryctolagus_cuniculus__GJA1__Q6TYA7
+reference_db,Ovis_aries,Ovis aries,Mammal,GJA3__Q9TU17,GJA3,GJA3,alpha_GJA,413,,,1.0,GJA3|Q9TU17,reference,reference_db,ref__Ovis_aries__GJA3__Q9TU17
+reference_db,Ovis_aries,Ovis aries,Mammal,GJA8__P55917,GJA8,GJA8,alpha_GJA,440,,,1.0,GJA8|P55917,reference,reference_db,ref__Ovis_aries__GJA8__P55917
+reference_db,Ovis_aries,Ovis aries,Mammal,GJB2__P46691,GJB2,GJB2,beta_GJB,226,,,1.0,GJB2|P46691,reference,reference_db,ref__Ovis_aries__GJB2__P46691
+reference_db,Pongo_pygmaeus,Pongo pygmaeus,Mammal,GJB2__Q8MIT9,GJB2,GJB2,beta_GJB,226,,,1.0,GJB2|Q8MIT9,reference,reference_db,ref__Pongo_pygmaeus__GJB2__Q8MIT9
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gja1__P08050,Gja1,GJA1,alpha_GJA,382,,,1.0,Gja1|P08050,reference,reference_db,ref__Rattus_norvegicus__Gja1__P08050
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gja3__P29414,Gja3,GJA3,alpha_GJA,416,,,1.0,Gja3|P29414,reference,reference_db,ref__Rattus_norvegicus__Gja3__P29414
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gja4__Q03190,Gja4,GJA4,alpha_GJA,333,,,1.0,Gja4|Q03190,reference,reference_db,ref__Rattus_norvegicus__Gja4__Q03190
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gja5__P28234,Gja5,GJA5,alpha_GJA,356,,,1.0,Gja5|P28234,reference,reference_db,ref__Rattus_norvegicus__Gja5__P28234
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gja6__P28233,Gja6,other GJA,alpha_GJA,286,,,1.0,Gja6|P28233,reference,reference_db,ref__Rattus_norvegicus__Gja6__P28233
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gja8__Q8K4Q9,Gja8,GJA8,alpha_GJA,440,,,1.0,Gja8|Q8K4Q9,reference,reference_db,ref__Rattus_norvegicus__Gja8__Q8K4Q9
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gjb1__P08033,Gjb1,GJB1,beta_GJB,283,,,1.0,Gjb1|P08033,reference,reference_db,ref__Rattus_norvegicus__Gjb1__P08033
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gjb2__P21994,Gjb2,GJB2,beta_GJB,226,,,1.0,Gjb2|P21994,reference,reference_db,ref__Rattus_norvegicus__Gjb2__P21994
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gjb3__P25305,Gjb3,GJB3,beta_GJB,270,,,1.0,Gjb3|P25305,reference,reference_db,ref__Rattus_norvegicus__Gjb3__P25305
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gjb4__P36380,Gjb4,other GJB,beta_GJB,265,,,1.0,Gjb4|P36380,reference,reference_db,ref__Rattus_norvegicus__Gjb4__P36380
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gjb5__P28232,Gjb5,other GJB,beta_GJB,271,,,1.0,Gjb5|P28232,reference,reference_db,ref__Rattus_norvegicus__Gjb5__P28232
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gjc1__A4GG66,Gjc1,GJC,gamma_GJC,396,,,1.0,Gjc1|A4GG66,reference,reference_db,ref__Rattus_norvegicus__Gjc1__A4GG66
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gjc2__Q80XF7,Gjc2,GJC,gamma_GJC,440,,,1.0,Gjc2|Q80XF7,reference,reference_db,ref__Rattus_norvegicus__Gjc2__Q80XF7
+reference_db,Rattus_norvegicus,Rattus norvegicus,Mammal,Gjd2__O70610,Gjd2,GJD,delta_GJD,321,,,1.0,Gjd2|O70610,reference,reference_db,ref__Rattus_norvegicus__Gjd2__O70610
+reference_db,Sus_scrofa,Sus scrofa,Mammal,GJA1__Q29101,GJA1,GJA1,alpha_GJA,382,,,1.0,GJA1|Q29101,reference,reference_db,ref__Sus_scrofa__GJA1__Q29101
+reference_db,Sus_scrofa,Sus scrofa,Mammal,GJA4__Q29559,GJA4,GJA4,alpha_GJA,138,,,1.0,GJA4|Q29559,reference,reference_db,ref__Sus_scrofa__GJA4__Q29559
+reference_db,Sus_scrofa,Sus scrofa,Mammal,GJC1__A4GVD1,GJC1,GJC,gamma_GJC,396,,,1.0,GJC1|A4GVD1,reference,reference_db,ref__Sus_scrofa__GJC1__A4GVD1
+reference_db,Ursus_americanus,Ursus americanus,Mammal,GJA1__A6XKM2,GJA1,GJA1,alpha_GJA,382,,,1.0,GJA1|A6XKM2,reference,reference_db,ref__Ursus_americanus__GJA1__A6XKM2
+reference_db,Xenopus_laevis,Xenopus laevis,Amphibian,gja1__P16863,gja1,GJA1,alpha_GJA,379,,,1.0,gja1|P16863,reference,reference_db,ref__Xenopus_laevis__gja1__P16863
+reference_db,Xenopus_laevis,Xenopus laevis,Amphibian,gja2__P16864,gja2,other GJA,alpha_GJA,334,,,1.0,gja2|P16864,reference,reference_db,ref__Xenopus_laevis__gja2__P16864
+reference_db,Xenopus_laevis,Xenopus laevis,Amphibian,gja4__P51914,gja4,GJA4,alpha_GJA,352,,,1.0,gja4|P51914,reference,reference_db,ref__Xenopus_laevis__gja4__P51914
+reference_db,Xenopus_laevis,Xenopus laevis,Amphibian,gjb1__P08983,gjb1,GJB1,beta_GJB,264,,,1.0,gjb1|P08983,reference,reference_db,ref__Xenopus_laevis__gjb1__P08983
+reference_db,Xenopus_tropicalis,Xenopus tropicalis,Amphibian,gja4__Q0V990,gja4,GJA4,alpha_GJA,352,,,1.0,gja4|Q0V990,reference,reference_db,ref__Xenopus_tropicalis__gja4__Q0V990
+discovery,Antrozous_pallidus,Antrozous pallidus,Mammal,candidate_inx_017,candidate_inx_017,other/unknown,unassigned,179,1,2,0.0,,high_confidence_connexin_candidate,connexin_evolutionary_discovery,disc__Antrozous_pallidus__candidate_inx_017
+discovery,Bombina_variegata,Bombina variegata,Amphibian,candidate_inx_028,candidate_inx_028,other/unknown,unassigned,346,1,3,0.0,,high_confidence_connexin_candidate,connexin_evolutionary_discovery,disc__Bombina_variegata__candidate_inx_028
+discovery,Butorides_sundevalli,Butorides sundevalli,Bird,candidate_inx_017,candidate_inx_017,other/unknown,unassigned,329,1,2,0.0,,high_confidence_connexin_candidate,connexin_evolutionary_discovery,disc__Butorides_sundevalli__candidate_inx_017
+discovery,Desmognathus_fuscus,Desmognathus fuscus,Amphibian,candidate_inx_009,candidate_inx_009,other/unknown,unassigned,366,1,2,0.0,,high_confidence_connexin_candidate,connexin_evolutionary_discovery,disc__Desmognathus_fuscus__candidate_inx_009
+discovery,Desmognathus_fuscus,Desmognathus fuscus,Amphibian,candidate_inx_038,candidate_inx_038,other/unknown,unassigned,237,1,2,0.0,,high_confidence_connexin_candidate,connexin_evolutionary_discovery,disc__Desmognathus_fuscus__candidate_inx_038
+discovery,Desmognathus_fuscus,Desmognathus fuscus,Amphibian,candidate_inx_125,candidate_inx_125,other/unknown,unassigned,171,1,10,0.0,,high_confidence_connexin_candidate,connexin_evolutionary_discovery,disc__Desmognathus_fuscus__candidate_inx_125
+discovery,Desmognathus_fuscus,Desmognathus fuscus,Amphibian,candidate_inx_094,candidate_inx_094,other/unknown,unassigned,306,1,5,0.0,,possible_connexin_candidate,connexin_evolutionary_discovery,disc__Desmognathus_fuscus__candidate_inx_094
+discovery,Desmognathus_fuscus,Desmognathus fuscus,Amphibian,candidate_inx_173,candidate_inx_173,other/unknown,unassigned,236,1,2,0.0,,possible_connexin_candidate,connexin_evolutionary_discovery,disc__Desmognathus_fuscus__candidate_inx_173
+discovery,Desmognathus_fuscus,Desmognathus fuscus,Amphibian,candidate_inx_184,candidate_inx_184,other/unknown,unassigned,311,1,2,0.0,,possible_connexin_candidate,connexin_evolutionary_discovery,disc__Desmognathus_fuscus__candidate_inx_184
+discovery,Desmognathus_fuscus,Desmognathus fuscus,Amphibian,candidate_inx_241,candidate_inx_241,other/unknown,unassigned,291,1,4,0.0,,possible_connexin_candidate,connexin_evolutionary_discovery,disc__Desmognathus_fuscus__candidate_inx_241
+discovery,Desmognathus_fuscus,Desmognathus fuscus,Amphibian,candidate_inx_050,candidate_inx_050,other/unknown,unassigned,322,1,1,0.0,,possible_connexin_candidate,connexin_evolutionary_discovery,disc__Desmognathus_fuscus__candidate_inx_050
+discovery,Dumetella_carolinensis,Dumetella carolinensis,Bird,candidate_inx_013,candidate_inx_013,other/unknown,unassigned,221,1,3,0.0,,high_confidence_connexin_candidate,connexin_evolutionary_discovery,disc__Dumetella_carolinensis__candidate_inx_013
+discovery,Hucho_bleekeri,Hucho bleekeri,Ray-finned fish,candidate_inx_004,gja1,GJA1,alpha_GJA,235,1,7,0.5429999999999999,ref__Xenopus_laevis__gja1__P16863,high_confidence_connexin_candidate,connexin_evolutionary_discovery,disc__Hucho_bleekeri__candidate_inx_004
+discovery,Eleutherodactylus_marnockii,Eleutherodactylus marnockii,Amphibian,candidate_inx_009,candidate_inx_009,other/unknown,unassigned,166,1,2,0.0,,high_confidence_connexin_candidate,connexin_evolutionary_batch2_discovery,disc__Eleutherodactylus_marnockii__candidate_inx_009
+discovery,Fejervarya_limnocharis,Fejervarya limnocharis,Amphibian,candidate_inx_003,candidate_inx_003,other/unknown,unassigned,437,1,5,0.0,,high_confidence_connexin_candidate,connexin_evolutionary_batch2_discovery,disc__Fejervarya_limnocharis__candidate_inx_003
+discovery,Fejervarya_limnocharis,Fejervarya limnocharis,Amphibian,candidate_inx_020,candidate_inx_020,other/unknown,unassigned,291,1,17,0.0,,possible_connexin_candidate,connexin_evolutionary_batch2_discovery,disc__Fejervarya_limnocharis__candidate_inx_020
+discovery,Gastrophryne_carolinensis,Gastrophryne carolinensis,Amphibian,candidate_inx_002,candidate_inx_002,other/unknown,unassigned,407,1,9,0.0,,possible_connexin_candidate,connexin_evolutionary_batch2_discovery,disc__Gastrophryne_carolinensis__candidate_inx_002
+discovery,Gastrophryne_carolinensis,Gastrophryne carolinensis,Amphibian,candidate_inx_029,candidate_inx_029,other/unknown,unassigned,267,1,2,0.0,,possible_connexin_candidate,connexin_evolutionary_batch2_discovery,disc__Gastrophryne_carolinensis__candidate_inx_029
+discovery,Ichthyophis_bannanicus,Ichthyophis bannanicus,Amphibian,candidate_inx_010,candidate_inx_010,other/unknown,unassigned,167,1,2,0.0,,high_confidence_connexin_candidate,connexin_evolutionary_batch2_discovery,disc__Ichthyophis_bannanicus__candidate_inx_010
+discovery,Mabuya_desiradae,Mabuya desiradae,Bird,candidate_inx_012,candidate_inx_012,other/unknown,unassigned,160,1,5,0.0,,high_confidence_connexin_candidate,connexin_evolutionary_batch2_discovery,disc__Mabuya_desiradae__candidate_inx_012
+discovery,Marmaronetta_angustirostris,Marmaronetta angustirostris,Bird,candidate_inx_008,candidate_inx_008,other/unknown,unassigned,383,1,1,0.0,,possible_connexin_candidate,connexin_evolutionary_batch2_discovery,disc__Marmaronetta_angustirostris__candidate_inx_008
+discovery,Okamejei_kenojei,Okamejei kenojei,Cartilaginous fish,candidate_inx_015,candidate_inx_015,other/unknown,unassigned,261,1,3,0.0,,high_confidence_connexin_candidate,connexin_evolutionary_batch2_discovery,disc__Okamejei_kenojei__candidate_inx_015
+discovery,Potamotrygon_marinae,Potamotrygon marinae,Cartilaginous fish,candidate_inx_008,candidate_inx_008,other/unknown,unassigned,222,1,2,0.0,,high_confidence_connexin_candidate,connexin_evolutionary_batch2_discovery,disc__Potamotrygon_marinae__candidate_inx_008
+discovery,Potamotrygon_marinae,Potamotrygon marinae,Cartilaginous fish,candidate_inx_023,candidate_inx_023,other/unknown,unassigned,251,1,2,0.0,,possible_connexin_candidate,connexin_evolutionary_batch2_discovery,disc__Potamotrygon_marinae__candidate_inx_023

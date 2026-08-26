@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tools &amp; plan — pannexins</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root { --ink:#1e2936; --muted:#5b6b78; --deep:#1e3a4c; --sea:#0e7490; --foam:#f3f6f8; --card:#fff; --line:rgba(30,41,54,.1); }
+body { margin:0; font-family:Sora,sans-serif; color:var(--ink); background:linear-gradient(180deg,#e7eef2,var(--foam)); line-height:1.6 }
+.hero { padding:1.6rem 1.4rem; color:#f4fbff; background:linear-gradient(118deg,#1e3a4c,#0e7490 60%,#c2410c) }
+.hero p { font-family:Fraunces,serif; font-size:2rem; margin:0 0 .35rem }
+.wrap { width:min(720px,calc(100% - 2rem)); margin:0 auto; padding:1.4rem 0 3rem }
+h2 { font-family:Fraunces,serif; font-size:1.15rem }
+li { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:.7rem .9rem; margin:0 0 .45rem; list-style:none }
+ul { padding:0 } li span { display:block; color:var(--muted); font-size:.82rem; margin-top:.15rem }
+a { color:var(--sea) } .back { color:#f4fbff; font-weight:600; text-decoration:none }
+</style>
+</head>
+<body>
+<header class="hero">
+  <p>Tools &amp; plan</p>
+  <span>Starter stack for the pannexin project.</span>
+  <div><a class="back" href="index.html">← path</a></div>
+</header>
+<main class="wrap">
+  <h2>Intended toolkit (same family as the gap-junction thesis)</h2>
+  <ul>
+    <li><b>UniProt download</b><span>Reference PANX FASTAs per species.</span></li>
+    <li><b>MMseqs2</b><span>Within-pannexin and pannexin→innexin (1 thread by default).</span></li>
+    <li><b>MAFFT / IQ-TREE</b><span>Tree already on disk; light rebuilds reuse it.</span></li>
+    <li><b>Python · Matplotlib · NumPy</b><span>Figures and composition embeddings.</span></li>
+    <li><b>Neighbourhood searches</b><span>Optional later work — not required for the UniProt panel story.</span></li>
+  </ul>
+  <h2>Fixed points from the literature</h2>
+  <ul>
+    <li><b>Third family</b><span>Beside invertebrate innexins and vertebrate connexins: pannexins are retained innexin homologs in chordates/vertebrates.</span></li>
+    <li><b>Heptamer</b><span>Panx1 cryo-EM: homo-heptamer (7) — not the innexon octamer (8) or connexon hexamer (6).</span></li>
+    <li><b>Job</b><span>Single-membrane channels; marked by extracellular N-X-S/T; they do not form intercellular gap junctions.</span></li>
+    <li><b>N-X-S/T</b><span>Conserved Asn-X-Ser/Thr motif on extracellular loops — sequence marker for the non-docking lineage.</span></li>
+    <li><b>Early chordate bottleneck</b><span>Welzel &amp; Schuster 2022 (<em>eLife</em>): lancelets keep one N-X-S/T-marked innexin and no connexins.</span></li>
+    <li><b>Cys motif</b><span>Same as innexins: 2 Cys per EL → 4 per monomer (not connexin 3+3=6).</span></li>
+  </ul>
+  <h2>Parameters</h2>
+  <ul>
+    <li><b>Not locked yet</b><span>When discovery and similarity builders land, we will pin the same style of explicit settings used on the gap-junction tools page (MMseqs <code>-s</code>/<code>-e</code>, cluster thresholds, IQ-TREE <code>-m MFP -bb 1000</code>, etc.).</span></li>
+  </ul>
+  <p><a href="index.html">← reading path</a></p>
+</main>
+</body>
+</html>

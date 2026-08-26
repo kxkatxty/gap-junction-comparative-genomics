@@ -1,0 +1,313 @@
+IQ-TREE 3.1.1 built Apr  8 2026
+
+Input file name: /Users/katerinamusienko/Documents/BachelorCursor/pannexin/project/results/pannexin_phylogeny/pannexin_panel.aln.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 924265
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 50 sequences with 994 amino-acid sites
+Number of constant sites: 250 (= 25.1509% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 250 (= 25.1509% of all sites)
+Number of parsimony informative sites: 608
+Number of distinct site patterns: 877
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+I+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.0062
+Gamma shape alpha: 0.8208
+
+ Category  Relative_rate  Proportion
+  0         0              0.0062
+  1         0.1006         0.2485
+  2         0.4179         0.2485
+  3         0.9685         0.2485
+  4         2.5378         0.2485
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -24542.6485 (s.e. 658.6107)
+Unconstrained log-likelihood (without tree): -6634.6711
+Number of free parameters (#branches + #model parameters): 99
+Akaike information criterion (AIC) score: 49283.2971
+Corrected Akaike information criterion (AICc) score: 49305.4447
+Bayesian information criterion (BIC) score: 49768.5690
+
+Total tree length (sum of branch lengths): 45.9513
+Sum of internal branch lengths: 15.4822 (33.6927% of tree length)
+
+WARNING: 1 too long branches (>9.8000) should be treated with caution!
+NOTE: Tree is UNROOTED although outgroup taxon 'panx|Xenopus_laevis|panx1.L|A0A1L8HJE1' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--panx|Xenopus_laevis|panx1.L|A0A1L8HJE1
+|
+|                                                                 +--panx|Xenopus_laevis|panx2.L|A0A8J0UPJ5
+|                                                              +--| (97)
+|                                                              |  +--panx|Xenopus_laevis|panx2.S|A0A1L8GU32
+|                                                           +--| (100)
+|                                                           |  +--panx|Xenopus_tropicalis|panx2|A0A8J0SJZ3
+|                                                        +--| (87)
+|                                                        |  |  +--panx|Gallus_gallus|PANX2|A0A8V0XA00
+|                                                        |  +--| (58)
+|                                                        |     |  +--panx|Anolis_carolinensis|PANX2|G1KAJ7
+|                                                        |     +--| (100)
+|                                                        |        +--panx|Podarcis_muralis|PANX2|A0A670J859
+|                                                     +--| (47)
+|                                                     |  |  +--panx|Latimeria_chalumnae|PANX2|H3BCF1
+|                                                     |  +--| (74)
+|                                                     |     +--panx|Callorhinchus_milii|PANX|A0A4W3JI34
+|                                                  +--| (71)
+|                                                  |  |     +--panx|Danio_rerio|panx2|A0A8M1P3J6
+|                                                  |  |  +--| (100)
+|                                                  |  |  |  |  +--panx|Takifugu_rubripes|panx2|A0A3B5K011
+|                                                  |  |  |  +--| (100)
+|                                                  |  |  |     +--panx|Takifugu_rubripes|PANX|H2SGQ8
+|                                                  |  +--| (100)
+|                                                  |     +--panx|Lepisosteus_oculatus|PANX|W5NEM0
+|                                     +------------| (100)
+|                                     |            |        +--panx|Bos_taurus|PANX2|A0A4W2C073
+|                                     |            |     +--| (100)
+|                                     |            |     |  +--panx|Sus_scrofa|PANX2|F1RXR8
+|                                     |            |  +--| (84)
+|                                     |            |  |  +--panx|Homo_sapiens|PANX2|Q96RD6
+|                                     |            +--| (74)
+|                                     |               |  +--panx|Mus_musculus|Panx2|Q6IMP4
+|                                     |               +--| (89)
+|                                     |                  +--panx|Rattus_norvegicus|Panx2|P60571
+|                                 +---| (64)
+|                                 |   +---------------------------------panx|Branchiostoma_floridae|LOC118405257|A0A9J7HJ13
+|                           +-----| (71)
+|                           |     +-----------panx|Branchiostoma_floridae|LOC118430338|A0A9J7M9Y8
+|                        +--| (28)
+|                        |  |              +--panx|Xenopus_laevis|panx3.L|A0A8J0T8Y2
+|                        |  |           +--| (87)
+|                        |  |           |  +--panx|Xenopus_laevis|panx3.S|A0A1L8FFR9
+|                        |  |        +--| (100)
+|                        |  |        |  +--panx|Xenopus_tropicalis|panx3|F7D9M9
+|                        |  |     +--| (77)
+|                        |  |     |  |     +--panx|Gallus_gallus|PANX3|A0A8V1A6C8
+|                        |  |     |  |  +--| (100)
+|                        |  |     |  |  |  |  +--panx|Anolis_carolinensis|PANX3|H9G3D5
+|                        |  |     |  |  |  +--| (100)
+|                        |  |     |  |  |     +--panx|Podarcis_muralis|PANX3|A0A670JSK3
+|                        |  |     |  +--| (98)
+|                        |  |     |     |     +--panx|Bos_taurus|PANX3|A0A4W2GW69
+|                        |  |     |     |  +--| (93)
+|                        |  |     |     |  |  +--panx|Sus_scrofa|PANX3|A0A4X1VH71
+|                        |  |     |     +--| (100)
+|                        |  |     |        |  +--panx|Homo_sapiens|PANX3|Q96QZ0
+|                        |  |     |        +--| (75)
+|                        |  |     |           |  +--panx|Mus_musculus|Panx3|Q8CEG0
+|                        |  |     |           +--| (89)
+|                        |  |     |              +--panx|Rattus_norvegicus|Panx3|P60572
+|                        |  |  +--| (97)
+|                        |  |  |  |  +--panx|Latimeria_chalumnae|PANX3|H3AKW8
+|                        |  |  |  +--| (96)
+|                        |  |  |     +----panx|Takifugu_rubripes|panx3|A0A674M993
+|                        |  +--| (99)
+|                        |     +---panx|Callorhinchus_milii|panx3|A0A4W3HHX6
+|                    +---| (69)
+|                    |   +----panx|Petromyzon_marinus|LOC116956353|A0AAJ7UCG9
+|                 +--| (94)
+|                 |  +----------------------------------------------out|Ciona|inx__F6USM8
+|              +--| (99)
+|              |  |     +--panx|Callorhinchus_milii|A0A4W3ILW5|A0A4W3ILW5
+|              |  +-----| (100)
+|              |        +**panx|Callorhinchus_milii|A0A4W3JCN1|A0A4W3JCN1
+|           +--| (95)
+|           |  |  +--panx|Danio_rerio|panx1a|A0A8M1PG01
+|           |  +--| (98)
+|           |     +----panx|Danio_rerio|panx1b|F1QSR7
+|        +--| (99)
+|        |  +--panx|Latimeria_chalumnae|PANX1|H3A740
+|     +--| (62)
+|     |  |     +--panx|Bos_taurus|PANX1|A0A4W2C374
+|     |  |  +--| (99)
+|     |  |  |  +--panx|Sus_scrofa|PANX1|A0A287B8K3
+|     |  +--| (100)
+|     |     |  +--panx|Homo_sapiens|PANX1|Q96RD7
+|     |     +--| (100)
+|     |        |  +--panx|Mus_musculus|Panx1|Q9JIP4
+|     |        +--| (100)
+|     |           +--panx|Rattus_norvegicus|Panx1|P60570
+|  +--| (64)
+|  |  |  +--panx|Anolis_carolinensis|panx1|G1KPN4
+|  |  +--| (100)
+|  |     +--panx|Podarcis_muralis|PANX1|A0A670IMW4
++--| (100)
+|  +--panx|Gallus_gallus|PANX1|A0A1D5P0I0
+|
++--panx|Xenopus_tropicalis|panx1|B3DLA5
+
+Tree in newick format:
+
+(panx|Xenopus_laevis|panx1.L|A0A1L8HJE1:0.0492992625,(((((((((((((((((panx|Xenopus_laevis|panx2.L|A0A8J0UPJ5:0.1012449874,panx|Xenopus_laevis|panx2.S|A0A1L8GU32:0.0354582920)97:0.0184447785,panx|Xenopus_tropicalis|panx2|A0A8J0SJZ3:0.0276306954)100:0.1941021016,(panx|Gallus_gallus|PANX2|A0A8V0XA00:0.1343084648,(panx|Anolis_carolinensis|PANX2|G1KAJ7:0.0291897516,panx|Podarcis_muralis|PANX2|A0A670J859:0.0812488040)100:0.0789397442)58:0.0157951524)87:0.0597052666,(panx|Latimeria_chalumnae|PANX2|H3BCF1:0.1503167131,panx|Callorhinchus_milii|PANX|A0A4W3JI34:0.2800215589)74:0.0644134865)47:0.0922078444,((panx|Danio_rerio|panx2|A0A8M1P3J6:0.1406055716,(panx|Takifugu_rubripes|panx2|A0A3B5K011:0.0079088777,panx|Takifugu_rubripes|PANX|H2SGQ8:0.0918528976)100:0.1649146666)100:0.1044616446,panx|Lepisosteus_oculatus|PANX|W5NEM0:0.0949390636)100:0.2257276428)71:0.0963540632,(((panx|Bos_taurus|PANX2|A0A4W2C073:0.0407221548,panx|Sus_scrofa|PANX2|F1RXR8:0.0270397075)100:0.0408036320,panx|Homo_sapiens|PANX2|Q96RD6:0.0288622782)84:0.0383571782,(panx|Mus_musculus|Panx2|Q6IMP4:0.0049258748,panx|Rattus_norvegicus|Panx2|P60571:0.0110988103)89:0.0223936779)74:0.1649913162)100:2.8312154060,panx|Branchiostoma_floridae|LOC118405257|A0A9J7HJ13:7.1686231168)64:0.9296387490,panx|Branchiostoma_floridae|LOC118430338|A0A9J7M9Y8:2.7276453969)71:1.4638265720,(((((panx|Xenopus_laevis|panx3.L|A0A8J0T8Y2:0.0379935663,panx|Xenopus_laevis|panx3.S|A0A1L8FFR9:0.1053107196)87:0.0308142153,panx|Xenopus_tropicalis|panx3|F7D9M9:0.0471691467)100:0.8261497769,((panx|Gallus_gallus|PANX3|A0A8V1A6C8:0.4731872198,(panx|Anolis_carolinensis|PANX3|H9G3D5:0.2633888564,panx|Podarcis_muralis|PANX3|A0A670JSK3:0.1375277821)100:0.3030490168)100:0.2568731210,((panx|Bos_taurus|PANX3|A0A4W2GW69:0.0549820836,panx|Sus_scrofa|PANX3|A0A4X1VH71:0.0542736017)93:0.0291665836,(panx|Homo_sapiens|PANX3|Q96QZ0:0.1042620038,(panx|Mus_musculus|Panx3|Q8CEG0:0.1032486188,panx|Rattus_norvegicus|Panx3|P60572:0.0326153552)89:0.0764135933)75:0.0373219551)100:0.4690582596)98:0.2001178136)77:0.1198481406,(panx|Latimeria_chalumnae|PANX3|H3AKW8:0.4560427706,panx|Takifugu_rubripes|panx3|A0A674M993:1.2047427095)96:0.2207760128)97:0.2701290182,panx|Callorhinchus_milii|panx3|A0A4W3HHX6:0.9688251157)99:0.5708023576)28:0.2274056925,panx|Petromyzon_marinus|LOC116956353|A0AAJ7UCG9:1.2477602808)69:0.9887637774,out|Ciona|inx__F6USM8:10.0051326751)94:0.2875396543,(panx|Callorhinchus_milii|A0A4W3ILW5|A0A4W3ILW5:0.2240187452,panx|Callorhinchus_milii|A0A4W3JCN1|A0A4W3JCN1:0.0000020978)100:1.3755764710)99:0.4012947567,(panx|Danio_rerio|panx1a|A0A8M1PG01:0.7100772665,panx|Danio_rerio|panx1b|F1QSR7:1.0605014526)98:0.2445405939)95:0.1984677307,panx|Latimeria_chalumnae|PANX1|H3A740:0.5777909435)99:0.2421161815,((panx|Bos_taurus|PANX1|A0A4W2C374:0.1939422752,panx|Sus_scrofa|PANX1|A0A287B8K3:0.1294192450)99:0.1052411620,(panx|Homo_sapiens|PANX1|Q96RD7:0.0688957433,(panx|Mus_musculus|Panx1|Q9JIP4:0.0549988343,panx|Rattus_norvegicus|Panx1|P60570:0.0297959315)100:0.1727525035)100:0.0626720746)100:0.3515998320)62:0.0781650332,(panx|Anolis_carolinensis|panx1|G1KPN4:0.3222583120,panx|Podarcis_muralis|PANX1|A0A670IMW4:0.1616391718)100:0.1167547207)64:0.1042408014,panx|Gallus_gallus|PANX1|A0A1D5P0I0:0.3153345136)100:0.5082866129,panx|Xenopus_tropicalis|panx1|B3DLA5:0.0910073901);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -24542.554095
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--panx|Xenopus_laevis|panx1.L|A0A1L8HJE1
+|
+|                                                              +--panx|Xenopus_laevis|panx2.L|A0A8J0UPJ5
+|                                                           +--| (97)
+|                                                           |  +--panx|Xenopus_laevis|panx2.S|A0A1L8GU32
+|                                                        +--| (100)
+|                                                        |  +--panx|Xenopus_tropicalis|panx2|A0A8J0SJZ3
+|                                                     +--| (87)
+|                                                     |  |  +--panx|Gallus_gallus|PANX2|A0A8V0XA00
+|                                                     |  +--| (58)
+|                                                     |     |  +--panx|Anolis_carolinensis|PANX2|G1KAJ7
+|                                                     |     +--| (100)
+|                                                     |        +--panx|Podarcis_muralis|PANX2|A0A670J859
+|                                                  +--| (47)
+|                                                  |  |  +--panx|Latimeria_chalumnae|PANX2|H3BCF1
+|                                                  |  +--| (74)
+|                                                  |     +--panx|Callorhinchus_milii|PANX|A0A4W3JI34
+|                                               +--| (71)
+|                                               |  |     +--panx|Danio_rerio|panx2|A0A8M1P3J6
+|                                               |  |  +--| (100)
+|                                               |  |  |  |  +--panx|Takifugu_rubripes|panx2|A0A3B5K011
+|                                               |  |  |  +--| (100)
+|                                               |  |  |     +--panx|Takifugu_rubripes|PANX|H2SGQ8
+|                                               |  +--| (100)
+|                                               |     +--panx|Lepisosteus_oculatus|PANX|W5NEM0
+|                                 +-------------| (100)
+|                                 |             |        +--panx|Bos_taurus|PANX2|A0A4W2C073
+|                                 |             |     +--| (100)
+|                                 |             |     |  +--panx|Sus_scrofa|PANX2|F1RXR8
+|                                 |             |  +--| (84)
+|                                 |             |  |  +--panx|Homo_sapiens|PANX2|Q96RD6
+|                                 |             +--| (74)
+|                                 |                |  +--panx|Mus_musculus|Panx2|Q6IMP4
+|                                 |                +--| (89)
+|                                 |                   +--panx|Rattus_norvegicus|Panx2|P60571
+|                             +---| (64)
+|                             |   +----------------------------------panx|Branchiostoma_floridae|LOC118405257|A0A9J7HJ13
+|                       +-----| (71)
+|                       |     +------------panx|Branchiostoma_floridae|LOC118430338|A0A9J7M9Y8
+|                    +--| (69)
+|                    |  |                  +--panx|Xenopus_laevis|panx3.L|A0A8J0T8Y2
+|                    |  |               +--| (87)
+|                    |  |               |  +--panx|Xenopus_laevis|panx3.S|A0A1L8FFR9
+|                    |  |           +---| (100)
+|                    |  |           |   +--panx|Xenopus_tropicalis|panx3|F7D9M9
+|                    |  |        +--| (77)
+|                    |  |        |  |     +--panx|Gallus_gallus|PANX3|A0A8V1A6C8
+|                    |  |        |  |  +--| (100)
+|                    |  |        |  |  |  |  +--panx|Anolis_carolinensis|PANX3|H9G3D5
+|                    |  |        |  |  |  +--| (100)
+|                    |  |        |  |  |     +--panx|Podarcis_muralis|PANX3|A0A670JSK3
+|                    |  |        |  +--| (98)
+|                    |  |        |     |     +--panx|Bos_taurus|PANX3|A0A4W2GW69
+|                    |  |        |     |  +--| (93)
+|                    |  |        |     |  |  +--panx|Sus_scrofa|PANX3|A0A4X1VH71
+|                    |  |        |     +--| (100)
+|                    |  |        |        |  +--panx|Homo_sapiens|PANX3|Q96QZ0
+|                    |  |        |        +--| (75)
+|                    |  |        |           |  +--panx|Mus_musculus|Panx3|Q8CEG0
+|                    |  |        |           +--| (89)
+|                    |  |        |              +--panx|Rattus_norvegicus|Panx3|P60572
+|                    |  |     +--| (97)
+|                    |  |     |  |  +--panx|Latimeria_chalumnae|PANX3|H3AKW8
+|                    |  |     |  +--| (96)
+|                    |  |     |     +----panx|Takifugu_rubripes|panx3|A0A674M993
+|                    |  |  +--| (99)
+|                    |  |  |  +---panx|Callorhinchus_milii|panx3|A0A4W3HHX6
+|                    |  +--| (61)
+|                    |     +-----panx|Petromyzon_marinus|LOC116956353|A0AAJ7UCG9
+|                 +--| (94)
+|                 |  +------------------------------------------------out|Ciona|inx__F6USM8
+|              +--| (99)
+|              |  |     +--panx|Callorhinchus_milii|A0A4W3ILW5|A0A4W3ILW5
+|              |  +-----| (100)
+|              |        +--panx|Callorhinchus_milii|A0A4W3JCN1|A0A4W3JCN1
+|           +--| (95)
+|           |  |  +--panx|Danio_rerio|panx1a|A0A8M1PG01
+|           |  +--| (98)
+|           |     +----panx|Danio_rerio|panx1b|F1QSR7
+|        +--| (99)
+|        |  +--panx|Latimeria_chalumnae|PANX1|H3A740
+|     +--| (62)
+|     |  |     +--panx|Bos_taurus|PANX1|A0A4W2C374
+|     |  |  +--| (99)
+|     |  |  |  +--panx|Sus_scrofa|PANX1|A0A287B8K3
+|     |  +--| (100)
+|     |     |  +--panx|Homo_sapiens|PANX1|Q96RD7
+|     |     +--| (100)
+|     |        |  +--panx|Mus_musculus|Panx1|Q9JIP4
+|     |        +--| (100)
+|     |           +--panx|Rattus_norvegicus|Panx1|P60570
+|  +--| (64)
+|  |  |  +--panx|Anolis_carolinensis|panx1|G1KPN4
+|  |  +--| (100)
+|  |     +--panx|Podarcis_muralis|PANX1|A0A670IMW4
++--| (100)
+|  +--panx|Gallus_gallus|PANX1|A0A1D5P0I0
+|
++--panx|Xenopus_tropicalis|panx1|B3DLA5
+
+
+Consensus tree in newick format: 
+
+(panx|Xenopus_laevis|panx1.L|A0A1L8HJE1:0.0497729271,((((((((((((((((panx|Xenopus_laevis|panx2.L|A0A8J0UPJ5:0.1018325481,panx|Xenopus_laevis|panx2.S|A0A1L8GU32:0.0356419414)97:0.0185503516,panx|Xenopus_tropicalis|panx2|A0A8J0SJZ3:0.0277689317)100:0.1953317635,(panx|Gallus_gallus|PANX2|A0A8V0XA00:0.1353594651,(panx|Anolis_carolinensis|PANX2|G1KAJ7:0.0293265391,panx|Podarcis_muralis|PANX2|A0A670J859:0.0816798767)100:0.0793467001)58:0.0158318000)87:0.0600549747,(panx|Latimeria_chalumnae|PANX2|H3BCF1:0.1511404680,panx|Callorhinchus_milii|PANX|A0A4W3JI34:0.2822655696)74:0.0648436024)47:0.0923134768,((panx|Danio_rerio|panx2|A0A8M1P3J6:0.1414424935,(panx|Takifugu_rubripes|panx2|A0A3B5K011:0.0079427447,panx|Takifugu_rubripes|PANX|H2SGQ8:0.0924712242)100:0.1659856531)100:0.1052012568,panx|Lepisosteus_oculatus|PANX|W5NEM0:0.0954569497)100:0.2275642394)71:0.1124916070,(((panx|Bos_taurus|PANX2|A0A4W2C073:0.0409483357,panx|Sus_scrofa|PANX2|F1RXR8:0.0271884804)100:0.0410314115,panx|Homo_sapiens|PANX2|Q96RD6:0.0290156651)84:0.0385573383,(panx|Mus_musculus|Panx2|Q6IMP4:0.0049528921,panx|Rattus_norvegicus|Panx2|P60571:0.0111551887)89:0.0225437644)74:0.1513002775)100:2.8534928531,panx|Branchiostoma_floridae|LOC118405257|A0A9J7HJ13:7.2232438001)64:0.9173281977,panx|Branchiostoma_floridae|LOC118430338|A0A9J7M9Y8:2.7138465945)71:1.3952597356,((((((panx|Xenopus_laevis|panx3.L|A0A8J0T8Y2:0.0383327411,panx|Xenopus_laevis|panx3.S|A0A1L8FFR9:0.1063498431)87:0.0309069769,panx|Xenopus_tropicalis|panx3|F7D9M9:0.0478347062)100:0.8322916799,((panx|Gallus_gallus|PANX3|A0A8V1A6C8:0.4779835674,(panx|Anolis_carolinensis|PANX3|H9G3D5:0.2658750158,panx|Podarcis_muralis|PANX3|A0A670JSK3:0.1391674144)100:0.3062989773)100:0.2568479273,((panx|Bos_taurus|PANX3|A0A4W2GW69:0.0555758327,panx|Sus_scrofa|PANX3|A0A4X1VH71:0.0547573780)93:0.0298199934,(panx|Homo_sapiens|PANX3|Q96QZ0:0.1053078340,(panx|Mus_musculus|Panx3|Q8CEG0:0.1043254636,panx|Rattus_norvegicus|Panx3|P60572:0.0329438966)89:0.0772027927)75:0.0374162082)100:0.4755325840)98:0.2036580669)77:0.1143550149,(panx|Latimeria_chalumnae|PANX3|H3AKW8:0.4621653899,panx|Takifugu_rubripes|panx3|A0A674M993:1.2160497149)96:0.2269584715)97:0.2804040257,panx|Callorhinchus_milii|panx3|A0A4W3HHX6:0.9795040181)99:0.6849936553,panx|Petromyzon_marinus|LOC116956353|A0AAJ7UCG9:1.3031728878)61:0.3292539482)69:0.7247208630,out|Ciona|inx__F6USM8:9.9999989902)94:0.3600631491,(panx|Callorhinchus_milii|A0A4W3ILW5|A0A4W3ILW5:0.2261286152,panx|Callorhinchus_milii|A0A4W3JCN1|A0A4W3JCN1:0.0000020713)100:1.3891395704)99:0.4027325488,(panx|Danio_rerio|panx1a|A0A8M1PG01:0.7186671951,panx|Danio_rerio|panx1b|F1QSR7:1.0707530438)98:0.2460797000)95:0.1971283411,panx|Latimeria_chalumnae|PANX1|H3A740:0.5821278299)99:0.2461943142,((panx|Bos_taurus|PANX1|A0A4W2C374:0.1957792005,panx|Sus_scrofa|PANX1|A0A287B8K3:0.1307851354)99:0.1063461151,(panx|Homo_sapiens|PANX1|Q96RD7:0.0695606515,(panx|Mus_musculus|Panx1|Q9JIP4:0.0555051393,panx|Rattus_norvegicus|Panx1|P60570:0.0301134972)100:0.1744730018)100:0.0631723291)100:0.3548201347)62:0.0795139570,(panx|Anolis_carolinensis|panx1|G1KPN4:0.3257564558,panx|Podarcis_muralis|PANX1|A0A670IMW4:0.1630058536)100:0.1182839053)64:0.1053009303,panx|Gallus_gallus|PANX1|A0A1D5P0I0:0.3185952123)100:0.5134822505,panx|Xenopus_tropicalis|panx1|B3DLA5:0.0918887224);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /Users/katerinamusienko/Documents/BachelorCursor/pannexin/project/results/pannexin_phylogeny/work/pannexin_panel.treefile -m "LG+I{0.00617212}+G4{0.820786}" --length 994
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /Users/katerinamusienko/Documents/BachelorCursor/pannexin/project/results/pannexin_phylogeny/pannexin_panel.aln.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /Users/katerinamusienko/Documents/BachelorCursor/pannexin/project/results/pannexin_phylogeny/pannexin_panel.aln.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed Aug 26 20:08:32 2026
+Total CPU time used: 1230.000504 seconds (0h:20m:30s)
+Total wall-clock time used: 520.6884482 seconds (0h:8m:40s)
+

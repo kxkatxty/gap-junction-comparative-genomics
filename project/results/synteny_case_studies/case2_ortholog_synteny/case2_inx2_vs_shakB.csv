@@ -1,0 +1,4 @@
+target_genome,target_species,Inx2_support,shakB_support,Inx2_goi_count,shakB_goi_count,Inx2_confident_goi,shakB_confident_goi,pattern
+GCA_951394115.2,Drosophila phalerata,weak_goi_signal,weak_goi_signal,5,1,0,0,Inx2=weak_goi_signal | shakB=weak_goi_signal
+GCA_963969585.1,Drosophila helvetica,probable_ortholog,flanking_synteny_only,9,0,0,0,Inx2=probable_ortholog | shakB=flanking_synteny_only
+GCF_011750605.1,Drosophila busckii,probable_ortholog,confident_ortholog,12,1,0,1,Inx2=probable_ortholog | shakB=confident_ortholog

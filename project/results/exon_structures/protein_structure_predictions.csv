@@ -1,0 +1,399 @@
+uniprot_accession,track,feature_id,feature_label,aa_start,aa_end,color,source,sequence_hash
+A2VE67,disorder,disorder,Disordered,221,226,#F39C12,biocentral_seth,48593ac9c42794a6
+A2VE67,secondary_structure,helix,Helix,3,15,#FF6B6B,biocentral_prott5,48593ac9c42794a6
+A2VE67,secondary_structure,helix,Helix,19,44,#FF6B6B,biocentral_prott5,48593ac9c42794a6
+A2VE67,secondary_structure,sheet,Sheet,51,53,#4DABF7,biocentral_prott5,48593ac9c42794a6
+A2VE67,secondary_structure,helix,Helix,71,107,#FF6B6B,biocentral_prott5,48593ac9c42794a6
+A2VE67,secondary_structure,helix,Helix,116,123,#FF6B6B,biocentral_prott5,48593ac9c42794a6
+A2VE67,secondary_structure,helix,Helix,131,157,#FF6B6B,biocentral_prott5,48593ac9c42794a6
+A2VE67,secondary_structure,sheet,Sheet,167,169,#4DABF7,biocentral_prott5,48593ac9c42794a6
+A2VE67,secondary_structure,sheet,Sheet,178,181,#4DABF7,biocentral_prott5,48593ac9c42794a6
+A2VE67,secondary_structure,helix,Helix,185,218,#FF6B6B,biocentral_prott5,48593ac9c42794a6
+A2VE67,transmembrane,tm_helix,TM helix,20,41,#9B59B6,biocentral_tmbed,48593ac9c42794a6
+A2VE67,transmembrane,tm_helix,TM helix,74,96,#9B59B6,biocentral_tmbed,48593ac9c42794a6
+A2VE67,transmembrane,tm_helix,TM helix,134,156,#9B59B6,biocentral_tmbed,48593ac9c42794a6
+A2VE67,transmembrane,tm_helix,TM helix,189,214,#9B59B6,biocentral_tmbed,48593ac9c42794a6
+A6XKM2,disorder,disorder,Disordered,241,382,#F39C12,biocentral_seth,dc121001f46dc85a
+A6XKM2,secondary_structure,helix,Helix,4,17,#FF6B6B,biocentral_prott5,dc121001f46dc85a
+A6XKM2,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,dc121001f46dc85a
+A6XKM2,secondary_structure,sheet,Sheet,52,54,#4DABF7,biocentral_prott5,dc121001f46dc85a
+A6XKM2,secondary_structure,helix,Helix,72,118,#FF6B6B,biocentral_prott5,dc121001f46dc85a
+A6XKM2,secondary_structure,helix,Helix,123,137,#FF6B6B,biocentral_prott5,dc121001f46dc85a
+A6XKM2,secondary_structure,helix,Helix,150,177,#FF6B6B,biocentral_prott5,dc121001f46dc85a
+A6XKM2,secondary_structure,sheet,Sheet,185,188,#4DABF7,biocentral_prott5,dc121001f46dc85a
+A6XKM2,secondary_structure,sheet,Sheet,196,199,#4DABF7,biocentral_prott5,dc121001f46dc85a
+A6XKM2,secondary_structure,helix,Helix,203,234,#FF6B6B,biocentral_prott5,dc121001f46dc85a
+A6XKM2,secondary_structure,helix,Helix,236,239,#FF6B6B,biocentral_prott5,dc121001f46dc85a
+A6XKM2,secondary_structure,helix,Helix,305,318,#FF6B6B,biocentral_prott5,dc121001f46dc85a
+A6XKM2,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,dc121001f46dc85a
+A6XKM2,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,dc121001f46dc85a
+A6XKM2,transmembrane,tm_helix,TM helix,154,176,#9B59B6,biocentral_tmbed,dc121001f46dc85a
+A6XKM2,transmembrane,tm_helix,TM helix,207,231,#9B59B6,biocentral_tmbed,dc121001f46dc85a
+O57474,disorder,disorder,Disordered,243,381,#F39C12,biocentral_seth,5a1e27720414ca07
+O57474,secondary_structure,helix,Helix,4,17,#FF6B6B,biocentral_prott5,5a1e27720414ca07
+O57474,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,5a1e27720414ca07
+O57474,secondary_structure,helix,Helix,72,116,#FF6B6B,biocentral_prott5,5a1e27720414ca07
+O57474,secondary_structure,helix,Helix,123,139,#FF6B6B,biocentral_prott5,5a1e27720414ca07
+O57474,secondary_structure,helix,Helix,151,177,#FF6B6B,biocentral_prott5,5a1e27720414ca07
+O57474,secondary_structure,sheet,Sheet,185,188,#4DABF7,biocentral_prott5,5a1e27720414ca07
+O57474,secondary_structure,sheet,Sheet,195,199,#4DABF7,biocentral_prott5,5a1e27720414ca07
+O57474,secondary_structure,helix,Helix,203,241,#FF6B6B,biocentral_prott5,5a1e27720414ca07
+O57474,secondary_structure,helix,Helix,308,312,#FF6B6B,biocentral_prott5,5a1e27720414ca07
+O57474,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,5a1e27720414ca07
+O57474,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,5a1e27720414ca07
+O57474,transmembrane,tm_helix,TM helix,154,176,#9B59B6,biocentral_tmbed,5a1e27720414ca07
+O57474,transmembrane,tm_helix,TM helix,207,231,#9B59B6,biocentral_tmbed,5a1e27720414ca07
+P08050,disorder,disorder,Disordered,241,382,#F39C12,biocentral_seth,2e3e63e76b30223f
+P08050,secondary_structure,helix,Helix,4,17,#FF6B6B,biocentral_prott5,2e3e63e76b30223f
+P08050,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,2e3e63e76b30223f
+P08050,secondary_structure,sheet,Sheet,52,54,#4DABF7,biocentral_prott5,2e3e63e76b30223f
+P08050,secondary_structure,helix,Helix,72,118,#FF6B6B,biocentral_prott5,2e3e63e76b30223f
+P08050,secondary_structure,helix,Helix,123,137,#FF6B6B,biocentral_prott5,2e3e63e76b30223f
+P08050,secondary_structure,helix,Helix,150,177,#FF6B6B,biocentral_prott5,2e3e63e76b30223f
+P08050,secondary_structure,sheet,Sheet,185,188,#4DABF7,biocentral_prott5,2e3e63e76b30223f
+P08050,secondary_structure,sheet,Sheet,196,199,#4DABF7,biocentral_prott5,2e3e63e76b30223f
+P08050,secondary_structure,helix,Helix,203,234,#FF6B6B,biocentral_prott5,2e3e63e76b30223f
+P08050,secondary_structure,helix,Helix,236,239,#FF6B6B,biocentral_prott5,2e3e63e76b30223f
+P08050,secondary_structure,helix,Helix,305,318,#FF6B6B,biocentral_prott5,2e3e63e76b30223f
+P08050,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,2e3e63e76b30223f
+P08050,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,2e3e63e76b30223f
+P08050,transmembrane,tm_helix,TM helix,154,176,#9B59B6,biocentral_tmbed,2e3e63e76b30223f
+P08050,transmembrane,tm_helix,TM helix,207,231,#9B59B6,biocentral_tmbed,2e3e63e76b30223f
+P14154,disorder,disorder,Disordered,241,381,#F39C12,biocentral_seth,e5b892588823b209
+P14154,secondary_structure,helix,Helix,4,17,#FF6B6B,biocentral_prott5,e5b892588823b209
+P14154,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,e5b892588823b209
+P14154,secondary_structure,sheet,Sheet,52,54,#4DABF7,biocentral_prott5,e5b892588823b209
+P14154,secondary_structure,helix,Helix,72,117,#FF6B6B,biocentral_prott5,e5b892588823b209
+P14154,secondary_structure,helix,Helix,123,134,#FF6B6B,biocentral_prott5,e5b892588823b209
+P14154,secondary_structure,helix,Helix,150,177,#FF6B6B,biocentral_prott5,e5b892588823b209
+P14154,secondary_structure,sheet,Sheet,185,188,#4DABF7,biocentral_prott5,e5b892588823b209
+P14154,secondary_structure,sheet,Sheet,195,199,#4DABF7,biocentral_prott5,e5b892588823b209
+P14154,secondary_structure,helix,Helix,203,234,#FF6B6B,biocentral_prott5,e5b892588823b209
+P14154,secondary_structure,helix,Helix,236,239,#FF6B6B,biocentral_prott5,e5b892588823b209
+P14154,secondary_structure,helix,Helix,304,317,#FF6B6B,biocentral_prott5,e5b892588823b209
+P14154,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,e5b892588823b209
+P14154,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,e5b892588823b209
+P14154,transmembrane,tm_helix,TM helix,154,176,#9B59B6,biocentral_tmbed,e5b892588823b209
+P14154,transmembrane,tm_helix,TM helix,206,230,#9B59B6,biocentral_tmbed,e5b892588823b209
+P16863,disorder,disorder,Disordered,241,379,#F39C12,biocentral_seth,f710f09a9a9818d0
+P16863,secondary_structure,helix,Helix,4,17,#FF6B6B,biocentral_prott5,f710f09a9a9818d0
+P16863,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,f710f09a9a9818d0
+P16863,secondary_structure,sheet,Sheet,52,54,#4DABF7,biocentral_prott5,f710f09a9a9818d0
+P16863,secondary_structure,helix,Helix,72,118,#FF6B6B,biocentral_prott5,f710f09a9a9818d0
+P16863,secondary_structure,helix,Helix,124,137,#FF6B6B,biocentral_prott5,f710f09a9a9818d0
+P16863,secondary_structure,helix,Helix,150,177,#FF6B6B,biocentral_prott5,f710f09a9a9818d0
+P16863,secondary_structure,sheet,Sheet,185,188,#4DABF7,biocentral_prott5,f710f09a9a9818d0
+P16863,secondary_structure,sheet,Sheet,196,199,#4DABF7,biocentral_prott5,f710f09a9a9818d0
+P16863,secondary_structure,helix,Helix,203,239,#FF6B6B,biocentral_prott5,f710f09a9a9818d0
+P16863,secondary_structure,helix,Helix,302,315,#FF6B6B,biocentral_prott5,f710f09a9a9818d0
+P16863,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,f710f09a9a9818d0
+P16863,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,f710f09a9a9818d0
+P16863,transmembrane,tm_helix,TM helix,154,176,#9B59B6,biocentral_tmbed,f710f09a9a9818d0
+P16863,transmembrane,tm_helix,TM helix,207,232,#9B59B6,biocentral_tmbed,f710f09a9a9818d0
+P17302,disorder,disorder,Disordered,241,382,#F39C12,biocentral_seth,57ac4ca5808e70e1
+P17302,secondary_structure,helix,Helix,4,17,#FF6B6B,biocentral_prott5,57ac4ca5808e70e1
+P17302,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,57ac4ca5808e70e1
+P17302,secondary_structure,sheet,Sheet,52,54,#4DABF7,biocentral_prott5,57ac4ca5808e70e1
+P17302,secondary_structure,helix,Helix,72,118,#FF6B6B,biocentral_prott5,57ac4ca5808e70e1
+P17302,secondary_structure,helix,Helix,123,137,#FF6B6B,biocentral_prott5,57ac4ca5808e70e1
+P17302,secondary_structure,helix,Helix,150,177,#FF6B6B,biocentral_prott5,57ac4ca5808e70e1
+P17302,secondary_structure,sheet,Sheet,185,188,#4DABF7,biocentral_prott5,57ac4ca5808e70e1
+P17302,secondary_structure,sheet,Sheet,196,199,#4DABF7,biocentral_prott5,57ac4ca5808e70e1
+P17302,secondary_structure,helix,Helix,203,234,#FF6B6B,biocentral_prott5,57ac4ca5808e70e1
+P17302,secondary_structure,helix,Helix,236,239,#FF6B6B,biocentral_prott5,57ac4ca5808e70e1
+P17302,secondary_structure,helix,Helix,305,318,#FF6B6B,biocentral_prott5,57ac4ca5808e70e1
+P17302,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,57ac4ca5808e70e1
+P17302,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,57ac4ca5808e70e1
+P17302,transmembrane,tm_helix,TM helix,154,176,#9B59B6,biocentral_tmbed,57ac4ca5808e70e1
+P17302,transmembrane,tm_helix,TM helix,206,231,#9B59B6,biocentral_tmbed,57ac4ca5808e70e1
+P18246,disorder,disorder,Disordered,242,383,#F39C12,biocentral_seth,a1eb6b09159dbf4d
+P18246,secondary_structure,helix,Helix,4,17,#FF6B6B,biocentral_prott5,a1eb6b09159dbf4d
+P18246,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,a1eb6b09159dbf4d
+P18246,secondary_structure,sheet,Sheet,52,54,#4DABF7,biocentral_prott5,a1eb6b09159dbf4d
+P18246,secondary_structure,helix,Helix,72,117,#FF6B6B,biocentral_prott5,a1eb6b09159dbf4d
+P18246,secondary_structure,helix,Helix,124,138,#FF6B6B,biocentral_prott5,a1eb6b09159dbf4d
+P18246,secondary_structure,helix,Helix,151,178,#FF6B6B,biocentral_prott5,a1eb6b09159dbf4d
+P18246,secondary_structure,sheet,Sheet,186,189,#4DABF7,biocentral_prott5,a1eb6b09159dbf4d
+P18246,secondary_structure,sheet,Sheet,197,200,#4DABF7,biocentral_prott5,a1eb6b09159dbf4d
+P18246,secondary_structure,helix,Helix,204,235,#FF6B6B,biocentral_prott5,a1eb6b09159dbf4d
+P18246,secondary_structure,helix,Helix,237,240,#FF6B6B,biocentral_prott5,a1eb6b09159dbf4d
+P18246,secondary_structure,helix,Helix,306,319,#FF6B6B,biocentral_prott5,a1eb6b09159dbf4d
+P18246,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,a1eb6b09159dbf4d
+P18246,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,a1eb6b09159dbf4d
+P18246,transmembrane,tm_helix,TM helix,155,177,#9B59B6,biocentral_tmbed,a1eb6b09159dbf4d
+P18246,transmembrane,tm_helix,TM helix,207,232,#9B59B6,biocentral_tmbed,a1eb6b09159dbf4d
+P21994,disorder,disorder,Disordered,221,226,#F39C12,biocentral_seth,87f88d6344511599
+P21994,secondary_structure,helix,Helix,3,15,#FF6B6B,biocentral_prott5,87f88d6344511599
+P21994,secondary_structure,helix,Helix,19,44,#FF6B6B,biocentral_prott5,87f88d6344511599
+P21994,secondary_structure,sheet,Sheet,51,53,#4DABF7,biocentral_prott5,87f88d6344511599
+P21994,secondary_structure,helix,Helix,71,107,#FF6B6B,biocentral_prott5,87f88d6344511599
+P21994,secondary_structure,helix,Helix,118,122,#FF6B6B,biocentral_prott5,87f88d6344511599
+P21994,secondary_structure,helix,Helix,132,158,#FF6B6B,biocentral_prott5,87f88d6344511599
+P21994,secondary_structure,sheet,Sheet,167,169,#4DABF7,biocentral_prott5,87f88d6344511599
+P21994,secondary_structure,sheet,Sheet,178,181,#4DABF7,biocentral_prott5,87f88d6344511599
+P21994,secondary_structure,helix,Helix,185,218,#FF6B6B,biocentral_prott5,87f88d6344511599
+P21994,transmembrane,tm_helix,TM helix,20,41,#9B59B6,biocentral_tmbed,87f88d6344511599
+P21994,transmembrane,tm_helix,TM helix,74,95,#9B59B6,biocentral_tmbed,87f88d6344511599
+P21994,transmembrane,tm_helix,TM helix,134,156,#9B59B6,biocentral_tmbed,87f88d6344511599
+P21994,transmembrane,tm_helix,TM helix,189,214,#9B59B6,biocentral_tmbed,87f88d6344511599
+P23242,disorder,disorder,Disordered,241,382,#F39C12,biocentral_seth,e1f8ead8f26e9322
+P23242,secondary_structure,helix,Helix,4,17,#FF6B6B,biocentral_prott5,e1f8ead8f26e9322
+P23242,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,e1f8ead8f26e9322
+P23242,secondary_structure,sheet,Sheet,52,54,#4DABF7,biocentral_prott5,e1f8ead8f26e9322
+P23242,secondary_structure,helix,Helix,72,118,#FF6B6B,biocentral_prott5,e1f8ead8f26e9322
+P23242,secondary_structure,helix,Helix,123,137,#FF6B6B,biocentral_prott5,e1f8ead8f26e9322
+P23242,secondary_structure,helix,Helix,150,177,#FF6B6B,biocentral_prott5,e1f8ead8f26e9322
+P23242,secondary_structure,sheet,Sheet,185,188,#4DABF7,biocentral_prott5,e1f8ead8f26e9322
+P23242,secondary_structure,sheet,Sheet,196,199,#4DABF7,biocentral_prott5,e1f8ead8f26e9322
+P23242,secondary_structure,helix,Helix,203,234,#FF6B6B,biocentral_prott5,e1f8ead8f26e9322
+P23242,secondary_structure,helix,Helix,236,239,#FF6B6B,biocentral_prott5,e1f8ead8f26e9322
+P23242,secondary_structure,helix,Helix,305,318,#FF6B6B,biocentral_prott5,e1f8ead8f26e9322
+P23242,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,e1f8ead8f26e9322
+P23242,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,e1f8ead8f26e9322
+P23242,transmembrane,tm_helix,TM helix,154,176,#9B59B6,biocentral_tmbed,e1f8ead8f26e9322
+P23242,transmembrane,tm_helix,TM helix,207,231,#9B59B6,biocentral_tmbed,e1f8ead8f26e9322
+P29033,disorder,disorder,Disordered,221,226,#F39C12,biocentral_seth,70fb9047856d6e93
+P29033,secondary_structure,helix,Helix,3,15,#FF6B6B,biocentral_prott5,70fb9047856d6e93
+P29033,secondary_structure,helix,Helix,19,44,#FF6B6B,biocentral_prott5,70fb9047856d6e93
+P29033,secondary_structure,sheet,Sheet,51,53,#4DABF7,biocentral_prott5,70fb9047856d6e93
+P29033,secondary_structure,helix,Helix,71,107,#FF6B6B,biocentral_prott5,70fb9047856d6e93
+P29033,secondary_structure,helix,Helix,118,122,#FF6B6B,biocentral_prott5,70fb9047856d6e93
+P29033,secondary_structure,helix,Helix,131,157,#FF6B6B,biocentral_prott5,70fb9047856d6e93
+P29033,secondary_structure,sheet,Sheet,167,169,#4DABF7,biocentral_prott5,70fb9047856d6e93
+P29033,secondary_structure,sheet,Sheet,178,181,#4DABF7,biocentral_prott5,70fb9047856d6e93
+P29033,secondary_structure,helix,Helix,185,218,#FF6B6B,biocentral_prott5,70fb9047856d6e93
+P29033,transmembrane,tm_helix,TM helix,20,41,#9B59B6,biocentral_tmbed,70fb9047856d6e93
+P29033,transmembrane,tm_helix,TM helix,74,95,#9B59B6,biocentral_tmbed,70fb9047856d6e93
+P29033,transmembrane,tm_helix,TM helix,134,156,#9B59B6,biocentral_tmbed,70fb9047856d6e93
+P29033,transmembrane,tm_helix,TM helix,189,214,#9B59B6,biocentral_tmbed,70fb9047856d6e93
+P33085,disorder,disorder,Disordered,8,17,#F39C12,biocentral_seth,3a53d7f30384686f
+P33085,disorder,disorder,Disordered,96,101,#F39C12,biocentral_seth,3a53d7f30384686f
+P33085,disorder,disorder,Disordered,357,372,#F39C12,biocentral_seth,3a53d7f30384686f
+P33085,secondary_structure,helix,Helix,3,9,#FF6B6B,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,helix,Helix,22,47,#FF6B6B,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,helix,Helix,62,68,#FF6B6B,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,sheet,Sheet,69,76,#4DABF7,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,helix,Helix,109,134,#FF6B6B,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,helix,Helix,138,144,#FF6B6B,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,helix,Helix,153,171,#FF6B6B,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,helix,Helix,174,203,#FF6B6B,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,helix,Helix,210,218,#FF6B6B,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,sheet,Sheet,236,243,#4DABF7,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,sheet,Sheet,250,257,#4DABF7,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,helix,Helix,261,295,#FF6B6B,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,helix,Helix,297,307,#FF6B6B,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,helix,Helix,313,322,#FF6B6B,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,helix,Helix,325,337,#FF6B6B,biocentral_prott5,3a53d7f30384686f
+P33085,secondary_structure,helix,Helix,340,354,#FF6B6B,biocentral_prott5,3a53d7f30384686f
+P33085,transmembrane,tm_helix,TM helix,25,47,#9B59B6,biocentral_tmbed,3a53d7f30384686f
+P33085,transmembrane,tm_helix,TM helix,109,133,#9B59B6,biocentral_tmbed,3a53d7f30384686f
+P33085,transmembrane,tm_helix,TM helix,178,200,#9B59B6,biocentral_tmbed,3a53d7f30384686f
+P33085,transmembrane,tm_helix,TM helix,268,294,#9B59B6,biocentral_tmbed,3a53d7f30384686f
+P46691,disorder,disorder,Disordered,221,226,#F39C12,biocentral_seth,2cb16d5112695e6d
+P46691,secondary_structure,helix,Helix,3,15,#FF6B6B,biocentral_prott5,2cb16d5112695e6d
+P46691,secondary_structure,helix,Helix,19,44,#FF6B6B,biocentral_prott5,2cb16d5112695e6d
+P46691,secondary_structure,sheet,Sheet,51,53,#4DABF7,biocentral_prott5,2cb16d5112695e6d
+P46691,secondary_structure,helix,Helix,71,107,#FF6B6B,biocentral_prott5,2cb16d5112695e6d
+P46691,secondary_structure,helix,Helix,116,122,#FF6B6B,biocentral_prott5,2cb16d5112695e6d
+P46691,secondary_structure,helix,Helix,131,157,#FF6B6B,biocentral_prott5,2cb16d5112695e6d
+P46691,secondary_structure,sheet,Sheet,167,169,#4DABF7,biocentral_prott5,2cb16d5112695e6d
+P46691,secondary_structure,sheet,Sheet,178,181,#4DABF7,biocentral_prott5,2cb16d5112695e6d
+P46691,secondary_structure,helix,Helix,185,218,#FF6B6B,biocentral_prott5,2cb16d5112695e6d
+P46691,transmembrane,tm_helix,TM helix,20,41,#9B59B6,biocentral_tmbed,2cb16d5112695e6d
+P46691,transmembrane,tm_helix,TM helix,74,96,#9B59B6,biocentral_tmbed,2cb16d5112695e6d
+P46691,transmembrane,tm_helix,TM helix,134,156,#9B59B6,biocentral_tmbed,2cb16d5112695e6d
+P46691,transmembrane,tm_helix,TM helix,189,214,#9B59B6,biocentral_tmbed,2cb16d5112695e6d
+Q00977,disorder,disorder,Disordered,221,226,#F39C12,biocentral_seth,cc544b6720e1455d
+Q00977,secondary_structure,helix,Helix,3,15,#FF6B6B,biocentral_prott5,cc544b6720e1455d
+Q00977,secondary_structure,helix,Helix,19,44,#FF6B6B,biocentral_prott5,cc544b6720e1455d
+Q00977,secondary_structure,sheet,Sheet,51,53,#4DABF7,biocentral_prott5,cc544b6720e1455d
+Q00977,secondary_structure,helix,Helix,71,107,#FF6B6B,biocentral_prott5,cc544b6720e1455d
+Q00977,secondary_structure,helix,Helix,118,122,#FF6B6B,biocentral_prott5,cc544b6720e1455d
+Q00977,secondary_structure,helix,Helix,132,158,#FF6B6B,biocentral_prott5,cc544b6720e1455d
+Q00977,secondary_structure,sheet,Sheet,167,169,#4DABF7,biocentral_prott5,cc544b6720e1455d
+Q00977,secondary_structure,sheet,Sheet,178,181,#4DABF7,biocentral_prott5,cc544b6720e1455d
+Q00977,secondary_structure,helix,Helix,185,218,#FF6B6B,biocentral_prott5,cc544b6720e1455d
+Q00977,transmembrane,tm_helix,TM helix,20,41,#9B59B6,biocentral_tmbed,cc544b6720e1455d
+Q00977,transmembrane,tm_helix,TM helix,74,95,#9B59B6,biocentral_tmbed,cc544b6720e1455d
+Q00977,transmembrane,tm_helix,TM helix,134,156,#9B59B6,biocentral_tmbed,cc544b6720e1455d
+Q00977,transmembrane,tm_helix,TM helix,189,214,#9B59B6,biocentral_tmbed,cc544b6720e1455d
+Q1DH70,disorder,disorder,Disordered,8,17,#F39C12,biocentral_seth,14183d4c0c6c4da6
+Q1DH70,disorder,disorder,Disordered,358,372,#F39C12,biocentral_seth,14183d4c0c6c4da6
+Q1DH70,secondary_structure,helix,Helix,3,9,#FF6B6B,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,helix,Helix,22,47,#FF6B6B,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,helix,Helix,62,68,#FF6B6B,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,sheet,Sheet,69,76,#4DABF7,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,helix,Helix,109,134,#FF6B6B,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,helix,Helix,138,144,#FF6B6B,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,helix,Helix,153,171,#FF6B6B,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,helix,Helix,174,203,#FF6B6B,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,helix,Helix,209,218,#FF6B6B,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,sheet,Sheet,236,244,#4DABF7,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,sheet,Sheet,250,257,#4DABF7,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,helix,Helix,261,295,#FF6B6B,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,helix,Helix,297,307,#FF6B6B,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,helix,Helix,313,322,#FF6B6B,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,helix,Helix,325,337,#FF6B6B,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,secondary_structure,helix,Helix,340,355,#FF6B6B,biocentral_prott5,14183d4c0c6c4da6
+Q1DH70,transmembrane,tm_helix,TM helix,25,47,#9B59B6,biocentral_tmbed,14183d4c0c6c4da6
+Q1DH70,transmembrane,tm_helix,TM helix,109,133,#9B59B6,biocentral_tmbed,14183d4c0c6c4da6
+Q1DH70,transmembrane,tm_helix,TM helix,178,200,#9B59B6,biocentral_tmbed,14183d4c0c6c4da6
+Q1DH70,transmembrane,tm_helix,TM helix,268,294,#9B59B6,biocentral_tmbed,14183d4c0c6c4da6
+Q29101,disorder,disorder,Disordered,241,382,#F39C12,biocentral_seth,6de5ca4ad83de045
+Q29101,secondary_structure,helix,Helix,4,17,#FF6B6B,biocentral_prott5,6de5ca4ad83de045
+Q29101,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,6de5ca4ad83de045
+Q29101,secondary_structure,sheet,Sheet,52,54,#4DABF7,biocentral_prott5,6de5ca4ad83de045
+Q29101,secondary_structure,helix,Helix,72,118,#FF6B6B,biocentral_prott5,6de5ca4ad83de045
+Q29101,secondary_structure,helix,Helix,123,137,#FF6B6B,biocentral_prott5,6de5ca4ad83de045
+Q29101,secondary_structure,helix,Helix,150,177,#FF6B6B,biocentral_prott5,6de5ca4ad83de045
+Q29101,secondary_structure,sheet,Sheet,185,188,#4DABF7,biocentral_prott5,6de5ca4ad83de045
+Q29101,secondary_structure,sheet,Sheet,196,199,#4DABF7,biocentral_prott5,6de5ca4ad83de045
+Q29101,secondary_structure,helix,Helix,203,234,#FF6B6B,biocentral_prott5,6de5ca4ad83de045
+Q29101,secondary_structure,helix,Helix,236,239,#FF6B6B,biocentral_prott5,6de5ca4ad83de045
+Q29101,secondary_structure,helix,Helix,305,318,#FF6B6B,biocentral_prott5,6de5ca4ad83de045
+Q29101,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,6de5ca4ad83de045
+Q29101,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,6de5ca4ad83de045
+Q29101,transmembrane,tm_helix,TM helix,154,176,#9B59B6,biocentral_tmbed,6de5ca4ad83de045
+Q29101,transmembrane,tm_helix,TM helix,206,231,#9B59B6,biocentral_tmbed,6de5ca4ad83de045
+Q4R4S7,disorder,disorder,Disordered,241,382,#F39C12,biocentral_seth,e6dc8e47360da7fd
+Q4R4S7,secondary_structure,helix,Helix,4,17,#FF6B6B,biocentral_prott5,e6dc8e47360da7fd
+Q4R4S7,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,e6dc8e47360da7fd
+Q4R4S7,secondary_structure,sheet,Sheet,52,54,#4DABF7,biocentral_prott5,e6dc8e47360da7fd
+Q4R4S7,secondary_structure,helix,Helix,72,118,#FF6B6B,biocentral_prott5,e6dc8e47360da7fd
+Q4R4S7,secondary_structure,helix,Helix,123,137,#FF6B6B,biocentral_prott5,e6dc8e47360da7fd
+Q4R4S7,secondary_structure,helix,Helix,150,177,#FF6B6B,biocentral_prott5,e6dc8e47360da7fd
+Q4R4S7,secondary_structure,sheet,Sheet,185,188,#4DABF7,biocentral_prott5,e6dc8e47360da7fd
+Q4R4S7,secondary_structure,sheet,Sheet,196,199,#4DABF7,biocentral_prott5,e6dc8e47360da7fd
+Q4R4S7,secondary_structure,helix,Helix,203,234,#FF6B6B,biocentral_prott5,e6dc8e47360da7fd
+Q4R4S7,secondary_structure,helix,Helix,236,239,#FF6B6B,biocentral_prott5,e6dc8e47360da7fd
+Q4R4S7,secondary_structure,helix,Helix,305,318,#FF6B6B,biocentral_prott5,e6dc8e47360da7fd
+Q4R4S7,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,e6dc8e47360da7fd
+Q4R4S7,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,e6dc8e47360da7fd
+Q4R4S7,transmembrane,tm_helix,TM helix,154,176,#9B59B6,biocentral_tmbed,e6dc8e47360da7fd
+Q4R4S7,transmembrane,tm_helix,TM helix,206,231,#9B59B6,biocentral_tmbed,e6dc8e47360da7fd
+Q6S9C0,disorder,disorder,Disordered,240,382,#F39C12,biocentral_seth,81241220e65d284e
+Q6S9C0,secondary_structure,helix,Helix,4,16,#FF6B6B,biocentral_prott5,81241220e65d284e
+Q6S9C0,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,81241220e65d284e
+Q6S9C0,secondary_structure,sheet,Sheet,52,54,#4DABF7,biocentral_prott5,81241220e65d284e
+Q6S9C0,secondary_structure,helix,Helix,72,117,#FF6B6B,biocentral_prott5,81241220e65d284e
+Q6S9C0,secondary_structure,helix,Helix,123,137,#FF6B6B,biocentral_prott5,81241220e65d284e
+Q6S9C0,secondary_structure,helix,Helix,150,177,#FF6B6B,biocentral_prott5,81241220e65d284e
+Q6S9C0,secondary_structure,sheet,Sheet,185,188,#4DABF7,biocentral_prott5,81241220e65d284e
+Q6S9C0,secondary_structure,sheet,Sheet,196,199,#4DABF7,biocentral_prott5,81241220e65d284e
+Q6S9C0,secondary_structure,helix,Helix,203,233,#FF6B6B,biocentral_prott5,81241220e65d284e
+Q6S9C0,secondary_structure,helix,Helix,307,318,#FF6B6B,biocentral_prott5,81241220e65d284e
+Q6S9C0,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,81241220e65d284e
+Q6S9C0,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,81241220e65d284e
+Q6S9C0,transmembrane,tm_helix,TM helix,154,176,#9B59B6,biocentral_tmbed,81241220e65d284e
+Q6S9C0,transmembrane,tm_helix,TM helix,207,230,#9B59B6,biocentral_tmbed,81241220e65d284e
+Q6TYA7,disorder,disorder,Disordered,241,382,#F39C12,biocentral_seth,10a3ac6b9701c862
+Q6TYA7,secondary_structure,helix,Helix,4,17,#FF6B6B,biocentral_prott5,10a3ac6b9701c862
+Q6TYA7,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,10a3ac6b9701c862
+Q6TYA7,secondary_structure,sheet,Sheet,52,54,#4DABF7,biocentral_prott5,10a3ac6b9701c862
+Q6TYA7,secondary_structure,helix,Helix,72,118,#FF6B6B,biocentral_prott5,10a3ac6b9701c862
+Q6TYA7,secondary_structure,helix,Helix,123,137,#FF6B6B,biocentral_prott5,10a3ac6b9701c862
+Q6TYA7,secondary_structure,helix,Helix,150,177,#FF6B6B,biocentral_prott5,10a3ac6b9701c862
+Q6TYA7,secondary_structure,sheet,Sheet,185,188,#4DABF7,biocentral_prott5,10a3ac6b9701c862
+Q6TYA7,secondary_structure,sheet,Sheet,196,199,#4DABF7,biocentral_prott5,10a3ac6b9701c862
+Q6TYA7,secondary_structure,helix,Helix,203,234,#FF6B6B,biocentral_prott5,10a3ac6b9701c862
+Q6TYA7,secondary_structure,helix,Helix,236,239,#FF6B6B,biocentral_prott5,10a3ac6b9701c862
+Q6TYA7,secondary_structure,helix,Helix,305,318,#FF6B6B,biocentral_prott5,10a3ac6b9701c862
+Q6TYA7,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,10a3ac6b9701c862
+Q6TYA7,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,10a3ac6b9701c862
+Q6TYA7,transmembrane,tm_helix,TM helix,154,176,#9B59B6,biocentral_tmbed,10a3ac6b9701c862
+Q6TYA7,transmembrane,tm_helix,TM helix,207,231,#9B59B6,biocentral_tmbed,10a3ac6b9701c862
+Q6TYA8,disorder,disorder,Disordered,241,382,#F39C12,biocentral_seth,f4b5a2612b8e6949
+Q6TYA8,secondary_structure,helix,Helix,4,17,#FF6B6B,biocentral_prott5,f4b5a2612b8e6949
+Q6TYA8,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,f4b5a2612b8e6949
+Q6TYA8,secondary_structure,sheet,Sheet,52,54,#4DABF7,biocentral_prott5,f4b5a2612b8e6949
+Q6TYA8,secondary_structure,helix,Helix,72,117,#FF6B6B,biocentral_prott5,f4b5a2612b8e6949
+Q6TYA8,secondary_structure,helix,Helix,123,137,#FF6B6B,biocentral_prott5,f4b5a2612b8e6949
+Q6TYA8,secondary_structure,helix,Helix,150,177,#FF6B6B,biocentral_prott5,f4b5a2612b8e6949
+Q6TYA8,secondary_structure,sheet,Sheet,185,188,#4DABF7,biocentral_prott5,f4b5a2612b8e6949
+Q6TYA8,secondary_structure,sheet,Sheet,196,199,#4DABF7,biocentral_prott5,f4b5a2612b8e6949
+Q6TYA8,secondary_structure,helix,Helix,203,240,#FF6B6B,biocentral_prott5,f4b5a2612b8e6949
+Q6TYA8,secondary_structure,helix,Helix,305,318,#FF6B6B,biocentral_prott5,f4b5a2612b8e6949
+Q6TYA8,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,f4b5a2612b8e6949
+Q6TYA8,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,f4b5a2612b8e6949
+Q6TYA8,transmembrane,tm_helix,TM helix,154,176,#9B59B6,biocentral_tmbed,f4b5a2612b8e6949
+Q6TYA8,transmembrane,tm_helix,TM helix,207,231,#9B59B6,biocentral_tmbed,f4b5a2612b8e6949
+Q6TYA9,disorder,disorder,Disordered,241,382,#F39C12,biocentral_seth,c233138fd2fe5c2b
+Q6TYA9,secondary_structure,helix,Helix,4,17,#FF6B6B,biocentral_prott5,c233138fd2fe5c2b
+Q6TYA9,secondary_structure,helix,Helix,20,45,#FF6B6B,biocentral_prott5,c233138fd2fe5c2b
+Q6TYA9,secondary_structure,sheet,Sheet,52,54,#4DABF7,biocentral_prott5,c233138fd2fe5c2b
+Q6TYA9,secondary_structure,helix,Helix,72,118,#FF6B6B,biocentral_prott5,c233138fd2fe5c2b
+Q6TYA9,secondary_structure,helix,Helix,123,137,#FF6B6B,biocentral_prott5,c233138fd2fe5c2b
+Q6TYA9,secondary_structure,helix,Helix,150,177,#FF6B6B,biocentral_prott5,c233138fd2fe5c2b
+Q6TYA9,secondary_structure,sheet,Sheet,185,188,#4DABF7,biocentral_prott5,c233138fd2fe5c2b
+Q6TYA9,secondary_structure,sheet,Sheet,196,199,#4DABF7,biocentral_prott5,c233138fd2fe5c2b
+Q6TYA9,secondary_structure,helix,Helix,203,234,#FF6B6B,biocentral_prott5,c233138fd2fe5c2b
+Q6TYA9,secondary_structure,helix,Helix,236,239,#FF6B6B,biocentral_prott5,c233138fd2fe5c2b
+Q6TYA9,secondary_structure,helix,Helix,305,318,#FF6B6B,biocentral_prott5,c233138fd2fe5c2b
+Q6TYA9,transmembrane,tm_helix,TM helix,21,43,#9B59B6,biocentral_tmbed,c233138fd2fe5c2b
+Q6TYA9,transmembrane,tm_helix,TM helix,74,97,#9B59B6,biocentral_tmbed,c233138fd2fe5c2b
+Q6TYA9,transmembrane,tm_helix,TM helix,154,176,#9B59B6,biocentral_tmbed,c233138fd2fe5c2b
+Q6TYA9,transmembrane,tm_helix,TM helix,206,231,#9B59B6,biocentral_tmbed,c233138fd2fe5c2b
+Q7PXN1,disorder,disorder,Disordered,8,17,#F39C12,biocentral_seth,aee607b5c35e09f8
+Q7PXN1,disorder,disorder,Disordered,359,373,#F39C12,biocentral_seth,aee607b5c35e09f8
+Q7PXN1,secondary_structure,helix,Helix,3,11,#FF6B6B,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,helix,Helix,22,47,#FF6B6B,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,helix,Helix,62,69,#FF6B6B,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,sheet,Sheet,70,76,#4DABF7,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,helix,Helix,110,135,#FF6B6B,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,helix,Helix,139,145,#FF6B6B,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,helix,Helix,154,172,#FF6B6B,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,helix,Helix,175,204,#FF6B6B,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,helix,Helix,210,219,#FF6B6B,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,sheet,Sheet,237,245,#4DABF7,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,sheet,Sheet,251,258,#4DABF7,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,helix,Helix,262,296,#FF6B6B,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,helix,Helix,298,308,#FF6B6B,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,helix,Helix,314,323,#FF6B6B,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,helix,Helix,326,338,#FF6B6B,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,secondary_structure,helix,Helix,341,356,#FF6B6B,biocentral_prott5,aee607b5c35e09f8
+Q7PXN1,transmembrane,tm_helix,TM helix,25,47,#9B59B6,biocentral_tmbed,aee607b5c35e09f8
+Q7PXN1,transmembrane,tm_helix,TM helix,110,134,#9B59B6,biocentral_tmbed,aee607b5c35e09f8
+Q7PXN1,transmembrane,tm_helix,TM helix,179,201,#9B59B6,biocentral_tmbed,aee607b5c35e09f8
+Q7PXN1,transmembrane,tm_helix,TM helix,269,295,#9B59B6,biocentral_tmbed,aee607b5c35e09f8
+Q8MHW5,disorder,disorder,Disordered,221,226,#F39C12,biocentral_seth,70fb9047856d6e93
+Q8MHW5,secondary_structure,helix,Helix,3,15,#FF6B6B,biocentral_prott5,70fb9047856d6e93
+Q8MHW5,secondary_structure,helix,Helix,19,44,#FF6B6B,biocentral_prott5,70fb9047856d6e93
+Q8MHW5,secondary_structure,sheet,Sheet,51,53,#4DABF7,biocentral_prott5,70fb9047856d6e93
+Q8MHW5,secondary_structure,helix,Helix,71,107,#FF6B6B,biocentral_prott5,70fb9047856d6e93
+Q8MHW5,secondary_structure,helix,Helix,118,122,#FF6B6B,biocentral_prott5,70fb9047856d6e93
+Q8MHW5,secondary_structure,helix,Helix,131,157,#FF6B6B,biocentral_prott5,70fb9047856d6e93
+Q8MHW5,secondary_structure,sheet,Sheet,167,169,#4DABF7,biocentral_prott5,70fb9047856d6e93
+Q8MHW5,secondary_structure,sheet,Sheet,178,181,#4DABF7,biocentral_prott5,70fb9047856d6e93
+Q8MHW5,secondary_structure,helix,Helix,185,218,#FF6B6B,biocentral_prott5,70fb9047856d6e93
+Q8MHW5,transmembrane,tm_helix,TM helix,20,41,#9B59B6,biocentral_tmbed,70fb9047856d6e93
+Q8MHW5,transmembrane,tm_helix,TM helix,74,95,#9B59B6,biocentral_tmbed,70fb9047856d6e93
+Q8MHW5,transmembrane,tm_helix,TM helix,134,156,#9B59B6,biocentral_tmbed,70fb9047856d6e93
+Q8MHW5,transmembrane,tm_helix,TM helix,189,214,#9B59B6,biocentral_tmbed,70fb9047856d6e93
+Q8MIT8,disorder,disorder,Disordered,221,226,#F39C12,biocentral_seth,f5b0e0e102524ccd
+Q8MIT8,secondary_structure,helix,Helix,3,16,#FF6B6B,biocentral_prott5,f5b0e0e102524ccd
+Q8MIT8,secondary_structure,helix,Helix,19,44,#FF6B6B,biocentral_prott5,f5b0e0e102524ccd
+Q8MIT8,secondary_structure,sheet,Sheet,51,53,#4DABF7,biocentral_prott5,f5b0e0e102524ccd
+Q8MIT8,secondary_structure,helix,Helix,71,107,#FF6B6B,biocentral_prott5,f5b0e0e102524ccd
+Q8MIT8,secondary_structure,helix,Helix,118,122,#FF6B6B,biocentral_prott5,f5b0e0e102524ccd
+Q8MIT8,secondary_structure,helix,Helix,131,157,#FF6B6B,biocentral_prott5,f5b0e0e102524ccd
+Q8MIT8,secondary_structure,sheet,Sheet,167,169,#4DABF7,biocentral_prott5,f5b0e0e102524ccd
+Q8MIT8,secondary_structure,sheet,Sheet,178,181,#4DABF7,biocentral_prott5,f5b0e0e102524ccd
+Q8MIT8,secondary_structure,helix,Helix,185,218,#FF6B6B,biocentral_prott5,f5b0e0e102524ccd
+Q8MIT8,transmembrane,tm_helix,TM helix,20,41,#9B59B6,biocentral_tmbed,f5b0e0e102524ccd
+Q8MIT8,transmembrane,tm_helix,TM helix,74,95,#9B59B6,biocentral_tmbed,f5b0e0e102524ccd
+Q8MIT8,transmembrane,tm_helix,TM helix,134,156,#9B59B6,biocentral_tmbed,f5b0e0e102524ccd
+Q8MIT8,transmembrane,tm_helix,TM helix,189,214,#9B59B6,biocentral_tmbed,f5b0e0e102524ccd
+Q8MIT9,disorder,disorder,Disordered,221,226,#F39C12,biocentral_seth,cebf48f69339c6b6
+Q8MIT9,secondary_structure,helix,Helix,3,15,#FF6B6B,biocentral_prott5,cebf48f69339c6b6
+Q8MIT9,secondary_structure,helix,Helix,19,44,#FF6B6B,biocentral_prott5,cebf48f69339c6b6
+Q8MIT9,secondary_structure,sheet,Sheet,51,53,#4DABF7,biocentral_prott5,cebf48f69339c6b6
+Q8MIT9,secondary_structure,helix,Helix,71,107,#FF6B6B,biocentral_prott5,cebf48f69339c6b6
+Q8MIT9,secondary_structure,helix,Helix,118,122,#FF6B6B,biocentral_prott5,cebf48f69339c6b6
+Q8MIT9,secondary_structure,helix,Helix,131,157,#FF6B6B,biocentral_prott5,cebf48f69339c6b6
+Q8MIT9,secondary_structure,sheet,Sheet,167,169,#4DABF7,biocentral_prott5,cebf48f69339c6b6
+Q8MIT9,secondary_structure,sheet,Sheet,178,181,#4DABF7,biocentral_prott5,cebf48f69339c6b6
+Q8MIT9,secondary_structure,helix,Helix,185,218,#FF6B6B,biocentral_prott5,cebf48f69339c6b6
+Q8MIT9,transmembrane,tm_helix,TM helix,20,41,#9B59B6,biocentral_tmbed,cebf48f69339c6b6
+Q8MIT9,transmembrane,tm_helix,TM helix,74,95,#9B59B6,biocentral_tmbed,cebf48f69339c6b6
+Q8MIT9,transmembrane,tm_helix,TM helix,134,156,#9B59B6,biocentral_tmbed,cebf48f69339c6b6
+Q8MIT9,transmembrane,tm_helix,TM helix,189,214,#9B59B6,biocentral_tmbed,cebf48f69339c6b6

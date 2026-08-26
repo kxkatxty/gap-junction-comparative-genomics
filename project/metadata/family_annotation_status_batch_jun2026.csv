@@ -1,0 +1,67 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Peripatoides novaezealandiae,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Peripatoides novaezealandiae,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Peripatoides novaezealandiae,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Peripatus solorzanoi,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Peripatus solorzanoi,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Peripatus solorzanoi,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Tubiluchus corallicola,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Tubiluchus corallicola,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Tubiluchus corallicola,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Rotaria sordida,innexin,yes,no,annotated_family_member_found,high,innexin,uniprot,A,A0A813T789,inx,Innexin,10,0,"organism_name:""Rotaria sordida"" AND protein_name:innexin"
+Rotaria sordida,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Rotaria sordida,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Philodina roseola,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Philodina roseola,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Philodina roseola,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Triops cancriformis,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Triops cancriformis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Triops cancriformis,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Artemia franciscana,innexin,yes,no,annotated_family_member_found,high,innexin,uniprot,A,A0AA88HGI7,inx,Innexin,17,0,"organism_name:""Artemia franciscana"" AND protein_name:innexin"
+Artemia franciscana,connexin,no,yes,related_or_family_like_entry_found,medium,Innexin family member shaking B,ncbi_gene,B,136041858,shakB,Innexin family member shaking B,0,5,"""gap junction""[All Fields] AND ""Artemia franciscana""[Organism]"
+Artemia franciscana,pannexin,no,yes,related_or_family_like_entry_found,medium,Innexin family member shaking B,ncbi_gene,B,136041858,shakB,Innexin family member shaking B,0,5,"""gap junction""[All Fields] AND ""Artemia franciscana""[Organism]"
+Tigriopus californicus,innexin,yes,no,annotated_family_member_found,high,innexin,uniprot,A,A0A553NFW3,inx,Innexin,15,0,"organism_name:""Tigriopus californicus"" AND protein_name:innexin"
+Tigriopus californicus,connexin,no,yes,related_or_family_like_entry_found,medium,innexin inx2-like,ncbi_gene,B,131888218,LOC131888218,innexin inx2-like,0,5,"""gap junction""[All Fields] AND ""Tigriopus californicus""[Organism]"
+Tigriopus californicus,pannexin,no,yes,related_or_family_like_entry_found,medium,innexin inx2-like,ncbi_gene,B,131888218,LOC131888218,innexin inx2-like,0,5,"""gap junction""[All Fields] AND ""Tigriopus californicus""[Organism]"
+Owenia fusiformis,innexin,yes,no,annotated_family_member_found,high,innexin,uniprot,A,A0A8J1YA83,inx,Innexin,10,0,"organism_name:""Owenia fusiformis"" AND protein_name:innexin"
+Owenia fusiformis,connexin,yes,no,annotated_family_member_found,high,connexin,uniprot,A,A0A8S4PV14,,Connexin cysteine-rich domain-containing protein,5,0,"organism_name:""Owenia fusiformis"" AND protein_name:connexin"
+Owenia fusiformis,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Streblospio benedicti,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Streblospio benedicti,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Streblospio benedicti,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Dimorphilus gyrociliatus,innexin,yes,no,annotated_family_member_found,high,innexin,uniprot,A,A0A7I8VSA8,inx,Innexin,10,0,"organism_name:""Dimorphilus gyrociliatus"" AND protein_name:innexin"
+Dimorphilus gyrociliatus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Dimorphilus gyrociliatus,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Mizuhopecten yessoensis,innexin,yes,no,annotated_family_member_found,high,innexin,uniprot,A,A0A210PLR5,inx,Innexin,15,0,"organism_name:""Mizuhopecten yessoensis"" AND protein_name:innexin"
+Mizuhopecten yessoensis,connexin,no,yes,related_or_family_like_entry_found,medium,WW domain-binding protein 4-like,ncbi_gene,B,110465441,LOC110465441,WW domain-binding protein 4-like,1,10,"""gap junction""[All Fields] AND ""Mizuhopecten yessoensis""[Organism]"
+Mizuhopecten yessoensis,pannexin,no,yes,related_or_family_like_entry_found,medium,WW domain-binding protein 4-like,ncbi_gene,B,110465441,LOC110465441,WW domain-binding protein 4-like,2,12,"""gap junction""[All Fields] AND ""Mizuhopecten yessoensis""[Organism]"
+Crassostrea virginica,innexin,yes,no,annotated_family_member_found,high,innexin,uniprot,A,A0A8B8AWX7,LOC111105603,Innexin,15,0,"organism_name:""Crassostrea virginica"" AND protein_name:innexin"
+Crassostrea virginica,connexin,no,yes,related_or_family_like_entry_found,medium,gamma-tubulin complex component 6-like,ncbi_gene,B,111136780,LOC111136780,gamma-tubulin complex component 6-like,1,10,"""gap junction""[All Fields] AND ""Crassostrea virginica""[Organism]"
+Crassostrea virginica,pannexin,no,yes,related_or_family_like_entry_found,medium,gamma-tubulin complex component 6-like,ncbi_gene,B,111136780,LOC111136780,gamma-tubulin complex component 6-like,0,10,"""gap junction""[All Fields] AND ""Crassostrea virginica""[Organism]"
+Octopus bimaculoides,innexin,yes,no,annotated_family_member_found,high,innexin,ncbi_gene,A,106874682,LOC106874682,innexin unc-9,5,0,"innexin[All Fields] AND ""Octopus bimaculoides""[Organism]"
+Octopus bimaculoides,connexin,no,yes,related_or_family_like_entry_found,medium,innexin unc-9,ncbi_gene,B,106874682,LOC106874682,innexin unc-9,0,1,"""gap junction""[All Fields] AND ""Octopus bimaculoides""[Organism]"
+Octopus bimaculoides,pannexin,no,yes,related_or_family_like_entry_found,medium,innexin unc-9,ncbi_gene,B,106874682,LOC106874682,innexin unc-9,0,1,"""gap junction""[All Fields] AND ""Octopus bimaculoides""[Organism]"
+Scolanthus callimorphus,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Scolanthus callimorphus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Scolanthus callimorphus,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Acropora millepora,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Acropora millepora,connexin,no,no,no_related_entry_found,,,,,,,,1,0,
+Acropora millepora,pannexin,yes,no,annotated_family_member_found,high,pannexin,ncbi_gene,A,114959178,LOC114959178,pannexin-2-like,1,0,"pannexin[All Fields] AND ""Acropora millepora""[Organism]"
+Stylissa carteri,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Stylissa carteri,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Stylissa carteri,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Xestospongia testudinaria,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Xestospongia testudinaria,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Xestospongia testudinaria,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Hormiphora californensis,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Hormiphora californensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Hormiphora californensis,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Pleurobrachia bachei,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Pleurobrachia bachei,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Pleurobrachia bachei,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Bolinopsis microptera,innexin,yes,no,annotated_family_member_found,high,innexin,ncbi_gene,A,134826076,LOC134826076,innexin shaking-B-like,5,0,"innexin[All Fields] AND ""Bolinopsis microptera""[Organism]"
+Bolinopsis microptera,connexin,no,yes,related_or_family_like_entry_found,medium,innexin inx2-like,ncbi_gene,B,134825064,LOC134825064,innexin inx2-like,1,5,"""gap junction""[All Fields] AND ""Bolinopsis microptera""[Organism]"
+Bolinopsis microptera,pannexin,no,yes,related_or_family_like_entry_found,medium,innexin inx2-like,ncbi_gene,B,134825064,LOC134825064,innexin inx2-like,0,5,"""gap junction""[All Fields] AND ""Bolinopsis microptera""[Organism]"
+Thulinius sp. DVL-2010,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Thulinius sp. DVL-2010,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Thulinius sp. DVL-2010,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,

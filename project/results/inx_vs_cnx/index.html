@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Innexin × Connexin — direct contrast</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#12202a; --muted:#4d6570; --deep:#0a3a42; --sea:#0f766e; --ember:#c2410c;
+  --foam:#f4f7f5; --card:#fff; --line:rgba(18,32,42,.1);
+}
+* { box-sizing:border-box }
+html { scroll-behavior:smooth }
+body {
+  margin:0; color:var(--ink); font-family:Sora,sans-serif; line-height:1.6;
+  background:
+    radial-gradient(1000px 480px at 8% -8%, rgba(15,118,110,.16), transparent 55%),
+    radial-gradient(900px 420px at 92% 4%, rgba(194,65,12,.12), transparent 50%),
+    linear-gradient(180deg,#e8f1ee 0%, var(--foam) 42%, #eef3f1 100%);
+}
+a { color:var(--sea) }
+.hero {
+  min-height:86vh; display:grid; align-items:end; padding:clamp(1.5rem,4vw,3.25rem); color:#f7fffb;
+  background:linear-gradient(118deg, rgba(10,58,66,.94) 0%, rgba(15,118,110,.7) 46%, rgba(194,65,12,.66) 100%);
+}
+.brand { font-family:Fraunces,serif; font-size:clamp(2.3rem,6.4vw,4.4rem); font-weight:700; letter-spacing:-.03em; line-height:.95; margin:0 0 1rem }
+.hero h1 { margin:0 0 .75rem; font-size:clamp(1.05rem,2.1vw,1.3rem); font-weight:500; max-width:40ch }
+.hero .lede { margin:0 0 1.6rem; max-width:50ch; opacity:.92 }
+.cta a {
+  display:inline-block; text-decoration:none; font-weight:600; padding:.8rem 1.15rem; border-radius:999px;
+  margin:.2rem .4rem .2rem 0; background:#f5fffb; color:var(--deep); box-shadow:0 8px 24px rgba(0,0,0,.18);
+}
+.cta a.ghost { background:transparent; color:#f5fffb; border:1px solid rgba(245,255,251,.45); box-shadow:none }
+.wrap { width:min(880px, calc(100% - 2rem)); margin:0 auto; padding:2.25rem 0 4.5rem }
+.verdict {
+  margin-top:-2.2rem; position:relative; z-index:2; background:rgba(255,255,255,.95);
+  border:1px solid var(--line); border-radius:18px; padding:1.25rem 1.35rem; box-shadow:0 14px 36px rgba(18,32,42,.08);
+}
+.verdict h2 { font-family:Fraunces,serif; font-size:1.35rem; margin:0 0 .55rem }
+.verdict p { margin:0; color:var(--muted) }
+.verdict strong { color:var(--deep) }
+.stats { display:grid; grid-template-columns:repeat(4,1fr); gap:.7rem; margin:1.4rem 0 0 }
+.stat { background:#fff; border:1px solid var(--line); border-radius:14px; padding:.85rem }
+.stat b { display:block; font-family:Fraunces,serif; font-size:1.25rem; color:var(--deep) }
+.stat span { color:var(--muted); font-size:.78rem }
+.toc { display:flex; flex-wrap:wrap; gap:.45rem; margin:1.75rem 0 .5rem }
+.toc a { text-decoration:none; font-size:.78rem; font-weight:500; color:var(--deep); background:#fff; border:1px solid var(--line); padding:.4rem .75rem; border-radius:999px }
+.beat { margin:2.3rem 0; scroll-margin-top:1rem }
+.beat .eyebrow { display:inline-block; font-size:.72rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--ember); margin-bottom:.35rem }
+.beat h2 { font-family:Fraunces,serif; font-size:clamp(1.4rem,3vw,1.8rem); margin:0 0 .55rem; letter-spacing:-.02em }
+.beat .claim { color:var(--muted); margin:0 0 1rem; max-width:64ch }
+.figure { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:.85rem; box-shadow:0 10px 28px rgba(18,32,42,.05) }
+.figure img { width:100%; display:block; border-radius:10px; cursor:zoom-in; background:#f8fafc }
+.closing { margin-top:2.5rem; padding:1.4rem 1.35rem; border-radius:16px; background:linear-gradient(135deg,var(--deep),var(--ember)); color:#f5fffb }
+.closing h2 { font-family:Fraunces,serif; margin:0 0 .55rem; font-size:1.4rem }
+.closing p { margin:0; opacity:.95; max-width:62ch }
+.dim-table-wrap { overflow-x:auto; margin:1rem 0 0 }
+.dim-table {
+  width:100%; border-collapse:collapse; font-size:.86rem; background:#fff;
+  border:1px solid var(--line); border-radius:12px; overflow:hidden;
+}
+.dim-table th, .dim-table td { padding:.55rem .7rem; text-align:left; border-bottom:1px solid var(--line); color:var(--ink) }
+.dim-table th { background:rgba(15,118,110,.08); color:var(--deep); font-weight:600; font-size:.78rem }
+.dim-table tr:last-child td { border-bottom:none }
+.dim-table td.num { font-variant-numeric:tabular-nums; white-space:nowrap }
+.dim-note { font-size:.82rem; color:var(--muted); max-width:64ch; margin:.75rem 0 0 }
+.closing .lit-note { font-size:.88rem; opacity:.92; max-width:64ch; margin:.65rem 0 0 }
+.footer { margin-top:1.75rem; color:var(--muted); font-size:.88rem }
+.footer a { margin-right:.85rem }
+.modal { display:none; position:fixed; inset:0; background:rgba(0,0,0,.88); z-index:30; align-items:center; justify-content:center; padding:1.25rem; cursor:zoom-out }
+.modal.open { display:flex }
+.modal img { max-width:95vw; max-height:90vh; border-radius:8px }
+@media (max-width:800px) { .stats { grid-template-columns:1fr 1fr } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div>
+    <p class="brand">Innexin × Connexin</p>
+    <h1>Compare the two families to each other — not each family to itself</h1>
+    <p class="lede">One sequence space, one length axis, one chemistry panel. Same biological job — sequence evidence asks whether the two families share detectable similarity.</p>
+    <div class="cta">
+      <a href="#verdict">Read the contrast</a>
+      <a class="ghost" href="../family_comparison/index.html">Previous site (same metrics twice)</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="verdict" id="verdict">
+    <h2>Core contrast</h2>
+    <p>
+      Innexins and connexins occupy the same biological niche (intercellular coupling) but
+      <strong>separate clouds in this panel’s sequence space</strong>.
+      They live in largely non-overlapping kingdoms, show
+      <strong>low cross-family embedding cosine</strong>
+      (innexin↔connexin 3-mer cosine -0.40 vs within-family 0.38 / 0.44),
+      different protein lengths (median 367 vs 322 aa),
+      exon architecture, and genomic neighbourhood logic.
+      Cross-family MMseqs finds <strong>0</strong> alignment(s) at e≤1e-3 and ≥80 aa —
+      failure to detect similarity at this threshold is evidence for extreme divergence or separate families,
+      not by itself proof of absence of homology (literature nonetheless treats them as non-homologous channels).
+    </p>
+    <div class="stats">
+      <div class="stat"><b>174</b><span>innexin proteins</span></div>
+      <div class="stat"><b>127</b><span>connexin proteins</span></div>
+      <div class="stat"><b>-0.40</b><span>innexin↔connexin embedding cosine</span></div>
+      <div class="stat"><b>0</b><span>cross-family hits (e≤1e-3, ≥80 aa)</span></div>
+    </div>
+  </section>
+  <nav class="toc">    <a href="#who">1. Different kingdoms</a>
+    <a href="#space">2. One sequence space, two clouds</a>
+    <a href="#aa">3. Composition space agrees</a>
+    <a href="#cos">4. Innexin ↔ connexin is the empty comparison</a>
+    <a href="#hom">5. Cross-family sequence search</a>
+    <a href="#len">6. Different protein shapes</a>
+    <a href="#exons">7. Different gene models</a>
+    <a href="#chem">8. Different chemistry</a>
+    <a href="#comp">9. Which amino acids each family prefers</a>
+    <a href="#copy">10. Panel sampling vs genome biology</a>
+    <a href="#arch">11. Different genomic logic</a></nav>
+
+  <article class="beat" id="who">
+    <span class="eyebrow">01 · innexin × connexin</span>
+    <h2>Different kingdoms</h2>
+    <p class="claim">Innexins predominate in invertebrates; connexins are the canonical vertebrate gap-junction family in this panel. The comparison starts with who carries which family, not with subfamily purity.</p>
+    <div class="figure">
+      <img src="figures/01_who_has_whom.png" alt="Different kingdoms" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="space">
+    <span class="eyebrow">02 · innexin × connexin</span>
+    <h2>One sequence space, two clouds</h2>
+    <p class="claim">Every innexin and connexin protein is embedded in the <em>same</em> 3-mer space. They form separate clouds. Cross-family cosine is -0.40 versus 0.38 / 0.44 inside each family.</p>
+    <div class="figure">
+      <img src="figures/02_joint_kmer_pca.png" alt="One sequence space, two clouds" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="aa">
+    <span class="eyebrow">03 · innexin × connexin</span>
+    <h2>Composition space agrees</h2>
+    <p class="claim">Amino-acid mix alone already splits the two families. They are not two labels on one protein cloud.</p>
+    <div class="figure">
+      <img src="figures/03_joint_aa_pca.png" alt="Composition space agrees" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="cos">
+    <span class="eyebrow">04 · innexin × connexin</span>
+    <h2>Innexin ↔ connexin is the empty comparison</h2>
+    <p class="claim">This bar is the actual between-family number: how similar innexins are to connexins, not how similar innexins are to other innexins.</p>
+    <div class="figure">
+      <img src="figures/04_cross_family_cosine.png" alt="Innexin ↔ connexin is the empty comparison" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="hom">
+    <span class="eyebrow">05 · innexin × connexin</span>
+    <h2>Cross-family sequence search</h2>
+    <p class="claim">MMseqs innexin query vs connexin target: <strong>0</strong> hit(s) at e≤1e-3 and ≥80 aa among 189 short fragments. Zero long alignments supports extreme divergence or separate families; it is not proof of absence of homology. Same job, different detectable sequence grammar.</p>
+    <div class="figure">
+      <img src="figures/05_cross_family_homology.png" alt="Cross-family sequence search" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="len">
+    <span class="eyebrow">06 · innexin × connexin</span>
+    <h2>Different protein shapes</h2>
+    <p class="claim">Overlaid <strong>monomer</strong> length distributions (aa). Innexin median 367 aa, connexin median 322 aa. This is not docked channel length in ångströms — monomer aa lengths are the genomic/sequence character analysed here.</p>
+    <div class="figure">
+      <img src="figures/06_length_overlay.png" alt="Different protein shapes" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="exons">
+    <span class="eyebrow">07 · innexin × connexin</span>
+    <h2>Different gene models</h2>
+    <p class="claim">Connexin coding regions usually lack introns (ORF in one exon → compact gene models, panel median ~2 exons including 5′ UTR). Innexins carry coding-region introns (median ~5 exons) and can produce multiple splice variants from one locus. Same axes: exon count and gene span.</p>
+    <div class="figure">
+      <img src="figures/07_exons_and_span.png" alt="Different gene models" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="chem">
+    <span class="eyebrow">08 · innexin × connexin</span>
+    <h2>Different chemistry</h2>
+    <p class="claim">Total cysteine density (whole protein), hydrophobicity (GRAVY) and charged-residue fraction. This is not the conserved extracellular-loop ladder: that signature is fixed at <strong>2 Cys/loop (4 total)</strong> for innexins/pannexins vs <strong>3 Cys/loop (6 total)</strong> for connexins.</p>
+    <div class="figure">
+      <img src="figures/08_chemistry.png" alt="Different chemistry" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="comp">
+    <span class="eyebrow">09 · innexin × connexin</span>
+    <h2>Which amino acids each family prefers</h2>
+    <p class="claim">Positive bars: innexins use more of that residue. Negative bars: connexins use more. A direct compositional contrast.</p>
+    <div class="figure">
+      <img src="figures/09_aa_difference.png" alt="Which amino acids each family prefers" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="copy">
+    <span class="eyebrow">10 · innexin × connexin</span>
+    <h2>Panel sampling vs genome biology</h2>
+    <p class="claim">Connexins are large multigene families in vertebrates (~20–22 in jawed vertebrates, up to ~46 in teleosts). A histogram median of 1 in an earlier plot was a panel sampling issue: 23/38 species carry only one connexin locus in this restricted reference/discovery slice (incomplete UniProt sampling + sparse discovery hits). Human (<strong>22</strong> loci here) and mouse (<strong>20</strong>) match expectation; the figure now shows best-covered reference species against the literature band, not a misleading genome-wide median.</p>
+    <div class="figure">
+      <img src="figures/10_copy_number.png" alt="Panel sampling vs genome biology" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="arch">
+    <span class="eyebrow">11 · innexin × connexin</span>
+    <h2>Different genomic logic</h2>
+    <p class="claim">Innexin: tandem clusters that cut across the tree. Connexin: conserved neighbourhoods — <strong>GJA4 β-cluster</strong> as a tandem-duplication array (unequal crossing-over) versus <strong>GJA1</strong> as a WGD-dispersed address. Empty flanks around <em>X. laevis</em> gja1.L are a scaffold/gap issue in the plot, not a gene island. Insect Inx2 ≠ nematode inx-2 (SF4 vs SF3).</p>
+    <div class="figure">
+      <img src="figures/11_genome_logic.png" alt="Different genomic logic" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <section class="closing">
+    <h2>Takeaway</h2>
+    <p>
+      Sequence space, gene models, copy-number sampling, and genomic neighbourhoods —
+      Cys motif counts (4 vs 6) are alignment filters. Annotation caveats are on the
+      <a href="../gap_junction_path/index.html#artifacts" style="color:#d1fae5">gap-junction path · chapter 4</a>.
+    </p>
+    <h2 style="margin-top:1.4rem">One sentence</h2>
+    <p>
+      Same gap-junction job, largely separate kingdom occupancy, separate sequence clouds, different gene models
+      (intron-rich innexins vs compact connexins), and no cross-family MMseqs hits at e≤1e-3 and ≥80 aa —
+      parallel solutions rather than one detectable homologous family in this panel.
+    </p>
+  </section>
+  <footer class="footer">
+    <p>Direct family-vs-family contrast from combined FASTAs, exon summaries, and cross-family MMseqs. The older same-metrics page is unchanged.</p>
+    <p>
+      <a href="../family_comparison/index.html">Same-metrics page</a>
+      <a href="../innexin_insights/index.html">Innexin insights</a>
+      <a href="../connexin_insights/index.html">Connexin insights</a>
+      <a href="../phylogenetic_story/index.html">Phylogeny story</a>
+      <a href="../../../pannexin/project/results/panx_vs_inx/index.html">Pannexin × innexin</a>
+      <a href="../sources/index.html">Sources</a>
+    </p>
+  </footer>
+</main>
+<div id="modal" class="modal" onclick="this.classList.remove('open')"><img id="modal-img" alt=""></div>
+<script>
+function openModal(src) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('modal').classList.add('open');
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('modal').classList.remove('open');
+});
+</script>
+</body>
+</html>

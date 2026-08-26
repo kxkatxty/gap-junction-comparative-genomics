@@ -1,0 +1,6 @@
+clade,organism,assembly_accession,assembly_level,assembly_source,connexin_category,connexin_term,connexin_evidence_level,connexin_source,assembly_priority_score,notes
+Mammalia,Mus musculus domesticus,GCA_056825265.1,Complete Genome,GenBank,no_related_entry_found,,,,70,mammals
+Mammalia,Antrozous pallidus,GCA_027563665.2,Chromosome,GenBank,related_or_family_like_entry_found,gap junction,,,60,mammals
+Mammalia,Babyrousa celebensis,GCA_057927545.1,Chromosome,GenBank,no_related_entry_found,,,,60,mammals
+Mammalia,Ceratotherium simum simum,GCA_057802395.1,Chromosome,GenBank,related_or_family_like_entry_found,gap junction,,,60,mammals
+Mammalia,Eospalax fontanierii baileyi,GCA_057931235.1,Chromosome,GenBank,no_related_entry_found,,,,60,mammals

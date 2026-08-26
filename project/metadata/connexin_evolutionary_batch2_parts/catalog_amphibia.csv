@@ -1,0 +1,6 @@
+clade,organism,assembly_accession,assembly_level,assembly_source,connexin_category,connexin_term,connexin_evidence_level,connexin_source,assembly_priority_score,notes
+Amphibia,Eleutherodactylus marnockii,GCA_055470875.1,Chromosome,GenBank,no_related_entry_found,,,,60,frogs salamanders caecilians
+Amphibia,Epidalea calamita,GCA_978041805.1,Chromosome,GenBank,no_related_entry_found,,,,60,frogs salamanders caecilians
+Amphibia,Fejervarya limnocharis,GCA_054083975.1,Chromosome,GenBank,no_related_entry_found,,,,60,frogs salamanders caecilians
+Amphibia,Gastrophryne carolinensis,GCA_027917425.1,Chromosome,GenBank,related_or_family_like_entry_found,gap junction,,,60,frogs salamanders caecilians
+Amphibia,Ichthyophis bannanicus,GCA_033557465.1,Chromosome,GenBank,no_related_entry_found,,,,60,frogs salamanders caecilians

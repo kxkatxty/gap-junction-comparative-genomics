@@ -1,0 +1,61 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mpl_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+venv/
+
+# Regenerable scratch
+project/results/**/work/
+project/results/**/tmp/
+project/results/**/_work/
+project/results/**/_cache/
+**/mmseqs_tmp/
+**/*.tmp
+
+# Huge local data — keep on disk, do not push to GitHub
+project/data/
+project/logs/
+
+# Genome / sequencing dumps (anywhere)
+*.fna
+*.fastq
+*.fq
+*.bam
+*.bai
+*.sam
+*.cram
+*.2bit
+*.nib
+*.gz
+*.bgz
+
+# Bulk per-species discovery runs (HTML summaries elsewhere tell the story)
+project/results/innexin_discovery/
+project/results/connexin_evolutionary_discovery/
+project/results/connexin_evolutionary_*_discovery/
+project/results/connexin_vertebrate_discovery/
+
+# SynVoy run outputs (tool code under SynVoy/ can stay)
+SynVoy/results/
+SynVoy/tmp/
+SynVoy/work/
+SynVoy/**/work/
+SynVoy/**/tmp/
+
+# Noise
+*.log
+nohup.out
+
+# Lean GitHub bundle (push that folder as its own repository if needed)
+# github_share/

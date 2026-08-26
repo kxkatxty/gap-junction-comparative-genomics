@@ -1,0 +1,15 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Ambystoma mexicanum,connexin,yes,no,annotated_family_member_found,high,GJB3,ncbi_gene,A,138503076,GJB3,gap junction protein beta 3,7,0,"GJB*[Gene Symbol] AND ""Ambystoma mexicanum""[Organism]"
+Anomaloglossus baeobatrachus,connexin,yes,no,annotated_family_member_found,high,GJA10,ncbi_gene,A,142297237,GJA10,gap junction protein alpha 10,10,0,"connexin[All Fields] AND ""Anomaloglossus baeobatrachus""[Organism]"
+Aquarana catesbeiana,connexin,yes,no,annotated_family_member_found,high,GJA1,ncbi_gene,A,141140240,GJA1,gap junction protein alpha 1,9,0,"GJA*[Gene Symbol] AND ""Aquarana catesbeiana""[Organism]"
+Ascaphus truei,connexin,yes,no,annotated_family_member_found,high,GJD2,ncbi_gene,A,142502362,GJD2,gap junction protein delta 2,2,0,"GJD*[Gene Symbol] AND ""Ascaphus truei""[Organism]"
+Bombina bombina,connexin,yes,no,annotated_family_member_found,high,GJA10,ncbi_gene,A,128657654,GJA10,gap junction protein alpha 10,4,0,"GJA*[Gene Symbol] AND ""Bombina bombina""[Organism]"
+Bombina variegata,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Boulenophrys sangzhiensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Bufo bufo,connexin,yes,no,annotated_family_member_found,high,GJB1,ncbi_gene,A,120977104,GJB1,gap junction protein beta 1,3,0,"GJB*[Gene Symbol] AND ""Bufo bufo""[Organism]"
+Bufo gargarizans,connexin,yes,no,annotated_family_member_found,high,GJA10,ncbi_gene,A,122935375,GJA10,gap junction protein alpha 10,10,0,"GJA*[Gene Symbol] AND ""Bufo gargarizans""[Organism]"
+Bufotes viridis,connexin,no,yes,related_or_family_like_entry_found,medium,gap junction,uniprot,B,A0ACM8I3A1,,Gap junction beta-6 protein,0,5,"organism_name:""Bufotes viridis"" AND (protein_name:""gap junction"" OR cc_function:""gap junction"")"
+Crinia signifera,connexin,yes,no,annotated_family_member_found,high,GJE1,ncbi_gene,A,146062890,GJE1,gap junction protein epsilon 1,1,0,"GJE*[Gene Symbol] AND ""Crinia signifera""[Organism]"
+Dendropsophus ebraccatus,connexin,yes,no,annotated_family_member_found,high,GJA1,ncbi_gene,A,138795600,GJA1,gap junction protein alpha 1,15,0,"GJA*[Gene Symbol] AND ""Dendropsophus ebraccatus""[Organism]"
+Desmognathus fuscus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Discoglossus pictus,connexin,no,yes,related_or_family_like_entry_found,medium,gap junction,ncbi_protein,B,KAM4709316.1,gap,gap junction beta-2 protein-like isoform 1-T2 [Discoglossus pictus],0,0,"""gap junction""[Title] AND ""Discoglossus pictus""[Organism]"

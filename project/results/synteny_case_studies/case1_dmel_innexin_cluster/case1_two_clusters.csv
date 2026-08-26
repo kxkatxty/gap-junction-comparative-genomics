@@ -1,0 +1,3 @@
+cluster_id,cluster_label,chrom,innexin_genes,shared_flanking,unique_flanking,note
+proximal_X,Proximal X ~6.97–7.00 Mb,NC_004354.4,ogre · Inx7 · Inx2,25,0,Tandem cluster; SynVoy Case 1 proximal blocks share all flanks
+distal_X,Distal X ~20.76–20.93 Mb,NC_004354.4,shakB,27,0,"shakB locus; Inx3 is annotated on 3R (NT_033777.3), not this X cluster"

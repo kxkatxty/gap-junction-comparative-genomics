@@ -1,0 +1,16 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Mnemiopsis leidyi,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Mnemiopsis leidyi,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Mnemiopsis leidyi,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Trichoplax adhaerens,innexin,no,yes,related_or_family_like_entry_found,medium,expressed hypothetical protein,ncbi_gene,B,6754839,TRIADDRAFT_63996,expressed hypothetical protein,0,6,"""gap junction""[All Fields] AND ""Trichoplax adhaerens""[Organism]"
+Trichoplax adhaerens,connexin,no,yes,related_or_family_like_entry_found,medium,expressed hypothetical protein,ncbi_gene,B,6754839,TRIADDRAFT_63996,expressed hypothetical protein,1,6,"""gap junction""[All Fields] AND ""Trichoplax adhaerens""[Organism]"
+Trichoplax adhaerens,pannexin,no,yes,related_or_family_like_entry_found,medium,expressed hypothetical protein,ncbi_gene,B,6754839,TRIADDRAFT_63996,expressed hypothetical protein,0,6,"""gap junction""[All Fields] AND ""Trichoplax adhaerens""[Organism]"
+Hoilungia hongkongensis,innexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Hoilungia hongkongensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Hoilungia hongkongensis,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Exaiptasia diaphana,innexin,no,yes,related_or_family_like_entry_found,medium,A-kinase anchor protein 9,ncbi_gene,B,110253982,LOC110253982,A-kinase anchor protein 9,0,10,"""gap junction""[All Fields] AND ""Exaiptasia diaphana""[Organism]"
+Exaiptasia diaphana,connexin,no,yes,related_or_family_like_entry_found,medium,A-kinase anchor protein 9,ncbi_gene,B,110253982,LOC110253982,A-kinase anchor protein 9,3,10,"""gap junction""[All Fields] AND ""Exaiptasia diaphana""[Organism]"
+Exaiptasia diaphana,pannexin,yes,no,annotated_family_member_found,high,pannexin,uniprot,A,A0A913YVM6,,LRRC8 pannexin-like TM region domain-containing protein,10,0,"organism_name:""Exaiptasia diaphana"" AND protein_name:pannexin"
+Hymenolepis microstoma,innexin,yes,no,annotated_family_member_found,high,innexin,ncbi_protein,A,CDS26018.2,innexin,innexin [Hymenolepis microstoma],0,0,"innexin[Title] AND ""Hymenolepis microstoma""[Organism]"
+Hymenolepis microstoma,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Hymenolepis microstoma,pannexin,no,no,no_related_entry_found,,,,,,,,0,0,

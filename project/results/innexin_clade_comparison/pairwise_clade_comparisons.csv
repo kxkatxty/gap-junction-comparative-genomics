@@ -1,0 +1,16 @@
+clade_a,clade_b,median_length_a,median_length_b,delta_median_length,median_identity_a,median_identity_b,n_a,n_b
+Annelida,Arthropoda (non-insect),366,353,13,38.8,58.5,12,41
+Annelida,Ctenophora,366,214,152,38.8,,12,2
+Annelida,Mollusca,366,372,-6,38.8,37.9,12,39
+Annelida,Other,366,183,183,38.8,52.9,12,1
+Annelida,Rotifera,366,370,-4,38.8,35.9,12,39
+Arthropoda (non-insect),Ctenophora,353,214,138,58.5,,41,2
+Arthropoda (non-insect),Mollusca,353,372,-19,58.5,37.9,41,39
+Arthropoda (non-insect),Other,353,183,170,58.5,52.9,41,1
+Arthropoda (non-insect),Rotifera,353,370,-17,58.5,35.9,41,39
+Ctenophora,Mollusca,214,372,-158,,37.9,2,39
+Ctenophora,Other,214,183,32,,52.9,2,1
+Ctenophora,Rotifera,214,370,-156,,35.9,2,39
+Mollusca,Other,372,183,189,37.9,52.9,39,1
+Mollusca,Rotifera,372,370,2,37.9,35.9,39,39
+Other,Rotifera,183,370,-187,52.9,35.9,1,39

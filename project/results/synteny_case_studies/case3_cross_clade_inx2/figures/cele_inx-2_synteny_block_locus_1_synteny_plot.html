@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SynVoy Synteny Plot</title>
+<style>
+:root {
+  --bg: #f8f9fb;
+  --surface: #ffffff;
+  --track-bg: #f3f5f8;
+  --track-border: #e8eaef;
+  --text-primary: #1a1d26;
+  --text-secondary: #555d6e;
+  --text-muted: #8c95a6;
+  --goi-color: #e31a1c;
+  --goi-dark: #8b0000;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+               'Helvetica Neue', Arial, sans-serif;
+  color: var(--text-primary);
+}
+.toolbar {
+  position: fixed; top: 12px; right: 16px; z-index: 100;
+  display: flex; gap: 6px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--track-border);
+  border-radius: 8px; padding: 4px 6px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.toolbar button {
+  width: 32px; height: 32px; border: none;
+  background: transparent; border-radius: 6px;
+  font-size: 18px; color: var(--text-secondary);
+  cursor: pointer; display: flex; align-items: center;
+  justify-content: center; transition: all 0.15s ease;
+}
+.toolbar button:hover {
+  background: var(--track-bg); color: var(--text-primary);
+}
+.plot-wrapper {
+  width: 100%; overflow: auto; padding: 16px;
+}
+.zoom-container {
+  transform-origin: left top;
+  transition: transform 0.15s ease;
+  display: inline-block;
+}
+.synteny-svg {
+  background: var(--surface);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.04);
+  display: block;
+}
+
+/* Track backgrounds */
+.track-bg {
+  fill: var(--track-bg);
+  stroke: var(--track-border);
+  stroke-width: 0.5;
+}
+
+/* Gene groups */
+.gene-group {
+  cursor: pointer;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.08));
+  transition: filter 0.15s ease, opacity 0.2s ease;
+}
+.gene-group:hover {
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.15)) brightness(1.06);
+}
+.gene-group .exon {
+  transition: filter 0.15s ease;
+}
+
+/* Intron lines */
+.intron-line {
+  stroke: #94a3b8;
+  stroke-width: 1.5;
+}
+
+/* Ribbons */
+.ribbon {
+  transition: opacity 0.2s ease;
+}
+.ribbon:hover {
+  opacity: 0.45 !important;
+}
+
+/* Labels */
+.gene-label {
+  fill: var(--text-secondary);
+  font-weight: 500;
+  pointer-events: none;
+}
+.gene-label.goi {
+  fill: var(--goi-dark);
+  font-weight: 700;
+}
+
+/* Track labels */
+.track-label {
+  fill: var(--text-primary);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* GOI status indicators */
+.goi-status {
+  font-size: 10px;
+  font-weight: 500;
+}
+.goi-status.absent { fill: #dc2626; }
+.goi-status.ambiguous { fill: #d97706; }
+
+/* Chromosome labels & breaks */
+.chrom-label {
+  fill: var(--text-muted);
+  font-size: 10px;
+  font-weight: 500;
+}
+.chrom-break-line {
+  stroke: #94a3b8;
+  stroke-width: 1.5;
+  stroke-dasharray: 5,4;
+}
+.break-label {
+  fill: var(--text-muted);
+  font-size: 9px;
+  font-weight: 600;
+}
+
+/* Scale bar */
+.scale-bar-line {
+  stroke: #6b7280;
+  stroke-width: 2;
+}
+.scale-bar-text {
+  fill: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Title */
+.plot-title {
+  fill: var(--text-primary);
+  font-size: 18px;
+  font-weight: 700;
+}
+.plot-subtitle {
+  fill: var(--text-muted);
+  font-size: 11px;
+}
+
+/* Highlight states (click-to-highlight) */
+.gene-group.highlighted {
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2)) brightness(1.1) !important;
+  opacity: 1 !important;
+}
+.gene-group.dimmed {
+  opacity: 0.18 !important;
+  filter: saturate(0.3) !important;
+}
+.ribbon.highlighted {
+  opacity: 0.5 !important;
+}
+.ribbon.dimmed {
+  opacity: 0.03 !important;
+}
+
+/* GOI pulse animation */
+@keyframes goi-pulse {
+  0%, 100% { filter: drop-shadow(0 1px 2px rgba(0,0,0,0.08)); }
+  50% { filter: drop-shadow(0 0 8px rgba(227,26,28,0.4)) brightness(1.1); }
+}
+.gene-group[data-is-goi="true"] {
+  animation: goi-pulse 1.8s ease-in-out 3;
+}
+
+/* Tooltip */
+.tooltip {
+  position: fixed;
+  padding: 10px 14px;
+  background: rgba(26,29,38,0.95);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  color: #e8eaef;
+  font-size: 12px;
+  line-height: 1.6;
+  pointer-events: none;
+  z-index: 1000;
+  max-width: 360px;
+  display: none;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.tooltip .tt-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+.tooltip .tt-product {
+  font-style: italic;
+  color: #a5b4c8;
+  margin-bottom: 6px;
+}
+.tooltip .tt-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.tooltip .tt-label {
+  color: #8c95a6;
+  white-space: nowrap;
+}
+.tooltip .tt-value {
+  color: #e8eaef;
+  text-align: right;
+  font-weight: 500;
+}
+.tooltip .tt-goi {
+  color: #ff6b6b;
+  font-weight: 700;
+  margin-top: 6px;
+  padding-top: 5px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <button id="zoom-in" title="Zoom in">+</button>
+  <button id="zoom-out" title="Zoom out">−</button>
+  <button id="zoom-reset" title="Reset zoom">⟲</button>
+</div>
+<div class="plot-wrapper">
+<div class="zoom-container">
+<svg class="synteny-svg" width="1500" height="360"
+     xmlns="http://www.w3.org/2000/svg"
+     style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<defs>
+
+    <filter id="geneShadow" x="-4%" y="-15%" width="108%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-opacity="0.10" flood-color="#000"/>
+    </filter>
+    
+</defs>
+<rect x="784.8" y="58.0" width="243.0" height="92.0" class="track-bg" rx="6"/>
+<rect x="344.2" y="217.0" width="616.4" height="92.0" class="track-bg" rx="6"/>
+<rect x="980.6" y="217.0" width="405.3" height="92.0" class="track-bg" rx="6"/>
+<g class="ribbons">
+<path d="M1005.0,100.0 C1005.0,183.5 358.2,183.5 358.2,267.0 L366.9,267.0 C366.9,183.5 1013.8,183.5 1013.8,100.0 Z" fill="rgba(212,166,200,0.2)" stroke="rgba(212,166,200,0.36000000000000004)" stroke-width="0.5" class="ribbon" data-homology="gene-CELE_F08G12.5"/>
+<path d="M997.7,64.0 C997.7,183.5 369.4,183.5 369.4,303.0 L378.1,303.0 C378.1,183.5 1004.1,183.5 1004.1,64.0 Z" fill="rgba(73,152,148,0.2)" stroke="rgba(73,152,148,0.36000000000000004)" stroke-width="0.5" class="ribbon" data-homology="gene-CELE_F08G12.4"/>
+<path d="M968.5,64.0 C968.5,165.5 395.3,165.5 395.3,267.0 L417.1,267.0 C417.1,165.5 989.6,165.5 989.6,64.0 Z" fill="rgba(140,209,125,0.2)" stroke="rgba(140,209,125,0.36000000000000004)" stroke-width="0.5" class="ribbon" data-homology="gene-CELE_F08G12.1"/>
+<path d="M946.5,64.0 C946.5,165.5 480.6,165.5 480.6,267.0 L489.5,267.0 C489.5,165.5 956.1,165.5 956.1,64.0 Z" fill="rgba(134,188,182,0.2)" stroke="rgba(134,188,182,0.36000000000000004)" stroke-width="0.5" class="ribbon" data-homology="gene-CELE_F08G12.2"/>
+<path d="M930.8,100.0 C930.8,183.5 499.5,183.5 499.5,267.0 L508.1,267.0 C508.1,183.5 939.3,183.5 939.3,100.0 Z" fill="rgba(229,22,22,0.2)" stroke="rgba(229,22,22,0.36000000000000004)" stroke-width="0.5" class="ribbon" data-homology="GOI_inx-2"/>
+<path d="M883.5,64.0 C883.5,165.5 531.1,165.5 531.1,267.0 L545.8,267.0 C545.8,165.5 889.7,165.5 889.7,64.0 Z" fill="rgba(237,201,72,0.2)" stroke="rgba(237,201,72,0.36000000000000004)" stroke-width="0.5" class="ribbon" data-homology="gene-CELE_F38B2.4"/>
+<path d="M856.7,100.0 C856.7,183.5 553.6,183.5 553.6,267.0 L580.6,267.0 C580.6,183.5 882.2,183.5 882.2,100.0 Z" fill="rgba(118,183,178,0.2)" stroke="rgba(118,183,178,0.36000000000000004)" stroke-width="0.5" class="ribbon" data-homology="gene-CELE_F38B2.3"/>
+<path d="M838.5,64.0 C838.5,165.5 597.6,165.5 597.6,267.0 L601.6,267.0 C601.6,165.5 843.9,165.5 843.9,64.0 Z" fill="rgba(89,161,79,0.2)" stroke="rgba(89,161,79,0.36000000000000004)" stroke-width="0.5" class="ribbon" data-homology="gene-CELE_F38B2.2"/>
+<path d="M798.8,64.0 C798.8,165.5 669.1,165.5 669.1,267.0 L695.7,267.0 C695.7,165.5 822.5,165.5 822.5,64.0 Z" fill="rgba(78,121,167,0.2)" stroke="rgba(78,121,167,0.36000000000000004)" stroke-width="0.5" class="ribbon" data-homology="gene-CELE_F38B2.1"/>
+<path d="M798.8,64.0 C798.8,165.5 1245.5,165.5 1245.5,267.0 L1250.8,267.0 C1250.8,165.5 822.5,165.5 822.5,64.0 Z" fill="rgba(78,121,167,0.2)" stroke="rgba(78,121,167,0.36000000000000004)" stroke-width="0.5" class="ribbon" data-homology="gene-CELE_F38B2.1"/>
+<path d="M930.8,100.0 C930.8,183.5 1360.8,183.5 1360.8,267.0 L1371.8,267.0 C1371.8,183.5 939.3,183.5 939.3,100.0 Z" fill="rgba(229,22,22,0.1)" stroke="rgba(229,22,22,0.18000000000000002)" stroke-width="0.5" class="ribbon" data-homology="GOI_inx-2"/>
+</g>
+<g class="genes">
+<g class="gene-group" data-homology="gene-CELE_F38B2.3" data-track="0" data-tooltip='{&quot;name&quot;: &quot;F38B2.3&quot;, &quot;product&quot;: &quot;CUB domain-containing protein&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,281,715-11,286,346&quot;, &quot;strand&quot;: &quot;-&quot;, &quot;exons&quot;: 16, &quot;isHome&quot;: true}'>
+<line x1="856.7" y1="122.0" x2="882.2" y2="122.0" class="intron-line"/>
+<rect x="856.7" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="857.4" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="861.2" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="862.1" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="862.9" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="865.8" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="866.7" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="869.5" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="870.6" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="872.2" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="874.2" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="876.3" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="877.1" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="878.2" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="879.2" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="881.9" y="108.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F38B2.1" data-track="0" data-tooltip='{&quot;name&quot;: &quot;ifa-1&quot;, &quot;product&quot;: &quot;Intermediate filament protein ifa-1&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,271,181-11,275,498&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 11, &quot;isHome&quot;: true}'>
+<path d="M801.8,72.0 L818.3,72.0 L822.5,86.0 L818.3,100.0 L801.8,100.0 Q798.8,100.0 798.8,97.0 L798.8,75.0 Q798.8,72.0 801.8,72.0 Z" fill="#4e79a7" stroke="#2e4864" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F08G12.1" data-track="0" data-tooltip='{&quot;name&quot;: &quot;F08G12.1&quot;, &quot;product&quot;: &quot;Rab-like protein 6&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,302,052-11,305,873&quot;, &quot;strand&quot;: &quot;-&quot;, &quot;exons&quot;: 14, &quot;isHome&quot;: true}'>
+<path d="M968.5,86.0 L972.3,72.0 L986.6,72.0 Q989.6,72.0 989.6,75.0 L989.6,97.0 Q989.6,100.0 986.6,100.0 L972.3,100.0 Z" fill="#8cd17d" stroke="#547d4b" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F08G12.3" data-track="0" data-tooltip='{&quot;name&quot;: &quot;F08G12.3&quot;, &quot;product&quot;: &quot;RasGEF domain protein&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,300,256-11,302,111&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 5, &quot;isHome&quot;: true}'>
+<path d="M961.7,108.0 L967.0,108.0 L968.9,122.0 L967.0,136.0 L961.7,136.0 Q958.7,136.0 958.7,133.0 L958.7,111.0 Q958.7,108.0 961.7,108.0 Z" fill="#e15759" stroke="#873435" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F08G12.2" data-track="0" data-tooltip='{&quot;name&quot;: &quot;snrp-40.1&quot;, &quot;product&quot;: &quot;U5 small nuclear ribonucleoprotein 40 kDa protein&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,298,035-11,299,784&quot;, &quot;strand&quot;: &quot;-&quot;, &quot;exons&quot;: 5, &quot;isHome&quot;: true}'>
+<path d="M946.5,86.0 L948.2,72.0 L953.2,72.0 Q956.1,72.0 956.1,74.9 L956.1,97.1 Q956.1,100.0 953.2,100.0 L948.2,100.0 Z" fill="#86bcb6" stroke="#50706d" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F08G12.5" data-track="0" data-tooltip='{&quot;name&quot;: &quot;F08G12.5&quot;, &quot;product&quot;: &quot;RING-type domain-containing protein&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,308,688-11,310,285&quot;, &quot;strand&quot;: &quot;-&quot;, &quot;exons&quot;: 4, &quot;isHome&quot;: true}'>
+<path d="M1005.0,122.0 L1006.6,108.0 L1011.2,108.0 Q1013.8,108.0 1013.8,110.6 L1013.8,133.4 Q1013.8,136.0 1011.2,136.0 L1006.6,136.0 Z" fill="#d4a6c8" stroke="#7f6378" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="GOI_NC_003284.9_11295185" data-track="0" data-tooltip='{&quot;name&quot;: &quot;NC_003284.9_11295185&quot;, &quot;product&quot;: &quot;&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,295,185-11,296,729&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 0, &quot;isHome&quot;: true, &quot;goiTag&quot;: &quot;GOI&quot;}' data-is-goi="true">
+<path d="M933.3,108.0 L937.8,108.0 L939.3,122.0 L937.8,136.0 L933.3,136.0 Q930.8,136.0 930.8,133.5 L930.8,110.5 Q930.8,108.0 933.3,108.0 Z" fill="#e51616" stroke="#8b0000" stroke-width="2.2" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F08G12.4" data-track="0" data-tooltip='{&quot;name&quot;: &quot;vhl-1&quot;, &quot;product&quot;: &quot;von Hippel-Lindau tumor suppressor homolog&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,307,355-11,308,518&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 3, &quot;isHome&quot;: true}'>
+<path d="M999.6,72.0 L1002.9,72.0 L1004.1,86.0 L1002.9,100.0 L999.6,100.0 Q997.7,100.0 997.7,98.1 L997.7,73.9 Q997.7,72.0 999.6,72.0 Z" fill="#499894" stroke="#2b5b58" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F38B2.4" data-track="0" data-tooltip='{&quot;name&quot;: &quot;F38B2.4&quot;, &quot;product&quot;: &quot;Adenylate kinase isoenzyme 1&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,286,588-11,287,717&quot;, &quot;strand&quot;: &quot;-&quot;, &quot;exons&quot;: 5, &quot;isHome&quot;: true}'>
+<path d="M883.5,86.0 L884.6,72.0 L887.9,72.0 Q889.7,72.0 889.7,73.9 L889.7,98.1 Q889.7,100.0 887.9,100.0 L884.6,100.0 Z" fill="#edc948" stroke="#8e782b" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F38B2.2" data-track="0" data-tooltip='{&quot;name&quot;: &quot;F38B2.2&quot;, &quot;product&quot;: &quot;uncharacterized protein&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,278,400-11,279,376&quot;, &quot;strand&quot;: &quot;-&quot;, &quot;exons&quot;: 4, &quot;isHome&quot;: true}'>
+<path d="M838.5,86.0 L839.5,72.0 L842.3,72.0 Q843.9,72.0 843.9,73.6 L843.9,98.4 Q843.9,100.0 842.3,100.0 L839.5,100.0 Z" fill="#59a14f" stroke="#35602f" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F38B2.6" data-track="0" data-tooltip='{&quot;name&quot;: &quot;F38B2.6&quot;, &quot;product&quot;: &quot;Neuropeptide-Like Protein&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,280,614-11,281,248&quot;, &quot;strand&quot;: &quot;-&quot;, &quot;exons&quot;: 2, &quot;isHome&quot;: true}'>
+<path d="M850.4,86.0 L851.4,72.0 L853.2,72.0 Q854.4,72.0 854.4,73.2 L854.4,98.8 Q854.4,100.0 853.2,100.0 L851.4,100.0 Z" fill="#b07aa1" stroke="#694960" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_C03A3.6" data-track="0" data-tooltip='{&quot;name&quot;: &quot;C03A3.6&quot;, &quot;product&quot;: &quot;Unclassified non-coding RNA C03A3.6&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,272,305-11,272,478&quot;, &quot;strand&quot;: &quot;-&quot;, &quot;exons&quot;: 0, &quot;isHome&quot;: true}'>
+<path d="M803.5,122.0 L804.5,108.0 L806.3,108.0 Q807.5,108.0 807.5,109.2 L807.5,134.8 Q807.5,136.0 806.3,136.0 L804.5,136.0 Z" fill="#f28e2b" stroke="#915519" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F38B2.7" data-track="0" data-tooltip='{&quot;name&quot;: &quot;F38B2.7&quot;, &quot;product&quot;: &quot;Unclassified non-coding RNA F38B2.7&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,287,859-11,287,997&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 0, &quot;isHome&quot;: true}'>
+<path d="M890.1,108.0 L891.9,108.0 L892.9,122.0 L891.9,136.0 L890.1,136.0 Q888.9,136.0 888.9,134.8 L888.9,109.2 Q888.9,108.0 890.1,108.0 Z" fill="#ff9da7" stroke="#995e64" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F08G12.12" data-track="0" data-tooltip='{&quot;name&quot;: &quot;mir-787&quot;, &quot;product&quot;: &quot;pre-microRNA mir-787&quot;, &quot;coords&quot;: &quot;NC_003284.9:11,294,707-11,294,797&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 0, &quot;isHome&quot;: true}'>
+<path d="M927.6,72.0 L929.4,72.0 L930.4,86.0 L929.4,100.0 L927.6,100.0 Q926.4,100.0 926.4,98.8 L926.4,73.2 Q926.4,72.0 927.6,72.0 Z" fill="#9c755f" stroke="#5d4639" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F38B2.3" data-track="1" data-tooltip='{&quot;name&quot;: &quot;CBG17378&quot;, &quot;product&quot;: &quot;Protein CBG17378&quot;, &quot;coords&quot;: &quot;NC_013491.2:5,316,402-5,321,303&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 13, &quot;isHome&quot;: false, &quot;homolog&quot;: &quot;CELE_F38B2.3&quot;, &quot;identity&quot;: 42.4, &quot;confidence&quot;: &quot;HIGH&quot;, &quot;evidence&quot;: &quot;flanking miniprot&quot;, &quot;model&quot;: &quot;complete&quot;, &quot;synteny&quot;: &quot;candidate region anchor&quot;, &quot;queryCov&quot;: 94.3}'>
+<line x1="553.6" y1="245.0" x2="580.6" y2="245.0" class="intron-line"/>
+<rect x="553.6" y="231.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="555.7" y="231.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="557.8" y="231.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="559.9" y="231.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="561.9" y="231.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="564.0" y="231.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="566.1" y="231.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="568.1" y="231.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="570.2" y="231.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="572.3" y="231.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="574.4" y="231.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="576.4" y="231.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+<rect x="578.5" y="231.0" width="2.0" height="28" rx="3" fill="#76b7b2" stroke="#466d6a" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F38B2.1" data-track="1" data-tooltip='{&quot;name&quot;: &quot;Cbr-ifa-1&quot;, &quot;product&quot;: &quot;Protein CBR-IFA-1&quot;, &quot;coords&quot;: &quot;NC_013491.2:5,337,411-5,342,232&quot;, &quot;strand&quot;: &quot;-&quot;, &quot;exons&quot;: 7, &quot;isHome&quot;: false, &quot;homolog&quot;: &quot;CELE_F38B2.1&quot;, &quot;identity&quot;: 93.4, &quot;confidence&quot;: &quot;HIGH&quot;, &quot;evidence&quot;: &quot;flanking miniprot&quot;, &quot;model&quot;: &quot;complete&quot;, &quot;synteny&quot;: &quot;candidate region anchor&quot;, &quot;queryCov&quot;: 100.0}'>
+<line x1="669.1" y1="245.0" x2="695.7" y2="245.0" class="intron-line"/>
+<rect x="669.1" y="231.0" width="2.5" height="28" rx="3" fill="#4e79a7" stroke="#2e4864" stroke-width="1" class="exon"/>
+<rect x="672.9" y="231.0" width="2.5" height="28" rx="3" fill="#4e79a7" stroke="#2e4864" stroke-width="1" class="exon"/>
+<rect x="676.7" y="231.0" width="2.5" height="28" rx="3" fill="#4e79a7" stroke="#2e4864" stroke-width="1" class="exon"/>
+<rect x="680.5" y="231.0" width="2.5" height="28" rx="3" fill="#4e79a7" stroke="#2e4864" stroke-width="1" class="exon"/>
+<rect x="684.3" y="231.0" width="2.5" height="28" rx="3" fill="#4e79a7" stroke="#2e4864" stroke-width="1" class="exon"/>
+<rect x="688.1" y="231.0" width="2.5" height="28" rx="3" fill="#4e79a7" stroke="#2e4864" stroke-width="1" class="exon"/>
+<rect x="691.9" y="231.0" width="2.5" height="28" rx="3" fill="#4e79a7" stroke="#2e4864" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F08G12.1" data-track="1" data-tooltip='{&quot;name&quot;: &quot;CBG17372&quot;, &quot;product&quot;: &quot;Protein CBG17372&quot;, &quot;coords&quot;: &quot;NC_013491.2:5,287,607-5,291,579&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 12, &quot;isHome&quot;: false, &quot;homolog&quot;: &quot;CELE_F08G12.1&quot;, &quot;identity&quot;: 77.4, &quot;confidence&quot;: &quot;HIGH&quot;, &quot;evidence&quot;: &quot;flanking miniprot&quot;, &quot;model&quot;: &quot;complete&quot;, &quot;synteny&quot;: &quot;candidate region anchor&quot;, &quot;queryCov&quot;: 100.0}'>
+<path d="M398.3,231.0 L413.2,231.0 L417.1,245.0 L413.2,259.0 L398.3,259.0 Q395.3,259.0 395.3,256.0 L395.3,234.0 Q395.3,231.0 398.3,231.0 Z" fill="#8cd17d" stroke="#547d4b" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F38B2.4" data-track="1" data-tooltip='{&quot;name&quot;: &quot;CBG17377&quot;, &quot;product&quot;: &quot;Protein CBG17377&quot;, &quot;coords&quot;: &quot;NC_013491.2:5,312,306-5,314,977&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 5, &quot;isHome&quot;: false, &quot;homolog&quot;: &quot;CELE_F38B2.4&quot;, &quot;identity&quot;: 95.2, &quot;confidence&quot;: &quot;HIGH&quot;, &quot;evidence&quot;: &quot;flanking miniprot&quot;, &quot;model&quot;: &quot;complete&quot;, &quot;synteny&quot;: &quot;candidate region anchor&quot;, &quot;queryCov&quot;: 100.0}'>
+<path d="M534.1,231.0 L543.2,231.0 L545.8,245.0 L543.2,259.0 L534.1,259.0 Q531.1,259.0 531.1,256.0 L531.1,234.0 Q531.1,231.0 534.1,231.0 Z" fill="#edc948" stroke="#8e782b" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="GOI_inx-2" data-track="1" data-tooltip='{&quot;name&quot;: &quot;Cbr-inx-14&quot;, &quot;product&quot;: &quot;Protein CBR-INX-14&quot;, &quot;coords&quot;: &quot;NC_013489.2:7,088,805-7,090,814&quot;, &quot;strand&quot;: &quot;-&quot;, &quot;exons&quot;: 4, &quot;isHome&quot;: false, &quot;homolog&quot;: &quot;inx-2&quot;, &quot;identity&quot;: 40.7, &quot;confidence&quot;: &quot;LOW&quot;, &quot;goiClass&quot;: &quot;ambiguous goi family member&quot;, &quot;evidence&quot;: &quot;fallback hit span&quot;, &quot;model&quot;: &quot;complete&quot;, &quot;synteny&quot;: &quot;weak flanking support&quot;, &quot;queryCov&quot;: 85.4, &quot;goiTag&quot;: &quot;GOI-like / ambiguous&quot;}' data-is-goi="true">
+<path d="M1360.8,245.0 L1362.8,231.0 L1368.8,231.0 Q1371.8,231.0 1371.8,234.0 L1371.8,256.0 Q1371.8,259.0 1368.8,259.0 L1362.8,259.0 Z" fill="rgba(229,22,22,0.32)" stroke="#8b0000" stroke-width="1.5" class="exon" stroke-dasharray="6,3"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F08G12.2" data-track="1" data-tooltip='{&quot;name&quot;: &quot;CBG17375&quot;, &quot;product&quot;: &quot;Protein CBG17375&quot;, &quot;coords&quot;: &quot;NC_013491.2:5,303,118-5,304,741&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 4, &quot;isHome&quot;: false, &quot;homolog&quot;: &quot;CELE_F08G12.2&quot;, &quot;identity&quot;: 83.1, &quot;confidence&quot;: &quot;HIGH&quot;, &quot;evidence&quot;: &quot;flanking miniprot&quot;, &quot;model&quot;: &quot;complete&quot;, &quot;synteny&quot;: &quot;candidate region anchor&quot;, &quot;queryCov&quot;: 100.0}'>
+<path d="M483.3,231.0 L487.9,231.0 L489.5,245.0 L487.9,259.0 L483.3,259.0 Q480.6,259.0 480.6,256.3 L480.6,233.7 Q480.6,231.0 483.3,231.0 Z" fill="#86bcb6" stroke="#50706d" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F08G12.5" data-track="1" data-tooltip='{&quot;name&quot;: &quot;CBG17369&quot;, &quot;product&quot;: &quot;Protein CBG17369&quot;, &quot;coords&quot;: &quot;NC_013491.2:5,280,853-5,282,431&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 4, &quot;isHome&quot;: false, &quot;homolog&quot;: &quot;CELE_F08G12.5&quot;, &quot;identity&quot;: 65.6, &quot;confidence&quot;: &quot;HIGH&quot;, &quot;evidence&quot;: &quot;flanking miniprot&quot;, &quot;model&quot;: &quot;complete&quot;, &quot;synteny&quot;: &quot;candidate region anchor&quot;, &quot;queryCov&quot;: 100.0}'>
+<path d="M360.8,231.0 L365.3,231.0 L366.9,245.0 L365.3,259.0 L360.8,259.0 Q358.2,259.0 358.2,256.4 L358.2,233.6 Q358.2,231.0 360.8,231.0 Z" fill="#d4a6c8" stroke="#7f6378" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F08G12.4" data-track="1" data-tooltip='{&quot;name&quot;: &quot;Cbr-vhl-1&quot;, &quot;product&quot;: &quot;Protein CBR-VHL-1&quot;, &quot;coords&quot;: &quot;NC_013491.2:5,282,900-5,284,472&quot;, &quot;strand&quot;: &quot;-&quot;, &quot;exons&quot;: 3, &quot;isHome&quot;: false, &quot;homolog&quot;: &quot;CELE_F08G12.4&quot;, &quot;identity&quot;: 63.2, &quot;confidence&quot;: &quot;HIGH&quot;, &quot;evidence&quot;: &quot;flanking miniprot&quot;, &quot;model&quot;: &quot;complete&quot;, &quot;synteny&quot;: &quot;candidate region anchor&quot;, &quot;queryCov&quot;: 100.0}'>
+<path d="M369.4,281.0 L371.0,267.0 L375.5,267.0 Q378.1,267.0 378.1,269.6 L378.1,292.4 Q378.1,295.0 375.5,295.0 L371.0,295.0 Z" fill="#499894" stroke="#2b5b58" stroke-width="1" class="exon"/>
+</g>
+<g class="gene-group" data-homology="GOI_inx-2" data-track="1" data-tooltip='{&quot;name&quot;: &quot;Cbr-inx-2&quot;, &quot;product&quot;: &quot;Protein CBR-INX-2&quot;, &quot;coords&quot;: &quot;NC_013491.2:5,306,551-5,308,113&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 3, &quot;isHome&quot;: false, &quot;homolog&quot;: &quot;inx-2&quot;, &quot;identity&quot;: 84.0, &quot;confidence&quot;: &quot;HIGH&quot;, &quot;goiClass&quot;: &quot;confident goi&quot;, &quot;evidence&quot;: &quot;exon annotation&quot;, &quot;model&quot;: &quot;complete&quot;, &quot;synteny&quot;: &quot;strong flanking support&quot;, &quot;queryCov&quot;: 100.0, &quot;goiTag&quot;: &quot;GOI&quot;}' data-is-goi="true">
+<path d="M502.0,231.0 L506.5,231.0 L508.1,245.0 L506.5,259.0 L502.0,259.0 Q499.5,259.0 499.5,256.4 L499.5,233.6 Q499.5,231.0 502.0,231.0 Z" fill="#e51616" stroke="#8b0000" stroke-width="2.2" class="exon"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F38B2.1" data-track="1" data-tooltip='{&quot;name&quot;: &quot;Cbr-let-75&quot;, &quot;product&quot;: &quot;Protein CBR-LET-75&quot;, &quot;coords&quot;: &quot;NC_013489.2:6,892,124-6,893,092&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 0, &quot;isHome&quot;: false, &quot;homolog&quot;: &quot;CELE_F38B2.1&quot;, &quot;identity&quot;: 16.5, &quot;confidence&quot;: &quot;LOW&quot;, &quot;evidence&quot;: &quot;flanking hit span&quot;, &quot;model&quot;: &quot;partial&quot;, &quot;synteny&quot;: &quot;candidate region anchor&quot;, &quot;queryCov&quot;: 53.7}'>
+<path d="M1247.1,231.0 L1249.8,231.0 L1250.8,245.0 L1249.8,259.0 L1247.1,259.0 Q1245.5,259.0 1245.5,257.4 L1245.5,232.6 Q1245.5,231.0 1247.1,231.0 Z" fill="#4e79a7" stroke="#2e4864" stroke-width="1" class="exon" stroke-dasharray="2,2"/>
+</g>
+<g class="gene-group" data-homology="gene-CELE_F38B2.2" data-track="1" data-tooltip='{&quot;name&quot;: &quot;CBG17380&quot;, &quot;product&quot;: &quot;Protein CBG17380&quot;, &quot;coords&quot;: &quot;NC_013491.2:5,324,543-5,324,968&quot;, &quot;strand&quot;: &quot;+&quot;, &quot;exons&quot;: 2, &quot;isHome&quot;: false, &quot;homolog&quot;: &quot;CELE_F38B2.2&quot;, &quot;identity&quot;: 53.3, &quot;confidence&quot;: &quot;LOW&quot;, &quot;evidence&quot;: &quot;flanking hit span&quot;, &quot;model&quot;: &quot;complete&quot;, &quot;synteny&quot;: &quot;candidate region anchor&quot;, &quot;queryCov&quot;: 71.3}'>
+<path d="M598.8,231.0 L600.6,231.0 L601.6,245.0 L600.6,259.0 L598.8,259.0 Q597.6,259.0 597.6,257.8 L597.6,232.2 Q597.6,231.0 598.8,231.0 Z" fill="#59a14f" stroke="#35602f" stroke-width="1" class="exon" stroke-dasharray="2,2"/>
+</g>
+</g>
+<g class="gene-labels">
+<text x="935.0" y="104.0" transform="rotate(-30 935.0 104.0)" class="gene-label goi" font-size="11">★ NC_003284.9_11295185</text>
+<text x="810.7" y="68.0" transform="rotate(-30 810.7 68.0)" class="gene-label" font-size="11">ifa-1</text>
+<text x="1000.9" y="68.0" transform="rotate(-30 1000.9 68.0)" class="gene-label" font-size="11">vhl-1</text>
+<text x="503.8" y="227.0" transform="rotate(-30 503.8 227.0)" class="gene-label goi" font-size="12">★ GOI inx-2</text>
+<text x="1366.3" y="227.0" transform="rotate(-30 1366.3 227.0)" class="gene-label goi" font-size="12">★ ~ GOI inx-2</text>
+<text x="373.8" y="263.0" transform="rotate(-30 373.8 263.0)" class="gene-label" font-size="12">Cbr-vhl-1</text>
+</g>
+<g class="track-labels">
+<text x="264" y="104.0" class="track-label" text-anchor="end" dominant-baseline="central">Home genome (NC_003284.9)</text>
+<text x="264" y="263.0" class="track-label" text-anchor="end" dominant-baseline="central">Caenorhabditis briggsae (GCF_000004555.2)</text>
+</g>
+<line x1="970.6" y1="217.0" x2="970.6" y2="309.0" class="chrom-break-line"/>
+<text x="1305.8" y="263.0" text-anchor="middle" dominant-baseline="central" class="break-label">// 196 kb</text>
+<text x="526.9" y="319.0" text-anchor="middle" class="chrom-label">NC_013491.2</text>
+<text x="1308.7" y="319.0" text-anchor="middle" class="chrom-label">NC_013489.2</text>
+<line x1="1355.9" y1="315.0" x2="1410.9" y2="315.0" class="scale-bar-line"/>
+<line x1="1355.9" y1="311.0" x2="1355.9" y2="319.0" class="scale-bar-line"/>
+<line x1="1410.9" y1="311.0" x2="1410.9" y2="319.0" class="scale-bar-line"/>
+<text x="1383.4" y="333.0" text-anchor="middle" class="scale-bar-text">10 kb</text>
+<text x="750.0" y="28" text-anchor="middle" class="plot-title">SynVoy Synteny Plot</text>
+<text x="750.0" y="48" text-anchor="middle" class="plot-subtitle">Genes coloured by homology group · ★ = resolved GOI · dashed = ambiguous · exon blocks + intron lines · ribbons connect orthologs · // = compressed gaps · 1 GOI-absent track(s) hidden</text>
+</svg>
+</div>
+</div>
+<div id="tooltip" class="tooltip"></div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const tooltip = document.getElementById('tooltip');
+  const svg = document.querySelector('.synteny-svg');
+  if (!svg) return;
+
+  // ---- Zoom controls ----
+  let zoom = 1;
+  const container = document.querySelector('.zoom-container');
+  const zoomIn = document.getElementById('zoom-in');
+  const zoomOut = document.getElementById('zoom-out');
+  const zoomReset = document.getElementById('zoom-reset');
+
+  function applyZoom() {
+    container.style.transform = 'scale(' + zoom + ')';
+  }
+  if (zoomIn) zoomIn.addEventListener('click', () => { zoom = Math.min(5, zoom * 1.25); applyZoom(); });
+  if (zoomOut) zoomOut.addEventListener('click', () => { zoom = Math.max(0.2, zoom / 1.25); applyZoom(); });
+  if (zoomReset) zoomReset.addEventListener('click', () => { zoom = 1; applyZoom(); });
+
+  // ---- Hover tooltips ----
+  svg.querySelectorAll('.gene-group').forEach(el => {
+    el.addEventListener('mouseenter', (e) => {
+      try {
+        const data = JSON.parse(el.dataset.tooltip);
+        let html = '<div class="tt-name">' + esc(data.name) + '</div>';
+        if (data.product) html += '<div class="tt-product">' + esc(data.product) + '</div>';
+        if (data.coords) html += row('Coords', data.coords);
+        if (data.strand) html += row('Strand', data.strand);
+        if (data.exons) html += row('Exons', data.exons);
+        if (data.homolog) html += row('Homolog', data.homolog);
+        if (data.identity !== undefined) html += row('Identity', data.identity + '%');
+        if (data.confidence) html += row('Confidence', data.confidence);
+        if (data.goiClass) html += row('GOI class', data.goiClass);
+        if (data.evidence) html += row('Evidence', data.evidence);
+        if (data.model) html += row('Model', data.model);
+        if (data.synteny) html += row('Synteny', data.synteny);
+        if (data.queryCov !== undefined) html += row('Query cov', data.queryCov + '%');
+        if (data.goiTag) html += '<div class="tt-goi">' + esc(data.goiTag) + '</div>';
+        tooltip.innerHTML = html;
+        tooltip.style.display = 'block';
+        positionTooltip(e);
+      } catch(err) {}
+    });
+    el.addEventListener('mousemove', positionTooltip);
+    el.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
+  });
+
+  function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+  function row(label, value) {
+    return '<div class="tt-row"><span class="tt-label">' + label +
+           '</span><span class="tt-value">' + esc(String(value)) + '</span></div>';
+  }
+  function positionTooltip(e) {
+    let x = e.clientX + 16, y = e.clientY + 16;
+    const r = tooltip.getBoundingClientRect();
+    if (x + r.width > window.innerWidth - 8) x = e.clientX - r.width - 16;
+    if (y + r.height > window.innerHeight - 8) y = e.clientY - r.height - 16;
+    tooltip.style.left = Math.max(4, x) + 'px';
+    tooltip.style.top = Math.max(4, y) + 'px';
+  }
+
+  // ---- Click-to-highlight orthologs ----
+  let selectedHom = null;
+  svg.querySelectorAll('.gene-group').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const hom = el.dataset.homology;
+      if (selectedHom === hom) { clearHighlight(); return; }
+      selectedHom = hom;
+      highlightHomology(hom);
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.gene-group')) clearHighlight();
+  });
+
+  function highlightHomology(homId) {
+    svg.querySelectorAll('.gene-group').forEach(g => {
+      if (g.dataset.homology === homId) {
+        g.classList.add('highlighted'); g.classList.remove('dimmed');
+      } else {
+        g.classList.add('dimmed'); g.classList.remove('highlighted');
+      }
+    });
+    svg.querySelectorAll('.ribbon').forEach(r => {
+      if (r.dataset.homology === homId) {
+        r.classList.add('highlighted'); r.classList.remove('dimmed');
+      } else {
+        r.classList.add('dimmed'); r.classList.remove('highlighted');
+      }
+    });
+  }
+
+  function clearHighlight() {
+    selectedHom = null;
+    svg.querySelectorAll('.highlighted, .dimmed').forEach(el => {
+      el.classList.remove('highlighted', 'dimmed');
+    });
+  }
+});
+</script>
+</body>
+</html>

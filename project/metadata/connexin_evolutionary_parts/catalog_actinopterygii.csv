@@ -1,0 +1,6 @@
+clade,organism,assembly_accession,assembly_level,assembly_source,connexin_category,connexin_term,connexin_evidence_level,connexin_source,assembly_priority_score,notes
+Actinopterygii,Bajacalifornia burragei,GCA_978802825.1,Complete Genome,GenBank,no_related_entry_found,,,,70,ray-finned fishes excluding tetrapods
+Actinopterygii,Epinephelus cyanopodus,GCA_058569155.1,Complete Genome,GenBank,no_related_entry_found,,,,70,ray-finned fishes excluding tetrapods
+Actinopterygii,Hemibarbus labeo,GCA_056632655.1,Complete Genome,GenBank,no_related_entry_found,,,,70,ray-finned fishes excluding tetrapods
+Actinopterygii,Hucho bleekeri,GCA_057318875.1,Complete Genome,GenBank,no_related_entry_found,,,,70,ray-finned fishes excluding tetrapods
+Actinopterygii,Parabramis pekinensis,GCA_057375095.1,Complete Genome,GenBank,no_related_entry_found,,,,70,ray-finned fishes excluding tetrapods

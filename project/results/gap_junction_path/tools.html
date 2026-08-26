@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tools &amp; parameters — gap-junction analyses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#12202a; --muted:#4d6570; --deep:#0a3a42; --sea:#0f766e; --ember:#c2410c;
+  --foam:#f4f7f5; --card:#fff; --line:rgba(18,32,42,.1);
+}
+* { box-sizing:border-box }
+body {
+  margin:0; color:var(--ink); font-family:Sora,sans-serif; line-height:1.6;
+  background:linear-gradient(180deg,#e8f1ee 0%, var(--foam) 40%, #eef3f1 100%);
+}
+a { color:var(--sea) }
+.hero {
+  padding:clamp(1.4rem,4vw,2.4rem); color:#f7fffb;
+  background:linear-gradient(118deg, rgba(10,58,66,.94) 0%, rgba(15,118,110,.72) 55%, rgba(194,65,12,.55) 100%);
+}
+.hero p { font-family:Fraunces,serif; font-size:clamp(1.8rem,4vw,2.6rem); margin:0 0 .4rem; letter-spacing:-.03em }
+.hero span { opacity:.9; font-size:.95rem }
+.wrap { width:min(780px, calc(100% - 2rem)); margin:0 auto; padding:1.6rem 0 3.5rem }
+h2 { font-family:Fraunces,serif; font-size:1.15rem; margin:1.7rem 0 .55rem }
+ul { margin:0; padding:0; list-style:none }
+li {
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:.75rem .95rem; margin:0 0 .45rem; font-size:.9rem;
+}
+li b { color:var(--deep) }
+li span { display:block; color:var(--muted); font-size:.82rem; margin-top:.2rem }
+code {
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:.8em;
+  background:rgba(15,118,110,.08); padding:.08em .28em; border-radius:4px;
+}
+.params {
+  margin-top:.45rem; padding:.45rem .55rem; border-left:3px solid rgba(15,118,110,.35);
+  background:rgba(15,118,110,.04); border-radius:0 8px 8px 0; font-size:.8rem; color:var(--ink);
+  line-height:1.55;
+}
+.back { display:inline-block; margin:.4rem 0 0; color:#f7fffb; font-weight:600; text-decoration:none }
+.note { color:var(--muted); font-size:.85rem; margin-top:1.4rem }
+</style>
+</head>
+<body>
+<header class="hero">
+  <p>Tools &amp; parameters</p>
+  <span>Software and settings used for the diagrams and analyses on this path.</span>
+  <div><a class="back" href="index.html">← back to the story</a></div>
+</header>
+<main class="wrap">
+
+  <h2>Finding genes in genomes</h2>
+  <ul>
+    <li>
+      <b>miniprot</b>
+      <span>Coarse location of innexin/connexin-like loci on genome assemblies (discovery + curator search).</span>
+      <div class="params">
+        <strong>Discovery</strong> (<code>discover_innexins.py</code>): <code>-j 2</code> (insect/vertebrate splice model);
+        score floor ≥ 30; HSP filters ≥ 60 bp, ≥ 20 aa query, ≥ 18% identity (short hits ≥ 35 aa and ≥ 22%);
+        locus clustering gap ≤ 8 kb with ±2 kb flanks; large genomes (&gt;4 GB) run per-contig with
+        contig ≥ 1 Mb and up to 3 parallel jobs.<br>
+        <strong>Curator probe</strong>: <code>--outs=0.5</code>, 4 threads; keep models with identity ≥ 0.20
+        and length ≥ 280 aa / ≥ 4 Cys (present), ≥ 180 aa (fragmentary), or ≥ 100 aa (weak).
+      </div>
+    </li>
+    <li>
+      <b>samtools</b>
+      <span>FAI indexing and region extraction for translating miniprot models.</span>
+      <div class="params"><code>samtools faidx</code> on genome FASTAs; region pull for CDS spans before Biopython translation.</div>
+    </li>
+    <li>
+      <b>MMseqs2</b> — candidate typing
+      <span>Protein search of candidate ORFs against trusted reference innexins/connexins.</span>
+      <div class="params">
+        <code>easy-search</code>, <code>--search-type 1</code> (protein), <code>-e 1e-5</code>,
+        <code>-s 5.7</code>, format <code>query,target,pident,qcov,bits</code>.
+        Keep ranks with reference identity ≥ 15%; protein length window ~150–750 aa (innexin) / similar for connexin.
+      </div>
+    </li>
+  </ul>
+
+  <h2>Alignment, trees, similarity</h2>
+  <ul>
+    <li>
+      <b>MAFFT</b>
+      <span>Multiple sequence alignment of phylogeny input FASTAs.</span>
+      <div class="params">Default mode <code>mafft --auto</code> (optional <code>linsi</code> / <code>ginsi</code> / <code>fftns</code>).</div>
+    </li>
+    <li>
+      <b>IQ-TREE 2</b>
+      <span>Phylogenetic trees for the innexin and connexin stories.</span>
+      <div class="params">
+        <code>-m MFP</code> (ModelFinder Plus); <code>-bb 1000</code> ultrafast bootstrap;
+        <code>-nt 2</code> threads (default in runner).
+      </div>
+    </li>
+    <li>
+      <b>MMseqs2</b> — all-vs-all &amp; clustering
+      <span>Within-family identity heatmaps and threshold sweeps (innexin / connexin similarity pages).</span>
+      <div class="params">
+        <strong>Search:</strong> <code>mmseqs search</code> all-vs-all, <code>-s 7.5</code>, <code>-e 1e-3</code>,
+        <code>--max-seqs 1000</code> (innexin) / <code>800</code> (connexin).<br>
+        <strong>Cluster sweep:</strong> <code>--min-seq-id</code>
+        innexin <code>0.20–0.70</code> (step 0.10); connexin <code>0.30–0.80</code>;
+        coverage <code>-c 0.8</code>, <code>--cov-mode 0</code>.
+      </div>
+    </li>
+    <li>
+      <b>MMseqs2</b> — cross-family &amp; discovery typing
+      <span>Innexin↔connexin homology check; discovery loci typed against reference connexins.</span>
+      <div class="params">
+        Cross-family: <code>easy-search</code> innexin query → connexin target, <code>-e 10</code>,
+        <code>-s 7.5</code>, <code>--max-seqs 5</code>. Homologous call =
+        <strong>e-value ≤ 1e-3 and alignment length ≥ 80 aa</strong> (raw short fragments are not counted as homology).<br>
+        Discovery typing: <code>easy-search</code>, <code>-e 1e-3</code>, <code>--max-seqs 5</code>.
+      </div>
+    </li>
+    <li>
+      <b>NumPy embeddings</b>
+      <span>3-mer composition + SVD and amino-acid composition cosines (family contrast pages).</span>
+      <div class="params">
+        k-mers: <code>k=3</code>, vocabulary capped at top 800 kmers, truncated SVD to
+        <code>n_comp=20</code> (similarity pages) or <code>8</code> (direct innexin×connexin PCA);
+        vectors L2-normalised; mean pairwise cosine sampled (seed 7, ≤ 8000 pairs).
+      </div>
+    </li>
+  </ul>
+
+  <h2>Synteny and gene architecture</h2>
+  <ul>
+    <li>
+      <b>SynVoy</b>
+      <span>Synteny-guided neighbourhood comparisons around selected innexin and connexin loci.</span>
+      <div class="params">
+        Easy mode: <code>--n_flanking_genes 5</code>, <code>--adaptive_max_regions 3</code>,
+        <code>--enable_smith_waterman false</code>, <code>--exon_level_search false</code>,
+        <code>--auto_params false</code>, <code>--multi_profile false</code>,
+        <code>--max_genomes 3</code> (local queue). Reference insect runs also use
+        <code>--mmseqs_split_memory_limit 1G</code>.
+      </div>
+    </li>
+    <li>
+      <b>NCBI GFF microsynteny</b>
+      <span>Exon counts, gene span, and cross-species neighbour sharing (GJA1 / GJA4 / innexin panels).</span>
+      <div class="params">
+        Neighbour plots: ±180 kb around the gene of interest, ≤ 22 genes kept in the window.
+        Neighbour conservation tiers from shared named genes across species (high = ≥3 shared in all species).
+      </div>
+    </li>
+    <li>
+      <b>UniProt / Pfam</b>
+      <span>Reference protein sequences and domain labels (e.g. Connexin PF00029).</span>
+    </li>
+  </ul>
+
+  <h2>Family sequence markers</h2>
+  <ul>
+    <li>
+      <b>Extracellular cysteine motif</b>
+      <span>Conserved Cys pattern in the two extracellular loops (alignment filter).</span>
+      <div class="params">
+        Innexin / pannexin: 2 Cys per loop → 4 per monomer.<br>
+        Connexin: 3 Cys per loop → 6 per monomer.<br>
+        Filters that require ≥4 Cys are a product-cleanliness check. Whole-protein Cys totals are often higher.
+      </div>
+    </li>
+    <li>
+      <b>Hemichannel stoichiometry (literature)</b>
+      <span>Not measured in this panel — labels used when reading papers.</span>
+      <div class="params">
+        Innexon = octamer (8). Connexon = hexamer (6). Pannexon = heptamer (7; non-docking).
+      </div>
+    </li>
+    <li>
+      <b>Coding-region introns / splicing</b>
+      <span>From reference GFF gene models (<code>exon_structures/</code>).</span>
+      <div class="params">
+        Connexin: ORF usually uninterrupted; models often ~2 exons (5′ UTR + coding exon). Panel median = 2.<br>
+        Innexin: coding-region introns common (panel median ~5 exons); one locus can yield several isoforms (e.g. <em>shakB</em>).
+        GFF exon counts include UTR exons where annotated.
+      </div>
+    </li>
+    <li>
+      <b>Annotation issues in the plots</b>
+      <span>See also <a href="index.html#artifacts">chapter 4</a> on the story path.</span>
+      <div class="params">
+        Single-exon innexin medians (Ctenophora / non-insect Arthropoda): often TSA / ab initio ORFs without resolved introns.<br>
+        δ GJD “~22 exons”: GFF fusion of a compact connexin ORF with intron-rich flanks (DLGAP3 / SMIM12 near GJA4).<br>
+        Empty GJA1 flanks in <em>X. laevis</em>: short scaffold / assembly gap, not a gene island.<br>
+        Insect Inx2 (SF4) ≠ nematode inx-2 (SF3): same name, different clades — use tree-guided SF3 contrasts.
+      </div>
+    </li>
+    <li>
+      <b>Early chordate bottleneck (literature)</b>
+      <span>Welzel &amp; Schuster 2022 (<em>eLife</em>) — gene-content framing, not a panel parameter.</span>
+      <div class="params">
+        Lancelets lack connexins and keep one innexin with an extracellular N-X-S/T motif (pannexin-lineage marker).
+        That bottleneck is the usual explanation for later connexin diversification.
+        See <a href="../../../pannexin/project/results/pannexin_path/index.html">pannexin path</a>.
+      </div>
+    </li>
+  </ul>
+
+  <h2>Figures and pages</h2>
+  <ul>
+    <li><b>Python · Matplotlib</b><span>Custom diagrams on this path. Agg backend for batch export.</span></li>
+    <li><b>pandas · Biopython</b><span>Tables, FASTA I/O, and sequence translation from miniprot CDS models.</span></li>
+  </ul>
+
+  <p class="note">Data sources: NCBI genome assemblies and UniProt reference FASTAs. Reported % identity values are MMseqs2 pairwise identities, not BLAST.</p>
+  <p class="note"><a href="index.html">← story path</a></p>
+</main>
+</body>
+</html>

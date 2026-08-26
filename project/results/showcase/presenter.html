@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Key findings</title>
+<style>
+:root{--blue:#2E86AB;--orange:#E67E22;--green:#27AE60;--ink:#2C3E50;--muted:#5d6d7e;--bg:#f4f7fb;--card:#fff}
+*{box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;margin:0;background:var(--bg);color:var(--ink);line-height:1.55}
+.layout{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+nav{position:sticky;top:0;height:100vh;overflow:auto;padding:1.25rem 1rem;background:#1a2836;color:#ecf0f1;border-right:1px solid #2c3e50}
+nav h2{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:#95a5a6;margin:0 0 .75rem}
+nav a{display:block;color:#ecf0f1;text-decoration:none;padding:.35rem .5rem;border-radius:6px;font-size:.88rem;margin-bottom:.15rem}
+nav a:hover{background:rgba(255,255,255,.08)}
+nav .switch{margin-top:1.5rem;padding-top:1rem;border-top:1px solid #34495e;font-size:.8rem;color:#95a5a6}
+nav .switch a{color:#5dade2;font-weight:600}
+main{padding:2rem 2.5rem 4rem;max-width:1100px}
+.hero{background:linear-gradient(135deg,var(--blue),var(--orange));color:#fff;padding:2rem 2.25rem;border-radius:16px;margin-bottom:2rem;box-shadow:0 8px 32px rgba(46,134,171,.25)}
+.hero.presenter{background:linear-gradient(135deg,#1a5276,#117a65)}
+.hero h1{margin:0 0 .5rem;font-size:1.85rem;font-weight:700}
+.hero .subtitle{opacity:.95;font-size:1.05rem;margin:0 0 1.25rem}
+.stats{display:flex;flex-wrap:wrap;gap:.75rem}
+.stat{background:rgba(255,255,255,.18);backdrop-filter:blur(4px);padding:.5rem 1rem;border-radius:999px;font-size:.85rem}
+.stat b{font-size:1.1rem;margin-right:.25rem}
+.guide{background:#fff;border-left:4px solid var(--green);padding:1.25rem 1.5rem;border-radius:0 12px 12px 0;margin-bottom:2.5rem;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.guide h2{margin:0 0 .75rem;font-size:1.15rem;color:var(--green)}
+.guide ol{margin:0;padding-left:1.25rem}
+.guide li{margin-bottom:.4rem;color:var(--muted)}
+.guide a{color:var(--blue)}
+section{margin-bottom:3rem;scroll-margin-top:1rem}
+section > h2{font-size:1.45rem;color:var(--blue);border-bottom:2px solid var(--blue);padding-bottom:.4rem;margin:0 0 .5rem}
+.section-intro{color:var(--muted);margin:0 0 1.25rem;font-size:.98rem;max-width:72ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.25rem}
+.card{background:var(--card);border-radius:12px;padding:1rem 1.1rem 1.15rem;box-shadow:0 2px 14px rgba(0,0,0,.07);border:1px solid #e8edf3;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
+.card.key{border-color:var(--green);box-shadow:0 2px 14px rgba(39,174,96,.15)}
+.card img{width:100%;border-radius:8px;cursor:zoom-in;background:#f8f9fa}
+.card h3{margin:.75rem 0 .35rem;font-size:1rem;color:var(--ink)}
+.card h3.peer-title{text-align:center;font-weight:600;margin:.85rem 0 0;font-size:.92rem}
+.card .caption{margin:.5rem 0 0;font-size:.88rem;color:var(--muted)}
+.card .script{margin:.65rem 0 0;padding:.65rem .75rem;background:#eafaf1;border-radius:8px;font-size:.86rem;color:#1e5631;border-left:3px solid var(--green)}
+.badge{display:inline-block;background:var(--green);color:#fff;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:.2rem .5rem;border-radius:4px;margin-bottom:.35rem}
+.finding-num{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;font-size:.9rem;margin-bottom:.5rem}
+.finding-headline{font-size:1.05rem;font-weight:600;color:var(--blue);margin:.5rem 0 .75rem;line-height:1.35}
+.findings-list{display:flex;flex-direction:column;gap:2rem;max-width:920px}
+.finding-card{background:var(--card);border-radius:14px;padding:1.25rem 1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.08);border:1px solid #e8edf3}
+.finding-card img{width:100%;border-radius:10px;cursor:zoom-in;background:#f8f9fa;margin-top:.5rem}
+details.appendix{margin-top:3rem;background:#fff;border-radius:12px;padding:1rem 1.5rem;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+details.appendix summary{cursor:pointer;font-weight:600;color:var(--muted);padding:.5rem 0}
+details.appendix summary:hover{color:var(--blue)}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:1000;align-items:center;justify-content:center;padding:2rem;cursor:zoom-out}
+.modal.open{display:flex}
+.modal img{max-width:95vw;max-height:90vh;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.5)}
+@media(max-width:900px){.layout{grid-template-columns:1fr}nav{position:relative;height:auto}main{padding:1.25rem}}
+</style></head><body>
+<div class='layout'>
+<nav><h2>Key findings</h2>
+<a href='#finding-1' title='Curator recovery: 16 new/rescued species, 116 present innexin loci'>1. Curator recovery: 16 new/rescued species, …</a>
+<a href='#finding-2' title='Connexins have longer introns than innexins at similar exon counts'>2. Connexins have longer introns than innexin…</a>
+<a href='#finding-3' title='Innexin exon counts differ a lot across species'>3. Innexin exon counts differ a lot across sp…</a>
+<a href='#finding-4' title='Innexin exon counts differ a lot across species'>4. Innexin exon counts differ a lot across sp…</a>
+<a href='#finding-5' title='shakB keeps canonical innexin TM topology across a multi-exon, multi-transcript locus'>5. shakB keeps canonical innexin TM topology …</a>
+<a href='#finding-6' title='shakB keeps canonical innexin TM topology across a multi-exon, multi-transcript locus'>6. shakB keeps canonical innexin TM topology …</a>
+<a href='#finding-7' title='Within Drosophila, ogre is 3× larger than other innexin paralogs'>7. Within Drosophila, ogre is 3× larger than …</a>
+<a href='#finding-8' title='GJA1 protein length conserved across vertebrates (~380 aa)'>8. GJA1 protein length conserved across verte…</a>
+<a href='#finding-9' title='Dmel innexin paralogs share 100% of flanking genes'>9. Dmel innexin paralogs share 100% of flanki…</a>
+<a href='#finding-10' title='Insect Inx2: 58 synteny hits vs nematode inx-2: only 6'>10. Insect Inx2: 58 synteny hits vs nematode i…</a>
+<a href='#finding-11' title='Inx2 vs inx-2: same name, different exon architecture'>11. Inx2 vs inx-2: same name, different exon a…</a>
+<a href='#finding-12' title='Inx2 has probable orthologs in 3 Drosophila species; shakB only 1 confident hit'>12. Inx2 has probable orthologs in 3 Drosophil…</a>
+<a href='#finding-13' title='shakB length and architecture differ across insects'>13. shakB length and architecture differ acros…</a>
+<div class='switch'>Full gallery<br><a href='index.html'>Open showcase →</a></div>
+</nav><main>
+<div class='hero presenter'>
+<h1>Key findings</h1>
+<p class='subtitle'>Figure notes · <a href='index.html' style='color:#fff'>index.html</a></p>
+<div class='stats'>
+<span class='stat'><b>13</b> findings</span>
+<span class='stat'><b>272</b> accepted candidates</span>
+<span class='stat'><b>16</b> new/rescued spp · <b>116</b> curator loci</span>
+</div></div>
+<div class='guide'><h2>Order</h2><ol>
+<li><a href='#finding-1'>Curator recovery: 16 new/rescued species, 116 present innexin loci</a></li>
+<li><a href='#finding-2'>Connexins have longer introns than innexins at similar exon counts</a></li>
+<li><a href='#finding-3'>Innexin exon counts differ a lot across species</a></li>
+<li><a href='#finding-4'>Innexin exon counts differ a lot across species</a></li>
+<li><a href='#finding-5'>shakB keeps canonical innexin TM topology across a multi-exon, multi-transcript locus</a></li>
+<li><a href='#finding-6'>shakB keeps canonical innexin TM topology across a multi-exon, multi-transcript locus</a></li>
+<li><a href='#finding-7'>Within Drosophila, ogre is 3× larger than other innexin paralogs</a></li>
+<li><a href='#finding-8'>GJA1 protein length conserved across vertebrates (~380 aa)</a></li>
+<li><a href='#finding-9'>Dmel innexin paralogs share 100% of flanking genes</a></li>
+<li><a href='#finding-10'>Insect Inx2: 58 synteny hits vs nematode inx-2: only 6</a></li>
+<li><a href='#finding-11'>Inx2 vs inx-2: same name, different exon architecture</a></li>
+<li><a href='#finding-12'>Inx2 has probable orthologs in 3 Drosophila species; shakB only 1 confident hit</a></li>
+<li><a href='#finding-13'>shakB length and architecture differ across insects</a></li>
+</ol></div>
+<section id='findings'>
+<p class='section-intro'>Selected results in the same order as index.html.</p>
+<div class='findings-list'>
+<article class='finding-card key' id='finding-1'><span class='badge'>Finding 1</span><p class='finding-headline'>Curator recovery: 16 new/rescued species, 116 present innexin loci</p><p class='caption' style='margin-top:0'><em>02 innexin candidates</em></p><img src='discovery/02_innexin_candidates.png' alt='02 innexin candidates' loading='lazy' onclick="openModal(this.src)"><p class='caption'>Genome-direct curator re-probe recovered long innexin-like products across rotifers, molluscs, arthropods and polychaetes. Highlights include rescued Rotaria macrura / Brachionus manjavacas and new spider loci (Amaurobius, Aelurillus, Agelena).</p><p class='script'>The first automated innexin search looked sparse — only 17 candidates. A genome-direct curator pass changed that: 16 new or rescued species and 116 present loci. Rotaria is no longer a blank; spiders and rotifers now carry clear UNC-9/Inx2-like models.</p></article>
+<article class='finding-card key' id='finding-2'><span class='badge'>Finding 2</span><p class='finding-headline'>Connexins have longer introns than innexins at similar exon counts</p><p class='caption' style='margin-top:0'><em>08 intron architecture</em></p><img src='comparison/08_intron_architecture.png' alt='08 intron architecture' loading='lazy' onclick="openModal(this.src)"><p class='caption'>Scatter of exon count vs mean intron length (log scale). Connexin genes occupy a different intron-size regime than innexins.</p><p class='script'>At comparable exon numbers, connexin introns are systematically longer. This supports treating the two families as separate architectural lineages, not just different species panels.</p></article>
+<article class='finding-card key' id='finding-3'><span class='badge'>Finding 3</span><p class='finding-headline'>Innexin exon counts differ a lot across species</p><p class='caption' style='margin-top:0'><em>innexin genomic exon map</em></p><img src='imported/exon_maps/innexin_genomic_exon_map.png' alt='innexin genomic exon map' loading='lazy' onclick="openModal(this.src)"><p class='caption'>C. elegans innexins reach up to 9 exons; Drosophila shakB has only 1 exon; ogre spans 6–8 exons. Same protein family, very different gene structures.</p><p class='script'>Innexin gene architecture is not conserved. Nematode inx genes are multi-exon, Drosophila shakB is a single exon, and ogre is huge. Architecture alone cannot define orthology.</p></article>
+<article class='finding-card key' id='finding-4'><span class='badge'>Finding 4</span><p class='finding-headline'>Innexin exon counts differ a lot across species</p><p class='caption' style='margin-top:0'><em>innexin genomic exon map</em></p><img src='imported/exon_maps/innexin_genomic_exon_map.png' alt='innexin genomic exon map' loading='lazy' onclick="openModal(this.src)"><p class='caption'>C. elegans innexins reach up to 9 exons; Drosophila shakB has only 1 exon; ogre spans 6–8 exons. Same protein family, very different gene structures.</p><p class='script'>Innexin gene architecture is not conserved. Nematode inx genes are multi-exon, Drosophila shakB is a single exon, and ogre is huge. Architecture alone cannot define orthology.</p></article>
+<article class='finding-card key' id='finding-5'><span class='badge'>Finding 5</span><p class='finding-headline'>shakB keeps canonical innexin TM topology across a multi-exon, multi-transcript locus</p><p class='caption' style='margin-top:0'><em>shakB protein feature map</em></p><img src='imported/protein_features/shakB_protein_feature_map.png' alt='shakB protein feature map' loading='lazy' onclick="openModal(this.src)"><p class='caption'>Predicted TM helices and disorder along shakB. The locus is intron-rich and splice-capable (many annotated transcripts in mosquito/fly panels), yet still encodes a plausible gap-junction channel protein.</p><p class='script'>shakB is a classic multi-isoform innexin locus — coding-region introns, not a single-exon gene. The protein feature map still shows the expected transmembrane topology. Exon count and domain architecture are related but not the same thing.</p></article>
+<article class='finding-card key' id='finding-6'><span class='badge'>Finding 6</span><p class='finding-headline'>shakB keeps canonical innexin TM topology across a multi-exon, multi-transcript locus</p><p class='caption' style='margin-top:0'><em>shakB protein feature map</em></p><img src='imported/protein_features/shakB_protein_feature_map.png' alt='shakB protein feature map' loading='lazy' onclick="openModal(this.src)"><p class='caption'>Predicted TM helices and disorder along shakB. The locus is intron-rich and splice-capable (many annotated transcripts in mosquito/fly panels), yet still encodes a plausible gap-junction channel protein.</p><p class='script'>shakB is a classic multi-isoform innexin locus — coding-region introns, not a single-exon gene. The protein feature map still shows the expected transmembrane topology. Exon count and domain architecture are related but not the same thing.</p></article>
+<article class='finding-card key' id='finding-7'><span class='badge'>Finding 7</span><p class='finding-headline'>Within Drosophila, ogre is 3× larger than other innexin paralogs</p><p class='caption' style='margin-top:0'><em>04 dmel paralog lengths</em></p><img src='innexin/04_dmel_paralog_lengths.png' alt='04 dmel paralog lengths' loading='lazy' onclick="openModal(this.src)"><p class='caption'>ogre gene span ~17 kb vs Inx2/Inx7 ~2–5 kb. Size heterogeneity exists even among paralogs in one species.</p><p class='script'>Even within D. melanogaster, innexin paralogs differ dramatically. ogre is the giant — long gene, many exons — while Inx2 and Inx7 are compact. That difference motivates the synteny cluster comparison.</p></article>
+<article class='finding-card key' id='finding-8'><span class='badge'>Finding 8</span><p class='finding-headline'>GJA1 protein length conserved across vertebrates (~380 aa)</p><p class='caption' style='margin-top:0'><em>06 gja1 trajectory</em></p><img src='connexin/06_gja1_trajectory.png' alt='06 gja1 trajectory' loading='lazy' onclick="openModal(this.src)"><p class='caption'>GJA1 ortholog trajectory across mammals, birds, fish. Connexin 43 is highly conserved compared to other connexin paralogs.</p><p class='script'>On the connexin side, GJA1 is remarkably conserved — about 380 amino acids across vertebrates. That contrasts with the architectural diversity among innexins.</p></article>
+<article class='finding-card key' id='finding-9'><span class='badge'>Finding 9</span><p class='finding-headline'>Dmel innexin paralogs share 100% of flanking genes</p><p class='caption' style='margin-top:0'><em>04 case1 cluster sharing</em></p><img src='synteny/04_case1_cluster_sharing.png' alt='04 case1 cluster sharing' loading='lazy' onclick="openModal(this.src)"><p class='caption'>Case 1: ogre, Inx2, and Inx3 at both loci share all 25–27 neighbouring genes with zero unique flanking genes — classic tandem duplication cluster.</p><p class='script'>At both the proximal and distal clusters, ogre, Inx2, and Inx3 share every flanking gene — 25 to 27 genes, zero unique neighbours. Consistent with local tandem duplication, not independent insertions.</p></article>
+<article class='finding-card key' id='finding-10'><span class='badge'>Finding 10</span><p class='finding-headline'>Insect Inx2: 58 synteny hits vs nematode inx-2: only 6</p><p class='caption' style='margin-top:0'><em>01 case3 comparison</em></p><img src='cross_clade/01_case3_comparison.png' alt='01 case3 comparison' loading='lazy' onclick="openModal(this.src)"><p class='caption'>Case 3: SynVoy across 5 insect genomes yields 58 GOI annotations for Inx2; nematode inx-2 panel yields only 6 — synteny signal is phylum-specific.</p><p class='script'>Cross-clade comparison: insect Inx2 produces 58 gene-of-interest annotations across five genomes, but C. elegans inx-2 only six. Synteny conservation does not transfer across phyla — we cannot use insect synteny rules for nematodes.</p></article>
+<article class='finding-card key' id='finding-11'><span class='badge'>Finding 11</span><p class='finding-headline'>Inx2 vs inx-2: same name, different exon architecture</p><p class='caption' style='margin-top:0'><em>02 inx2 architecture</em></p><img src='cross_clade/02_inx2_architecture.png' alt='02 inx2 architecture' loading='lazy' onclick="openModal(this.src)"><p class='caption'>Drosophila Inx2: 1–3 exons, ~5480 bp gene span. C. elegans inx-2: 4 exons, 1727 bp. Ortholog naming does not imply structural similarity.</p><p class='script'>The architecture bar chart makes this concrete: Drosophila Inx2 is 2-exon and compact, C. elegans inx-2 has 4 exons. Calling both Inx2 is historical naming — the gene structures diverged.</p></article>
+<article class='finding-card key' id='finding-12'><span class='badge'>Finding 12</span><p class='finding-headline'>Inx2 has probable orthologs in 3 Drosophila species; shakB only 1 confident hit</p><p class='caption' style='margin-top:0'><em>01 case2 support</em></p><img src='ortholog/01_case2_support.png' alt='01 case2 support' loading='lazy' onclick="openModal(this.src)"><p class='caption'>Case 2 SynVoy: Inx2 → probable ortholog in D. limbata, D. helvetica, D. busckii. shakB → confident ortholog only in D. busckii; flanking-only in D. helvetica.</p><p class='script'>Cross-species orthology is gene-specific. Inx2 gets probable support in three Drosophila species. shakB is much stricter — only D. busckii has a confident ortholog; in D. helvetica synteny is present but no clear GOI match.</p></article>
+<article class='finding-card key' id='finding-13'><span class='badge'>Finding 13</span><p class='finding-headline'>shakB length and architecture differ across insects</p><p class='caption' style='margin-top:0'><em>03 shakB insects</em></p><img src='ortholog/03_shakB_insects.png' alt='03 shakB insects' loading='lazy' onclick="openModal(this.src)"><p class='caption'>shakB orthologs in Aedes, Anopheles, and Drosophila differ in protein length and exon count — not a simple copy-paste ortholog.</p><p class='script'>Zooming into shakB across insects: protein length and exon structure are not uniform. Anopheles shakB has up to 8 exons, Aedes has 10 — very different from Drosophila's single-exon shakB.</p></article>
+</div></section>
+<div id='modal' class='modal' onclick='closeModal()'>
+<img id='modal-img' src='' alt='Enlarged figure'></div>
+<script>
+function openModal(src){document.getElementById('modal-img').src=src;
+document.getElementById('modal').classList.add('open')}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()})
+</script></main></div></body></html>

@@ -1,0 +1,22 @@
+Species duplicate check report
+================================
+Total unique species across all sources: 89
+Spelling duplicates (same species, different spelling): 0
+
+Species in BOTH not_annotated_innexin.txt AND species_batch_jun2026.txt: 12
+  - Hormiphora californensis
+  - Peripatoides novaezealandiae
+  - Peripatus solorzanoi
+  - Philodina roseola
+  - Pleurobrachia bachei
+  - Scolanthus callimorphus
+  - Streblospio benedicti
+  - Stylissa carteri
+  - Thulinius sp. DVL-2010
+  - Triops cancriformis
+  - Tubiluchus corallicola
+  - Xestospongia testudinaria
+
+Species with annotation search: 59
+Species with innexin discovery run: 34
+Species in species_config only (reference panel): 30

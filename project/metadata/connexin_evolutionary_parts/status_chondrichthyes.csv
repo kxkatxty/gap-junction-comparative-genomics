@@ -1,0 +1,12 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Amblyraja radiata,connexin,yes,no,annotated_family_member_found,high,gjc2,ncbi_gene,A,116987449,gjc2,gap junction protein gamma 2,5,0,"connexin[All Fields] AND ""Amblyraja radiata""[Organism]"
+Carcharhinus amblyrhynchos,connexin,yes,no,annotated_family_member_found,high,gja1b,ncbi_gene,A,145345023,gja1b,gap junction protein alpha 1b,5,0,"GJA*[Gene Symbol] AND ""Carcharhinus amblyrhynchos""[Organism]"
+Carcharias taurus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Carcharodon carcharias,connexin,yes,no,annotated_family_member_found,high,gjb8,ncbi_gene,A,121284119,gjb8,gap junction protein beta 8,3,0,"GJB*[Gene Symbol] AND ""Carcharodon carcharias""[Organism]"
+Cetorhinus maximus,connexin,yes,no,annotated_family_member_found,high,connexin,ncbi_gene,A,144689891,cnsta,"consortin, connexin sorting protein a",9,0,"connexin[All Fields] AND ""Cetorhinus maximus""[Organism]"
+Chiloscyllium plagiosum,connexin,yes,no,annotated_family_member_found,high,connexin,ncbi_gene,A,122552647,cnsta,"consortin, connexin sorting protein a",4,0,"connexin[All Fields] AND ""Chiloscyllium plagiosum""[Organism]"
+Chiloscyllium punctatum,connexin,yes,no,annotated_family_member_found,high,connexin,uniprot,A,A0A401SQW6,,Connexin cysteine-rich domain-containing protein,9,0,"organism_name:""Chiloscyllium punctatum"" AND protein_name:connexin"
+Chimaera phantasma,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Echinorhinus cookei,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Fontitrygon garouaensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Galeorhinus galeus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,

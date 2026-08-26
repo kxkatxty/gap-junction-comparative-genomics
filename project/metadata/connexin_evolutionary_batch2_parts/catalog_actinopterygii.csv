@@ -1,0 +1,6 @@
+clade,organism,assembly_accession,assembly_level,assembly_source,connexin_category,connexin_term,connexin_evidence_level,connexin_source,assembly_priority_score,notes
+Actinopterygii,Scleropages jardinii,GCA_054883365.1,Complete Genome,GenBank,no_related_entry_found,,,,70,ray-finned fishes excluding tetrapods
+Actinopterygii,Triplophysa stolickai,GCA_057944685.1,Complete Genome,GenBank,no_related_entry_found,,,,70,ray-finned fishes excluding tetrapods
+Actinopterygii,Abudefduf saxatilis,GCA_977929305.1,Chromosome,GenBank,no_related_entry_found,,,,60,ray-finned fishes excluding tetrapods
+Actinopterygii,Acanthurus chirurgus,GCA_055796265.1,Chromosome,GenBank,no_related_entry_found,,,,60,ray-finned fishes excluding tetrapods
+Actinopterygii,Acanthurus tractus,GCA_980438365.1,Chromosome,GenBank,no_related_entry_found,,,,60,ray-finned fishes excluding tetrapods

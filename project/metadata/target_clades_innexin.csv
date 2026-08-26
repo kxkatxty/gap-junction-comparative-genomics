@@ -1,0 +1,11 @@
+clade,ncbi_search_term,notes,priority
+Crustacea,txid197562[Organism:exp] NOT txid6960[Organism:exp] NOT txid50557[Organism:exp],copepods branchiopods decapods etc.,1
+Chelicerata,txid6843[Organism:exp],spiders horseshoe crabs mites,2
+Tardigrada,txid42241[Organism:exp],water bears,3
+Rotifera,txid10190[Organism:exp],bdelloid and other rotifers,4
+Annelida,txid6340[Organism:exp],polychaetes oligochaetes leeches,5
+Mollusca,txid6447[Organism:exp],bivalves gastropods cephalopods,6
+Cnidaria,txid6073[Organism:exp],corals jellyfish hydroids,7
+Porifera,txid6040[Organism:exp],sponges early metazoan outgroups,8
+Placozoa,txid10226[Organism:exp],Trichoplax and relatives,9
+Ctenophora,txid10197[Organism:exp],comb jellies,10

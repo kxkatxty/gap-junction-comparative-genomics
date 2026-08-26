@@ -1,0 +1,4 @@
+locus_a,locus_b,n_shared_family_stems,n_a,n_b,shared_stems
+proximal_X_SF_mixed,distal_X_SF1,0,21,8,
+proximal_X_SF_mixed,Inx3_3R_SF3,0,21,7,
+distal_X_SF1,Inx3_3R_SF3,0,8,7,

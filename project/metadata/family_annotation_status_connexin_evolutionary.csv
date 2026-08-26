@@ -1,0 +1,52 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Acanthopagrus latus,connexin,yes,no,annotated_family_member_found,high,gjb1a,ncbi_gene,A,119031269,gjb1a,gap junction protein beta 1a,4,0,"GJB*[Gene Symbol] AND ""Acanthopagrus latus""[Organism]"
+Arapaima gigas,connexin,yes,no,annotated_family_member_found,high,GJA10,uniprot,A,A0ACF8EAZ1,GJA10,Gap junction alpha-10 protein-like,12,0,"organism_name:""Arapaima gigas"" AND gene:GJA*"
+Bajacalifornia burragei,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Epinephelus cyanopodus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Hemibarbus labeo,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Hucho bleekeri,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Micropterus salmoides,connexin,yes,no,annotated_family_member_found,high,gjb3,ncbi_gene,A,119910089,gjb3,gap junction protein beta 3,8,0,"connexin[All Fields] AND ""Micropterus salmoides""[Organism]"
+Parabramis pekinensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Ambystoma mexicanum,connexin,yes,no,annotated_family_member_found,high,GJB3,ncbi_gene,A,138503076,GJB3,gap junction protein beta 3,7,0,"GJB*[Gene Symbol] AND ""Ambystoma mexicanum""[Organism]"
+Anomaloglossus baeobatrachus,connexin,yes,no,annotated_family_member_found,high,GJA10,ncbi_gene,A,142297237,GJA10,gap junction protein alpha 10,10,0,"connexin[All Fields] AND ""Anomaloglossus baeobatrachus""[Organism]"
+Aquarana catesbeiana,connexin,yes,no,annotated_family_member_found,high,GJA1,ncbi_gene,A,141140240,GJA1,gap junction protein alpha 1,9,0,"GJA*[Gene Symbol] AND ""Aquarana catesbeiana""[Organism]"
+Ascaphus truei,connexin,yes,no,annotated_family_member_found,high,GJD2,ncbi_gene,A,142502362,GJD2,gap junction protein delta 2,2,0,"GJD*[Gene Symbol] AND ""Ascaphus truei""[Organism]"
+Bombina bombina,connexin,yes,no,annotated_family_member_found,high,GJA10,ncbi_gene,A,128657654,GJA10,gap junction protein alpha 10,4,0,"GJA*[Gene Symbol] AND ""Bombina bombina""[Organism]"
+Bombina variegata,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Boulenophrys sangzhiensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Bufo bufo,connexin,yes,no,annotated_family_member_found,high,GJB1,ncbi_gene,A,120977104,GJB1,gap junction protein beta 1,3,0,"GJB*[Gene Symbol] AND ""Bufo bufo""[Organism]"
+Bufo gargarizans,connexin,yes,no,annotated_family_member_found,high,GJA10,ncbi_gene,A,122935375,GJA10,gap junction protein alpha 10,10,0,"GJA*[Gene Symbol] AND ""Bufo gargarizans""[Organism]"
+Bufotes viridis,connexin,no,yes,related_or_family_like_entry_found,medium,gap junction,uniprot,B,A0ACM8I3A1,,Gap junction beta-6 protein,0,5,"organism_name:""Bufotes viridis"" AND (protein_name:""gap junction"" OR cc_function:""gap junction"")"
+Crinia signifera,connexin,yes,no,annotated_family_member_found,high,GJE1,ncbi_gene,A,146062890,GJE1,gap junction protein epsilon 1,1,0,"GJE*[Gene Symbol] AND ""Crinia signifera""[Organism]"
+Dendropsophus ebraccatus,connexin,yes,no,annotated_family_member_found,high,GJA1,ncbi_gene,A,138795600,GJA1,gap junction protein alpha 1,15,0,"GJA*[Gene Symbol] AND ""Dendropsophus ebraccatus""[Organism]"
+Desmognathus fuscus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Discoglossus pictus,connexin,no,yes,related_or_family_like_entry_found,medium,gap junction,ncbi_protein,B,KAM4709316.1,gap,gap junction beta-2 protein-like isoform 1-T2 [Discoglossus pictus],0,0,"""gap junction""[Title] AND ""Discoglossus pictus""[Organism]"
+Amblyraja radiata,connexin,yes,no,annotated_family_member_found,high,gjc2,ncbi_gene,A,116987449,gjc2,gap junction protein gamma 2,5,0,"connexin[All Fields] AND ""Amblyraja radiata""[Organism]"
+Carcharhinus amblyrhynchos,connexin,yes,no,annotated_family_member_found,high,gja1b,ncbi_gene,A,145345023,gja1b,gap junction protein alpha 1b,5,0,"GJA*[Gene Symbol] AND ""Carcharhinus amblyrhynchos""[Organism]"
+Carcharias taurus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Carcharodon carcharias,connexin,yes,no,annotated_family_member_found,high,gjb8,ncbi_gene,A,121284119,gjb8,gap junction protein beta 8,3,0,"GJB*[Gene Symbol] AND ""Carcharodon carcharias""[Organism]"
+Cetorhinus maximus,connexin,yes,no,annotated_family_member_found,high,connexin,ncbi_gene,A,144689891,cnsta,"consortin, connexin sorting protein a",9,0,"connexin[All Fields] AND ""Cetorhinus maximus""[Organism]"
+Chiloscyllium plagiosum,connexin,yes,no,annotated_family_member_found,high,connexin,ncbi_gene,A,122552647,cnsta,"consortin, connexin sorting protein a",4,0,"connexin[All Fields] AND ""Chiloscyllium plagiosum""[Organism]"
+Chiloscyllium punctatum,connexin,yes,no,annotated_family_member_found,high,connexin,uniprot,A,A0A401SQW6,,Connexin cysteine-rich domain-containing protein,9,0,"organism_name:""Chiloscyllium punctatum"" AND protein_name:connexin"
+Chimaera phantasma,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Echinorhinus cookei,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Fontitrygon garouaensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Galeorhinus galeus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Mus musculus domesticus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Ovis aries,connexin,yes,no,annotated_family_member_found,high,GJA3,uniprot,A,Q9TU17,GJA3,Gap junction alpha-3 protein,27,0,"organism_name:""Ovis aries"" AND protein_name:connexin"
+Sus scrofa,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,Q29101,GJA1,Gap junction alpha-1 protein,28,0,"organism_name:""Sus scrofa"" AND protein_name:connexin"
+Alexandromys fortis,connexin,yes,no,annotated_family_member_found,high,Gjb3,ncbi_gene,A,126508228,Gjb3,gap junction protein beta 3,9,0,"connexin[All Fields] AND ""Alexandromys fortis""[Organism]"
+Antrozous pallidus,connexin,no,yes,related_or_family_like_entry_found,medium,gap junction,ncbi_protein,B,KAN7646806.1,gap,gap junction alpha-4 protein [Antrozous pallidus],0,0,"""gap junction""[Title] AND ""Antrozous pallidus""[Organism]"
+Babyrousa celebensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Bos grunniens,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,A0A8B9X589,GJA1,Gap junction protein,17,0,"organism_name:""Bos grunniens"" AND gene:GJA*"
+Bos taurus,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,P18246,GJA1,Gap junction alpha-1 protein,30,0,"organism_name:""Bos taurus"" AND protein_name:connexin"
+Canis lupus familiaris,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,Q6S9C0,GJA1,Gap junction alpha-1 protein,28,0,"organism_name:""Canis lupus familiaris"" AND protein_name:connexin"
+Capra hircus,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,A0A452DQ32,GJA1,Gap junction protein,28,0,"organism_name:""Capra hircus"" AND gene:GJA*"
+Ceratotherium simum simum,connexin,no,yes,related_or_family_like_entry_found,medium,gap junction,uniprot,B,A0ABM0H9E4,LOC101389768,Gap junction protein,11,32,"organism_name:""Ceratotherium simum simum"" AND (protein_name:""gap junction"" OR cc_function:""gap junction"")"
+Eospalax fontanierii baileyi,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Alligator mississippiensis,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,A0A151M322,GJA1,Gap junction protein,36,0,"organism_name:""Alligator mississippiensis"" AND gene:GJA*"
+Butorides sundevalli,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Cecropis daurica,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Correlophus ciliatus,connexin,no,yes,related_or_family_like_entry_found,medium,gap junction,ncbi_protein,B,KAN9781063.1,gap,gap junction gamma-2 protein isoform 1-T9 [Correlophus ciliatus],0,0,"""gap junction""[Title] AND ""Correlophus ciliatus""[Organism]"
+Dumetella carolinensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Emberiza tahapisi,connexin,no,no,no_related_entry_found,,,,,,,,0,0,

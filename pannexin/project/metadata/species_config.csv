@@ -1,0 +1,19 @@
+family,organism,reviewed_only,clade_hint,notes
+pannexin,Homo sapiens,true,Mammal,PANX1 PANX2 PANX3
+pannexin,Mus musculus,true,Mammal,Panx1 Panx2 Panx3
+pannexin,Rattus norvegicus,true,Mammal,
+pannexin,Bos taurus,false,Mammal,
+pannexin,Sus scrofa,false,Mammal,
+pannexin,Gallus gallus,false,Bird,
+pannexin,Anolis carolinensis,false,Reptile,
+pannexin,Podarcis muralis,false,Reptile,
+pannexin,Xenopus tropicalis,false,Amphibian,
+pannexin,Xenopus laevis,false,Amphibian,
+pannexin,Danio rerio,false,Ray-finned fish,teleost; panx1a/panx1b
+pannexin,Takifugu rubripes,false,Ray-finned fish,
+pannexin,Lepisosteus oculatus,false,Ray-finned fish,holostean outgroup to teleosts
+pannexin,Latimeria chalumnae,false,Lobe-finned fish,coelacanth
+pannexin,Callorhinchus milii,false,Cartilaginous fish,elephant shark — fills skate UniProt gap
+pannexin,Petromyzon marinus,false,Jawless vertebrate,lamprey
+pannexin,Branchiostoma floridae,false,Tunicate / lancelet,lancelet; UniProt LOC / weak labels
+pannexin,Ciona intestinalis,false,Tunicate / lancelet,expect innexin not pannexin in UniProt

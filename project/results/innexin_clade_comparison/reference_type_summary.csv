@@ -1,0 +1,14 @@
+reference_type,subfamily,n_loci,n_clades,clades,n_curator,n_reference
+Inx1/ogre,SF2_Inx1_ogre,4,2,Arthropoda (non-insect); Reference insect,2,2
+Inx2,SF4_Inx2_expansion,14,3,Arthropoda (non-insect); Mollusca; Reference insect,12,2
+Inx3,SF3_Inx3_Inx7_nematode,1,1,Reference insect,0,1
+Inx4/zpg,SF4_Inx2_expansion,2,1,Reference insect,0,2
+Inx5,SF4_Inx2_expansion,1,1,Reference insect,0,1
+Inx6,SF4_Inx2_expansion,1,1,Reference insect,0,1
+Inx7,SF3_Inx3_Inx7_nematode,1,1,Reference insect,0,1
+inx-2 (Cele),SF3_Inx3_Inx7_nematode,3,1,Rotifera,3,0
+other nematode,SF3_Inx3_Inx7_nematode,1,1,Reference nematode,0,1
+other/unknown,unassigned,47,5,Arthropoda (non-insect); Ctenophora; Other; Reference nematode; Rotifera,27,14
+shakB,SF1_shakB,16,4,Arthropoda (non-insect); Mollusca; Reference insect; Rotifera,13,3
+unc-7,SF3_Inx3_Inx7_nematode,34,4,Annelida; Mollusca; Reference nematode; Rotifera,33,1
+unc-9,SF3_Inx3_Inx7_nematode,39,5,Annelida; Arthropoda (non-insect); Mollusca; Reference nematode; Rotifera,38,1

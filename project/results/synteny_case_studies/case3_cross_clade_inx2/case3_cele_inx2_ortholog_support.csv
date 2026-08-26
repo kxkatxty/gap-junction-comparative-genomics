@@ -1,0 +1,4 @@
+query_gene,query_clade,accession,source_species,target_genome,target_species,genes_discovered,goi_annotations,confident_goi,probable_goi,ambiguous_goi,flanking_annotations,synteny_regions,best_region_score,ortholog_support
+inx-2,nematode,Q9U3K5,Caenorhabditis elegans,GCA_963978915.1,Caenorhabditis parvicauda,12,1,0,1,0,11,3,0.22244897959183674,probable_ortholog
+inx-2,nematode,Q9U3K5,Caenorhabditis elegans,GCA_964036275.1,Litoditis marina,4,2,0,0,0,2,0,None,weak_goi_signal
+inx-2,nematode,Q9U3K5,Caenorhabditis elegans,GCF_000004555.2,Caenorhabditis briggsae,71,3,1,1,1,68,3,0.43461324041811844,confident_ortholog

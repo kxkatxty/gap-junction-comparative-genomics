@@ -1,0 +1,175 @@
+seq_id,source,species_dir,organism,clade,gene_label,reference_type,subfamily,length,identity_to_ref
+ref|Aedes_aegypti|shakB|Q1DH70,reference_db,Aedes_aegypti,Aedes aegypti,Insecta,shakB,shakB,SF1_shakB,372,
+ref|Anopheles_gambiae|ZPG|Q7Q5R9,reference_db,Anopheles_gambiae,Anopheles gambiae,Insecta,ZPG,Inx4/zpg,SF4_Inx2_expansion,386,
+ref|Anopheles_gambiae|shakB|Q7PXN1,reference_db,Anopheles_gambiae,Anopheles gambiae,Insecta,shakB,shakB,SF1_shakB,373,
+ref|Caenorhabditis_briggsae|inx-19|A8WVX4,reference_db,Caenorhabditis_briggsae,Caenorhabditis briggsae,Nematoda,inx-19,other/unknown,SF3_Inx3_Inx7_nematode,439,
+ref|Caenorhabditis_elegans|eat-5|Q27295,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,eat-5,other nematode,SF3_Inx3_Inx7_nematode,423,
+ref|Caenorhabditis_elegans|inx-10|Q22549,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-10,other/unknown,SF3_Inx3_Inx7_nematode,559,
+ref|Caenorhabditis_elegans|inx-11|Q23157,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-11,other/unknown,SF3_Inx3_Inx7_nematode,465,
+ref|Caenorhabditis_elegans|inx-12|O01634,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-12,other/unknown,SF3_Inx3_Inx7_nematode,408,
+ref|Caenorhabditis_elegans|inx-14|O62136,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-14,other/unknown,SF3_Inx3_Inx7_nematode,434,
+ref|Caenorhabditis_elegans|inx-16|O61787,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-16,other/unknown,SF3_Inx3_Inx7_nematode,372,
+ref|Caenorhabditis_elegans|inx-17|O61788,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-17,other/unknown,SF3_Inx3_Inx7_nematode,362,
+ref|Caenorhabditis_elegans|inx-19|O61715,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-19,other/unknown,SF3_Inx3_Inx7_nematode,454,
+ref|Caenorhabditis_elegans|inx-2|Q9U3K5,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-2,other/unknown,SF3_Inx3_Inx7_nematode,419,
+ref|Caenorhabditis_elegans|inx-3|Q19746,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-3,other/unknown,SF3_Inx3_Inx7_nematode,420,
+ref|Caenorhabditis_elegans|inx-5|Q23027,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-5,other/unknown,SF3_Inx3_Inx7_nematode,447,
+ref|Caenorhabditis_elegans|inx-6|Q9U3N4,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-6,other/unknown,SF3_Inx3_Inx7_nematode,389,
+ref|Caenorhabditis_elegans|inx-7|Q21123,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-7,other/unknown,SF3_Inx3_Inx7_nematode,556,
+ref|Caenorhabditis_elegans|inx-8|Q23593,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,inx-8,other/unknown,SF3_Inx3_Inx7_nematode,382,
+ref|Caenorhabditis_elegans|unc-7|Q03412,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,unc-7,unc-7,SF3_Inx3_Inx7_nematode,522,
+ref|Caenorhabditis_elegans|unc-9|O01393,reference_db,Caenorhabditis_elegans,Caenorhabditis elegans,Nematoda,unc-9,unc-9,SF3_Inx3_Inx7_nematode,386,
+ref|Drosophila_melanogaster|Inx2|Q9V427,reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,Inx2,Inx2,SF4_Inx2_expansion,367,
+ref|Drosophila_melanogaster|Inx3|Q9VAS7,reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,Inx3,Inx3,SF3_Inx3_Inx7_nematode,395,
+ref|Drosophila_melanogaster|Inx5|Q9VWL5,reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,Inx5,Inx5,SF4_Inx2_expansion,419,
+ref|Drosophila_melanogaster|Inx6|Q9VR82,reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,Inx6,Inx6,SF4_Inx2_expansion,481,
+ref|Drosophila_melanogaster|Inx7|Q9V3W6,reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,Inx7,Inx7,SF3_Inx3_Inx7_nematode,438,
+ref|Drosophila_melanogaster|ogre|P27716,reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,ogre,Inx1/ogre,SF2_Inx1_ogre,362,
+ref|Drosophila_melanogaster|shakB|P33085,reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,shakB,shakB,SF1_shakB,372,
+ref|Drosophila_melanogaster|zpg|Q9VRX6,reference_db,Drosophila_melanogaster,Drosophila melanogaster,Insecta,zpg,Inx4/zpg,SF4_Inx2_expansion,367,
+ref|Schistocerca_americana|inx1|Q9XYN0,reference_db,Schistocerca_americana,Schistocerca americana,Insecta,inx1,Inx1/ogre,SF2_Inx1_ogre,361,
+ref|Schistocerca_americana|inx2|Q9XYN1,reference_db,Schistocerca_americana,Schistocerca americana,Insecta,inx2,Inx2,SF4_Inx2_expansion,359,
+phylo|Adineta_vaga_candidate_inx_008_innexin,phylo_panel,Adineta_vaga,Adineta vaga,Rotifera,candidate_inx_008,other/unknown,unassigned,207,
+phylo|Adineta_vaga_candidate_inx_028_innexin,phylo_panel,Adineta_vaga,Adineta vaga,Rotifera,candidate_inx_028,other/unknown,unassigned,376,
+phylo|Dryodora_glandiformis_candidate_inx_004_innexin,phylo_panel,Dryodora_glandiformis,Dryodora glandiformis,Ctenophora,candidate_inx_004,other/unknown,unassigned,153,
+phylo|Eriophyidae_sp._candidate_inx_001_innexin,phylo_panel,Eriophyidae_sp.,Eriophyidae sp.,Arthropoda (non-insect),candidate_inx_001,other/unknown,unassigned,552,
+phylo|Mnemiopsis_leidyi_candidate_inx_001_innexin,phylo_panel,Mnemiopsis_leidyi,Mnemiopsis leidyi,Ctenophora,candidate_inx_001,other/unknown,unassigned,276,
+cur|Abra_alba|OZ409525.1_26983439_26985168|p1,curator_new,Abra_alba,Abra alba,Mollusca,sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,313,0.2747
+cur|Abra_alba|OZ409525.1_18330358_18348899|p2,curator_new,Abra_alba,Abra alba,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,381,0.3874
+cur|Abra_alba|OZ409525.1_27026774_27031521|p3,curator_new,Abra_alba,Abra alba,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,381,0.3665
+cur|Abra_alba|OZ409525.1_53154133_53163052|p4,curator_new,Abra_alba,Abra alba,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,363,0.422
+cur|Abra_alba|OZ409525.1_26978116_27031527|p5,curator_new,Abra_alba,Abra alba,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,372,0.4036
+cur|Abra_alba|OZ409525.1_27063409_27064521|p6,curator_new,Abra_alba,Abra alba,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,371,0.384
+cur|Abra_alba|OZ409525.1_47319987_47324644|p7,curator_new,Abra_alba,Abra alba,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,378,0.3782
+cur|Abra_alba|OZ409527.1_48105670_48111459|p8,curator_new,Abra_alba,Abra alba,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,388,0.3543
+cur|Abra_segmentum|OZ251777.1_53450550_53469929|p1,curator_new,Abra_segmentum,Abra segmentum,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,381,0.3848
+cur|Abra_segmentum|OZ251777.1_37619854_37628968|p2,curator_new,Abra_segmentum,Abra segmentum,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,393,0.3782
+cur|Abra_segmentum|OZ251777.1_10571949_10575809|p3,curator_new,Abra_segmentum,Abra segmentum,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,386,0.3938
+cur|Abra_segmentum|OZ251784.1_30028846_30031445|p4,curator_new,Abra_segmentum,Abra segmentum,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,380,0.3472
+cur|Abra_segmentum|OZ251786.1_2258616_2261215|p5,curator_new,Abra_segmentum,Abra segmentum,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,380,0.3446
+cur|Abra_segmentum|OZ251777.1_14113510_14127320|p6,curator_new,Abra_segmentum,Abra segmentum,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,363,0.4301
+cur|Abra_segmentum|OZ251777.1_37671120_37672232|p7,curator_new,Abra_segmentum,Abra segmentum,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,371,0.3867
+cur|Abra_segmentum|OZ251777.1_32509668_32513297|p8,curator_new,Abra_segmentum,Abra segmentum,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,378,0.3782
+cur|Abra_segmentum|OZ251777.1_37626866_37628412|p9,curator_new,Abra_segmentum,Abra segmentum,Mollusca,sp|Q9XYN1|INX2_SCHAM,Inx2,SF4_Inx2_expansion,307,0.2848
+cur|Acanthocardia_echinata|OZ377328.1_19071829_19072938|p1,curator_new,Acanthocardia_echinata,Acanthocardia echinata,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,370,0.4
+cur|Acanthocardia_echinata|OZ377328.1_21360257_21387081|p2,curator_new,Acanthocardia_echinata,Acanthocardia echinata,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,377,0.3687
+cur|Acanthocardia_echinata|OZ377328.1_23300040_23302999|p3,curator_new,Acanthocardia_echinata,Acanthocardia echinata,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,362,0.3812
+cur|Acanthocardia_echinata|OZ377328.1_11251456_11255941|p4,curator_new,Acanthocardia_echinata,Acanthocardia echinata,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,386,0.3497
+cur|Acanthocardia_echinata|OZ377328.1_11291981_11299363|p5,curator_new,Acanthocardia_echinata,Acanthocardia echinata,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,386,0.3446
+cur|Acanthocardia_echinata|OZ377328.1_2223730_2233660|p6,curator_new,Acanthocardia_echinata,Acanthocardia echinata,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,368,0.4225
+cur|Acanthocardia_echinata|OZ377328.1_18890103_18896398|p8,curator_new,Acanthocardia_echinata,Acanthocardia echinata,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,372,0.3953
+cur|Acanthocardia_echinata|OZ377328.1_23337154_23339399|p9,curator_new,Acanthocardia_echinata,Acanthocardia echinata,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,373,0.3974
+cur|Acanthocardia_echinata|OZ377328.1_21312057_21325945|p10,curator_new,Acanthocardia_echinata,Acanthocardia echinata,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,362,0.377
+cur|Acanthocardia_echinata|OZ377328.1_21341102_21387057|p11,curator_new,Acanthocardia_echinata,Acanthocardia echinata,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,380,0.3805
+cur|Acanthocardia_echinata|OZ377318.1_9903781_9904962|p12,curator_new,Acanthocardia_echinata,Acanthocardia echinata,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,394,0.3645
+cur|Acanthocardia_echinata|OZ377327.1_20123227_20124345|p13,curator_new,Acanthocardia_echinata,Acanthocardia echinata,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,373,0.3792
+cur|Acanthocardia_echinata|OZ377325.1_14826690_14837377|p14,curator_new,Acanthocardia_echinata,Acanthocardia echinata,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,376,0.3747
+cur|Acanthochitona_discrepans|CM108789.1_13572118_13573209|p1,curator_new,Acanthochitona_discrepans,Acanthochitona discrepans,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,364,0.389
+cur|Acanthochitona_discrepans|CM108789.1_13668655_13669749|p2,curator_new,Acanthochitona_discrepans,Acanthochitona discrepans,Mollusca,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,365,0.3616
+cur|Acanthochitona_discrepans|CM108789.1_17930773_17931897|p3,curator_new,Acanthochitona_discrepans,Acanthochitona discrepans,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,375,0.4199
+cur|Acanthochitona_discrepans|JBLVQD010000009.1_6410532_6411647|p4,curator_new,Acanthochitona_discrepans,Acanthochitona discrepans,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,372,0.4011
+cur|Acanthochitona_discrepans|CM108789.1_13705717_13706817|p5,curator_new,Acanthochitona_discrepans,Acanthochitona discrepans,Mollusca,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,367,0.382
+cur|Acartia_tonsa|NC_137263.1_17650629_17688963|p1,curator_new,Acartia_tonsa,Acartia tonsa,Arthropoda (non-insect),sp|P33085|SHAKB_DROME,shakB,SF1_shakB,356,0.6947
+cur|Acartia_tonsa|NC_137274.1_20357689_20410150|p2,curator_new,Acartia_tonsa,Acartia tonsa,Arthropoda (non-insect),sp|P33085|SHAKB_DROME,shakB,SF1_shakB,324,0.6574
+cur|Acartia_tonsa|NC_137263.1_23536043_23592996|p3,curator_new,Acartia_tonsa,Acartia tonsa,Arthropoda (non-insect),sp|P27716|INX1_DROME,Inx1/ogre,SF2_Inx1_ogre,353,0.4774
+cur|Acartia_tonsa|NC_137263.1_17379775_17417008|p4,curator_new,Acartia_tonsa,Acartia tonsa,Arthropoda (non-insect),sp|P27716|INX1_DROME,Inx1/ogre,SF2_Inx1_ogre,337,0.4855
+cur|Acartia_tonsa|NC_137274.1_22130542_22180508|p7,curator_new,Acartia_tonsa,Acartia tonsa,Arthropoda (non-insect),sp|Q1DH70|SHAKB_AEDAE,shakB,SF1_shakB,324,0.6636
+cur|Acartia_tonsa|NC_137263.1_23613023_23627865|p8,curator_new,Acartia_tonsa,Acartia tonsa,Arthropoda (non-insect),sp|Q9XYN1|INX2_SCHAM,Inx2,SF4_Inx2_expansion,359,0.6462
+cur|Adineta_ricciae|CAJNOJ010000043.1_384169_385557|p1,curator_new,Adineta_ricciae,Adineta ricciae,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,374,0.3467
+cur|Adineta_ricciae|CAJNOJ010000006.1_265306_266692|p2,curator_new,Adineta_ricciae,Adineta ricciae,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,372,0.3432
+cur|Adineta_ricciae|CAJNOJ010000009.1_407234_409021|p3,curator_new,Adineta_ricciae,Adineta ricciae,Rotifera,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,365,0.3656
+cur|Adineta_ricciae|CAJNOJ010000030.1_78572_80153|p4,curator_new,Adineta_ricciae,Adineta ricciae,Rotifera,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,365,0.3622
+cur|Adineta_steineri|CAJNOI010000719.1_9542_10669|p1,curator_new,Adineta_steineri,Adineta steineri,Rotifera,candidate_inx_028,other/unknown,unassigned,376,0.7287
+cur|Adineta_steineri|CAJNOI010000031.1_518472_519599|p3,curator_new,Adineta_steineri,Adineta steineri,Rotifera,candidate_inx_028,other/unknown,unassigned,376,0.7261
+cur|Adineta_steineri|CAJNOI010000009.1_556245_558144|p4,curator_new,Adineta_steineri,Adineta steineri,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,373,0.3636
+cur|Adineta_steineri|CAJNOI010000040.1_242648_244045|p5,curator_new,Adineta_steineri,Adineta steineri,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,370,0.3531
+cur|Adineta_steineri|CAJNOI010000016.1_537749_538837|p6,curator_new,Adineta_steineri,Adineta steineri,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,363,0.3148
+cur|Adineta_vaga|CP075494.1_663807_664934|p1,curator_new,Adineta_vaga,Adineta vaga,Rotifera,candidate_inx_028,other/unknown,unassigned,376,0.845
+cur|Adineta_vaga|CP075494.1_9868312_9869674|p2,curator_new,Adineta_vaga,Adineta vaga,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,370,0.3504
+cur|Adineta_vaga|CP075494.1_12494283_12495859|p4,curator_new,Adineta_vaga,Adineta vaga,Rotifera,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,365,0.3548
+cur|Adineta_vaga|CP075495.1_2966282_2969516|p5,curator_new,Adineta_vaga,Adineta vaga,Rotifera,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,465,0.3131
+cur|Adineta_vaga|CP075494.1_12488368_12495862|p6,curator_new,Adineta_vaga,Adineta vaga,Rotifera,sp|Q1DH70|SHAKB_AEDAE,shakB,SF1_shakB,378,0.2657
+cur|Aegaeobuthus_cyprius|OZ392248.1_35911550_35912590|p1,curator_new,Aegaeobuthus_cyprius,Aegaeobuthus cyprius,Arthropoda (non-insect),sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,347,0.5214
+cur|Aegaeobuthus_cyprius|OZ392242.1_38977305_38978369|p2,curator_new,Aegaeobuthus_cyprius,Aegaeobuthus cyprius,Arthropoda (non-insect),sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,355,0.5169
+cur|Aegaeobuthus_cyprius|OZ392242.1_38998061_38999119|p3,curator_new,Aegaeobuthus_cyprius,Aegaeobuthus cyprius,Arthropoda (non-insect),sp|P33085|SHAKB_DROME,shakB,SF1_shakB,353,0.6102
+cur|Aegaeobuthus_cyprius|OZ392248.1_36019898_36020956|p4,curator_new,Aegaeobuthus_cyprius,Aegaeobuthus cyprius,Arthropoda (non-insect),sp|P33085|SHAKB_DROME,shakB,SF1_shakB,353,0.5734
+cur|Aegaeobuthus_cyprius|OZ392242.1_38986725_38987792|p8,curator_new,Aegaeobuthus_cyprius,Aegaeobuthus cyprius,Arthropoda (non-insect),sp|Q1DH70|SHAKB_AEDAE,shakB,SF1_shakB,356,0.5028
+cur|Aegaeobuthus_cyprius|OZ392248.1_35985027_35986106|p9,curator_new,Aegaeobuthus_cyprius,Aegaeobuthus cyprius,Arthropoda (non-insect),sp|Q9XYN1|INX2_SCHAM,Inx2,SF4_Inx2_expansion,360,0.5472
+cur|Aegaeobuthus_cyprius|OZ392248.1_35997561_35998628|p10,curator_new,Aegaeobuthus_cyprius,Aegaeobuthus cyprius,Arthropoda (non-insect),sp|Q9XYN1|INX2_SCHAM,Inx2,SF4_Inx2_expansion,356,0.535
+cur|Aegaeobuthus_cyprius|OZ392242.1_38970484_38971530|p11,curator_new,Aegaeobuthus_cyprius,Aegaeobuthus cyprius,Arthropoda (non-insect),sp|Q9XYN1|INX2_SCHAM,Inx2,SF4_Inx2_expansion,349,0.5299
+cur|Aelurillus_cypriotus|OZ390146.1_38046247_38047305|p1,curator_new,Aelurillus_cypriotus,Aelurillus cypriotus,Arthropoda (non-insect),sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,353,0.5593
+cur|Aelurillus_cypriotus|OZ390146.1_122266154_122267227|p2,curator_new,Aelurillus_cypriotus,Aelurillus cypriotus,Arthropoda (non-insect),sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,358,0.4596
+cur|Aelurillus_cypriotus|OZ390143.1_182374130_182375188|p3,curator_new,Aelurillus_cypriotus,Aelurillus cypriotus,Arthropoda (non-insect),sp|P33085|SHAKB_DROME,shakB,SF1_shakB,353,0.613
+cur|Aelurillus_cypriotus|OZ390143.1_182108915_182109973|p4,curator_new,Aelurillus_cypriotus,Aelurillus cypriotus,Arthropoda (non-insect),sp|P33085|SHAKB_DROME,shakB,SF1_shakB,353,0.507
+cur|Aelurillus_cypriotus|OZ390143.1_182084363_182085409|p8,curator_new,Aelurillus_cypriotus,Aelurillus cypriotus,Arthropoda (non-insect),sp|Q9XYN1|INX2_SCHAM,Inx2,SF4_Inx2_expansion,349,0.4886
+cur|Aelurillus_cypriotus|OZ390143.1_182312731_182375161|p9,curator_new,Aelurillus_cypriotus,Aelurillus cypriotus,Arthropoda (non-insect),recovered_Abra_segmentum_best,other/unknown,unassigned,316,0.3125
+cur|Aelurillus_cypriotus|OZ390146.1_38212569_38213624|p14,curator_new,Aelurillus_cypriotus,Aelurillus cypriotus,Arthropoda (non-insect),recovered_Aegaeobuthus_cyprius_best,other/unknown,unassigned,352,0.661
+cur|Aelurillus_cypriotus|OZ390140.1_313071859_313072914|p15,curator_new,Aelurillus_cypriotus,Aelurillus cypriotus,Arthropoda (non-insect),recovered_Aegaeobuthus_cyprius_best,other/unknown,unassigned,352,0.6412
+cur|Aelurillus_cypriotus|OZ390143.1_182176791_182177849|p16,curator_new,Aelurillus_cypriotus,Aelurillus cypriotus,Arthropoda (non-insect),recovered_Aegaeobuthus_cyprius_best,other/unknown,unassigned,353,0.6243
+cur|Aelurillus_cypriotus|OZ390143.1_182139075_182140130|p18,curator_new,Aelurillus_cypriotus,Aelurillus cypriotus,Arthropoda (non-insect),recovered_Aegaeobuthus_cyprius_best,other/unknown,unassigned,352,0.5819
+cur|Agelena_orientalis|OZ405006.1_111738241_111739299|p1,curator_new,Agelena_orientalis,Agelena orientalis,Arthropoda (non-insect),sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,353,0.5508
+cur|Agelena_orientalis|OZ405006.1_106576794_106577825|p2,curator_new,Agelena_orientalis,Agelena orientalis,Arthropoda (non-insect),sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,344,0.4899
+cur|Agelena_orientalis|OZ405006.1_297866838_297971678|p3,curator_new,Agelena_orientalis,Agelena orientalis,Arthropoda (non-insect),sp|P33085|SHAKB_DROME,shakB,SF1_shakB,353,0.5565
+cur|Agelena_orientalis|OZ405006.1_111928554_111929630|p6,curator_new,Agelena_orientalis,Agelena orientalis,Arthropoda (non-insect),sp|P27716|INX1_DROME,Inx1/ogre,SF2_Inx1_ogre,359,0.4194
+cur|Agelena_orientalis|OZ405001.1_267681632_267682690|p13,curator_new,Agelena_orientalis,Agelena orientalis,Arthropoda (non-insect),recovered_Acartia_tonsa_best,other/unknown,unassigned,353,0.4915
+cur|Agelena_orientalis|OZ405001.1_268184608_268185666|p14,curator_new,Agelena_orientalis,Agelena orientalis,Arthropoda (non-insect),recovered_Acartia_tonsa_best,other/unknown,unassigned,353,0.4605
+cur|Agelena_orientalis|OZ405001.1_268312122_268313180|p16,curator_new,Agelena_orientalis,Agelena orientalis,Arthropoda (non-insect),recovered_Aegaeobuthus_cyprius_best,other/unknown,unassigned,353,0.5989
+cur|Agelena_orientalis|OZ405001.1_268229052_268230107|p17,curator_new,Agelena_orientalis,Agelena orientalis,Arthropoda (non-insect),recovered_Aegaeobuthus_cyprius_best,other/unknown,unassigned,352,0.5932
+cur|Agelena_orientalis|OZ405001.1_268351784_268352848|p18,curator_new,Agelena_orientalis,Agelena orientalis,Arthropoda (non-insect),recovered_Aegaeobuthus_cyprius_best,other/unknown,unassigned,355,0.5
+cur|Amaurobius_ferox|OX578135.1_22005959_22006999|p1,curator_new,Amaurobius_ferox,Amaurobius ferox,Arthropoda (non-insect),sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,347,0.4971
+cur|Amaurobius_ferox|OX578143.1_93836975_93837997|p2,curator_new,Amaurobius_ferox,Amaurobius ferox,Arthropoda (non-insect),sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,341,0.4971
+cur|Amaurobius_ferox|OX578135.1_22333051_22334109|p3,curator_new,Amaurobius_ferox,Amaurobius ferox,Arthropoda (non-insect),sp|P33085|SHAKB_DROME,shakB,SF1_shakB,353,0.6102
+cur|Amaurobius_ferox|OX578143.1_20044333_20140154|p4,curator_new,Amaurobius_ferox,Amaurobius ferox,Arthropoda (non-insect),sp|P33085|SHAKB_DROME,shakB,SF1_shakB,353,0.5565
+cur|Amaurobius_ferox|OX578135.1_22021857_22022915|p5,curator_new,Amaurobius_ferox,Amaurobius ferox,Arthropoda (non-insect),sp|P33085|SHAKB_DROME,shakB,SF1_shakB,353,0.4986
+cur|Amaurobius_ferox|OX578143.1_91948787_91949863|p7,curator_new,Amaurobius_ferox,Amaurobius ferox,Arthropoda (non-insect),sp|P27716|INX1_DROME,Inx1/ogre,SF2_Inx1_ogre,359,0.4139
+cur|Amaurobius_ferox|OX578144.1_139756876_139757760|p8,curator_new,Amaurobius_ferox,Amaurobius ferox,Arthropoda (non-insect),sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,295,0.28
+cur|Amaurobius_ferox|OX578143.1_92003010_92004068|p14,curator_new,Amaurobius_ferox,Amaurobius ferox,Arthropoda (non-insect),recovered_Acartia_tonsa_best,other/unknown,unassigned,353,0.5169
+cur|Amaurobius_ferox|OX578135.1_22068971_22070029|p16,curator_new,Amaurobius_ferox,Amaurobius ferox,Arthropoda (non-insect),recovered_Acartia_tonsa_best,other/unknown,unassigned,353,0.4887
+cur|Amaurobius_ferox|OX578135.1_22040277_22041332|p21,curator_new,Amaurobius_ferox,Amaurobius ferox,Arthropoda (non-insect),recovered_Aegaeobuthus_cyprius_best,other/unknown,unassigned,352,0.5706
+cur|Brachionus_calyciflorus|NTPY01000330.1_409940_411611|p1,curator_new,Brachionus_calyciflorus,Brachionus calyciflorus,Rotifera,sp|P33085|SHAKB_DROME,shakB,SF1_shakB,357,0.2761
+cur|Brachionus_calyciflorus|NTPY01000529.1_56274_58710|p2,curator_new,Brachionus_calyciflorus,Brachionus calyciflorus,Rotifera,sp|Q9U3K5|INX2_CAEEL,inx-2 (Cele),SF3_Inx3_Inx7_nematode,406,0.2402
+cur|Brachionus_calyciflorus|NTPY01000970.1_33584_34756|p3,curator_new,Brachionus_calyciflorus,Brachionus calyciflorus,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,391,0.3919
+cur|Brachionus_calyciflorus|NTPY01000526.1_2301293_2302390|p4,curator_new,Brachionus_calyciflorus,Brachionus calyciflorus,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,366,0.3995
+cur|Brachionus_calyciflorus|NTPY01000483.1_809096_811261|p5,curator_new,Brachionus_calyciflorus,Brachionus calyciflorus,Rotifera,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,414,0.3285
+cur|Brachionus_calyciflorus|NTPY01000275.1_566644_568817|p6,curator_new,Brachionus_calyciflorus,Brachionus calyciflorus,Rotifera,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,393,0.335
+cur|Brachionus_calyciflorus|NTPY01000330.1_409940_411611|p7,curator_new,Brachionus_calyciflorus,Brachionus calyciflorus,Rotifera,sp|Q1DH70|SHAKB_AEDAE,shakB,SF1_shakB,343,0.2823
+cur|Brachionus_koreanus|PJRA01000196.1_402296_406389|p1,curator_new,Brachionus_koreanus,Brachionus koreanus,Rotifera,sp|Q9U3K5|INX2_CAEEL,inx-2 (Cele),SF3_Inx3_Inx7_nematode,387,0.2423
+cur|Brachionus_koreanus|PJRA01000555.1_1340882_1341979|p2,curator_new,Brachionus_koreanus,Brachionus koreanus,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,366,0.4321
+cur|Brachionus_koreanus|PJRA01000389.1_11013_14791|p4,curator_new,Brachionus_koreanus,Brachionus koreanus,Rotifera,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,392,0.3383
+cur|Brachionus_koreanus|PJRA01000263.1_5378433_5381126|p5,curator_new,Brachionus_koreanus,Brachionus koreanus,Rotifera,sp|Q1DH70|SHAKB_AEDAE,shakB,SF1_shakB,377,0.2806
+cur|Brachionus_manjavacas|JAHQIY010000010.1_3042979_3051256|p1,curator_new,Brachionus_manjavacas,Brachionus manjavacas,Rotifera,sp|Q9U3K5|INX2_CAEEL,inx-2 (Cele),SF3_Inx3_Inx7_nematode,369,0.2378
+cur|Brachionus_manjavacas|JAHQIY010000020.1_863382_864479|p2,curator_new,Brachionus_manjavacas,Brachionus manjavacas,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,366,0.4158
+cur|Brachionus_manjavacas|JAHQIY010000001.1_3683723_3686938|p3,curator_new,Brachionus_manjavacas,Brachionus manjavacas,Rotifera,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,392,0.3358
+cur|Brachionus_manjavacas|JAHQIY010000004.1_8292265_8293444|p4,curator_new,Brachionus_manjavacas,Brachionus manjavacas,Rotifera,sp|Q1DH70|SHAKB_AEDAE,shakB,SF1_shakB,348,0.303
+cur|Dryodora_glandiformis|JAUELJ010278292.1_395_1618|p1,curator_new,Dryodora_glandiformis,Dryodora glandiformis,Ctenophora,sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,388,0.4667
+cur|Dryodora_glandiformis|JAUELJ010287262.1_606_1743|p2,curator_new,Dryodora_glandiformis,Dryodora glandiformis,Ctenophora,sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,356,0.4566
+cur|Dryodora_glandiformis|JAUELJ010069302.1_2030_3163|p3,curator_new,Dryodora_glandiformis,Dryodora glandiformis,Ctenophora,sp|P27716|INX1_DROME,Inx1/ogre,SF2_Inx1_ogre,378,0.3456
+cur|Dryodora_glandiformis|JAUELJ010305675.1_629_1771|p4,curator_new,Dryodora_glandiformis,Dryodora glandiformis,Ctenophora,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,381,0.3756
+cur|Dryodora_glandiformis|JAUELJ010241728.1_537_1514|p5,curator_new,Dryodora_glandiformis,Dryodora glandiformis,Ctenophora,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,326,0.4036
+cur|Dryodora_glandiformis|JAUELJ010331040.1_2053_3400|p6,curator_new,Dryodora_glandiformis,Dryodora glandiformis,Ctenophora,sp|Q9XYN1|INX2_SCHAM,Inx2,SF4_Inx2_expansion,353,0.5457
+cur|Eriophyidae_sp.|CP157589.1_15871915_15872964|p1,curator_new,Eriophyidae_sp.,Eriophyidae sp.,Arthropoda (non-insect),sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,350,0.584
+cur|Eriophyidae_sp.|CP157590.1_242827_243888|p2,curator_new,Eriophyidae_sp.,Eriophyidae sp.,Arthropoda (non-insect),sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,354,0.5042
+cur|Eriophyidae_sp.|CP157589.1_1945697_1946933|p3,curator_new,Eriophyidae_sp.,Eriophyidae sp.,Arthropoda (non-insect),sp|Q9V427|INX2_DROME,Inx2,SF4_Inx2_expansion,352,0.4561
+cur|Eriophyidae_sp.|CP157589.1_12771188_12772438|p7,curator_new,Eriophyidae_sp.,Eriophyidae sp.,Arthropoda (non-insect),sp|P27716|INX1_DROME,Inx1/ogre,SF2_Inx1_ogre,354,0.427
+cur|Eriophyidae_sp.|CP157589.1_12771188_12772438|p10,curator_new,Eriophyidae_sp.,Eriophyidae sp.,Arthropoda (non-insect),sp|Q1DH70|SHAKB_AEDAE,shakB,SF1_shakB,353,0.4592
+cur|Eriophyidae_sp.|CP157589.1_14051685_14059055|p12,curator_new,Eriophyidae_sp.,Eriophyidae sp.,Arthropoda (non-insect),sp|Q9XYN1|INX2_SCHAM,Inx2,SF4_Inx2_expansion,358,0.4875
+cur|Eriophyidae_sp.|CP157589.1_2915620_2916790|p13,curator_new,Eriophyidae_sp.,Eriophyidae sp.,Arthropoda (non-insect),sp|Q9XYN1|INX2_SCHAM,Inx2,SF4_Inx2_expansion,357,0.4594
+cur|Rotaria_macrura|OENT01000325.1_81075_83639|p1,curator_new,Rotaria_macrura,Rotaria macrura,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,387,0.3555
+cur|Rotaria_macrura|OENT01000045.1_119094_122499|p2,curator_new,Rotaria_macrura,Rotaria macrura,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,386,0.3566
+cur|Rotaria_macrura|OENT01001445.1_20220_22805|p3,curator_new,Rotaria_macrura,Rotaria macrura,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,370,0.3585
+cur|Rotaria_macrura|OENT01001165.1_23266_28470|p4,curator_new,Rotaria_macrura,Rotaria macrura,Rotifera,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,370,0.3504
+cur|Rotaria_macrura|OENT01000439.1_8602_9805|p5,curator_new,Rotaria_macrura,Rotaria macrura,Rotifera,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,379,0.3151
+cur|Streblospio_benedicti|CM032661.1_36454555_36461623|p1,curator_new,Streblospio_benedicti,Streblospio benedicti,Annelida,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,373,0.393
+cur|Streblospio_benedicti|CM032666.1_530575_537250|p2,curator_new,Streblospio_benedicti,Streblospio benedicti,Annelida,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,343,0.4203
+cur|Streblospio_benedicti|CM032660.1_56259174_56277458|p3,curator_new,Streblospio_benedicti,Streblospio benedicti,Annelida,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,348,0.3894
+cur|Streblospio_benedicti|CM032660.1_38859841_38860992|p4,curator_new,Streblospio_benedicti,Streblospio benedicti,Annelida,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,384,0.3731
+cur|Streblospio_benedicti|CM032663.1_21744357_21747197|p5,curator_new,Streblospio_benedicti,Streblospio benedicti,Annelida,sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,385,0.3419
+cur|Streblospio_benedicti|CM032660.1_13839080_13840183|p6,curator_new,Streblospio_benedicti,Streblospio benedicti,Annelida,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,368,0.3978
+cur|Streblospio_benedicti|CM032666.1_10353645_10358349|p7,curator_new,Streblospio_benedicti,Streblospio benedicti,Annelida,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,361,0.418
+cur|Streblospio_benedicti|CM032663.1_51675706_51690919|p8,curator_new,Streblospio_benedicti,Streblospio benedicti,Annelida,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,367,0.3859
+cur|Streblospio_benedicti|CM032660.1_38854181_38855281|p9,curator_new,Streblospio_benedicti,Streblospio benedicti,Annelida,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,367,0.372
+cur|Streblospio_benedicti|CM032660.1_38866392_38867486|p10,curator_new,Streblospio_benedicti,Streblospio benedicti,Annelida,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,365,0.3733
+cur|Streblospio_benedicti|CM032660.1_23991495_23998058|p11,curator_new,Streblospio_benedicti,Streblospio benedicti,Annelida,sp|Q03412|UNC7_CAEEL,unc-7,SF3_Inx3_Inx7_nematode,348,0.3614
+cur|Triops_cancriformis|JAHZNP010000030.1_219375_220831|p1,curator_new,Triops_cancriformis,Triops cancriformis,Arthropoda (non-insect),sp|P27716|INX1_DROME,Inx1/ogre,SF2_Inx1_ogre,362,0.5635
+cur|Triops_cancriformis|JAHZNP010000413.1_12392_54817|p2,curator_new,Triops_cancriformis,Triops cancriformis,Arthropoda (non-insect),sp|P27716|INX1_DROME,Inx1/ogre,SF2_Inx1_ogre,355,0.4873
+cur|Triops_cancriformis|JAHZNP010000030.1_205087_209529|p3,curator_new,Triops_cancriformis,Triops cancriformis,Arthropoda (non-insect),sp|O01393|UNC9_CAEEL,unc-9,SF3_Inx3_Inx7_nematode,304,0.2823

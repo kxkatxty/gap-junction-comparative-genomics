@@ -1,0 +1,43 @@
+clade,organism,assembly_accession,assembly_level,assembly_source,has_gff_annotation,innexin_annotation_status,connexin_annotation_status,pannexin_annotation_status,already_checked,innexin_discovery_run,model_species,priority_score,priority_tier,recommended_pipeline,clade_priority,notes
+Crustacea,Bathyporeia elegans,GCA_965195825.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,1,copepods branchiopods decapods etc.
+Crustacea,Liocarcinus depurator,GCA_965195915.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,1,copepods branchiopods decapods etc.
+Crustacea,Processa modica,GCA_965195785.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,1,copepods branchiopods decapods etc.
+Crustacea,Thia scutellata,GCA_965195895.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,1,copepods branchiopods decapods etc.
+Crustacea,Acartia tonsa,GCF_053477335.1,Chromosome,RefSeq,yes,,,,no,no,no,100,high,classify_then_discovery,1,copepods branchiopods decapods etc.
+Chelicerata,Eriophyidae sp.,GCA_045522265.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,2,spiders horseshoe crabs mites
+Chelicerata,Aegaeobuthus cyprius,GCA_978021275.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,2,spiders horseshoe crabs mites
+Chelicerata,Aelurillus cypriotus,GCA_978018815.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,2,spiders horseshoe crabs mites
+Chelicerata,Agelena orientalis,GCA_978045235.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,2,spiders horseshoe crabs mites
+Chelicerata,Amaurobius ferox,GCA_951213105.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,2,spiders horseshoe crabs mites
+Tardigrada,Hypsibius exemplaris,GCA_002082055.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,3,water bears
+Tardigrada,Paramacrobiotus metropolitanus,GCF_019649055.1,Scaffold,RefSeq,yes,,,,no,no,no,85,high,classify_then_discovery,3,water bears
+Rotifera,Adineta ricciae,GCA_905250025.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,4,bdelloid and other rotifers
+Rotifera,Adineta steineri,GCA_905250115.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,4,bdelloid and other rotifers
+Rotifera,Brachionus calyciflorus,GCA_002922825.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,4,bdelloid and other rotifers
+Rotifera,Brachionus koreanus,GCA_016987375.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,4,bdelloid and other rotifers
+Rotifera,Brachionus manjavacas,GCA_019054805.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,4,bdelloid and other rotifers
+Annelida,Lanice conchilega,GCA_965119625.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,5,polychaetes oligochaetes leeches
+Annelida,Nephtys caeca,GCA_965117105.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,5,polychaetes oligochaetes leeches
+Annelida,Nephtys hombergii,GCA_965118265.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,5,polychaetes oligochaetes leeches
+Annelida,Nephtys longosetosa,GCA_965118275.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,5,polychaetes oligochaetes leeches
+Annelida,Ophelia borealis,GCA_965119635.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,5,polychaetes oligochaetes leeches
+Mollusca,Macoma balthica,GCA_965119735.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,6,bivalves gastropods cephalopods
+Mollusca,Abra alba,GCA_979025805.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,6,bivalves gastropods cephalopods
+Mollusca,Abra segmentum,GCA_965244925.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,6,bivalves gastropods cephalopods
+Mollusca,Acanthocardia echinata,GCA_977930445.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,6,bivalves gastropods cephalopods
+Mollusca,Acanthochitona discrepans,GCA_048544545.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,6,bivalves gastropods cephalopods
+Cnidaria,Acropora austera,GCA_964273435.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,7,corals jellyfish hydroids
+Cnidaria,Acropora cervicornis,GCA_964034985.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,7,corals jellyfish hydroids
+Cnidaria,Acropora cf. manni,GCA_965118205.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,7,corals jellyfish hydroids
+Cnidaria,Acropora glauca,GCA_964274385.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,7,corals jellyfish hydroids
+Cnidaria,Acropora hyacinthus,GCA_964291705.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,7,corals jellyfish hydroids
+Porifera,Acanthascus dawsoni,GCA_978045225.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,8,sponges early metazoan outgroups
+Porifera,Agelas clathrodes,GCA_965279245.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,8,sponges early metazoan outgroups
+Porifera,Agelas conifera,GCA_965122385.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,8,sponges early metazoan outgroups
+Porifera,Agelas oroides,GCA_949130485.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,8,sponges early metazoan outgroups
+Porifera,Agelas tubulata,GCA_964245335.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,8,sponges early metazoan outgroups
+Placozoa,Trichoplax sp. H2,GCA_003344405.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,9,Trichoplax and relatives
+Ctenophora,Mertensia ovum,GCA_965231305.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,10,comb jellies
+Ctenophora,Beroe forskalii,GCA_011033025.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,10,comb jellies
+Ctenophora,Beroe ovata,GCA_946803715.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,10,comb jellies
+Ctenophora,Dryodora glandiformis,GCA_031471255.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,10,comb jellies

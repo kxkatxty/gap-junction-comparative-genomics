@@ -1,0 +1,4 @@
+panx_type,n_loci,n_clades,n_species,median_length_aa,clades
+PANX1,15,7,13,426,Amphibian; Bird; Cartilaginous fish; Lobe-finned fish; Mammal; Ray-finned fish; Reptile
+PANX2,18,8,16,668,Amphibian; Bird; Cartilaginous fish; Lobe-finned fish; Mammal; Ray-finned fish; Reptile; Tunicate / lancelet
+PANX3,16,9,15,408,Amphibian; Bird; Cartilaginous fish; Jawless vertebrate; Lobe-finned fish; Mammal; Ray-finned fish; Reptile; Tunicate / lancelet

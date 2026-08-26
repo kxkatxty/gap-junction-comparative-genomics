@@ -1,0 +1,6 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Anas platyrhynchos,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,U3HYR1,GJA1,Gap junction protein,20,0,"organism_name:""Anas platyrhynchos"" AND gene:GJA*"
+Butorides sundevalli,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Cecropis daurica,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Dumetella carolinensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Emberiza tahapisi,connexin,no,no,no_related_entry_found,,,,,,,,0,0,

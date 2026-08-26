@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pannexin × innexin</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --ink:#12202a; --muted:#4d6570; --panx:#c2410c; --inx:#0f766e; --line:rgba(18,32,42,.12); --foam:#f6f3ef; }
+body { margin:0; font-family:Sora,sans-serif; color:var(--ink); line-height:1.65;
+  background:radial-gradient(900px 420px at 8% -5%, rgba(15,118,110,.14), transparent 55%),
+             radial-gradient(800px 380px at 95% 0%, rgba(194,65,12,.12), transparent 50%),
+             linear-gradient(180deg,#efe8e1 0%, var(--foam) 40%, #f3f0eb 100%); }
+.wrap { width:min(860px, calc(100% - 2rem)); margin:0 auto; padding:2rem 0 4rem }
+.brand { font-family:Fraunces,serif; font-size:clamp(1.7rem,4vw,2.4rem); margin:0 0 .35rem; letter-spacing:-.02em }
+.lede { color:var(--muted); max-width:58ch; margin:0 0 1.2rem }
+.facts { display:grid; grid-template-columns:repeat(4,1fr); gap:.65rem; margin:0 0 1.4rem }
+.fact { background:#fff; border:1px solid var(--line); border-radius:12px; padding:.75rem }
+.fact b { display:block; font-family:Fraunces,serif; font-size:1.35rem }
+.fact span { font-size:.75rem; color:var(--muted) }
+.take { border-left:3px solid var(--inx); background:rgba(15,118,110,.07); padding:.75rem .9rem; border-radius:0 12px 12px 0; margin:0 0 1.2rem }
+.fig { background:#fff; border:1px solid var(--line); border-radius:14px; padding:.85rem; margin:0 0 1rem }
+.fig img { width:100%; display:block; border-radius:8px }
+.cap { font-size:.88rem; color:var(--muted); margin:.55rem 0 0 }
+.closing { margin-top:1.8rem; padding:1.2rem 1.25rem; border-radius:14px; background:linear-gradient(135deg,#1e3a4c,var(--panx)); color:#fff }
+.footer { margin-top:1.4rem; color:var(--muted); font-size:.88rem }
+.footer a { margin-right:.85rem; color:var(--panx) }
+@media (max-width:700px) { .facts { grid-template-columns:1fr 1fr } }
+</style></head><body>
+<main class="wrap">
+  <p class="brand">Pannexin × innexin</p>
+  <p class="lede">Same comparison style as the innexin × connexin page, but only against innexins —
+  the family pannexins are expected to resemble. Connexins are intentionally not in this contrast.</p>
+
+  <div class="facts">
+    <div class="fact"><b>49</b><span>pannexin proteins</span></div>
+    <div class="fact"><b>174</b><span>innexin proteins</span></div>
+    <div class="fact"><b>1062</b><span>cross hits (e≤1e-3, ≥80 aa)</span></div>
+    <div class="fact"><b>90%</b><span>panx with ≥1 inx hit</span></div>
+  </div>
+
+  <p class="take"><strong>Finding.</strong> Most pannexin proteins (44/49) hit at least one innexin at e≤1e-3 and ≥80 aa (median %id 27.8). That is the opposite pattern from innexin×connexin on the parent site (no cross-family hits at the same thresholds).</p>
+
+  <div class="fig"><img src="figures/01_lengths.png" alt="lengths">
+    <p class="cap">Length distributions for the two panels.</p></div>
+  <div class="fig"><img src="figures/02_kmer_space.png" alt="kmer space">
+    <p class="cap">3-mer composition SVD. Overlap is expected if pannexins are innexin-related sequences;
+    separation would argue against detectable relatedness in this feature space.</p></div>
+  <div class="fig"><img src="figures/03_cross_identity.png" alt="cross identity">
+    <p class="cap">MMseqs % identity for pannexin→innexin hits (aln ≥80 aa, e≤1e-3).</p></div>
+  <div class="fig"><img src="figures/04_hit_coverage.png" alt="coverage">
+    <p class="cap">How many pannexin proteins recover at least one innexin hit under the same thresholds
+    used for innexin×connexin (where cross hits were essentially zero).</p></div>
+
+  <section class="closing">
+    <p>Literature treats pannexins as chordate/vertebrate relatives of innexins that no longer dock into gap junctions. This page only tests sequence detectability against the innexin panel; it does not re-derive the chordate bottleneck story from these trees alone.</p>
+  </section>
+  <p class="footer">
+    <a href="../pannexin_path/index.html">Pannexin path</a>
+    <a href="../pannexin_similarity/index.html">Within-pannexin similarity</a>
+    <a href="../../../../project/results/inx_vs_cnx/index.html">Innexin × connexin (parent)</a>
+  </p>
+</main></body></html>

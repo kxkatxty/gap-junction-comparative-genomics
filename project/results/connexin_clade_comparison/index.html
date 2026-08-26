@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Connexin Clade × Type Comparison</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root { --ink:#2a1408; --muted:#7a5340; --deep:#7c2d12; --amber:#c2410c; --bg:#fbf4ee; }
+*{box-sizing:border-box}
+body{margin:0;font-family:Sora,sans-serif;color:var(--ink);background:
+ radial-gradient(900px 420px at 0% 0%, rgba(234,88,12,.14), transparent 55%),
+ linear-gradient(180deg,#f8ebe3,var(--bg));line-height:1.55}
+.hero{min-height:78vh;display:grid;align-items:end;padding:clamp(1.4rem,4vw,3rem);color:#fffaf6;
+ background:linear-gradient(120deg,rgba(124,45,18,.94),rgba(194,65,12,.78) 55%,rgba(217,119,6,.55))}
+.brand{font-family:Fraunces,serif;font-size:clamp(2.4rem,6.5vw,4.6rem);margin:0 0 .7rem;line-height:.95}
+.hero h1{font-size:clamp(1.05rem,2vw,1.3rem);font-weight:500;max-width:42ch;margin:0 0 .7rem}
+.hero p{max-width:52ch;opacity:.92}
+.cta a{display:inline-block;text-decoration:none;background:#fffaf6;color:var(--deep);padding:.8rem 1.15rem;border-radius:999px;font-weight:700;margin:.4rem .4rem 0 0}
+.cta a.ghost{background:transparent;color:#fffaf6;border:1px solid rgba(255,250,246,.45)}
+.wrap{width:min(1160px,calc(100% - 2rem));margin:0 auto;padding:2rem 0 4rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;margin-top:-2rem}
+.stat{background:#fff;border-radius:16px;padding:1rem;box-shadow:0 10px 28px rgba(42,20,8,.06)}
+.stat b{display:block;font-family:Fraunces,serif;font-size:1.8rem;color:var(--deep)}
+.stat span{color:var(--muted);font-size:.84rem}
+h2{font-family:Fraunces,serif}
+.findings{background:#fff;border-radius:16px;padding:1.1rem 1.3rem;border-left:4px solid #d97706}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1rem}
+.card{background:#fff;border-radius:16px;padding:.85rem;box-shadow:0 8px 22px rgba(42,20,8,.05)}
+.card img{width:100%;border-radius:10px;cursor:zoom-in}
+.card h3{font-size:.95rem;margin:.7rem 0 0}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:.88rem}
+th,td{padding:.55rem .7rem;border-bottom:1px solid #f3e0d4;text-align:left}
+th{background:#7c2d12;color:#fffaf6}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:20;align-items:center;justify-content:center;padding:1.5rem;cursor:zoom-out}
+.modal.open{display:flex} .modal img{max-width:95vw;max-height:90vh;border-radius:8px}
+@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+<header class="hero"><div>
+<p class="brand">Clade × Connexin</p>
+<h1>Compare vertebrate clades and classical connexin labels in one place</h1>
+<p>Reference proteins plus high-confidence discovery loci — sliced by clade, gene type (GJA1, GJB2, GJC…) and α/β/γ/δ/ε subfamily.</p>
+<div class="cta">
+<a href="#figures">See diagrams</a>
+<a class="ghost" href="../innexin_clade_comparison/index.html">Innexin counterpart</a>
+</div>
+</div></header>
+<main class="wrap">
+<div class="stats">
+<div class="stat"><b>127</b><span>annotated connexin loci</span></div>
+<div class="stat"><b>38</b><span>species represented</span></div>
+<div class="stat"><b>6</b><span>clade bins</span></div>
+<div class="stat"><b>15</b><span>type labels</span></div>
+</div>
+<section><h2>Key results</h2>
+<div class="findings"><ol><li>Dataset: 103 reference connexins + 24 high-confidence discovery loci across 38 species.</li><li>Discovery recoveries most often match other/unknown (23/24). Labels are best-hit similarity, not proven 1:1 orthology.</li><li>α (GJA) and β (GJB) subfamilies co-occur in: Amphibian, Bird, Mammal, Other vertebrate, Ray-finned fish — the dual-locus architecture (GJA1 vs β-cluster) is a vertebrate-wide pattern, not mammal-only.</li><li>Among discovery loci, Amphibian contributes the most (15).</li><li>Median protein length: Mammal 333 aa vs Amphibian 308 aa.</li><li>Median protein length: Bird 375 aa vs Ray-finned fish 277 aa.</li><li>Median protein length: Amphibian 308 aa vs Cartilaginous fish 256 aa.</li><li>Reference set covers α/β/γ/δ/ε classes (GJA, GJB, GJC, GJD, GJE). GJA4 sits in the conserved β-neighborhood; GJA1 is a separate locus.</li><li>Note: δ GJD exon-count outliers (up to ~22) are often automated GFF fusions with intron-rich flanks (e.g. DLGAP3/SMIM12 near GJA4), not real 22-exon connexins.</li></ol></div>
+<p style="color:#7a5340;max-width:70ch">A discovery locus labelled GJA1-like means its <em>best reference hit</em> was GJA1. Orthology still needs synteny (GJA1 vs the β-cluster around GJA4).</p>
+</section>
+<section><h2>Clade overview</h2><table><tr><th>Clade</th><th>Loci</th><th>Species</th><th>Ref</th><th>Discovery</th></tr><tr><td>Mammal</td><td>84</td><td>16</td><td>83</td><td>1</td></tr><tr><td>Amphibian</td><td>20</td><td>8</td><td>5</td><td>15</td></tr><tr><td>Bird</td><td>10</td><td>5</td><td>6</td><td>4</td></tr><tr><td>Ray-finned fish</td><td>5</td><td>2</td><td>4</td><td>1</td></tr><tr><td>Other vertebrate</td><td>4</td><td>4</td><td>4</td><td>0</td></tr><tr><td>Cartilaginous fish</td><td>4</td><td>3</td><td>1</td><td>3</td></tr></table></section>
+<section><h2>Connexin labels</h2><table><tr><th>Type</th><th>Subfamily</th><th>Loci</th><th>Clades</th></tr><tr><td>other/unknown</td><td>unassigned</td><td>26</td><td>5</td></tr><tr><td>GJA1</td><td>alpha_GJA</td><td>15</td><td>5</td></tr><tr><td>GJC</td><td>gamma_GJC</td><td>14</td><td>4</td></tr><tr><td>GJB2</td><td>beta_GJB</td><td>9</td><td>2</td></tr><tr><td>GJD</td><td>delta_GJD</td><td>9</td><td>1</td></tr><tr><td>GJB1</td><td>beta_GJB</td><td>8</td><td>3</td></tr><tr><td>GJA4</td><td>alpha_GJA</td><td>7</td><td>2</td></tr><tr><td>other GJB</td><td>beta_GJB</td><td>7</td><td>1</td></tr><tr><td>GJA3</td><td>alpha_GJA</td><td>6</td><td>2</td></tr><tr><td>GJA5</td><td>alpha_GJA</td><td>6</td><td>2</td></tr><tr><td>other GJA</td><td>alpha_GJA</td><td>6</td><td>2</td></tr><tr><td>GJA8</td><td>alpha_GJA</td><td>5</td><td>2</td></tr><tr><td>GJB3</td><td>beta_GJB</td><td>4</td><td>1</td></tr><tr><td>GJB6</td><td>beta_GJB</td><td>3</td><td>2</td></tr><tr><td>GJE</td><td>epsilon_GJE</td><td>2</td><td>1</td></tr></table></section>
+<section id="figures"><h2>Diagrams</h2>
+<div class="grid"><article class="card">
+  <img src="figures/01_loci_by_clade_source.png" alt="Loci by clade, stacked by source" loading="lazy" onclick="openModal(this.src)">
+  <h3>Loci by clade, stacked by source</h3>
+</article><article class="card">
+  <img src="figures/02_heatmap_clade_x_type.png" alt="Heatmap: clade × connexin type" loading="lazy" onclick="openModal(this.src)">
+  <h3>Heatmap: clade × connexin type</h3>
+</article><article class="card">
+  <img src="figures/03_type_mix_per_clade.png" alt="Type mix within clades" loading="lazy" onclick="openModal(this.src)">
+  <h3>Type mix within clades</h3>
+</article><article class="card">
+  <img src="figures/04_classical_across_clades.png" alt="GJA1/GJA4/GJB… across clades" loading="lazy" onclick="openModal(this.src)">
+  <h3>GJA1/GJA4/GJB… across clades</h3>
+</article><article class="card">
+  <img src="figures/05_subfamily_by_clade.png" alt="α/β/γ/δ/ε subfamilies by clade" loading="lazy" onclick="openModal(this.src)">
+  <h3>α/β/γ/δ/ε subfamilies by clade</h3>
+</article><article class="card">
+  <img src="figures/06_length_by_clade.png" alt="Protein length by clade" loading="lazy" onclick="openModal(this.src)">
+  <h3>Protein length by clade</h3>
+</article><article class="card">
+  <img src="figures/07_length_by_type.png" alt="Protein length by connexin type" loading="lazy" onclick="openModal(this.src)">
+  <h3>Protein length by connexin type</h3>
+</article><article class="card">
+  <img src="figures/10_species_richness.png" alt="Top discovery species" loading="lazy" onclick="openModal(this.src)">
+  <h3>Top discovery species</h3>
+</article><article class="card">
+  <img src="figures/13_exon_by_clade.png" alt="Exon architecture by clade" loading="lazy" onclick="openModal(this.src)">
+  <h3>Exon architecture by clade</h3>
+</article><article class="card">
+  <img src="figures/14_exon_by_subfamily.png" alt="Exons by α/β/γ/δ (δ spikes = annotation fusion)" loading="lazy" onclick="openModal(this.src)">
+  <h3>Exons by α/β/γ/δ (δ spikes = annotation fusion)</h3>
+</article></div>
+</section>
+<section>
+<p>
+<a href="all_connexin_loci_annotated.csv">all loci</a> ·
+<a href="clade_summary.csv">clade summary</a> ·
+<a href="reference_type_summary.csv">type summary</a> ·
+<a href="../connexin_similarity/index.html">MMseqs + embeddings</a> ·
+<a href="../connexin_insights/index.html">Curated insights</a> ·
+<a href="../family_comparison/index.html">vs innexin</a>
+</p>
+</section>
+</main>
+<div id="modal" class="modal" onclick="this.classList.remove('open')"><img id="modal-img" alt=""></div>
+<script>
+function openModal(src){document.getElementById('modal-img').src=src;document.getElementById('modal').classList.add('open')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('modal').classList.remove('open')});
+</script>
+</body></html>

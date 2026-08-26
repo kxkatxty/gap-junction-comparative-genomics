@@ -1,0 +1,31 @@
+# Gap-junction reference species list (30 species)
+Aedes aegypti
+Anopheles gambiae
+Caenorhabditis briggsae
+Caenorhabditis elegans
+Drosophila melanogaster
+Schistocerca americana
+Bos taurus
+Canis lupus familiaris
+Chlorocebus sabaeus
+Cricetulus griseus
+Danio rerio
+Equus caballus
+Erinaceus europaeus
+Gallus gallus
+Gorilla gorilla gorilla
+Homo sapiens
+Hylobates moloch
+Leucoraja erinaceus
+Macaca fascicularis
+Macaca mulatta
+Mesocricetus auratus
+Mus musculus
+Oryctolagus cuniculus
+Ovis aries
+Pongo pygmaeus
+Rattus norvegicus
+Sus scrofa
+Ursus americanus
+Xenopus laevis
+Xenopus tropicalis

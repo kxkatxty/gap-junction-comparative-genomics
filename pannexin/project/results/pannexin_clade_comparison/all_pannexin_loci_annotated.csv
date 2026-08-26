@@ -1,0 +1,50 @@
+seq_id,organism,organism_key,gene,accession,panx_type,clade,length,cys_count,source,bottleneck_clade
+panx|Xenopus_laevis|panx1.L|A0A1L8HJE1,Xenopus laevis,Xenopus_laevis,panx1.L,A0A1L8HJE1,PANX1,Amphibian,428,10,reference_panel,no
+panx|Xenopus_laevis|panx2.L|A0A8J0UPJ5,Xenopus laevis,Xenopus_laevis,panx2.L,A0A8J0UPJ5,PANX2,Amphibian,688,16,reference_panel,no
+panx|Xenopus_laevis|panx2.S|A0A1L8GU32,Xenopus laevis,Xenopus_laevis,panx2.S,A0A1L8GU32,PANX2,Amphibian,675,11,reference_panel,no
+panx|Xenopus_laevis|panx3.L|A0A8J0T8Y2,Xenopus laevis,Xenopus_laevis,panx3.L,A0A8J0T8Y2,PANX3,Amphibian,408,12,reference_panel,no
+panx|Xenopus_laevis|panx3.S|A0A1L8FFR9,Xenopus laevis,Xenopus_laevis,panx3.S,A0A1L8FFR9,PANX3,Amphibian,408,11,reference_panel,no
+panx|Xenopus_tropicalis|panx1|B3DLA5,Xenopus tropicalis,Xenopus_tropicalis,panx1,B3DLA5,PANX1,Amphibian,428,10,reference_panel,no
+panx|Xenopus_tropicalis|panx2|A0A8J0SJZ3,Xenopus tropicalis,Xenopus_tropicalis,panx2,A0A8J0SJZ3,PANX2,Amphibian,675,10,reference_panel,no
+panx|Xenopus_tropicalis|panx3|F7D9M9,Xenopus tropicalis,Xenopus_tropicalis,panx3,F7D9M9,PANX3,Amphibian,408,12,reference_panel,no
+panx|Gallus_gallus|PANX1|A0A1D5P0I0,Gallus gallus,Gallus_gallus,PANX1,A0A1D5P0I0,PANX1,Bird,433,11,reference_panel,no
+panx|Gallus_gallus|PANX2|A0A8V0XA00,Gallus gallus,Gallus_gallus,PANX2,A0A8V0XA00,PANX2,Bird,572,10,reference_panel,no
+panx|Gallus_gallus|PANX3|A0A8V1A6C8,Gallus gallus,Gallus_gallus,PANX3,A0A8V1A6C8,PANX3,Bird,429,11,reference_panel,no
+panx|Callorhinchus_milii|A0A4W3ILW5|A0A4W3ILW5,Callorhinchus milii,Callorhinchus_milii,A0A4W3ILW5,A0A4W3ILW5,PANX1,Cartilaginous fish,420,9,reference_panel,no
+panx|Callorhinchus_milii|A0A4W3JCN1|A0A4W3JCN1,Callorhinchus milii,Callorhinchus_milii,A0A4W3JCN1,A0A4W3JCN1,PANX1,Cartilaginous fish,408,10,reference_panel,no
+panx|Callorhinchus_milii|panx3|A0A4W3HHX6,Callorhinchus milii,Callorhinchus_milii,panx3,A0A4W3HHX6,PANX3,Cartilaginous fish,431,13,reference_panel,no
+panx|Callorhinchus_milii|PANX|A0A4W3JI34,Callorhinchus milii,Callorhinchus_milii,PANX,A0A4W3JI34,PANX2,Cartilaginous fish,575,10,reference_panel,no
+panx|Petromyzon_marinus|LOC116956353|A0AAJ7UCG9,Petromyzon marinus,Petromyzon_marinus,LOC116956353,A0AAJ7UCG9,PANX3,Jawless vertebrate,453,10,reference_panel,yes
+panx|Latimeria_chalumnae|PANX1|H3A740,Latimeria chalumnae,Latimeria_chalumnae,PANX1,H3A740,PANX1,Lobe-finned fish,428,10,reference_panel,no
+panx|Latimeria_chalumnae|PANX2|H3BCF1,Latimeria chalumnae,Latimeria_chalumnae,PANX2,H3BCF1,PANX2,Lobe-finned fish,681,11,reference_panel,no
+panx|Latimeria_chalumnae|PANX3|H3AKW8,Latimeria chalumnae,Latimeria_chalumnae,PANX3,H3AKW8,PANX3,Lobe-finned fish,390,13,reference_panel,no
+panx|Bos_taurus|PANX1|A0A4W2C374,Bos taurus,Bos_taurus,PANX1,A0A4W2C374,PANX1,Mammal,424,12,reference_panel,no
+panx|Bos_taurus|PANX2|A0A4W2C073,Bos taurus,Bos_taurus,PANX2,A0A4W2C073,PANX2,Mammal,666,11,reference_panel,no
+panx|Bos_taurus|PANX3|A0A4W2GW69,Bos taurus,Bos_taurus,PANX3,A0A4W2GW69,PANX3,Mammal,392,10,reference_panel,no
+panx|Homo_sapiens|PANX1|Q96RD7,Homo sapiens,Homo_sapiens,PANX1,Q96RD7,PANX1,Mammal,426,11,reference_panel,no
+panx|Homo_sapiens|PANX2|Q96RD6,Homo sapiens,Homo_sapiens,PANX2,Q96RD6,PANX2,Mammal,677,10,reference_panel,no
+panx|Homo_sapiens|PANX3|Q96QZ0,Homo sapiens,Homo_sapiens,PANX3,Q96QZ0,PANX3,Mammal,392,9,reference_panel,no
+panx|Mus_musculus|Panx1|Q9JIP4,Mus musculus,Mus_musculus,Panx1,Q9JIP4,PANX1,Mammal,426,10,reference_panel,no
+panx|Mus_musculus|Panx2|Q6IMP4,Mus musculus,Mus_musculus,Panx2,Q6IMP4,PANX2,Mammal,677,12,reference_panel,no
+panx|Mus_musculus|Panx3|Q8CEG0,Mus musculus,Mus_musculus,Panx3,Q8CEG0,PANX3,Mammal,392,7,reference_panel,no
+panx|Rattus_norvegicus|Panx1|P60570,Rattus norvegicus,Rattus_norvegicus,Panx1,P60570,PANX1,Mammal,426,10,reference_panel,no
+panx|Rattus_norvegicus|Panx2|P60571,Rattus norvegicus,Rattus_norvegicus,Panx2,P60571,PANX2,Mammal,674,12,reference_panel,no
+panx|Rattus_norvegicus|Panx3|P60572,Rattus norvegicus,Rattus_norvegicus,Panx3,P60572,PANX3,Mammal,392,8,reference_panel,no
+panx|Sus_scrofa|PANX1|A0A287B8K3,Sus scrofa,Sus_scrofa,PANX1,A0A287B8K3,PANX1,Mammal,425,12,reference_panel,no
+panx|Sus_scrofa|PANX2|F1RXR8,Sus scrofa,Sus_scrofa,PANX2,F1RXR8,PANX2,Mammal,669,11,reference_panel,no
+panx|Sus_scrofa|PANX3|A0A4X1VH71,Sus scrofa,Sus_scrofa,PANX3,A0A4X1VH71,PANX3,Mammal,392,10,reference_panel,no
+panx|Danio_rerio|panx1a|A0A8M1PG01,Danio rerio,Danio_rerio,panx1a,A0A8M1PG01,PANX1,Ray-finned fish,417,13,reference_panel,no
+panx|Danio_rerio|panx1b|F1QSR7,Danio rerio,Danio_rerio,panx1b,F1QSR7,PANX1,Ray-finned fish,422,13,reference_panel,no
+panx|Danio_rerio|panx2|A0A8M1P3J6,Danio rerio,Danio_rerio,panx2,A0A8M1P3J6,PANX2,Ray-finned fish,651,10,reference_panel,no
+panx|Lepisosteus_oculatus|PANX|W5NEM0,Lepisosteus oculatus,Lepisosteus_oculatus,PANX,W5NEM0,PANX2,Ray-finned fish,654,11,reference_panel,no
+panx|Takifugu_rubripes|panx2|A0A3B5K011,Takifugu rubripes,Takifugu_rubripes,panx2,A0A3B5K011,PANX2,Ray-finned fish,656,12,reference_panel,no
+panx|Takifugu_rubripes|panx3|A0A674M993,Takifugu rubripes,Takifugu_rubripes,panx3,A0A674M993,PANX3,Ray-finned fish,461,10,reference_panel,no
+panx|Takifugu_rubripes|PANX|H2SGQ8,Takifugu rubripes,Takifugu_rubripes,PANX,H2SGQ8,PANX2,Ray-finned fish,604,12,reference_panel,no
+panx|Anolis_carolinensis|panx1|G1KPN4,Anolis carolinensis,Anolis_carolinensis,panx1,G1KPN4,PANX1,Reptile,435,11,reference_panel,no
+panx|Anolis_carolinensis|PANX2|G1KAJ7,Anolis carolinensis,Anolis_carolinensis,PANX2,G1KAJ7,PANX2,Reptile,685,10,reference_panel,no
+panx|Anolis_carolinensis|PANX3|H9G3D5,Anolis carolinensis,Anolis_carolinensis,PANX3,H9G3D5,PANX3,Reptile,408,12,reference_panel,no
+panx|Podarcis_muralis|PANX1|A0A670IMW4,Podarcis muralis,Podarcis_muralis,PANX1,A0A670IMW4,PANX1,Reptile,432,12,reference_panel,no
+panx|Podarcis_muralis|PANX2|A0A670J859,Podarcis muralis,Podarcis_muralis,PANX2,A0A670J859,PANX2,Reptile,621,12,reference_panel,no
+panx|Podarcis_muralis|PANX3|A0A670JSK3,Podarcis muralis,Podarcis_muralis,PANX3,A0A670JSK3,PANX3,Reptile,409,14,reference_panel,no
+panx|Branchiostoma_floridae|LOC118405257|A0A9J7HJ13,Branchiostoma floridae,Branchiostoma_floridae,LOC118405257,A0A9J7HJ13,PANX2,Tunicate / lancelet,381,10,reference_panel,yes
+panx|Branchiostoma_floridae|LOC118430338|A0A9J7M9Y8,Branchiostoma floridae,Branchiostoma_floridae,LOC118430338,A0A9J7M9Y8,PANX3,Tunicate / lancelet,480,12,reference_panel,yes

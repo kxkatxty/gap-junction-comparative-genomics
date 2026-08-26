@@ -1,0 +1,135 @@
+family,organism,panel_role,panel_source,annotation_category,annotation_term,annotation_evidence,assembly_level,has_gff_annotation,discovery_candidates,discovery_accepted,discovery_high_confidence,discovery_best_rank,discovery_best_score
+connexin,Antrozous pallidus,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,related_or_family_like_entry_found,gap junction,,,,9,2,1,high_confidence_connexin_candidate,65.0
+connexin,Babyrousa celebensis,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,8,3,0,weak_manual_review,25.0
+connexin,Bajacalifornia burragei,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,0,0,0,,
+connexin,Bombina variegata,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,8,5,1,high_confidence_connexin_candidate,65.0
+connexin,Boulenophrys sangzhiensis,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,7,1,0,weak_manual_review,15.0
+connexin,Bufotes viridis,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,related_or_family_like_entry_found,gap junction,,,,5,2,0,weak_manual_review,20.0
+connexin,Butorides sundevalli,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,8,5,1,high_confidence_connexin_candidate,65.0
+connexin,Carcharias taurus,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,6,1,0,weak_manual_review,15.0
+connexin,Cecropis daurica,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,10,3,0,weak_manual_review,30.0
+connexin,Ceratotherium simum simum,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,related_or_family_like_entry_found,gap junction,,,,6,2,0,weak_manual_review,20.0
+connexin,Chimaera phantasma,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,0,0,0,,
+connexin,Correlophus ciliatus,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,related_or_family_like_entry_found,gap junction,,,,4,1,0,weak_manual_review,15.0
+connexin,Desmognathus fuscus,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,89,27,3,high_confidence_connexin_candidate,65.0
+connexin,Discoglossus pictus,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,related_or_family_like_entry_found,gap junction,,,,4,3,0,weak_manual_review,35.0
+connexin,Dumetella carolinensis,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,7,3,1,high_confidence_connexin_candidate,65.0
+connexin,Echinorhinus cookei,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,6,3,0,weak_manual_review,45.0
+connexin,Emberiza tahapisi,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,4,2,0,weak_manual_review,45.0
+connexin,Eospalax fontanierii baileyi,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,0,0,0,,
+connexin,Epinephelus cyanopodus,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,1,1,0,weak_manual_review,20.0
+connexin,Fontitrygon garouaensis,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,0,0,0,,
+connexin,Galeorhinus galeus,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,5,1,0,weak_manual_review,15.0
+connexin,Hemibarbus labeo,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,1,1,0,weak_manual_review,15.0
+connexin,Hucho bleekeri,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,9,3,1,high_confidence_connexin_candidate,80.0
+connexin,Mus musculus domesticus,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,5,3,0,weak_manual_review,15.0
+connexin,Parabramis pekinensis,discovery_connexin_evolutionary,project/metadata/not_annotated_connexin_evolutionary.txt,no_related_entry_found,,,,,0,0,0,,
+connexin,Abudefduf saxatilis,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,0,0,0,,
+connexin,Acanthurus chirurgus,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,4,1,0,possible_connexin_candidate,40.0
+connexin,Acanthurus tractus,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,0,0,0,,
+connexin,Eleutherodactylus marnockii,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,10,3,1,high_confidence_connexin_candidate,65.0
+connexin,Eospalax fontanierii cansus,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,0,0,0,,
+connexin,Eospalax rufescens,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,0,0,0,,
+connexin,Epidalea calamita,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,4,2,0,weak_manual_review,45.0
+connexin,Equus grevyi,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,5,2,0,weak_manual_review,15.0
+connexin,Euprepiophis mandarinus,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,4,2,0,weak_manual_review,15.0
+connexin,Fejervarya limnocharis,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,9,6,1,high_confidence_connexin_candidate,65.0
+connexin,Gastrophryne carolinensis,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,related_or_family_like_entry_found,gap junction,,,,17,6,0,possible_connexin_candidate,55.0
+connexin,Hydrolagus colliei,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,2,1,0,possible_connexin_candidate,55.0
+connexin,Ichthyophis bannanicus,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,12,5,1,high_confidence_connexin_candidate,65.0
+connexin,Leucoraja naevus,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,4,1,0,weak_manual_review,15.0
+connexin,Liasis olivaceus olivaceus,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,2,1,0,weak_manual_review,15.0
+connexin,Luscinia svecica,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,5,3,0,weak_manual_review,25.0
+connexin,Mabuya desiradae,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,6,3,1,high_confidence_connexin_candidate,65.0
+connexin,Malacoraja senta,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,5,3,0,weak_manual_review,45.0
+connexin,Marmaronetta angustirostris,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,8,3,0,possible_connexin_candidate,40.0
+connexin,Marmota vancouverensis,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,5,1,0,weak_manual_review,15.0
+connexin,Mops condylurus,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,0,0,0,,
+connexin,Okamejei kenojei,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,6,2,1,high_confidence_connexin_candidate,65.0
+connexin,Potamotrygon marinae,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,21,17,1,high_confidence_connexin_candidate,65.0
+connexin,Scleropages jardinii,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,5,2,0,weak_manual_review,45.0
+connexin,Triplophysa stolickai,discovery_connexin_evolutionary_batch2,project/metadata/not_annotated_connexin_evolutionary_batch2.txt,no_related_entry_found,,,,,6,2,0,weak_manual_review,35.0
+connexin,Bos taurus,reference_connexin,species_config.csv,annotated_family_member_found,GJA1,,Chromosome,yes,0,0,0,,
+connexin,Canis lupus familiaris,reference_connexin,species_config.csv,annotated_family_member_found,GJA1,,Chromosome,yes,0,0,0,,
+connexin,Chlorocebus sabaeus,reference_connexin,species_config.csv,,,,,,0,0,0,,
+connexin,Cricetulus griseus,reference_connexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+connexin,Danio rerio,reference_connexin,species_config.csv,,,,Complete Genome,yes,0,0,0,,
+connexin,Equus caballus,reference_connexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+connexin,Erinaceus europaeus,reference_connexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+connexin,Gallus gallus,reference_connexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+connexin,Gorilla gorilla gorilla,reference_connexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+connexin,Homo sapiens,reference_connexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+connexin,Hylobates moloch,reference_connexin,species_config.csv,,,,,,0,0,0,,
+connexin,Leucoraja erinaceus,reference_connexin,species_config.csv,annotated_family_member_found,gja9a,,Chromosome,yes,0,0,0,,
+connexin,Macaca fascicularis,reference_connexin,species_config.csv,,,,Complete Genome,yes,0,0,0,,
+connexin,Macaca mulatta,reference_connexin,species_config.csv,,,,Complete Genome,yes,0,0,0,,
+connexin,Mesocricetus auratus,reference_connexin,species_config.csv,,,,Scaffold,yes,0,0,0,,
+connexin,Mus musculus,reference_connexin,species_config.csv,,,,Complete Genome,yes,0,0,0,,
+connexin,Oryctolagus cuniculus,reference_connexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+connexin,Ovis aries,reference_connexin,species_config.csv,annotated_family_member_found,GJA3,,Complete Genome,yes,0,0,0,,
+connexin,Pongo pygmaeus,reference_connexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+connexin,Rattus norvegicus,reference_connexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+connexin,Sus scrofa,reference_connexin,species_config.csv,annotated_family_member_found,GJA1,,Complete Genome,yes,0,0,0,,
+connexin,Ursus americanus,reference_connexin,species_config.csv,,,,Contig,yes,0,0,0,,
+connexin,Xenopus laevis,reference_connexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+connexin,Xenopus tropicalis,reference_connexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+innexin,Hormiphora californensis,discovery_innexin,project/metadata/not_annotated_innexin.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Peripatoides novaezealandiae,discovery_innexin,project/metadata/not_annotated_innexin.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Peripatus solorzanoi,discovery_innexin,project/metadata/not_annotated_innexin.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Philodina roseola,discovery_innexin,project/metadata/not_annotated_innexin.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Pleurobrachia bachei,discovery_innexin,project/metadata/not_annotated_innexin.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Scolanthus callimorphus,discovery_innexin,project/metadata/not_annotated_innexin.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Streblospio benedicti,discovery_innexin,project/metadata/not_annotated_innexin.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Stylissa carteri,discovery_innexin,project/metadata/not_annotated_innexin.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Thulinius sp. DVL-2010,discovery_innexin,project/metadata/not_annotated_innexin.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Triops cancriformis,discovery_innexin,project/metadata/not_annotated_innexin.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Tubiluchus corallicola,discovery_innexin,project/metadata/not_annotated_innexin.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Xestospongia testudinaria,discovery_innexin,project/metadata/not_annotated_innexin.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Abra alba,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,1,0,0,,0.0
+innexin,Abra segmentum,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Acanthascus dawsoni,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Acanthocardia echinata,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Acanthochitona discrepans,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Acartia tonsa,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,annotated_family_member_found,innexin,,,,0,0,0,,
+innexin,Acropora austera,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Acropora cervicornis,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Acropora cf. manni,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Acropora glauca,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Acropora hyacinthus,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Adineta ricciae,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,annotated_family_member_found,innexin,,,,0,0,0,,
+innexin,Adineta steineri,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,annotated_family_member_found,innexin,,,,0,0,0,,
+innexin,Aegaeobuthus cyprius,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,1,1,0,weak_manual_review,15.0
+innexin,Aelurillus cypriotus,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Agelas clathrodes,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Agelas conifera,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Agelas oroides,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Agelas tubulata,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Agelena orientalis,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Amaurobius ferox,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Bathyporeia elegans,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Beroe forskalii,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Beroe ovata,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Brachionus calyciflorus,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,annotated_family_member_found,innexin,,,,0,0,0,,
+innexin,Brachionus koreanus,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Brachionus manjavacas,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,1,0,0,,0.0
+innexin,Dryodora glandiformis,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,1,1,0,weak_manual_review,30.0
+innexin,Eriophyidae sp.,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,1,1,1,high_confidence_innexin_candidate,65.0
+innexin,Hypsibius exemplaris,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Lanice conchilega,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Liocarcinus depurator,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Macoma balthica,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Mertensia ovum,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Nephtys caeca,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Nephtys hombergii,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Nephtys longosetosa,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Ophelia borealis,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Paramacrobiotus metropolitanus,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Processa modica,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Thia scutellata,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Trichoplax sp. H2,discovery_innexin_clade,project/metadata/species_discovery_queue.txt,no_related_entry_found,,,,,0,0,0,,
+innexin,Aedes aegypti,reference_innexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+innexin,Anopheles gambiae,reference_innexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+innexin,Caenorhabditis briggsae,reference_innexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+innexin,Caenorhabditis elegans,reference_innexin,species_config.csv,,,,Complete Genome,yes,0,0,0,,
+innexin,Drosophila melanogaster,reference_innexin,species_config.csv,,,,Chromosome,yes,0,0,0,,
+innexin,Schistocerca americana,reference_innexin,species_config.csv,,,,Chromosome,yes,0,0,0,,

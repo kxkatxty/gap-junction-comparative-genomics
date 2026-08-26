@@ -1,0 +1,9 @@
+query_gene,accession,target_genome,target_species,genes_discovered,total_annotations,flanking_annotations,goi_annotations,confident_goi,probable_goi,ambiguous_goi,tandem_goi_copies,goi_high_confidence,goi_medium_confidence,goi_low_confidence,synteny_regions,goi_anchor_regions,best_region_score,ortholog_support
+Inx2,Q9V427,GCA_018908115.1,Anopheles rivulorum,25,25,21,4,0,0,4,0,0,0,4,6,4,0.18814163152537444,weak_goi_signal
+Inx2,Q9V427,GCA_951394115.2,Drosophila phalerata,21,21,16,5,0,0,5,0,0,0,5,3,2,0.15,weak_goi_signal
+Inx2,Q9V427,GCA_963924055.1,Drosophila limbata,71,71,43,28,0,1,19,8,0,1,27,6,3,0.2981697886234748,probable_ortholog
+Inx2,Q9V427,GCA_963969585.1,Drosophila helvetica,34,34,25,9,0,1,8,0,0,1,8,5,2,0.29390722698851246,probable_ortholog
+Inx2,Q9V427,GCF_011750605.1,Drosophila busckii,51,51,39,12,0,1,11,0,0,1,11,6,6,0.19332703213610586,probable_ortholog
+shakB,P33085,GCA_951394115.2,Drosophila phalerata,34,34,33,1,0,0,1,0,0,0,1,3,2,0.1890625,weak_goi_signal
+shakB,P33085,GCA_963969585.1,Drosophila helvetica,24,24,24,0,0,0,0,0,0,0,0,3,1,0.17177777777777778,flanking_synteny_only
+shakB,P33085,GCF_011750605.1,Drosophila busckii,28,28,27,1,1,0,0,0,1,0,0,3,3,0.21936585365853656,confident_ortholog

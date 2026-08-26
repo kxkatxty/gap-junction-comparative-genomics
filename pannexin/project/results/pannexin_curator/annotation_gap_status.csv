@@ -1,0 +1,6 @@
+species,clade,uniprot_pannexin,action,status
+Callorhinchus milii,Cartilaginous fish,yes (TrEMBL),in curated panel (covers the skate UniProt gap),in_panel
+Leucoraja erinaceus,Cartilaginous fish,none,no usable UniProt pannexins; elephant shark used as proxy,covered_by_proxy
+Ciona intestinalis,Tunicate / lancelet,none,"UniProt shows innexins, not pannexins — used as tree outgroup only",outgroup_inx
+Branchiostoma floridae,Tunicate / lancelet,LOC / pannexin-like labels,in curated panel (two proteins); orthology still tentative,in_panel_weak
+Petromyzon marinus,Jawless vertebrate,LOC labels,in curated panel (one protein); orthology still tentative,in_panel_weak

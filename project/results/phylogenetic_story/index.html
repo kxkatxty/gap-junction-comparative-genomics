@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phylogenetic story — gap-junction evolution</title>
+<style>
+:root {
+  --ink: #1a2836;
+  --muted: #5a6a7a;
+  --bg: #f0f4f8;
+  --card: #ffffff;
+  --innexin: #2E86AB;
+  --connexin: #E67E22;
+  --pannexin: #C2410C;
+  --accent: #1a5276;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.55;
+}
+.wrap { max-width: 820px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+header {
+  background: linear-gradient(145deg, #1a5276 0%, #2E86AB 42%, #C2410C 72%, #E67E22 100%);
+  color: #fff;
+  padding: 2.25rem 1.5rem 2rem;
+  border-radius: 0 0 20px 20px;
+  margin: 0 0 2rem;
+  box-shadow: 0 10px 36px rgba(26, 82, 118, 0.28);
+}
+header h1 {
+  font-size: clamp(1.55rem, 4vw, 2.1rem);
+  margin: 0 0 0.45rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+header .lede {
+  margin: 0;
+  max-width: 54ch;
+  opacity: 0.95;
+  font-size: 1.02rem;
+}
+.story-arc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1.25rem;
+}
+.story-arc a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.74rem;
+  font-family: system-ui, sans-serif;
+  background: rgba(255,255,255,0.18);
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+}
+.story-arc a:hover { background: rgba(255,255,255,0.3); }
+.throughline {
+  background: var(--card);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.2rem;
+  border-radius: 0 12px 12px 0;
+  margin-bottom: 1.35rem;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.05);
+  font-size: 1.02rem;
+}
+.throughline strong { color: var(--accent); }
+.throughline.panx { border-left-color: var(--pannexin); }
+.throughline.panx strong { color: var(--pannexin); }
+.throughline.inx { border-left-color: var(--innexin); }
+.throughline.inx strong { color: var(--innexin); }
+article {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 1.4rem 1.35rem 1.6rem;
+  margin-bottom: 1.75rem;
+  box-shadow: 0 3px 18px rgba(0,0,0,0.06);
+  border: 1px solid #e4ebf2;
+  scroll-margin-top: 1rem;
+}
+.step {
+  display: inline-block;
+  font-family: system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  color: #fff;
+  margin-bottom: 0.65rem;
+}
+.step.inx { background: var(--innexin); }
+.step.cnx { background: var(--connexin); }
+.step.panx { background: var(--pannexin); }
+.step.both { background: var(--accent); }
+article h2 {
+  margin: 0 0 0.55rem;
+  font-size: 1.28rem;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.claim {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+article img {
+  width: 100%;
+  border-radius: 10px;
+  background: #f8fafc;
+  cursor: zoom-in;
+  display: block;
+}
+article img + img { margin-top: 0.85rem; }
+.takeaway {
+  margin: 1rem 0 0;
+  padding: 0.75rem 0.9rem;
+  background: #eef6fb;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  border-left: 3px solid var(--innexin);
+}
+.takeaway.cnx-tone {
+  background: #fef6ee;
+  border-left-color: var(--connexin);
+}
+.takeaway.panx-tone {
+  background: #fff4ed;
+  border-left-color: var(--pannexin);
+}
+.more {
+  margin: 0.65rem 0 0;
+  font-size: 0.88rem;
+  font-family: system-ui, sans-serif;
+  color: var(--muted);
+}
+.more a { color: var(--pannexin); }
+footer {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #d5dde6;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-family: system-ui, sans-serif;
+}
+footer a { color: var(--innexin); }
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  cursor: zoom-out;
+}
+.modal.open { display: flex; }
+.modal img { max-width: 96vw; max-height: 92vh; border-radius: 8px; }
+@media (max-width: 600px) {
+  .wrap { padding: 1rem 0.85rem 3rem; }
+  article { padding: 1.1rem 1rem 1.25rem; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap" style="padding-top:0;padding-bottom:0;margin:0 auto">
+    <h1>How gap junctions diverged</h1>
+    <p class="lede">Innexins diversify in invertebrates; a glycosylated chordate remnant becomes
+      today’s pannexins; connexins expand as the vertebrate gap-junction toolkit.</p>
+    <nav class="story-arc" aria-label="Story steps">
+      <a href="#s1">1 · Two families</a>
+      <a href="#s2">2 · Architecture</a>
+      <a href="#s3">3 · Innexin expansion</a>
+      <a href="#s4">4 · Deep split</a>
+      <a href="#s5">5 · Pannexin bridge</a>
+      <a href="#s6">6 · Panx × inx</a>
+      <a href="#s7">7 · PANX1–3</a>
+      <a href="#s8">8 · Connexin neighborhoods</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="throughline">
+    <strong>Literature:</strong> gap-junction channels are often described as two largely independent protein
+    families (innexin-lineage vs connexin), with an early chordate innexin bottleneck in lancelets
+    (one glycosylated innexin, no connexins; Welzel &amp; Schuster 2022) preceding connexin diversification
+    and a retained glycosylated branch (pannexins).
+    <strong>This panel:</strong> innexins diversify mainly by local tandem duplication with little conserved
+    microsynteny across phyla; connexins diversify within stable vertebrate gene neighbourhoods.
+    Pannexins are treated as the third chapter of the same story — not a side gallery.
+    <strong>Together:</strong> parallel gap-junction solutions (inx vs cnx), plus a homologous chordate remnant
+    (panx) that no longer docks. The dated bottleneck timeline is literature framing; the
+    panx×inx MMseqs contrast and PANX1–3 copy counts are from this panel.
+  </p>
+  <p class="throughline panx">
+    <strong>Pannexin in this story:</strong>
+    UniProt panel of <strong>49</strong> proteins / <strong>17</strong> species;
+    <strong>~90%</strong> hit ≥1 innexin at the same MMseqs thresholds where innexin×connexin finds
+    <strong>0</strong> hits; early-chordate copy numbers are low (lamprey 1; Branchiostoma 2; Ciona 0 in panel).
+    Full pages:
+    <a href="../../../pannexin/project/results/pannexin_path/index.html">path</a> ·
+    <a href="../../../pannexin/project/results/panx_vs_inx/index.html">× innexin</a> ·
+    <a href="../../../pannexin/project/results/pannexin_clade_comparison/index.html">clade × type</a> ·
+    <a href="../../../pannexin/project/results/pannexin_phylogeny/index.html">phylogeny</a>.
+  </p>
+  <p class="throughline inx">
+    <strong>From the innexin tree:</strong>
+    four subfamilies — <em>SF1</em> shakB;
+    <em>SF2</em> ogre/Inx1;
+    <em>SF3</em> Inx3 + Inx7 + <strong>all nematode innexins</strong>;
+    <em>SF4</em> Inx2 + zpg/Inx4–6.
+    Gene names are historical labels, not orthology.
+    Details: <a href="../innexin_subfamilies/index.html">innexin_subfamilies/</a>.
+  </p>
+  <p class="throughline inx">
+    <strong>Discovery update:</strong>
+    Genome-direct curator re-probe recovered innexin-like loci in <strong>20 species</strong>
+    (<strong>142</strong> present loci), including <strong>16 new/rescued species</strong>
+    (<strong>116</strong> loci).
+  </p>
+
+  <article id="s1">
+    <span class="step both">Figure 1 · Phylogeny</span>
+    <h2>Two families, not one tree</h2>
+    <p class="claim">This panel tree is an innexin reference + discovery phylogeny (no connexin tips).
+      <strong>Literature</strong> contrasts invertebrate innexins with vertebrate connexins as non-orthologous
+      gap-junction channels, with an early chordate bottleneck (glycosylated innexin remnants → pannexins)
+      plus later connexins.
+      <strong>This figure</strong> is the invertebrate half only; it does not demonstrate that evolutionary bridge —
+      that is what figures 5–7 add from the pannexin workspace.</p>
+    <img src="figures/01_two_families.png" alt="Innexin phylogeny — references + discovery" onclick="openModal(this.src)">
+    <p class="takeaway"><strong>Note:</strong> Start with the innexin tree as the invertebrate half. Pannexins are the literature’s retained, non-docking chordate innexin branch; connexin neighbourhoods close the vertebrate half.</p>
+  </article>
+
+  <article id="s2">
+    <span class="step both">Figure 2 · Gene architecture</span>
+    <h2>Different gene structures follow the split</h2>
+    <p class="claim">Gene models diverge with the families: connexin coding regions usually lack introns (compact ORFs; panel median ~2 exons including 5′ UTR), while innexins keep coding-region introns (median ~5 exons) and can splice multiple isoforms from one locus.
+      Flat 1-exon medians in some non-insect innexin clades are mostly TSA/ab initio artifacts; δ GJD “~22 exon” spikes are GFF fusions with intron-rich flanks.</p>
+    <img src="figures/02_architecture.png" alt="Exon count comparison innexin vs connexin" onclick="openModal(this.src)">
+    <p class="takeaway"><strong>Note:</strong> After the phylogenetic split, intron/exon logic also diverged — compact connexin ORFs versus intron-rich innexin loci. Orthology still cannot be read from exon count alone within innexins.</p>
+  </article>
+
+  <article id="s3">
+    <span class="step inx">Figure 3 · Innexin development</span>
+    <h2>Two genomic clusters — four tree subfamilies</h2>
+    <p class="claim">Genomically, <em>Drosophila</em> shows <strong>two</strong> X clusters
+      (<strong>ogre · Inx7 · Inx2</strong> at ~6.97 Mb; <strong>shakB</strong> at ~20.76 Mb), plus <strong>Inx3 on 3R</strong>.
+      The phylogeny cuts across those intervals: Inx7 and Inx3 join the nematode radiation (SF3),
+      while ogre (SF2), Inx2/4–6 (SF4), and shakB (SF1) are separate insect subfamilies.
+      Shared flanks within a cluster still support local tandem duplication; shared <em>gene families</em>
+      between clusters would hint at older segmental / WGD-like copying.</p>
+    <img src="figures/03_innexin_duplication.png" alt="Two Drosophila innexin genomic clusters" onclick="openModal(this.src)">
+    <p class="takeaway"><strong>Note:</strong> Present <em>two intervals with gene names</em>, then overlay the
+      tree hypothesis. Named panels:
+      <a href="../synteny_phylo_guided/dmel_two_clusters_named.html">two clusters</a> ·
+      <a href="../innexin_subfamilies/index.html">subfamilies</a>.</p>
+  </article>
+
+  <article id="s4">
+    <span class="step inx">Figure 4 · Cross-phylum limit</span>
+    <h2>Tree-guided comparison: SF3 vs nematodes</h2>
+    <p class="claim">Compare Dmel Inx3 / Inx7 to nematode innexins as a group.
+      <em>Drosophila</em> Inx2 and <em>C. elegans</em> inx-2 share a numerical suffix from screens but are
+      not orthologs — nematode inx-2 sits in SF3 with Inx3/Inx7 (and unc-7/unc-9), while insect Inx2 is SF4.
+      If neighbourhoods still fail to match under the SF3 pairing, that supports clade-bound architecture.</p>
+    <img src="figures/04_cross_clade.png" alt="Cross-clade architecture" onclick="openModal(this.src)">
+    <p class="takeaway"><strong>Note:</strong> Prefer the tree over the gene names.
+      SF3 gene-order panel:
+      <a href="../innexin_subfamilies/SF3_Inx3_Inx7_vs_nematode_innexins.html">SF3 vs nematodes</a>.</p>
+  </article>
+
+  <article id="s5">
+    <span class="step panx">Figure 5 · Pannexin bridge</span>
+    <h2>The third family is the retained innexin branch</h2>
+    <p class="claim">
+      <strong>Literature:</strong> after the early chordate innexin collapse, a glycosylated remnant
+      (extracellular N-X-S/T) no longer docks into gap junctions — today’s pannexins — while connexins
+      later supply vertebrate cell–cell coupling.
+      <strong>This panel:</strong> we treat pannexins as homologous to innexins (not to connexins) and
+      build a vertebrate/chordate UniProt panel (PANX1–3) for the checks that follow.
+      Genome-wide recovery for weakly annotated chordates is outside the present scope.
+    </p>
+    <img src="figures/05_pannexin_bridge.png" alt="Innexin–pannexin–connexin relationship map" onclick="openModal(this.src)">
+    <img src="figures/05b_glycosylation.png" alt="N-glycosylation blocks pannexin docking" onclick="openModal(this.src)">
+    <p class="takeaway panx-tone"><strong>Note:</strong> Same fold family as innexins; docking blocked by N-glycans on extracellular loops.
+      Guided notes: <a href="../../../pannexin/project/results/pannexin_path/index.html">pannexin path</a>.</p>
+  </article>
+
+  <article id="s6">
+    <span class="step panx">Figure 6 · Homology check</span>
+    <h2>Pannexin × innexin — the opposite of innexin × connexin</h2>
+    <p class="claim">
+      Same MMseqs thresholds as the direct innexin×connexin contrast (e≤1e-3, alignment ≥80 aa).
+      <strong>This panel:</strong> ~90% of curated pannexins hit ≥1 innexin (median ~28% identity; 1062 hits).
+      On the parent site, innexin×connexin returns essentially <strong>zero</strong> cross-family hits
+      at those cutoffs. Sequence space also overlaps in a simple 3-mer embedding — expected if
+      pannexins are innexin-related, not a third unrelated GJ family.
+    </p>
+    <img src="figures/06_panx_vs_inx.png" alt="Fraction of pannexins with innexin hits" onclick="openModal(this.src)">
+    <img src="figures/06b_panx_kmer.png" alt="3-mer space pannexin vs innexin" onclick="openModal(this.src)">
+    <p class="takeaway panx-tone"><strong>Note:</strong> Homology to innexins is detectable; homology to connexins is not (at these thresholds).
+      Full contrast: <a href="../../../pannexin/project/results/panx_vs_inx/index.html">panx × inx</a> ·
+      parent: <a href="../inx_vs_cnx/index.html">inx × cnx</a>.</p>
+  </article>
+
+  <article id="s7">
+    <span class="step panx">Figure 7 · Paralogs &amp; bottleneck</span>
+    <h2>PANX1–3 in jawed vertebrates; few copies early</h2>
+    <p class="claim">
+      <strong>Literature:</strong> vertebrate genome duplications yield PANX1, PANX2, PANX3; teleosts can keep extras.
+      Lancelets / early chordates are the copy-number bottleneck in the published story.
+      <strong>This panel:</strong> most mammals / birds / reptiles / amphibians / coelacanth carry a named
+      PANX1–3 triplet; lamprey has 1 panel protein; <em>Branchiostoma</em> has 2 (weak LOC labels);
+      <em>Ciona</em> has 0 pannexins in the UniProt panel (innexin outgroups only). Types are UniProt labels —
+      confirm weak chordate names on the phylogeny page.
+    </p>
+    <img src="figures/07_pannexin_bottleneck.png" alt="Early chordate vs mammal copy numbers" onclick="openModal(this.src)">
+    <img src="figures/07b_panx_clade_type.png" alt="Clade × PANX type heatmap" onclick="openModal(this.src)">
+    <img src="figures/07c_panx_iqtree.png" alt="Rendered IQ-TREE pannexin phylogeny" onclick="openModal(this.src)">
+    <p class="takeaway panx-tone"><strong>Note:</strong> Copy-number check and IQ-TREE from the curated UniProt panel.
+      <a href="../../../pannexin/project/results/pannexin_clade_comparison/index.html">clade × type</a> ·
+      <a href="../../../pannexin/project/results/pannexin_phylogeny/index.html">PANX tree</a> ·
+      <a href="../../../pannexin/project/results/pannexin_insights/index.html">insights</a>.</p>
+  </article>
+
+  <article id="s8">
+    <span class="step cnx">Figure 8 · Connexin development</span>
+    <h2>Connexins diversify inside conserved neighborhoods</h2>
+    <p class="claim">Across vertebrates, GJA4 sits with the same neighbours (GJB3–GJB5, DLGAP3, SMIM12) — the β-connexin cluster,
+      a tandem array from local unequal crossing-over, while whole-genome duplications also put other paralogs
+      (notably GJA1) on separate chromosomes. In <em>Xenopus</em> that β-cluster is visible in both allotetraploid
+      <em>X. laevis</em> (L) and diploid <em>X. tropicalis</em>, while GJA1 occupies a different locus.
+      In <em>X. laevis</em> the flank <em>kdm1a.L → tmem30b.L → zmpste24.L → smim12.L</em> sits left of <em>gja4.L</em>;
+      in <em>X. tropicalis</em> that block is inverted and sits to the right of <em>gja4</em>.
+      Empty flanks around <em>X. laevis</em> <em>gja1.L</em> on the
+      <a href="../synteny_gff/cross_species/connexin_GJA1_cross_species.html">GJA1 panel</a> are a short scaffold
+      or assembly gap, not a biological gene island.</p>
+    <img src="figures/08_connexin_synteny.png" alt="GJA4 cross-species microsynteny with Xenopus inversion" onclick="openModal(this.src)">
+    <p class="takeaway cnx-tone"><strong>Note:</strong> Connexin expansion = tandem clusters + WGD-dispersed addresses + local inversions.
+      Panels: <a href="../synteny_gff/cross_species/connexin_GJA4_cross_species.html">GJA4</a> ·
+      <a href="../synteny_gff/cross_species/connexin_GJA1_cross_species.html">GJA1</a>.</p>
+  </article>
+
+  <footer>
+    <p>Three chapters, one story: invertebrate innexin diversification → retained glycosylated chordate branch (pannexins, homologous to innexins) → vertebrate connexin neighbourhoods (separate sequence family). Cross-family MMseqs: panx×inx hits; inx×cnx none at e≤1e-3 / ≥80 aa.</p>
+    <p class="more" style="margin-top:1rem">
+      Guided path: <a href="../gap_junction_path/index.html">gap-junction story path</a> ·
+      Direct contrast: <a href="../inx_vs_cnx/index.html">innexin × connexin</a> ·
+      Pannexin: <a href="../../../pannexin/project/results/pannexin_path/index.html">path</a> ·
+      <a href="../../../pannexin/project/results/panx_vs_inx/index.html">× innexin</a> ·
+      <a href="../../../pannexin/project/results/pannexin_clade_comparison/index.html">clade × type</a> ·
+      <a href="../../../pannexin/project/results/pannexin_phylogeny/index.html">phylogeny</a> ·
+      Insights: <a href="../innexin_insights/index.html">innexin</a> /
+      <a href="../connexin_insights/index.html">connexin</a> ·
+      Clade pages: <a href="../innexin_clade_comparison/index.html">innexin</a> /
+      <a href="../connexin_clade_comparison/index.html">connexin</a> ·
+      Literature: <a href="../sources/index.html">Sources</a>
+    </p>
+  </footer>
+</main>
+
+<div id="modal" class="modal" onclick="closeModal()">
+  <img id="modal-img" src="" alt="Enlarged figure">
+</div>
+<script>
+function openModal(src) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('modal').classList.add('open');
+}
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
+</body>
+</html>

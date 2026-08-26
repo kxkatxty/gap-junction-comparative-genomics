@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pannexin annotation gaps</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root { --ink:#12202a; --muted:#4d6570; --ember:#c2410c; --line:rgba(18,32,42,.12); }
+body { margin:0; font-family:Sora,sans-serif; color:var(--ink); background:#f7f3ef; line-height:1.55 }
+.wrap { width:min(920px, calc(100% - 2rem)); margin:0 auto; padding:2rem 0 4rem }
+h1 { font-family:Fraunces,serif; margin:0 0 .4rem }
+.lede { color:var(--muted); max-width:60ch }
+.take { border-left:3px solid var(--ember); background:rgba(194,65,12,.07); padding:.75rem .9rem; border-radius:0 12px 12px 0 }
+.table-wrap { overflow:auto; background:#fff; border:1px solid var(--line); border-radius:12px; margin:1rem 0 }
+table { border-collapse:collapse; width:100%; font-size:.82rem }
+th,td { padding:.45rem .55rem; border-bottom:1px solid var(--line); text-align:left }
+th { background:rgba(194,65,12,.08) }
+.footer a { margin-right:.85rem; color:var(--ember) }
+</style></head><body>
+<main class="wrap">
+  <h1>Pannexin annotation gaps</h1>
+  <p class="lede">Where UniProt coverage is thin for the chordate story — and how the curated panel
+  handles it. This page is a status table, not a genome search.</p>
+  <p class="take"><strong>In practice.</strong> The cartilaginous gap is covered with
+  <em>Callorhinchus milii</em>. Tunicates contribute innexins (tree outgroups), not pannexins.
+  Lancelet and lamprey entries in the panel still carry weak LOC labels.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>species</th><th>clade</th><th>UniProt panx</th><th>status</th><th>action</th></tr></thead>
+    <tbody><tr><td>Callorhinchus milii</td><td>Cartilaginous fish</td><td>yes (TrEMBL)</td><td>in_panel</td><td>in curated panel (covers the skate UniProt gap)</td></tr><tr><td>Leucoraja erinaceus</td><td>Cartilaginous fish</td><td>none</td><td>covered_by_proxy</td><td>no usable UniProt pannexins; elephant shark used as proxy</td></tr><tr><td>Ciona intestinalis</td><td>Tunicate / lancelet</td><td>none</td><td>outgroup_inx</td><td>UniProt shows innexins, not pannexins — used as tree outgroup only</td></tr><tr><td>Branchiostoma floridae</td><td>Tunicate / lancelet</td><td>LOC / pannexin-like labels</td><td>in_panel_weak</td><td>in curated panel (two proteins); orthology still tentative</td></tr><tr><td>Petromyzon marinus</td><td>Jawless vertebrate</td><td>LOC labels</td><td>in_panel_weak</td><td>in curated panel (one protein); orthology still tentative</td></tr></tbody>
+  </table></div>
+  <p class="footer">
+    <a href="../pannexin_annotation_status/index.html">Annotation status</a>
+    <a href="../pannexin_clade_comparison/index.html">Clade × type</a>
+    <a href="../panx_vs_inx/index.html">Pannexin × innexin</a>
+    <a href="../pannexin_phylogeny/index.html">Phylogeny</a>
+    <a href="../pannexin_path/index.html">Path</a>
+  </p>
+</main></body></html>

@@ -1,0 +1,3 @@
+clade,query_gene,source_species,genomes_searched,confident_ortholog_species,probable_ortholog_species,weak_goi_species,flanking_only_species,total_goi_annotations,home_flanking_count,home_goi_count
+nematode,inx-2,Caenorhabditis elegans,3,1,1,1,0,6,13,1
+insect,Inx2,Drosophila melanogaster,5,0,3,2,0,58,25,4

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curator Recovery — New Innexin Species</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #12232e;
+  --muted: #4d6573;
+  --foam: #f3f8f6;
+  --sea: #0f6a6a;
+  --sea-deep: #0a3d44;
+  --sand: #d9a15b;
+  --coral: #c45c3e;
+  --mint: #2f9e7b;
+  --card: rgba(255,255,255,.88);
+  --line: rgba(18,35,46,.1);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Sora", sans-serif;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(47,158,123,.18), transparent 55%),
+    radial-gradient(900px 500px at 90% 0%, rgba(217,161,91,.16), transparent 50%),
+    linear-gradient(180deg, #e8f2ef 0%, var(--foam) 35%, #eef3f1 100%);
+  line-height: 1.55;
+}
+a { color: var(--sea); }
+.hero {
+  position: relative;
+  min-height: 92vh;
+  display: grid;
+  align-items: end;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+  color: #f7fffc;
+  overflow: hidden;
+  background:
+    linear-gradient(115deg, rgba(10,61,68,.92) 0%, rgba(15,106,106,.78) 48%, rgba(196,92,62,.55) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.08' stroke-width='1'%3E%3Cpath d='M0 40h160M0 80h160M0 120h160M40 0v160M80 0v160M120 0v160'/%3E%3C/g%3E%3C/svg%3E"),
+    radial-gradient(circle at 70% 30%, #1d8a7a, #0a3d44 60%);
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -10% -20% 35%;
+  height: 70%;
+  background: radial-gradient(ellipse at center, rgba(217,161,91,.35), transparent 65%);
+  pointer-events: none;
+  animation: drift 12s ease-in-out infinite alternate;
+}
+@keyframes drift {
+  from { transform: translate3d(0,0,0) scale(1); }
+  to { transform: translate3d(-4%, 3%, 0) scale(1.05); }
+}
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 920px;
+}
+.brand {
+  font-family: "Fraunces", serif;
+  font-size: clamp(2.6rem, 7vw, 5.2rem);
+  font-weight: 700;
+  letter-spacing: -.03em;
+  line-height: .95;
+  margin: 0 0 1rem;
+  text-shadow: 0 10px 40px rgba(0,0,0,.25);
+}
+.hero h1 {
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  margin: 0 0 .75rem;
+  max-width: 38ch;
+}
+.hero p.lede {
+  margin: 0 0 1.75rem;
+  max-width: 48ch;
+  opacity: .92;
+  font-size: 1.02rem;
+}
+.cta {
+  display: inline-flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+.cta a {
+  text-decoration: none;
+  color: var(--sea-deep);
+  background: #f7fffc;
+  padding: .85rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: .92rem;
+  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+}
+.cta a.ghost {
+  background: transparent;
+  color: #f7fffc;
+  border: 1px solid rgba(247,255,252,.45);
+  box-shadow: none;
+}
+.cta a:hover { transform: translateY(-2px); }
+.wrap {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .9rem;
+  margin: -2.5rem 0 2.5rem;
+  position: relative;
+  z-index: 2;
+}
+.stat {
+  background: var(--card);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.1rem 1.15rem;
+  box-shadow: 0 10px 30px rgba(18,35,46,.06);
+}
+.stat b {
+  display: block;
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--sea-deep);
+}
+.stat span { color: var(--muted); font-size: .86rem; }
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.toolbar input {
+  flex: 1 1 220px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: .75rem 1rem;
+  font: inherit;
+  background: #fff;
+}
+.chip {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  padding: .55rem .9rem;
+  font: inherit;
+  cursor: pointer;
+  color: var(--muted);
+}
+.chip.active, .chip:hover {
+  background: var(--sea-deep);
+  color: #fff;
+  border-color: var(--sea-deep);
+}
+.intro {
+  max-width: 68ch;
+  margin-bottom: 2rem;
+}
+.intro h2 {
+  font-family: "Fraunces", serif;
+  font-size: 1.85rem;
+  margin: 0 0 .5rem;
+}
+.intro p { color: var(--muted); margin: 0; }
+.clade-block { margin: 2.25rem 0 2.75rem; }
+.clade-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  border-bottom: 2px solid rgba(15,106,106,.25);
+  margin-bottom: 1rem;
+  padding-bottom: .4rem;
+}
+.clade-head h2 {
+  font-family: "Fraunces", serif;
+  margin: 0;
+  font-size: 1.55rem;
+}
+.clade-head p { margin: 0; color: var(--muted); font-size: .9rem; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+.species {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1rem 1.05rem 1.15rem;
+  box-shadow: 0 8px 24px rgba(18,35,46,.05);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.species:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(18,35,46,.1);
+}
+.species header {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+  align-items: center;
+  margin-bottom: .55rem;
+}
+.pill {
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: .25rem .55rem;
+  border-radius: 999px;
+  color: #fff;
+}
+.pill.new { background: var(--mint); }
+.pill.rescued { background: var(--sand); color: #2c2110; }
+.pill.expanded { background: var(--sea); }
+.clade-tag { font-size: .75rem; color: var(--muted); }
+.species h3 {
+  margin: 0 0 .85rem;
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+.species h3 em { font-style: italic; font-family: "Fraunces", serif; font-weight: 600; }
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .45rem;
+  margin-bottom: .75rem;
+}
+.metric {
+  background: rgba(15,106,106,.06);
+  border-radius: 12px;
+  padding: .55rem .45rem;
+  text-align: center;
+}
+.metric b { display: block; font-size: 1.05rem; color: var(--sea-deep); }
+.metric span { font-size: .68rem; color: var(--muted); }
+.idrow {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: .5rem;
+  align-items: center;
+  font-size: .78rem;
+  color: var(--muted);
+  margin-bottom: .65rem;
+}
+.idbar {
+  display: block;
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(18,35,46,.08);
+  overflow: hidden;
+}
+.idbar i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--mint), var(--sand));
+}
+.meta {
+  display: grid;
+  grid-template-columns: 7.2rem 1fr;
+  gap: .35rem;
+  font-size: .78rem;
+  margin-top: .35rem;
+}
+.meta span { color: var(--muted); }
+.meta code, .meta b {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .72rem;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+.note {
+  margin: .75rem 0 0;
+  padding: .65rem .7rem;
+  border-left: 3px solid var(--sand);
+  background: rgba(217,161,91,.12);
+  border-radius: 0 10px 10px 0;
+  font-size: .82rem;
+  color: #5a4120;
+}
+.expanded-block {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(18,35,46,.2);
+}
+.footer {
+  margin-top: 3rem;
+  color: var(--muted);
+  font-size: .9rem;
+}
+.hidden { display: none !important; }
+@media (max-width: 800px) {
+  .stats { grid-template-columns: repeat(2, 1fr); margin-top: -1.5rem; }
+  .clade-head { flex-direction: column; align-items: flex-start; }
+  .hero { min-height: 78vh; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="brand">Curator Recovery</p>
+    <h1>Sixteen genomes where innexin-like loci were newly found or rescued</h1>
+    <p class="lede">A genome-direct curator re-probe across discovery species turned sparse automated hits into present, full-length innexin-like models — especially in rotifers, molluscs, spiders and a polychaete.</p>
+    <div class="cta">
+      <a href="#gallery">Browse species</a>
+      <a class="ghost" href="../showcase/index.html">Full thesis showcase</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="gallery">
+  <div class="stats">
+    <div class="stat"><b>16</b><span>new / rescued species</span></div>
+    <div class="stat"><b>116</b><span>present loci in those species</span></div>
+    <div class="stat"><b>4</b><span>major clades represented</span></div>
+    <div class="stat"><b>20</b><span>total present species (142 loci)</span></div>
+  </div>
+
+  <div class="intro">
+    <h2>What “new” means here</h2>
+    <p>
+      <strong>New</strong> = curator found ≥1 present locus and the species was not previously run, or prior accepted count was 0 (<em>rescued</em>).
+      <strong>Expanded</strong> = already had accepted loci, but the curator pass recovered additional / stronger models.
+      Present loci are long innexin-like products from the genome-direct probe (not fragmentary-only hits).
+    </p>
+  </div>
+
+  <div class="toolbar">
+    <input id="q" type="search" placeholder="Filter by species name…" aria-label="Filter species">
+    <button class="chip active" data-filter="all">All new/rescued</button>
+    <button class="chip" data-filter="Rotifera">Rotifera</button>
+    <button class="chip" data-filter="Mollusca">Mollusca</button>
+    <button class="chip" data-filter="Arthropoda">Arthropoda</button>
+    <button class="chip" data-filter="Annelida">Annelida</button>
+  </div>
+
+  
+<section class="clade-block" id="clade-rotifera">
+  <div class="clade-head">
+    <h2>Rotifera</h2>
+    <p>6 new/rescued species · 30 present loci</p>
+  </div>
+  <div class="grid">
+<article class="species new" data-clade="Rotifera" data-status="new" data-name="adineta steineri">
+  <header>
+    <span class="pill new">New</span>
+    <span class="clade-tag">Rotifera · bdelloid</span>
+  </header>
+  <h3><em>Adineta steineri</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>6</b><span>present loci</span></div>
+    <div class="metric"><b>376</b><span>best length (aa)</span></div>
+    <div class="metric"><b>73%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:73%"></i></span><b>72.9%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>CAJNOI010000719.1:9542-10669</code></div>
+  <div class="meta"><span>Prior discovery</span><b>not_run</b></div>
+  <p class="note">Highest identity among new rotifers (best id ~73%).</p>
+</article>
+
+<article class="species new" data-clade="Rotifera" data-status="new" data-name="brachionus calyciflorus">
+  <header>
+    <span class="pill new">New</span>
+    <span class="clade-tag">Rotifera · monogonont</span>
+  </header>
+  <h3><em>Brachionus calyciflorus</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>6</b><span>present loci</span></div>
+    <div class="metric"><b>414</b><span>best length (aa)</span></div>
+    <div class="metric"><b>33%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:33%"></i></span><b>32.9%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>NTPY01000483.1:809096-811261</code></div>
+  <div class="meta"><span>Prior discovery</span><b>not_run</b></div>
+  
+</article>
+
+<article class="species new" data-clade="Rotifera" data-status="new" data-name="brachionus koreanus">
+  <header>
+    <span class="pill new">New</span>
+    <span class="clade-tag">Rotifera · monogonont</span>
+  </header>
+  <h3><em>Brachionus koreanus</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>5</b><span>present loci</span></div>
+    <div class="metric"><b>392</b><span>best length (aa)</span></div>
+    <div class="metric"><b>34%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:34%"></i></span><b>33.8%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>PJRA01000389.1:11013-14791</code></div>
+  <div class="meta"><span>Prior discovery</span><b>not_run</b></div>
+  
+</article>
+
+<article class="species rescued" data-clade="Rotifera" data-status="rescued" data-name="rotaria macrura">
+  <header>
+    <span class="pill rescued">Rescued</span>
+    <span class="clade-tag">Rotifera · bdelloid</span>
+  </header>
+  <h3><em>Rotaria macrura</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>5</b><span>present loci</span></div>
+    <div class="metric"><b>387</b><span>best length (aa)</span></div>
+    <div class="metric"><b>36%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:36%"></i></span><b>35.5%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>OENT01000325.1:81075-83639</code></div>
+  <div class="meta"><span>Prior discovery</span><b>accepted=0;candidates=3</b></div>
+  <p class="note">Rescued: prior search had candidates but zero accepted loci.</p>
+</article>
+
+<article class="species new" data-clade="Rotifera" data-status="new" data-name="adineta ricciae">
+  <header>
+    <span class="pill new">New</span>
+    <span class="clade-tag">Rotifera · bdelloid</span>
+  </header>
+  <h3><em>Adineta ricciae</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>4</b><span>present loci</span></div>
+    <div class="metric"><b>374</b><span>best length (aa)</span></div>
+    <div class="metric"><b>35%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:35%"></i></span><b>34.7%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>CAJNOJ010000043.1:384169-385557</code></div>
+  <div class="meta"><span>Prior discovery</span><b>not_run</b></div>
+  
+</article>
+
+<article class="species rescued" data-clade="Rotifera" data-status="rescued" data-name="brachionus manjavacas">
+  <header>
+    <span class="pill rescued">Rescued</span>
+    <span class="clade-tag">Rotifera · monogonont</span>
+  </header>
+  <h3><em>Brachionus manjavacas</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>4</b><span>present loci</span></div>
+    <div class="metric"><b>392</b><span>best length (aa)</span></div>
+    <div class="metric"><b>34%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:34%"></i></span><b>33.6%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>JAHQIY010000001.1:3683723-3686938</code></div>
+  <div class="meta"><span>Prior discovery</span><b>accepted=0;candidates=1</b></div>
+  <p class="note">Rescued: prior accepted=0; curator recovered present models.</p>
+</article></div>
+</section>
+<section class="clade-block" id="clade-mollusca">
+  <div class="clade-head">
+    <h2>Mollusca</h2>
+    <p>4 new/rescued species · 36 present loci</p>
+  </div>
+  <div class="grid">
+<article class="species new" data-clade="Mollusca" data-status="new" data-name="acanthocardia echinata">
+  <header>
+    <span class="pill new">New</span>
+    <span class="clade-tag">Mollusca · bivalve</span>
+  </header>
+  <h3><em>Acanthocardia echinata</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>14</b><span>present loci</span></div>
+    <div class="metric"><b>394</b><span>best length (aa)</span></div>
+    <div class="metric"><b>36%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:36%"></i></span><b>36.4%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>OZ377318.1:9903781-9904962</code></div>
+  <div class="meta"><span>Prior discovery</span><b>not_run</b></div>
+  <p class="note">Highest molluscan yield in this batch (14 present loci).</p>
+</article>
+
+<article class="species new" data-clade="Mollusca" data-status="new" data-name="abra segmentum">
+  <header>
+    <span class="pill new">New</span>
+    <span class="clade-tag">Mollusca · bivalve</span>
+  </header>
+  <h3><em>Abra segmentum</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>9</b><span>present loci</span></div>
+    <div class="metric"><b>393</b><span>best length (aa)</span></div>
+    <div class="metric"><b>38%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:38%"></i></span><b>37.8%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>OZ251777.1:37619854-37628968</code></div>
+  <div class="meta"><span>Prior discovery</span><b>not_run</b></div>
+  
+</article>
+
+<article class="species rescued" data-clade="Mollusca" data-status="rescued" data-name="abra alba">
+  <header>
+    <span class="pill rescued">Rescued</span>
+    <span class="clade-tag">Mollusca · bivalve</span>
+  </header>
+  <h3><em>Abra alba</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>8</b><span>present loci</span></div>
+    <div class="metric"><b>388</b><span>best length (aa)</span></div>
+    <div class="metric"><b>35%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:35%"></i></span><b>35.4%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>OZ409527.1:48105670-48111459</code></div>
+  <div class="meta"><span>Prior discovery</span><b>accepted=0;candidates=1</b></div>
+  <p class="note">Rescued: prior accepted=0; now a clear multi-locus molluscan hit.</p>
+</article>
+
+<article class="species new" data-clade="Mollusca" data-status="new" data-name="acanthochitona discrepans">
+  <header>
+    <span class="pill new">New</span>
+    <span class="clade-tag">Mollusca · chiton</span>
+  </header>
+  <h3><em>Acanthochitona discrepans</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>5</b><span>present loci</span></div>
+    <div class="metric"><b>375</b><span>best length (aa)</span></div>
+    <div class="metric"><b>42%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:42%"></i></span><b>42.0%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>CM108789.1:17930773-17931897</code></div>
+  <div class="meta"><span>Prior discovery</span><b>not_run</b></div>
+  
+</article></div>
+</section>
+<section class="clade-block" id="clade-arthropoda">
+  <div class="clade-head">
+    <h2>Arthropoda</h2>
+    <p>5 new/rescued species · 39 present loci</p>
+  </div>
+  <div class="grid">
+<article class="species new" data-clade="Arthropoda" data-status="new" data-name="amaurobius ferox">
+  <header>
+    <span class="pill new">New</span>
+    <span class="clade-tag">Arthropoda · spider</span>
+  </header>
+  <h3><em>Amaurobius ferox</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>11</b><span>present loci</span></div>
+    <div class="metric"><b>359</b><span>best length (aa)</span></div>
+    <div class="metric"><b>56%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:56%"></i></span><b>55.8%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>OX578143.1:91948787-91949863</code></div>
+  <div class="meta"><span>Prior discovery</span><b>not_run</b></div>
+  <p class="note">New spider expansion — 11 present loci.</p>
+</article>
+
+<article class="species new" data-clade="Arthropoda" data-status="new" data-name="aelurillus cypriotus">
+  <header>
+    <span class="pill new">New</span>
+    <span class="clade-tag">Arthropoda · spider</span>
+  </header>
+  <h3><em>Aelurillus cypriotus</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>10</b><span>present loci</span></div>
+    <div class="metric"><b>358</b><span>best length (aa)</span></div>
+    <div class="metric"><b>46%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:46%"></i></span><b>46.0%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>OZ390146.1:122266154-122267227</code></div>
+  <div class="meta"><span>Prior discovery</span><b>not_run</b></div>
+  <p class="note">New jumping-spider genome; large-genome round.</p>
+</article>
+
+<article class="species new" data-clade="Arthropoda" data-status="new" data-name="agelena orientalis">
+  <header>
+    <span class="pill new">New</span>
+    <span class="clade-tag">Arthropoda · spider</span>
+  </header>
+  <h3><em>Agelena orientalis</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>9</b><span>present loci</span></div>
+    <div class="metric"><b>359</b><span>best length (aa)</span></div>
+    <div class="metric"><b>56%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:56%"></i></span><b>56.1%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>OZ405006.1:111928554-111929630</code></div>
+  <div class="meta"><span>Prior discovery</span><b>not_run</b></div>
+  <p class="note">New spider genome with strong UNC-9/Inx-like identity (~56%).</p>
+</article>
+
+<article class="species new" data-clade="Arthropoda" data-status="new" data-name="acartia tonsa">
+  <header>
+    <span class="pill new">New</span>
+    <span class="clade-tag">Arthropoda · copepod</span>
+  </header>
+  <h3><em>Acartia tonsa</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>6</b><span>present loci</span></div>
+    <div class="metric"><b>359</b><span>best length (aa)</span></div>
+    <div class="metric"><b>65%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:65%"></i></span><b>64.6%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>NC_137263.1:23613023-23627865</code></div>
+  <div class="meta"><span>Prior discovery</span><b>not_run</b></div>
+  <p class="note">Copepod with strong best-hit identity (~65%).</p>
+</article>
+
+<article class="species new" data-clade="Arthropoda" data-status="new" data-name="triops cancriformis">
+  <header>
+    <span class="pill new">New</span>
+    <span class="clade-tag">Arthropoda · branchiopod</span>
+  </header>
+  <h3><em>Triops cancriformis</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>3</b><span>present loci</span></div>
+    <div class="metric"><b>362</b><span>best length (aa)</span></div>
+    <div class="metric"><b>56%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:56%"></i></span><b>56.4%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>JAHZNP010000030.1:219375-220831</code></div>
+  <div class="meta"><span>Prior discovery</span><b>not_run</b></div>
+  
+</article></div>
+</section>
+<section class="clade-block" id="clade-annelida">
+  <div class="clade-head">
+    <h2>Annelida</h2>
+    <p>1 new/rescued species · 11 present loci</p>
+  </div>
+  <div class="grid">
+<article class="species new" data-clade="Annelida" data-status="new" data-name="streblospio benedicti">
+  <header>
+    <span class="pill new">New</span>
+    <span class="clade-tag">Annelida · polychaete</span>
+  </header>
+  <h3><em>Streblospio benedicti</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>11</b><span>present loci</span></div>
+    <div class="metric"><b>385</b><span>best length (aa)</span></div>
+    <div class="metric"><b>34%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:34%"></i></span><b>34.2%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>CM032663.1:21744357-21747197</code></div>
+  <div class="meta"><span>Prior discovery</span><b>not_run</b></div>
+  <p class="note">First polychaete with a clear multi-locus curator recovery.</p>
+</article></div>
+</section>
+
+  <section class="expanded-block" id="expanded">
+    <div class="clade-head">
+      <h2>Already known — expanded by curator</h2>
+      <p>4 species with prior accepted loci</p>
+    </div>
+    <div class="grid">
+      
+<article class="species expanded" data-clade="Arthropoda" data-status="expanded" data-name="aegaeobuthus cyprius">
+  <header>
+    <span class="pill expanded">Expanded</span>
+    <span class="clade-tag">Arthropoda · scorpion</span>
+  </header>
+  <h3><em>Aegaeobuthus cyprius</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>8</b><span>present loci</span></div>
+    <div class="metric"><b>361</b><span>best length (aa)</span></div>
+    <div class="metric"><b>56%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:56%"></i></span><b>55.8%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>OZ392242.1:38980248-38999146</code></div>
+  <div class="meta"><span>Prior discovery</span><b>accepted=1;candidates=1</b></div>
+  
+</article>
+
+<article class="species expanded" data-clade="Rotifera" data-status="expanded" data-name="adineta vaga">
+  <header>
+    <span class="pill expanded">Expanded</span>
+    <span class="clade-tag">Rotifera · bdelloid</span>
+  </header>
+  <h3><em>Adineta vaga</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>6</b><span>present loci</span></div>
+    <div class="metric"><b>465</b><span>best length (aa)</span></div>
+    <div class="metric"><b>31%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:31%"></i></span><b>31.3%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>CP075495.1:2966282-2969516</code></div>
+  <div class="meta"><span>Prior discovery</span><b>accepted=2;candidates=8</b></div>
+  
+</article>
+
+<article class="species expanded" data-clade="Ctenophora" data-status="expanded" data-name="dryodora glandiformis">
+  <header>
+    <span class="pill expanded">Expanded</span>
+    <span class="clade-tag">Ctenophora · ctenophore</span>
+  </header>
+  <h3><em>Dryodora glandiformis</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>6</b><span>present loci</span></div>
+    <div class="metric"><b>388</b><span>best length (aa)</span></div>
+    <div class="metric"><b>47%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:47%"></i></span><b>46.7%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>JAUELJ010278292.1:395-1618</code></div>
+  <div class="meta"><span>Prior discovery</span><b>accepted=1;candidates=1</b></div>
+  
+</article>
+
+<article class="species expanded" data-clade="Arthropoda" data-status="expanded" data-name="eriophyidae sp.">
+  <header>
+    <span class="pill expanded">Expanded</span>
+    <span class="clade-tag">Arthropoda · mite</span>
+  </header>
+  <h3><em>Eriophyidae sp.</em></h3>
+  <div class="metrics">
+    <div class="metric"><b>6</b><span>present loci</span></div>
+    <div class="metric"><b>358</b><span>best length (aa)</span></div>
+    <div class="metric"><b>49%</b><span>best identity</span></div>
+  </div>
+  <div class="idrow"><span>Identity</span><span class="idbar"><i style="width:49%"></i></span><b>48.8%</b></div>
+  
+  <div class="meta"><span>Best locus</span><code>CP157589.1:14051685-14059055</code></div>
+  <div class="meta"><span>Prior discovery</span><b>accepted=1;candidates=1</b></div>
+  
+</article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>
+      Source: <a href="../gene_curator_probe/innexin_search_summary.md">innexin_search_summary.md</a>
+      · Story: <a href="../phylogenetic_story/index.html">phylogenetic story</a>
+      · Subfamilies: <a href="../innexin_subfamilies/index.html">innexin subfamilies</a>
+    </p>
+    <p>Built from curator batch search over 51 genomes · 20 with present loci · 16 new/rescued (116 loci).</p>
+  </footer>
+</main>
+
+<script>
+const chips = [...document.querySelectorAll('.chip')];
+const cards = [...document.querySelectorAll('.species')];
+const q = document.getElementById('q');
+let filter = 'all';
+
+function apply() {
+  const query = (q.value || '').trim().toLowerCase();
+  cards.forEach(card => {
+    const clade = card.dataset.clade;
+    const status = card.dataset.status;
+    const name = card.dataset.name || '';
+    const isNewish = status === 'new' || status === 'rescued';
+    const cladeOk = filter === 'all' ? isNewish : (clade === filter && isNewish);
+    // expanded cards live in their own section; keep them visible unless searching
+    const inExpanded = status === 'expanded';
+    const searchOk = !query || name.includes(query);
+    let show;
+    if (inExpanded) {
+      show = searchOk && (filter === 'all' || clade === filter);
+    } else {
+      show = cladeOk && searchOk;
+    }
+    card.classList.toggle('hidden', !show);
+  });
+  document.querySelectorAll('.clade-block').forEach(block => {
+    const visible = [...block.querySelectorAll('.species')].some(c => !c.classList.contains('hidden'));
+    block.classList.toggle('hidden', !visible);
+  });
+}
+
+chips.forEach(chip => chip.addEventListener('click', () => {
+  chips.forEach(c => c.classList.remove('active'));
+  chip.classList.add('active');
+  filter = chip.dataset.filter;
+  apply();
+}));
+q.addEventListener('input', apply);
+</script>
+</body>
+</html>

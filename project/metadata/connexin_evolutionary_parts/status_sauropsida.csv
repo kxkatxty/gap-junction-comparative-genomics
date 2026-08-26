@@ -1,0 +1,7 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Alligator mississippiensis,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,A0A151M322,GJA1,Gap junction protein,36,0,"organism_name:""Alligator mississippiensis"" AND gene:GJA*"
+Butorides sundevalli,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Cecropis daurica,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Correlophus ciliatus,connexin,no,yes,related_or_family_like_entry_found,medium,gap junction,ncbi_protein,B,KAN9781063.1,gap,gap junction gamma-2 protein isoform 1-T9 [Correlophus ciliatus],0,0,"""gap junction""[Title] AND ""Correlophus ciliatus""[Organism]"
+Dumetella carolinensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Emberiza tahapisi,connexin,no,no,no_related_entry_found,,,,,,,,0,0,

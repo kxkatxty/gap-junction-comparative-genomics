@@ -1,0 +1,6 @@
+clade,organism,assembly_accession,assembly_level,assembly_source,connexin_category,connexin_term,connexin_evidence_level,connexin_source,assembly_priority_score,notes
+Mammalia,Eospalax fontanierii cansus,GCA_057930505.1,Chromosome,GenBank,no_related_entry_found,,,,60,mammals
+Mammalia,Eospalax rufescens,GCA_057930555.1,Chromosome,GenBank,no_related_entry_found,,,,60,mammals
+Mammalia,Equus grevyi,GCA_057877195.1,Chromosome,GenBank,no_related_entry_found,,,,60,mammals
+Mammalia,Marmota vancouverensis,GCA_040207255.2,Chromosome,GenBank,no_related_entry_found,,,,60,mammals
+Mammalia,Mops condylurus,GCA_043748645.2,Chromosome,GenBank,no_related_entry_found,,,,60,mammals

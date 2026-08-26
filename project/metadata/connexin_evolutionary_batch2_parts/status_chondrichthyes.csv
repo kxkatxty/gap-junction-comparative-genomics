@@ -1,0 +1,22 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Amblyraja radiata,connexin,yes,no,annotated_family_member_found,high,gjb8,ncbi_gene,A,116974363,gjb8,gap junction protein beta 8,5,0,"GJB*[Gene Symbol] AND ""Amblyraja radiata""[Organism]"
+Carcharhinus amblyrhynchos,connexin,yes,no,annotated_family_member_found,high,gjb7,ncbi_gene,A,145345132,gjb7,gap junction protein beta 7,2,0,"GJB*[Gene Symbol] AND ""Carcharhinus amblyrhynchos""[Organism]"
+Carcharodon carcharias,connexin,yes,no,annotated_family_member_found,high,gja8b,ncbi_gene,A,121284094,gja8b,gap junction protein alpha 8 paralog b,2,0,"GJA*[Gene Symbol] AND ""Carcharodon carcharias""[Organism]"
+Cetorhinus maximus,connexin,yes,no,annotated_family_member_found,high,connexin,ncbi_gene,A,144689891,cnsta,"consortin, connexin sorting protein a",9,0,"connexin[All Fields] AND ""Cetorhinus maximus""[Organism]"
+Chiloscyllium plagiosum,connexin,yes,no,annotated_family_member_found,high,gja3,ncbi_gene,A,122550733,gja3,"gap junction protein, alpha 3",3,0,"connexin[All Fields] AND ""Chiloscyllium plagiosum""[Organism]"
+Chiloscyllium punctatum,connexin,yes,no,annotated_family_member_found,high,connexin,uniprot,A,A0A401SQW6,,Connexin cysteine-rich domain-containing protein,9,0,"organism_name:""Chiloscyllium punctatum"" AND protein_name:connexin"
+Hemiscyllium ocellatum,connexin,yes,no,annotated_family_member_found,high,connexin,ncbi_gene,A,132819352,cnsta,"consortin, connexin sorting protein a",11,0,"connexin[All Fields] AND ""Hemiscyllium ocellatum""[Organism]"
+Hemitrygon akajei,connexin,yes,no,annotated_family_member_found,high,gja10b,ncbi_gene,A,140733746,gja10b,gap junction protein alpha 10 b,5,0,"GJA*[Gene Symbol] AND ""Hemitrygon akajei""[Organism]"
+Heptranchias perlo,connexin,yes,no,annotated_family_member_found,high,gja10b,ncbi_gene,A,137321440,gja10b,gap junction protein alpha 10 b,7,0,"GJA*[Gene Symbol] AND ""Heptranchias perlo""[Organism]"
+Heterodontus francisci,connexin,yes,no,annotated_family_member_found,high,connexin,ncbi_gene,A,137376581,cnsta,"consortin, connexin sorting protein a",5,0,"connexin[All Fields] AND ""Heterodontus francisci""[Organism]"
+Hydrolagus colliei,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Hypanus sabinus,connexin,yes,no,annotated_family_member_found,high,connexin,ncbi_gene,A,132402652,cnsta,"consortin, connexin sorting protein a",5,0,"connexin[All Fields] AND ""Hypanus sabinus""[Organism]"
+Leucoraja erinaceus,connexin,yes,no,annotated_family_member_found,high,gja9a,ncbi_gene,A,129709694,gja9a,gap junction protein alpha 9a,5,0,"connexin[All Fields] AND ""Leucoraja erinaceus""[Organism]"
+Leucoraja naevus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Malacoraja senta,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Mobula birostris,connexin,yes,no,annotated_family_member_found,high,connexin,ncbi_gene,A,140201160,cnsta,"consortin, connexin sorting protein a",13,0,"connexin[All Fields] AND ""Mobula birostris""[Organism]"
+Mobula hypostoma,connexin,yes,no,annotated_family_member_found,high,connexin,ncbi_gene,A,134350378,cnsta,"consortin, connexin sorting protein a",15,0,"connexin[All Fields] AND ""Mobula hypostoma""[Organism]"
+Mustelus asterias,connexin,yes,no,annotated_family_member_found,high,connexin,ncbi_gene,A,144504338,cnsta,"consortin, connexin sorting protein a",12,0,"connexin[All Fields] AND ""Mustelus asterias""[Organism]"
+Narcine bancroftii,connexin,yes,no,annotated_family_member_found,high,connexin,ncbi_gene,A,138760365,cnsta,"consortin, connexin sorting protein a",11,0,"connexin[All Fields] AND ""Narcine bancroftii""[Organism]"
+Okamejei kenojei,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Potamotrygon marinae,connexin,no,no,no_related_entry_found,,,,,,,,0,0,

@@ -1,0 +1,14 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Ovis aries,connexin,yes,no,annotated_family_member_found,high,GJA1,ncbi_gene,A,101122284,GJA1,gap junction protein alpha 1,43,0,"connexin[All Fields] AND ""Ovis aries""[Organism]"
+Sus scrofa,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,Q29101,GJA1,Gap junction alpha-1 protein,43,0,"organism_name:""Sus scrofa"" AND protein_name:connexin"
+Alexandromys fortis,connexin,yes,no,annotated_family_member_found,high,Gja1,ncbi_gene,A,126499060,Gja1,gap junction protein alpha 1,22,0,"GJA*[Gene Symbol] AND ""Alexandromys fortis""[Organism]"
+Bos grunniens,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,A0A8B9X589,GJA1,Gap junction protein,17,0,"organism_name:""Bos grunniens"" AND gene:GJA*"
+Bos taurus,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,P18246,GJA1,Gap junction alpha-1 protein,47,0,"organism_name:""Bos taurus"" AND protein_name:connexin"
+Canis lupus familiaris,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,Q6S9C0,GJA1,Gap junction alpha-1 protein,43,0,"organism_name:""Canis lupus familiaris"" AND protein_name:connexin"
+Capra hircus,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,A0A452DQ32,GJA1,Gap junction protein,37,0,"organism_name:""Capra hircus"" AND gene:GJA*"
+Eospalax fontanierii cansus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Eospalax rufescens,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Equus asinus,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,A0A9L0KDQ7,GJA1,Gap junction protein,42,0,"organism_name:""Equus asinus"" AND gene:GJA*"
+Equus grevyi,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Marmota vancouverensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Mops condylurus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,

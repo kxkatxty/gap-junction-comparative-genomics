@@ -1,0 +1,6 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Aldabrachelys gigantea,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Apalone spinifera,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Caretta caretta,connexin,yes,no,annotated_family_member_found,high,GJA10,ncbi_gene,A,125634892,GJA10,gap junction protein alpha 10,3,0,"GJA*[Gene Symbol] AND ""Caretta caretta""[Organism]"
+Carettochelys insculpta,connexin,yes,no,annotated_family_member_found,high,GJA10,ncbi_gene,A,142010707,GJA10,gap junction protein alpha 10,1,0,"GJA*[Gene Symbol] AND ""Carettochelys insculpta""[Organism]"
+Chelonia mydas,connexin,yes,no,annotated_family_member_found,high,GJA1,ncbi_gene,A,102944472,GJA1,gap junction protein alpha 1,10,0,"GJA*[Gene Symbol] AND ""Chelonia mydas""[Organism]"

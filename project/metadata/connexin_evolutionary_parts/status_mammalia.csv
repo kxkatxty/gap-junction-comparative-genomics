@@ -1,0 +1,13 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Mus musculus domesticus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Ovis aries,connexin,yes,no,annotated_family_member_found,high,GJA3,uniprot,A,Q9TU17,GJA3,Gap junction alpha-3 protein,27,0,"organism_name:""Ovis aries"" AND protein_name:connexin"
+Sus scrofa,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,Q29101,GJA1,Gap junction alpha-1 protein,28,0,"organism_name:""Sus scrofa"" AND protein_name:connexin"
+Alexandromys fortis,connexin,yes,no,annotated_family_member_found,high,Gjb3,ncbi_gene,A,126508228,Gjb3,gap junction protein beta 3,9,0,"connexin[All Fields] AND ""Alexandromys fortis""[Organism]"
+Antrozous pallidus,connexin,no,yes,related_or_family_like_entry_found,medium,gap junction,ncbi_protein,B,KAN7646806.1,gap,gap junction alpha-4 protein [Antrozous pallidus],0,0,"""gap junction""[Title] AND ""Antrozous pallidus""[Organism]"
+Babyrousa celebensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Bos grunniens,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,A0A8B9X589,GJA1,Gap junction protein,17,0,"organism_name:""Bos grunniens"" AND gene:GJA*"
+Bos taurus,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,P18246,GJA1,Gap junction alpha-1 protein,30,0,"organism_name:""Bos taurus"" AND protein_name:connexin"
+Canis lupus familiaris,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,Q6S9C0,GJA1,Gap junction alpha-1 protein,28,0,"organism_name:""Canis lupus familiaris"" AND protein_name:connexin"
+Capra hircus,connexin,yes,no,annotated_family_member_found,high,GJA1,uniprot,A,A0A452DQ32,GJA1,Gap junction protein,28,0,"organism_name:""Capra hircus"" AND gene:GJA*"
+Ceratotherium simum simum,connexin,no,yes,related_or_family_like_entry_found,medium,gap junction,uniprot,B,A0ABM0H9E4,LOC101389768,Gap junction protein,11,32,"organism_name:""Ceratotherium simum simum"" AND (protein_name:""gap junction"" OR cc_function:""gap junction"")"
+Eospalax fontanierii baileyi,connexin,no,no,no_related_entry_found,,,,,,,,0,0,

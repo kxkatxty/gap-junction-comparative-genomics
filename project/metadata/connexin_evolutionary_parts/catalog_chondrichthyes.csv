@@ -1,0 +1,6 @@
+clade,organism,assembly_accession,assembly_level,assembly_source,connexin_category,connexin_term,connexin_evidence_level,connexin_source,assembly_priority_score,notes
+Chondrichthyes,Carcharias taurus,GCA_055471155.1,Chromosome,GenBank,no_related_entry_found,,,,60,cartilaginous fishes sharks rays chimaeras
+Chondrichthyes,Chimaera phantasma,GCA_057930315.1,Chromosome,GenBank,no_related_entry_found,,,,60,cartilaginous fishes sharks rays chimaeras
+Chondrichthyes,Echinorhinus cookei,GCA_057876775.1,Chromosome,GenBank,no_related_entry_found,,,,60,cartilaginous fishes sharks rays chimaeras
+Chondrichthyes,Fontitrygon garouaensis,GCA_054367945.1,Chromosome,GenBank,no_related_entry_found,,,,60,cartilaginous fishes sharks rays chimaeras
+Chondrichthyes,Galeorhinus galeus,GCA_055755675.1,Chromosome,GenBank,no_related_entry_found,,,,60,cartilaginous fishes sharks rays chimaeras

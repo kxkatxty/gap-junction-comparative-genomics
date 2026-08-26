@@ -1,0 +1,6 @@
+clade,organism,assembly_accession,assembly_level,assembly_source,connexin_category,connexin_term,connexin_evidence_level,connexin_source,assembly_priority_score,notes
+Sauropsida,Butorides sundevalli,GCA_057816225.1,Chromosome,GenBank,no_related_entry_found,,,,60,birds and reptiles turtles crocodilians squamates
+Sauropsida,Cecropis daurica,GCA_057381115.1,Chromosome,GenBank,no_related_entry_found,,,,60,birds and reptiles turtles crocodilians squamates
+Sauropsida,Correlophus ciliatus,GCA_040207535.2,Chromosome,GenBank,related_or_family_like_entry_found,gap junction,,,60,birds and reptiles turtles crocodilians squamates
+Sauropsida,Dumetella carolinensis,GCA_057427935.1,Chromosome,GenBank,no_related_entry_found,,,,60,birds and reptiles turtles crocodilians squamates
+Sauropsida,Emberiza tahapisi,GCA_058130095.1,Chromosome,GenBank,no_related_entry_found,,,,60,birds and reptiles turtles crocodilians squamates

@@ -1,0 +1,16 @@
+clade,organism,assembly_accession,assembly_level,assembly_source,has_gff_annotation,innexin_annotation_status,connexin_annotation_status,pannexin_annotation_status,already_checked,innexin_discovery_run,model_species,priority_score,priority_tier,recommended_pipeline,clade_priority,notes
+Ctenophora,Mertensia ovum,GCA_965231305.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,10,comb jellies
+Ctenophora,Beroe forskalii,GCA_011033025.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,10,comb jellies
+Ctenophora,Beroe ovata,GCA_946803715.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,10,comb jellies
+Ctenophora,Dryodora glandiformis,GCA_031471255.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,10,comb jellies
+Mollusca,Macoma balthica,GCA_965119735.1,Complete Genome,GenBank,yes,,,,no,no,no,110,high,classify_then_discovery,6,bivalves gastropods cephalopods
+Mollusca,Abra alba,GCA_979025805.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,6,bivalves gastropods cephalopods
+Mollusca,Abra segmentum,GCA_965244925.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,6,bivalves gastropods cephalopods
+Mollusca,Acanthocardia echinata,GCA_977930445.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,6,bivalves gastropods cephalopods
+Mollusca,Acanthochitona discrepans,GCA_048544545.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,6,bivalves gastropods cephalopods
+Placozoa,Trichoplax sp. H2,GCA_003344405.1,Scaffold,GenBank,yes,,,,no,no,no,85,high,classify_then_discovery,9,Trichoplax and relatives
+Porifera,Acanthascus dawsoni,GCA_978045225.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,8,sponges early metazoan outgroups
+Porifera,Agelas clathrodes,GCA_965279245.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,8,sponges early metazoan outgroups
+Porifera,Agelas conifera,GCA_965122385.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,8,sponges early metazoan outgroups
+Porifera,Agelas oroides,GCA_949130485.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,8,sponges early metazoan outgroups
+Porifera,Agelas tubulata,GCA_964245335.1,Chromosome,GenBank,yes,,,,no,no,no,100,high,classify_then_discovery,8,sponges early metazoan outgroups

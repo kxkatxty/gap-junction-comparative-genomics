@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Connexin similarity — MMseqs2 & embeddings</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Sora:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2a1408;--muted:#7a5340;--deep:#7c2d12;--bg:#fbf4ee}
+body{margin:0;font-family:Sora,sans-serif;color:var(--ink);background:linear-gradient(180deg,#f8ebe3,var(--bg));line-height:1.55}
+.hero{min-height:70vh;display:grid;align-items:end;padding:clamp(1.3rem,4vw,3rem);color:#fffaf6;
+background:linear-gradient(115deg,rgba(124,45,18,.94),rgba(194,65,12,.75) 55%,rgba(3,105,161,.45))}
+.brand{font-family:Fraunces,serif;font-size:clamp(2.2rem,6vw,4.2rem);margin:0 0 .6rem;line-height:.95}
+.cta a{display:inline-block;margin:.4rem .4rem 0 0;padding:.75rem 1.1rem;border-radius:999px;background:#fffaf6;color:var(--deep);text-decoration:none;font-weight:700}
+.wrap{width:min(1140px,calc(100% - 2rem));margin:0 auto;padding:2rem 0 4rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin-top:-1.6rem}
+.stat{background:#fff;border-radius:14px;padding:1rem;box-shadow:0 8px 22px rgba(42,20,8,.06)}
+.stat b{display:block;font-family:Fraunces,serif;font-size:1.7rem;color:var(--deep)}
+.findings{background:#fff;border-left:4px solid #d97706;border-radius:12px;padding:1rem 1.2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1rem}
+.card{background:#fff;border-radius:14px;padding:.8rem;box-shadow:0 8px 20px rgba(42,20,8,.05)}
+.card img{width:100%;border-radius:10px;cursor:zoom-in}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);align-items:center;justify-content:center;z-index:9;padding:1rem;cursor:zoom-out}
+.modal.open{display:flex} .modal img{max-width:95vw;max-height:90vh}
+@media(max-width:700px){.stats{grid-template-columns:1fr}}
+</style></head><body>
+<header class="hero"><div>
+<p class="brand">Sequence × Embedding</p>
+<p>Compare connexin α/β/γ/δ/ε groups with MMseqs2 identity sweeps and protein embeddings.</p>
+<div class="cta"><a href="#figs">Diagrams</a><a href="../connexin_clade_comparison/index.html">Clade comparison</a><a href="../family_comparison/index.html">vs innexin</a></div>
+</div></header>
+<main class="wrap">
+<div class="stats">
+<div class="stat"><b>127</b><span>proteins in all-vs-all</span></div>
+<div class="stat"><b>6</b><span>identity thresholds</span></div>
+<div class="stat"><b>4</b><span>similarity approaches</span></div>
+</div>
+<section><h2>Key results</h2><div class="findings"><ol><li>MMseqs2 sweep: highest α/β/γ/δ purity 1.00 at min-seq-id=0.80 (63 clusters).</li><li>Within-subfamily median identity ~56.6% vs between-subfamily median 40.1% — α vs β are sequence-separable but one family.</li><li>3-mer embedding cosine: same-subfamily 0.492 vs different -0.053.</li><li>AA-composition cosine barely separates groups (same 0.925 vs diff 0.880) — k-mers and MMseqs carry the structural signal.</li><li>α (GJA) ↔ β (GJB) mean identity 46.4057% (n=1395).</li><li>Caveat: discovery types are MMseqs best-hits; GJA1 vs GJA4 still need synteny to confirm locus identity.</li></ol></div></section>
+<section id="figs"><h2>Diagrams</h2><div class="grid"><article class='card'><img src='figures/01_mmseqs_threshold_sweep.png' alt='MMseqs2 identity-threshold sweep' loading='lazy' onclick="openModal(this.src)"><h3>MMseqs2 identity-threshold sweep</h3></article><article class='card'><img src='figures/02_within_sf_identity.png' alt='Within-subfamily sequence identity' loading='lazy' onclick="openModal(this.src)"><h3>Within-subfamily sequence identity</h3></article><article class='card'><img src='figures/03_heatmap_mmseqs_identity.png' alt='Subfamily × subfamily MMseqs2 identity' loading='lazy' onclick="openModal(this.src)"><h3>Subfamily × subfamily MMseqs2 identity</h3></article><article class='card'><img src='figures/04_heatmap_aa_composition.png' alt='AA-composition cosine heatmap' loading='lazy' onclick="openModal(this.src)"><h3>AA-composition cosine heatmap</h3></article><article class='card'><img src='figures/05_heatmap_kmer_embedding.png' alt='3-mer embedding cosine heatmap' loading='lazy' onclick="openModal(this.src)"><h3>3-mer embedding cosine heatmap</h3></article><article class='card'><img src='figures/06_embedding_pca_kmer.png' alt='3-mer embedding PCA' loading='lazy' onclick="openModal(this.src)"><h3>3-mer embedding PCA</h3></article><article class='card'><img src='figures/07_seq_vs_embedding_cohesion.png' alt='Sequence vs embedding cohesion' loading='lazy' onclick="openModal(this.src)"><h3>Sequence vs embedding cohesion</h3></article><article class='card'><img src='figures/08_embedding_pca_aa.png' alt='AA-composition PCA' loading='lazy' onclick="openModal(this.src)"><h3>AA-composition PCA</h3></article></div></section>
+<section><p>
+<a href="all_connexins.fasta">FASTA</a> ·
+<a href="sequence_metadata.csv">metadata</a> ·
+<a href="mmseqs_allvsall.m8">all-vs-all</a> ·
+<a href="group_similarity_matrix.csv">group matrix</a> ·
+<a href="../connexin_insights/index.html">curated insights</a> ·
+<a href="../family_comparison/index.html">vs innexin</a>
+</p></section>
+</main>
+<div id="modal" class="modal" onclick="this.classList.remove('open')"><img id="mimg" alt=""></div>
+<script>
+function openModal(s){document.getElementById('mimg').src=s;document.getElementById('modal').classList.add('open')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('modal').classList.remove('open')})
+</script>
+</body></html>

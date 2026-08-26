@@ -1,0 +1,18 @@
+organism,clade,n_loci,n_panx1,n_panx2,n_panx3,n_other,has_full_triplet,bottleneck_clade
+Xenopus laevis,Amphibian,5,1,2,2,0,yes,no
+Xenopus tropicalis,Amphibian,3,1,1,1,0,yes,no
+Gallus gallus,Bird,3,1,1,1,0,yes,no
+Callorhinchus milii,Cartilaginous fish,4,2,1,1,0,yes,no
+Petromyzon marinus,Jawless vertebrate,1,0,0,1,0,no,yes
+Latimeria chalumnae,Lobe-finned fish,3,1,1,1,0,yes,no
+Bos taurus,Mammal,3,1,1,1,0,yes,no
+Homo sapiens,Mammal,3,1,1,1,0,yes,no
+Mus musculus,Mammal,3,1,1,1,0,yes,no
+Rattus norvegicus,Mammal,3,1,1,1,0,yes,no
+Sus scrofa,Mammal,3,1,1,1,0,yes,no
+Danio rerio,Ray-finned fish,3,2,1,0,0,no,no
+Lepisosteus oculatus,Ray-finned fish,1,0,1,0,0,no,no
+Takifugu rubripes,Ray-finned fish,3,0,2,1,0,no,no
+Anolis carolinensis,Reptile,3,1,1,1,0,yes,no
+Podarcis muralis,Reptile,3,1,1,1,0,yes,no
+Branchiostoma floridae,Tunicate / lancelet,2,0,1,1,0,no,yes

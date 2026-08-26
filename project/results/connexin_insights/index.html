@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connexin Insights — Phylogeny, Clades & Structure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #2a1408;
+  --muted: #7a5340;
+  --deep: #7c2d12;
+  --sea: #c2410c;
+  --amber: #d97706;
+  --foam: #fbf4ee;
+  --card: #ffffff;
+  --line: rgba(42, 20, 8, 0.1);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Sora", sans-serif;
+  line-height: 1.6;
+  background:
+    radial-gradient(1000px 480px at 8% -8%, rgba(194, 65, 12, 0.16), transparent 55%),
+    radial-gradient(900px 420px at 92% 4%, rgba(3, 105, 161, 0.12), transparent 50%),
+    linear-gradient(180deg, #f8ebe3 0%, var(--foam) 40%, #f7f0ea 100%);
+}
+a { color: var(--sea); }
+.hero {
+  position: relative;
+  min-height: 88vh;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  padding: clamp(1.5rem, 4vw, 3.25rem);
+  color: #fffaf6;
+  background:
+    linear-gradient(118deg, rgba(124, 45, 18, 0.94) 0%, rgba(194, 65, 12, 0.78) 52%, rgba(3, 105, 161, 0.5) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cpath d='M0 70h140M70 0v140' stroke='%23fff' stroke-opacity='.07'/%3E%3C/svg%3E");
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -15% -30% 40%;
+  height: 75%;
+  background: radial-gradient(ellipse at center, rgba(255, 250, 246, 0.16), transparent 65%);
+  animation: drift 14s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+@keyframes drift {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(-5%, 4%, 0) scale(1.06); }
+}
+.hero-inner { position: relative; z-index: 1; max-width: 760px; }
+.brand {
+  font-family: "Fraunces", serif;
+  font-size: clamp(2.6rem, 7vw, 4.8rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  margin: 0 0 1rem;
+}
+.hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.05rem, 2.1vw, 1.3rem);
+  font-weight: 500;
+  max-width: 38ch;
+}
+.hero .lede { margin: 0 0 1.6rem; max-width: 48ch; opacity: 0.92; }
+.cta a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.8rem 1.15rem;
+  border-radius: 999px;
+  margin-right: 0.45rem;
+  margin-bottom: 0.35rem;
+  background: #fffaf6;
+  color: var(--deep);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  transition: transform 0.2s ease;
+}
+.cta a.ghost {
+  background: transparent;
+  color: #fffaf6;
+  border: 1px solid rgba(255,250,246,0.45);
+  box-shadow: none;
+}
+.cta a:hover { transform: translateY(-2px); }
+.wrap { width: min(860px, calc(100% - 2rem)); margin: 0 auto; padding: 2.25rem 0 4.5rem; }
+.verdict {
+  margin-top: -2.2rem;
+  position: relative;
+  z-index: 2;
+  background: rgba(255,255,255,0.94);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.25rem 1.35rem;
+  box-shadow: 0 14px 36px rgba(42, 20, 8, 0.08);
+}
+.verdict h2 { font-family: "Fraunces", serif; font-size: 1.35rem; margin: 0 0 0.55rem; }
+.verdict p { margin: 0; color: var(--muted); }
+.verdict strong { color: var(--deep); }
+.toc { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 1.75rem 0 0.5rem; }
+.toc a {
+  text-decoration: none; font-size: 0.8rem; font-weight: 500; color: var(--deep);
+  background: #fff; border: 1px solid var(--line); padding: 0.4rem 0.75rem; border-radius: 999px;
+}
+.toc a:hover { border-color: var(--sea); color: var(--sea); }
+.beat { margin: 2.4rem 0; scroll-margin-top: 1rem; }
+.beat .eyebrow {
+  display: inline-block; font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--amber); margin-bottom: 0.35rem;
+}
+.beat h2 {
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.45rem, 3vw, 1.85rem);
+  margin: 0 0 0.55rem;
+  letter-spacing: -0.02em;
+}
+.beat .claim { color: var(--muted); margin: 0 0 1rem; max-width: 62ch; }
+.figure {
+  background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+  padding: 0.85rem; margin: 0 0 1rem; box-shadow: 0 10px 28px rgba(42, 20, 8, 0.05);
+}
+.figure img { width: 100%; display: block; border-radius: 10px; cursor: zoom-in; background: #fffaf6; }
+.figure .cap { margin: 0.7rem 0.15rem 0.1rem; font-size: 0.9rem; color: var(--muted); }
+.take {
+  margin: 0.35rem 0 0; padding: 0.75rem 0.9rem;
+  border-left: 3px solid var(--sea);
+  background: rgba(194, 65, 12, 0.07);
+  border-radius: 0 12px 12px 0;
+  font-size: 0.92rem; color: var(--deep);
+}
+.closing {
+  margin-top: 2.5rem; padding: 1.4rem 1.35rem; border-radius: 16px;
+  background: linear-gradient(135deg, var(--deep), #c2410c); color: #fffaf6;
+}
+.closing h2 { font-family: "Fraunces", serif; margin: 0 0 0.55rem; font-size: 1.4rem; }
+.closing p { margin: 0; opacity: 0.95; max-width: 62ch; }
+.footer { margin-top: 1.75rem; color: var(--muted); font-size: 0.88rem; }
+.footer a { margin-right: 0.85rem; }
+.modal {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.88);
+  z-index: 30; align-items: center; justify-content: center; padding: 1.25rem; cursor: zoom-out;
+}
+.modal.open { display: flex; }
+.modal img { max-width: 95vw; max-height: 90vh; border-radius: 8px; }
+@media (max-width: 700px) { .hero { min-height: 78vh; } .verdict { margin-top: -1.4rem; } }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="brand">Connexin Insights</p>
+    <h1>What vertebrate phylogeny says about connexin gene and protein structure</h1>
+    <p class="lede">Selected plots for grouping α/β/γ/δ connexins across mammals, birds, reptiles, amphibians and fishes.</p>
+    <div class="cta">
+      <a href="#verdict">Start here</a>
+      <a class="ghost" href="../gap_junction_path/index.html">Story path</a>
+      <a class="ghost" href="../innexin_insights/index.html">Innexin insights</a>
+      <a class="ghost" href="../family_comparison/index.html">vs innexin</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="verdict" id="verdict">
+    <h2>Main point</h2>
+    <p>
+      Connexins are a <strong>vertebrate family with conserved subfamilies</strong> (α GJA, β GJB, γ GJC, δ GJD),
+      not a Drosophila-style name-chaos problem.
+      α and β <strong>co-occur across tetrapods and fish</strong>.
+      Proteins stay closer than innexins (~57% within-subfamily vs ~40% between; α↔β ~46%).
+      Gene architecture is <strong>neighborhood-conserved</strong>: GJA4 lives in the β-cluster, GJA1 occupies a separate locus —
+      two genomic addresses, not one connexin pile.
+    </p>
+  </section>
+
+  <nav class="toc" aria-label="Contents">
+    <a href="#beat1">1. Phylogeny vs clades</a>
+    <a href="#beat2">2. Sequence distance</a>
+    <a href="#beat3">3. Gene neighborhoods</a>
+    <a href="#beat4">4. Protein similarity</a>
+    <a href="#beat5">5. Architecture</a>
+  </nav>
+
+  <article class="beat" id="beat1">
+    <span class="eyebrow">Phylogeny across clades</span>
+    <h2>α and β travel together across vertebrates</h2>
+    <p class="claim">
+      If connexins were a mammal-only expansion, fish and amphibians would lack the α/β split.
+      The reference panel shows GJA and GJB (and often GJC) in multiple vertebrate clades — connexins as the
+      canonical vertebrate gap-junction family across tetrapods and fish, not a late mammalian invention.
+    </p>
+    <div class="figure">
+      <img src="figures/01_subfamilies_across_clades.png" alt="α β γ δ ε subfamilies across clades" onclick="openModal(this.src)">
+      <p class="cap">α / β / γ / δ / ε connexin subfamilies mapped onto vertebrate clades.</p>
+      <p class="take"><strong>Note:</strong> Mammals hold the densest named panel, but α+β co-occur in amphibians, birds and ray-finned fish — not a late mammalian invention.</p>
+    </div>
+    <div class="figure">
+      <img src="figures/02_clade_x_type.png" alt="Clade by connexin type heatmap" onclick="openModal(this.src)">
+      <p class="cap">Which classical labels (GJA1, GJB2, GJC…) appear in which clade.</p>
+      <p class="take"><strong>Note:</strong> GJA1 is the most widely shared α gene; β paralogs (GJB1/2/3/6) are richest in mammals. Discovery sequences that fail MMseqs typing remain “unassigned” — they are not secretly a new innexin-like radiation.</p>
+    </div>
+    <div class="figure">
+      <img src="figures/03_classical_across_clades.png" alt="Classical connexin labels across clades" onclick="openModal(this.src)">
+      <p class="cap">GJA1, GJA4, GJB1–3, GJC, GJD counts by clade.</p>
+      <p class="take"><strong>Note:</strong> The named vertebrate set is uneven but homologous: same labels, many clades — the opposite of insect Inx1–7 names that do not transfer to nematodes.</p>
+    </div>
+  </article>
+
+  <article class="beat" id="beat2">
+    <span class="eyebrow">Sequence distance</span>
+    <h2>Subfamilies are close relatives — closer than innexin SF3 vs SF4</h2>
+    <p class="claim">
+      MMseqs2 all-vs-all on 103 references + typed discovery proteins: within-subfamily identity stays high, between-subfamily still clearly connexin.
+    </p>
+    <div class="figure">
+      <img src="figures/05_within_subfamily_identity.png" alt="Within-subfamily identity" onclick="openModal(this.src)">
+      <p class="cap">Within-subfamily % identity (dashed line = median between subfamilies).</p>
+      <p class="take"><strong>Note:</strong> ~57% within vs ~40% between. Innexin SF groups were ~46% vs ~28%. Connexin paralogs diverged less — consistent with a younger, vertebrate-restricted family.</p>
+    </div>
+  </article>
+
+  <article class="beat" id="beat3">
+    <span class="eyebrow">Gene structure</span>
+    <h2>Two loci: GJA4 in a β-cluster, GJA1 on its own</h2>
+    <p class="claim">
+      Unlike Drosophila innexins, where genomic clusters cut across the tree, vertebrate connexins keep a stable neighborhood around the β-cluster (GJA4 with GJB3–GJB5).
+      Physically adjacent paralogs such as <strong>cx38 / gjb3 / gjb4 / gja4</strong> are a classic signature of
+      <strong>tandem gene duplication</strong> by local unequal crossing-over — how much of the vertebrate connexin repertoire
+      expanded into tight genomic arrays — whereas <strong>whole-genome duplications</strong> also scattered other paralogs onto
+      separate chromosomes (notably the isolated <strong>GJA1</strong> address). Xenopus already has both loci.
+      Between <em>Xenopus laevis</em> (allotetraploid L-homeolog) and diploid <em>X. tropicalis</em>, the GJA4 microsynteny plot shows a
+      <strong>local chromosomal inversion</strong>: in <em>X. laevis</em> the flank
+      <em>kdm1a.L → tmem30b.L → zmpste24.L → smim12.L</em> sits to the <em>left</em> of <em>gja4.L</em>; in <em>X. tropicalis</em>
+      that same conserved block is inverted and sits to the <em>right</em> of <em>gja4</em>. The neighbourhood is retained;
+      only the orientation relative to the connexin locus changed after tetraploidization / diploidization.
+    </p>
+    <div class="figure">
+      <img src="figures/04_gja4_neighborhood.png" alt="GJA4 conserved microsynteny" onclick="openModal(this.src)">
+      <p class="cap">GJA4 cross-species microsynteny — tandem β-cluster (GJB3–GJB5, DLGAP3, SMIM12); Xenopus L vs tropicalis inversion of the kdm1a–smim12 block relative to gja4.</p>
+      <p class="take"><strong>Note:</strong> Connexin evolution mixes <em>tandem clusters</em> (local unequal crossing-over) with
+        <em>WGD-dispersed</em> addresses (GJA1). Compare
+        <a href="../synteny_gff/cross_species/connexin_GJA4_cross_species.html">GJA4</a> with
+        <a href="../synteny_gff/cross_species/connexin_GJA1_cross_species.html">GJA1</a>.
+        Reading Xenopus at gene-order resolution reveals post-duplication inversion dynamics — not just “shared flanks”.</p>
+    </div>
+    <div class="figure">
+      <p class="cap" style="margin-bottom:.5rem">On the <a href="../synteny_gff/cross_species/connexin_GJA1_cross_species.html">GJA1 microsynteny</a> plot,
+        <em>X. laevis</em> <code>gja1.L</code> can look isolated while <em>Danio</em> has a full neighbourhood.
+        That blank space is usually a short scaffold or assembly gap in the draft genome — not a biological gene island.</p>
+    </div>
+  </article>
+
+  <article class="beat" id="beat4">
+    <span class="eyebrow">Protein similarity</span>
+    <h2>α and β separate in sequence space and in embeddings</h2>
+    <p class="claim">
+      Identity heatmaps and 3-mer embeddings agree: α (GJA) and β (GJB) are distinct clouds inside one family.
+      Amino-acid composition alone barely splits them — local motif grammar does.
+    </p>
+    <div class="figure">
+      <img src="figures/06_protein_identity_by_subfamily.png" alt="MMseqs identity between subfamilies" onclick="openModal(this.src)">
+      <p class="cap">Mean MMseqs2 % identity between α/β/γ/δ/ε.</p>
+      <p class="take"><strong>Note:</strong> α↔β ~46%. Distinct paralog classes, still one protein fold family — the right contrast to innexin SF3↔SF4 (~28%).</p>
+    </div>
+    <div class="figure">
+      <img src="figures/07_embedding_similarity.png" alt="3-mer embedding cosine" onclick="openModal(this.src)">
+      <p class="cap">3-mer SVD embedding cosine (same-group ~0.49 vs different ~0).</p>
+      <p class="take"><strong>Note:</strong> Embedding separation is sharper than raw composition. β-cluster genes share a sequence “texture” beyond overall amino-acid mix.</p>
+    </div>
+    <div class="figure">
+      <img src="figures/08_embedding_pca_by_subfamily.png" alt="Embedding PCA by subfamily" onclick="openModal(this.src)">
+      <p class="cap">Proteins in 3-mer embedding space, coloured by subfamily.</p>
+      <p class="take"><strong>Note:</strong> α and β form the main clouds; γ/δ sit nearby. Phylogeny of connexin classes leaves a footprint in protein feature space.</p>
+    </div>
+  </article>
+
+  <article class="beat" id="beat5">
+    <span class="eyebrow">Gene &amp; protein architecture</span>
+    <h2>Lengths stay connexin-like; exons stay simple</h2>
+    <p class="claim">
+      Reference connexins are typically ~250–380 aa with few exons (panel median 2).
+      That compactness matches the textbook rule: connexin coding regions usually lack introns
+      (ORF in one exon; often a separate 5′ UTR exon). Innexins, by contrast, keep coding-region introns
+      and can splice multiple isoforms from one locus.
+    </p>
+    <div class="figure">
+      <img src="figures/09_protein_length_by_clade.png" alt="Protein length by clade" onclick="openModal(this.src)">
+      <p class="cap">Protein length by vertebrate clade.</p>
+      <p class="take"><strong>Note:</strong> Mammals ~333 aa, birds ~375 aa, amphibians ~308 aa, fishes shorter (~256–277 aa). Length is conserved enough to stay “connexin-shaped”.</p>
+    </div>
+    <div class="figure">
+      <img src="figures/10_exon_architecture_by_clade.png" alt="Exon count by clade" onclick="openModal(this.src)">
+      <p class="cap">Mean exon count for reference connexins by clade.</p>
+      <p class="take"><strong>Note:</strong> Compact, usually intron-free coding architecture is a clade-wide connexin character — another reason they are not remodelled copies of intron-rich innexins.
+        δ GJD can spike toward ~22 exons in clade×subfamily plots — usually a GFF fusion with intron-rich flanks (e.g. DLGAP3/SMIM12), not a real 22-exon connexin.</p>
+    </div>
+  </article>
+
+  <section class="closing">
+    <h2>Summary</h2>
+    <p>
+      Connexins diversified inside vertebrates as named α/β/γ/δ classes that stay sequence-close and synteny-stable
+      (GJA4 β-cluster vs a separate GJA1 locus). Innexins, by contrast, diversified by clade-specific duplication with misleading gene names and little conserved cross-phylum synteny.
+    </p>
+  </section>
+
+  <footer class="footer">
+    <p>Built from clade comparison + MMseqs/embedding similarity + GJA4 microsynteny. 103 reference proteins · 24 discovery loci · 38 species.</p>
+    <p>
+      <a href="../connexin_clade_comparison/index.html">Clade comparison</a>
+      <a href="../connexin_similarity/index.html">Similarity analysis</a>
+      <a href="../family_comparison/index.html">vs innexin</a>
+      <a href="../innexin_insights/index.html">Innexin insights</a>
+      <a href="../phylogenetic_story/index.html">Phylogeny story</a>
+    </p>
+  </footer>
+</main>
+
+<div id="modal" class="modal" onclick="this.classList.remove('open')">
+  <img id="modal-img" alt="Enlarged figure">
+</div>
+<script>
+function openModal(src) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('modal').classList.add('open');
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('modal').classList.remove('open');
+});
+</script>
+</body>
+</html>

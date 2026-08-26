@@ -1,0 +1,6 @@
+clade,ncbi_search_term,notes,priority
+Fishes,(txid7898[Organism:exp] OR txid7777[Organism:exp]) NOT txid32523[Organism:exp],ray-finned and cartilaginous fishes excluding tetrapods,1
+Amphibians,Amphibia[Organism:exp],frogs salamanders caecilians,2
+Reptiles,txid8459[Organism:exp] NOT txid8782[Organism:exp],squamates turtles crocodilians excluding birds,3
+Birds,txid8782[Organism:exp],aves,4
+Mammals,txid40674[Organism:exp],mammalia,5

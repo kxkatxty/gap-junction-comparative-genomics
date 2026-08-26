@@ -1,0 +1,5 @@
+subfamily_id,label,dmel_genes,members,genomic_note
+SF1_shakB,shakB clade,shakB,Dmel shakB; mosquito shakB orthologs,Distal X cluster ~20.76 Mb (NC_004354.4)
+SF2_Inx1_ogre,Inx1 / ogre clade,ogre (Inx1),Dmel ogre; Schistocerca inx1,"Proximal X cluster with Inx7/Inx2 (~6.97 Mb) — genomic neighbor, not SF3 sister"
+SF3_Inx3_Inx7_nematode,Inx3 + Inx7 + nematode innexins,"Inx3, Inx7","Dmel Inx3, Inx7; all C. elegans innexins (inx-*, unc-7/9, eat-5)",Inx7 sits in proximal X; Inx3 on 3R — tree groups them with nematodes despite split loci
+SF4_Inx2_expansion,Inx2 / Inx4–6 insect expansion,"Inx2, zpg(Inx4), Inx5, Inx6",Dmel Inx2/4/5/6; Schistocerca inx2; Anopheles ZPG/Inx4,Inx2 in proximal X tandem with ogre/Inx7; Inx4–6 elsewhere

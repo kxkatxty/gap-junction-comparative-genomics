@@ -1,0 +1,6 @@
+clade,organism,assembly_accession,assembly_level,assembly_source,connexin_category,connexin_term,connexin_evidence_level,connexin_source,assembly_priority_score,notes
+Chondrichthyes,Hydrolagus colliei,GCA_035084275.1,Chromosome,GenBank,no_related_entry_found,,,,60,cartilaginous fishes sharks rays chimaeras
+Chondrichthyes,Leucoraja naevus,GCA_965643135.1,Chromosome,GenBank,no_related_entry_found,,,,60,cartilaginous fishes sharks rays chimaeras
+Chondrichthyes,Malacoraja senta,GCA_038087875.1,Chromosome,GenBank,no_related_entry_found,,,,60,cartilaginous fishes sharks rays chimaeras
+Chondrichthyes,Okamejei kenojei,GCA_035221665.1,Chromosome,GenBank,no_related_entry_found,,,,60,cartilaginous fishes sharks rays chimaeras
+Chondrichthyes,Potamotrygon marinae,GCA_055471215.1,Chromosome,GenBank,no_related_entry_found,,,,60,cartilaginous fishes sharks rays chimaeras

@@ -1,0 +1,8 @@
+gene,accession,source_species,outdir_name,status,synteny_block_plots,genomes_searched,genomes_with_hits,total_hits,genomes_with_annotations,total_goi_annotations,confident_goi_annotations,low_confidence_regions,report_path
+inx-2,Q9U3K5,Caenorhabditis_elegans,cele_inx-2,complete,14,3,0,0,3,6,1,5,/Users/katerinamusienko/Documents/BachelorCursor/SynVoy/results/innexin_synvoy/cele_inx-2/synvoy_report.json
+Inx2,Q9V427,Drosophila_melanogaster,dmel_inx2,complete,4,5,0,0,5,58,0,26,/Users/katerinamusienko/Documents/BachelorCursor/SynVoy/results/innexin_synvoy/dmel_inx2/synvoy_report.json
+Inx3,Q9VAS7,Drosophila_melanogaster,dmel_inx3,complete,1,5,0,0,5,199,0,30,/Users/katerinamusienko/Documents/BachelorCursor/SynVoy/results/innexin_synvoy/dmel_inx3/synvoy_report.json
+ogre,P27716,Drosophila_melanogaster,dmel_ogre_inx1,complete,2,5,0,0,5,271,2,28,/Users/katerinamusienko/Documents/BachelorCursor/SynVoy/results/innexin_synvoy/dmel_ogre_inx1/synvoy_report.json
+shakB,P33085,Drosophila_melanogaster,dmel_shakB,complete,2,3,0,0,3,2,1,9,/Users/katerinamusienko/Documents/BachelorCursor/SynVoy/results/innexin_synvoy/dmel_shakB/synvoy_report.json
+Inx5,Q9VWL5,Drosophila_melanogaster,dmel_inx5,incomplete,0,,,,,,0,,
+Inx6,Q9VR82,Drosophila_melanogaster,dmel_inx6,incomplete,0,,,,,,0,,

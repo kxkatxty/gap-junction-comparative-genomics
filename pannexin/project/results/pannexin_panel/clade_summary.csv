@@ -1,0 +1,10 @@
+clade,n_proteins,n_species,species,color
+Mammal,15,5,Bos taurus; Homo sapiens; Mus musculus; Rattus norvegicus; Sus scrofa,#B45309
+Amphibian,8,2,Xenopus laevis; Xenopus tropicalis,#0F766E
+Ray-finned fish,7,3,Danio rerio; Lepisosteus oculatus; Takifugu rubripes,#1D4ED8
+Reptile,6,2,Anolis carolinensis; Podarcis muralis,#15803D
+Cartilaginous fish,4,1,Callorhinchus milii,#0E7490
+Bird,3,1,Gallus gallus,#0369A1
+Lobe-finned fish,3,1,Latimeria chalumnae,#7C3AED
+Tunicate / lancelet,2,1,Branchiostoma floridae,#78716C
+Jawless vertebrate,1,1,Petromyzon marinus,#64748B

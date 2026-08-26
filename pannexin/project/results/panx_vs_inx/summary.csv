@@ -1,0 +1,2 @@
+n_panx,n_inx,n_hits,pct_with_hit,verdict,closing
+49,174,1062,90%,Most pannexin proteins (44/49) hit at least one innexin at e≤1e-3 and ≥80 aa (median %id 27.8). That is the opposite pattern from innexin×connexin on the parent site (no cross-family hits at the same thresholds).,Literature treats pannexins as chordate/vertebrate relatives of innexins that no longer dock into gap junctions. This page only tests sequence detectability against the innexin panel; it does not re-derive the chordate bottleneck story from these trees alone.

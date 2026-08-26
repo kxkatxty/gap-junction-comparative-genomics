@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Innexin vs Connexin — same comparisons</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #12202a;
+  --muted: #4d6570;
+  --deep: #0a3a42;
+  --sea: #0f766e;
+  --ember: #c2410c;
+  --foam: #f4f7f5;
+  --card: #ffffff;
+  --line: rgba(18, 32, 42, 0.1);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; color: var(--ink); font-family: "Sora", sans-serif; line-height: 1.6;
+  background:
+    radial-gradient(1000px 480px at 8% -8%, rgba(15, 118, 110, 0.16), transparent 55%),
+    radial-gradient(900px 420px at 92% 4%, rgba(194, 65, 12, 0.12), transparent 50%),
+    linear-gradient(180deg, #e8f1ee 0%, var(--foam) 40%, #eef3f1 100%);
+}
+a { color: var(--sea); }
+.hero {
+  position: relative; min-height: 86vh; display: grid; align-items: end; overflow: hidden;
+  padding: clamp(1.5rem, 4vw, 3.25rem); color: #f7fffb;
+  background:
+    linear-gradient(118deg, rgba(10, 58, 66, 0.94) 0%, rgba(15, 118, 110, 0.72) 48%, rgba(194, 65, 12, 0.62) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cpath d='M0 70h140M70 0v140' stroke='%23fff' stroke-opacity='.07'/%3E%3C/svg%3E");
+}
+.brand { font-family: "Fraunces", serif; font-size: clamp(2.4rem, 6.5vw, 4.5rem); font-weight: 700; letter-spacing: -0.03em; line-height: 0.95; margin: 0 0 1rem; }
+.hero h1 { margin: 0 0 0.75rem; font-size: clamp(1.05rem, 2.1vw, 1.3rem); font-weight: 500; max-width: 42ch; }
+.hero .lede { margin: 0 0 1.6rem; max-width: 52ch; opacity: 0.92; }
+.cta a {
+  display: inline-block; text-decoration: none; font-weight: 600; padding: 0.8rem 1.15rem; border-radius: 999px;
+  margin-right: 0.45rem; margin-bottom: 0.35rem; background: #f5fffb; color: var(--deep); box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+.cta a.ghost { background: transparent; color: #f5fffb; border: 1px solid rgba(245,255,251,0.45); box-shadow: none; }
+.wrap { width: min(880px, calc(100% - 2rem)); margin: 0 auto; padding: 2.25rem 0 4.5rem; }
+.verdict {
+  margin-top: -2.2rem; position: relative; z-index: 2; background: rgba(255,255,255,0.95);
+  border: 1px solid var(--line); border-radius: 18px; padding: 1.25rem 1.35rem; box-shadow: 0 14px 36px rgba(18,32,42,0.08);
+}
+.verdict h2 { font-family: "Fraunces", serif; font-size: 1.35rem; margin: 0 0 0.55rem; }
+.verdict p { margin: 0; color: var(--muted); }
+.verdict strong { color: var(--deep); }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.7rem; margin: 1.4rem 0 0; }
+.stat { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 0.85rem; }
+.stat b { display: block; font-family: "Fraunces", serif; font-size: 1.35rem; color: var(--deep); }
+.stat span { color: var(--muted); font-size: 0.78rem; }
+.toc { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 1.75rem 0 0.5rem; }
+.toc a {
+  text-decoration: none; font-size: 0.78rem; font-weight: 500; color: var(--deep); background: #fff;
+  border: 1px solid var(--line); padding: 0.4rem 0.75rem; border-radius: 999px;
+}
+.beat { margin: 2.3rem 0; scroll-margin-top: 1rem; }
+.beat .eyebrow { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ember); margin-bottom: 0.35rem; }
+.beat h2 { font-family: "Fraunces", serif; font-size: clamp(1.4rem, 3vw, 1.8rem); margin: 0 0 0.55rem; letter-spacing: -0.02em; }
+.beat .claim { color: var(--muted); margin: 0 0 1rem; max-width: 64ch; }
+.figure { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 0.85rem; box-shadow: 0 10px 28px rgba(18,32,42,0.05); }
+.figure img { width: 100%; display: block; border-radius: 10px; cursor: zoom-in; background: #f8fafc; }
+.closing { margin-top: 2.5rem; padding: 1.4rem 1.35rem; border-radius: 16px; background: linear-gradient(135deg, var(--deep), var(--ember)); color: #f5fffb; }
+.closing h2 { font-family: "Fraunces", serif; margin: 0 0 0.55rem; font-size: 1.4rem; }
+.closing p { margin: 0; opacity: 0.95; max-width: 62ch; }
+.footer { margin-top: 1.75rem; color: var(--muted); font-size: 0.88rem; }
+.footer a { margin-right: 0.85rem; }
+.modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.88); z-index: 30; align-items: center; justify-content: center; padding: 1.25rem; cursor: zoom-out; }
+.modal.open { display: flex; }
+.modal img { max-width: 95vw; max-height: 90vh; border-radius: 8px; }
+@media (max-width: 800px) { .stats { grid-template-columns: 1fr 1fr; } .hero { min-height: 76vh; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="brand">Innexin vs Connexin</p>
+    <h1>The same comparisons, read against each other</h1>
+    <p class="lede">Clade geography, within/between identity, embeddings, length, exons and synteny logic — one frame for both gap-junction families.</p>
+    <div class="cta">
+      <a href="#verdict">Start here</a>
+      <a class="ghost" href="../innexin_insights/index.html">Innexin insights</a>
+      <a class="ghost" href="../connexin_insights/index.html">Connexin insights</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="verdict" id="verdict">
+    <h2>Main contrast</h2>
+    <p>
+      Both families encode gap junctions. Cross-family MMseqs and embeddings in this panel treat them as
+      <strong>separate sequence clouds</strong>, consistent with literature that places them in different
+      channel families (not proof of absence of deep homology).
+      Innexins diversified by <strong>clade-specific duplication</strong> with misleading gene names
+      (within ~46% vs between ~28%; SF3↔SF4 ~28%).
+      Connexins diversified inside vertebrates as <strong>named α/β/γ/δ classes</strong> that stay closer
+      (within ~57% vs between ~40%; α↔β ~46%)
+      and keep two conserved genomic addresses (GJA4 in the β-cluster, GJA1 elsewhere).
+    </p>
+    <div class="stats">
+      <div class="stat"><b>164</b><span>innexin proteins</span></div>
+      <div class="stat"><b>127</b><span>connexin proteins</span></div>
+      <div class="stat"><b>28% vs 46%</b><span>SF3↔SF4 vs α↔β identity</span></div>
+      <div class="stat"><b>0</b><span>innexin↔connexin MMseqs hits</span></div>
+    </div>
+  </section>
+  <nav class="toc" aria-label="Comparisons">
+    <a href="#scope">1. Same comparison, two datasets</a>
+    <a href="#clades">2. Clade geography is not interchangeable</a>
+    <a href="#identity">3. Within vs between identity</a>
+    <a href="#heatmaps">4. Subfamily heatmaps, paired</a>
+    <a href="#split">5. The contrast that matters</a>
+    <a href="#embed">6. 3-mer embeddings agree</a>
+    <a href="#sweep">7. How cleanly do groups cluster?</a>
+    <a href="#length">8. Protein shape is family-specific</a>
+    <a href="#exons">9. Exon architecture</a>
+    <a href="#yield">10. Discovery yield vs reference panel</a>
+    <a href="#cross">11. Cross-family sequence search</a>
+    <a href="#arch">12. Synteny logic is different</a>
+  </nav>
+
+  <article class="beat" id="scope">
+    <span class="eyebrow">01</span>
+    <h2>Same comparison, two datasets</h2>
+    <p class="claim">Innexin panel: <strong>164</strong> proteins in <strong>28</strong> species. Connexin panel: <strong>127</strong> proteins in <strong>38</strong> species. The innexin story is discovery-heavy; the connexin story is carried by the vertebrate reference panel.</p>
+    <div class="figure">
+      <img src="figures/01_dataset_scope.png" alt="Same comparison, two datasets" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="clades">
+    <span class="eyebrow">02</span>
+    <h2>Clade geography is not interchangeable</h2>
+    <p class="claim">Innexin recoveries outside insects pile into SF3 / nematode-like labels. Connexin α and β co-occur across mammals, birds, amphibians and fish — the canonical vertebrate gap-junction radiation in this panel, not a name-chaos problem.</p>
+    <div class="figure">
+      <img src="figures/02_clade_geography.png" alt="Clade geography is not interchangeable" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="identity">
+    <span class="eyebrow">03</span>
+    <h2>Within vs between identity</h2>
+    <p class="claim">Identical metric. Innexins: ~46% within vs ~28% between. Connexins stay closer: ~57% vs ~40%. Both are still one family internally; connexin paralogs diverged less.</p>
+    <div class="figure">
+      <img src="figures/03_within_between_identity.png" alt="Within vs between identity" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="heatmaps">
+    <span class="eyebrow">04</span>
+    <h2>Subfamily heatmaps, paired</h2>
+    <p class="claim">Read the off-diagonals. Innexin SF3 vs SF4 is the cold cell (~28%). Connexin α vs β is still warm (~46%) — distinct classes, younger split.</p>
+    <div class="figure">
+      <img src="figures/04_identity_heatmaps.png" alt="Subfamily heatmaps, paired" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="split">
+    <span class="eyebrow">05</span>
+    <h2>The contrast that matters</h2>
+    <p class="claim">SF3↔SF4 is two evolutionary experiments inside innexins (insect expansion vs nematode-like radiation). α↔β is a conserved vertebrate paralog split. Same plot type; different depths of divergence.</p>
+    <div class="figure">
+      <img src="figures/07_key_pair_identity.png" alt="The contrast that matters" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="embed">
+    <span class="eyebrow">06</span>
+    <h2>3-mer embeddings agree</h2>
+    <p class="claim">Local motif grammar separates groups even when amino-acid composition does not. Innexin same vs different: 0.28 vs 0.05. Connexin: 0.49 vs -0.05.</p>
+    <div class="figure">
+      <img src="figures/05_embedding_separation.png" alt="3-mer embeddings agree" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="sweep">
+    <span class="eyebrow">07</span>
+    <h2>How cleanly do groups cluster?</h2>
+    <p class="claim">Connexin named classes stay pure even at high identity (recent, well-separated paralogs). Innexin subfamilies peak around 40% identity — older, more mixed expansions.</p>
+    <div class="figure">
+      <img src="figures/06_threshold_sweep.png" alt="How cleanly do groups cluster?" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="length">
+    <span class="eyebrow">08</span>
+    <h2>Protein shape is family-specific</h2>
+    <p class="claim">Innexins sit longer (~350–420 aa). Connexins are compact (~250–380 aa). Length is conserved more tightly than sequence identity inside each family.</p>
+    <div class="figure">
+      <img src="figures/08_protein_length.png" alt="Protein shape is family-specific" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="exons">
+    <span class="eyebrow">09</span>
+    <h2>Exon architecture</h2>
+    <p class="claim">Reference gene models: innexin exon counts vary by lineage; connexins stay compact (often ~2 exons). Architecture is a family character, not a shared ancestral gene model.</p>
+    <div class="figure">
+      <img src="figures/09_exon_architecture.png" alt="Exon architecture" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="yield">
+    <span class="eyebrow">10</span>
+    <h2>Discovery yield vs reference panel</h2>
+    <p class="claim">Innexin curator recoveries (rotifers, molluscs, non-insect arthropods) carry the phylogenetic argument. Connexin discovery is sparse; α/β/γ/δ structure is already in the reference vertebrates.</p>
+    <div class="figure">
+      <img src="figures/10_discovery_yield.png" alt="Discovery yield vs reference panel" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="cross">
+    <span class="eyebrow">11</span>
+    <h2>Cross-family sequence search</h2>
+    <p class="claim">Sensitive MMseqs finds <strong>189</strong> short fragment hits (median length 28 aa), but <strong>0</strong> alignment(s) at e≤1e-3 and ≥80 aa. Zero long hits supports extreme divergence or separate families — not by itself proof of absence of homology. Same biological job; analyse sequence and synteny in parallel, not as one alignment.</p>
+    <div class="figure">
+      <img src="figures/11_cross_family_mmseqs.png" alt="Cross-family sequence search" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <article class="beat" id="arch">
+    <span class="eyebrow">12</span>
+    <h2>Synteny logic is different</h2>
+    <p class="claim">Innexin: Drosophila tandem clusters cut across the tree (Inx7 is next to ogre/Inx2 but phylogenetically with nematodes). Connexin: GJA4 stays in a conserved β-cluster; GJA1 is a second locus already present in Xenopus.</p>
+    <div class="figure">
+      <img src="figures/12_architecture_modes.png" alt="Synteny logic is different" onclick="openModal(this.src)">
+    </div>
+  </article>
+  <section class="closing">
+    <h2>Summary</h2>
+    <p>
+      Innexins and connexins fill a similar biological niche with <strong>distinct sequence and genomic
+      characters in this panel</strong>:
+      innexins split into tree subfamilies whose proteins and names come apart across phyla,
+      while connexins keep α/β classes sequence-close and synteny-stable across vertebrates.
+    </p>
+  </section>
+  <footer class="footer">
+    <p>Built from innexin and connexin clade tables + MMseqs/embedding matrices + exon summaries + cross-family MMseqs.</p>
+    <p>
+      <a href="../innexin_insights/index.html">Innexin insights</a>
+      <a href="../connexin_insights/index.html">Connexin insights</a>
+      <a href="../innexin_similarity/index.html">Innexin MMseqs</a>
+      <a href="../connexin_similarity/index.html">Connexin MMseqs</a>
+      <a href="../phylogenetic_story/index.html">Phylogeny story</a>
+      <a href="../sources/index.html">Sources</a>
+    </p>
+  </footer>
+</main>
+<div id="modal" class="modal" onclick="this.classList.remove('open')">
+  <img id="modal-img" alt="Enlarged figure">
+</div>
+<script>
+function openModal(src) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('modal').classList.add('open');
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('modal').classList.remove('open');
+});
+</script>
+</body>
+</html>

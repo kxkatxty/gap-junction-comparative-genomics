@@ -1,0 +1,6 @@
+clade,organism,assembly_accession,assembly_level,assembly_source,connexin_category,connexin_term,connexin_evidence_level,connexin_source,assembly_priority_score,notes
+Amphibia,Bombina variegata,GCA_964205295.1,Chromosome,GenBank,no_related_entry_found,,,,60,frogs salamanders caecilians
+Amphibia,Boulenophrys sangzhiensis,GCA_056363575.1,Chromosome,GenBank,no_related_entry_found,,,,60,frogs salamanders caecilians
+Amphibia,Bufotes viridis,GCA_033119425.1,Chromosome,GenBank,related_or_family_like_entry_found,gap junction,,,60,frogs salamanders caecilians
+Amphibia,Desmognathus fuscus,GCA_050004315.1,Chromosome,GenBank,no_related_entry_found,,,,60,frogs salamanders caecilians
+Amphibia,Discoglossus pictus,GCA_027410445.1,Chromosome,GenBank,related_or_family_like_entry_found,gap junction,,,60,frogs salamanders caecilians

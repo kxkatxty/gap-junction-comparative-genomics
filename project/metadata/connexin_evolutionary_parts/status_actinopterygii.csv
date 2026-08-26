@@ -1,0 +1,9 @@
+organism,family,exact_annotation_found,related_annotation_found,final_category,confidence,top_matching_term,database_source,search_level,top_accession,top_gene_symbol,top_protein_name,level_a_hit_count,level_b_hit_count,example_query
+Acanthopagrus latus,connexin,yes,no,annotated_family_member_found,high,gjb1a,ncbi_gene,A,119031269,gjb1a,gap junction protein beta 1a,4,0,"GJB*[Gene Symbol] AND ""Acanthopagrus latus""[Organism]"
+Arapaima gigas,connexin,yes,no,annotated_family_member_found,high,GJA10,uniprot,A,A0ACF8EAZ1,GJA10,Gap junction alpha-10 protein-like,12,0,"organism_name:""Arapaima gigas"" AND gene:GJA*"
+Bajacalifornia burragei,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Epinephelus cyanopodus,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Hemibarbus labeo,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Hucho bleekeri,connexin,no,no,no_related_entry_found,,,,,,,,0,0,
+Micropterus salmoides,connexin,yes,no,annotated_family_member_found,high,gjb3,ncbi_gene,A,119910089,gjb3,gap junction protein beta 3,8,0,"connexin[All Fields] AND ""Micropterus salmoides""[Organism]"
+Parabramis pekinensis,connexin,no,no,no_related_entry_found,,,,,,,,0,0,

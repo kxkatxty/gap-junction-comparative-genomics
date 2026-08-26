@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Innexin Clade × Type Comparison</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Sora:wght@400;550;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:#102a33; --muted:#4d6570; --sea:#0f766e; --deep:#0b3b40; --sand:#d4a017; --bg:#eef6f4;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Sora,sans-serif;color:var(--ink);background:
+ radial-gradient(900px 420px at 0% 0%, rgba(14,165,233,.12), transparent 55%),
+ radial-gradient(800px 380px at 100% 10%, rgba(15,118,110,.14), transparent 50%),
+ linear-gradient(180deg,#e7f3f0,var(--bg));line-height:1.55}
+.hero{min-height:78vh;display:grid;align-items:end;padding:clamp(1.4rem,4vw,3rem);color:#f4fffb;
+ background:linear-gradient(120deg,rgba(11,59,64,.94),rgba(15,118,110,.78) 55%,rgba(180,83,9,.55)),
+ radial-gradient(circle at 75% 25%,#1d8a7a,#0b3b40 60%)}
+.brand{font-family:Fraunces,serif;font-size:clamp(2.4rem,6.5vw,4.6rem);margin:0 0 .7rem;line-height:.95;letter-spacing:-.03em}
+.hero h1{font-size:clamp(1.05rem,2vw,1.3rem);font-weight:500;max-width:40ch;margin:0 0 .7rem}
+.hero p{max-width:52ch;opacity:.92;margin:0 0 1.4rem}
+.cta a{display:inline-block;text-decoration:none;background:#f4fffb;color:var(--deep);padding:.8rem 1.15rem;border-radius:999px;font-weight:700;margin-right:.5rem}
+.cta a.ghost{background:transparent;color:#f4fffb;border:1px solid rgba(244,255,251,.45)}
+.wrap{width:min(1160px,calc(100% - 2rem));margin:0 auto;padding:2rem 0 4rem}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem;margin-top:-2rem;position:relative;z-index:2}
+.stat{background:rgba(255,255,255,.9);border:1px solid rgba(16,42,51,.08);border-radius:16px;padding:1rem;box-shadow:0 10px 28px rgba(16,42,51,.06)}
+.stat b{display:block;font-family:Fraunces,serif;font-size:1.8rem;color:var(--deep)}
+.stat span{color:var(--muted);font-size:.84rem}
+section{margin:2.4rem 0}
+h2{font-family:Fraunces,serif;font-size:1.7rem;margin:0 0 .6rem}
+.lead{color:var(--muted);max-width:70ch}
+.findings{background:#fff;border-radius:16px;padding:1.1rem 1.3rem;border-left:4px solid var(--sand);box-shadow:0 8px 24px rgba(16,42,51,.05)}
+.findings ol{margin:.4rem 0 0;padding-left:1.2rem}
+.findings li{margin:.35rem 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1rem}
+.card{background:rgba(255,255,255,.92);border:1px solid rgba(16,42,51,.08);border-radius:16px;padding:.85rem;box-shadow:0 8px 22px rgba(16,42,51,.05)}
+.card img{width:100%;border-radius:10px;cursor:zoom-in;background:#f8fafc}
+.card h3{font-size:.95rem;margin:.7rem 0 0;font-weight:600}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(16,42,51,.05);font-size:.88rem}
+th,td{padding:.55rem .7rem;border-bottom:1px solid #e2e8f0;text-align:left}
+th{background:#0b3b40;color:#f4fffb;font-weight:600}
+.links a{margin-right:1rem}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:20;align-items:center;justify-content:center;padding:1.5rem;cursor:zoom-out}
+.modal.open{display:flex}
+.modal img{max-width:95vw;max-height:90vh;border-radius:8px}
+@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}.hero{min-height:68vh}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div>
+    <p class="brand">Clade × Innexin</p>
+    <h1>Compare every clade and every classical innexin label in one place</h1>
+    <p>Reference database proteins, older discovery candidates and curator-recovered loci — sliced by clade, best-hit type (Inx1–7, shakB, unc-7/9…) and tree-guided subfamily.</p>
+    <div class="cta">
+      <a href="#figures">See diagrams</a>
+      <a class="ghost" href="../new_species_gallery/index.html">New species gallery</a>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <div class="stats">
+    <div class="stat"><b>164</b><span>annotated innexin loci</span></div>
+    <div class="stat"><b>28</b><span>species represented</span></div>
+    <div class="stat"><b>8</b><span>clade bins</span></div>
+    <div class="stat"><b>13</b><span>reference-type labels</span></div>
+  </div>
+
+  <section>
+    <h2>Key results</h2>
+    <div class="findings"><ol><li>Dataset integrates 30 reference proteins, 6 old-discovery loci and 128 curator-present loci across 28 species.</li><li>Curator recoveries most often match unc-9 references (38/128 loci) — names like Inx2 in nematodes are best-hit labels, not proven orthologs.</li><li>Outside insects, 74/134 kept loci map (via best-hit) to SF3 (Inx3/Inx7 + nematode-like references), consistent with the tree grouping.</li><li>Among discovery+curator loci, Arthropoda (non-insect) contributes the most (41 loci).</li><li>Median protein length: Rotifera 370 aa vs Mollusca 372 aa.</li><li>Median protein length: Arthropoda (non-insect) 353 aa vs Rotifera 370 aa.</li><li>Median protein length: Reference insect 372 aa vs Reference nematode 423 aa.</li><li>Reference DB covers classical labels: Inx1/ogre, Inx2, Inx3, Inx4/zpg, Inx5, Inx6, Inx7, other nematode, other/unknown, shakB, unc-7, unc-9.</li><li>Note: flat median ~1 exon in Ctenophora / non-insect Arthropoda is often a TSA / ab initio gene model (continuous ORF as one exon), not intron-free innexins.</li></ol></div>
+    <p class="lead" style="margin-top:1rem">
+      “Inx2-like” for a mollusc/rotifer means the locus’s <em>best reference hit</em> was an Inx2/unc-9/… protein.
+      Orthology still needs the phylogeny (SF1–SF4), not the gene name alone.
+    </p>
+  </section>
+
+  <section>
+    <h2>Clade overview</h2>
+    <table><tr><th>Clade</th><th>Loci</th><th>Species</th><th>Ref</th><th>Old</th><th>Curator</th></tr><tr><td>Arthropoda (non-insect)</td><td>41</td><td>7</td><td>0</td><td>2</td><td>39</td></tr><tr><td>Rotifera</td><td>39</td><td>7</td><td>0</td><td>2</td><td>37</td></tr><tr><td>Mollusca</td><td>39</td><td>4</td><td>0</td><td>0</td><td>39</td></tr><tr><td>Reference nematode</td><td>17</td><td>2</td><td>17</td><td>0</td><td>0</td></tr><tr><td>Reference insect</td><td>13</td><td>4</td><td>13</td><td>0</td><td>0</td></tr><tr><td>Annelida</td><td>12</td><td>1</td><td>0</td><td>0</td><td>12</td></tr><tr><td>Ctenophora</td><td>2</td><td>2</td><td>0</td><td>2</td><td>0</td></tr><tr><td>Other</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr></table>
+  </section>
+
+  <section>
+    <h2>Innexin labels (Inx1–7, shakB, nematode genes)</h2>
+    <table><tr><th>Reference type</th><th>Subfamily</th><th>Loci</th><th>Clades</th></tr><tr><td>other/unknown</td><td>unassigned</td><td>47</td><td>5</td></tr><tr><td>unc-9</td><td>SF3_Inx3_Inx7_nematode</td><td>39</td><td>5</td></tr><tr><td>unc-7</td><td>SF3_Inx3_Inx7_nematode</td><td>34</td><td>4</td></tr><tr><td>shakB</td><td>SF1_shakB</td><td>16</td><td>4</td></tr><tr><td>Inx2</td><td>SF4_Inx2_expansion</td><td>14</td><td>3</td></tr><tr><td>Inx1/ogre</td><td>SF2_Inx1_ogre</td><td>4</td><td>2</td></tr><tr><td>inx-2 (Cele)</td><td>SF3_Inx3_Inx7_nematode</td><td>3</td><td>1</td></tr><tr><td>Inx4/zpg</td><td>SF4_Inx2_expansion</td><td>2</td><td>1</td></tr><tr><td>other nematode</td><td>SF3_Inx3_Inx7_nematode</td><td>1</td><td>1</td></tr><tr><td>Inx3</td><td>SF3_Inx3_Inx7_nematode</td><td>1</td><td>1</td></tr><tr><td>Inx5</td><td>SF4_Inx2_expansion</td><td>1</td><td>1</td></tr><tr><td>Inx6</td><td>SF4_Inx2_expansion</td><td>1</td><td>1</td></tr><tr><td>Inx7</td><td>SF3_Inx3_Inx7_nematode</td><td>1</td><td>1</td></tr></table>
+  </section>
+
+  <section id="figures">
+    <h2>Diagrams</h2>
+    <p class="lead">Every comparison plot generated from the combined reference + discovery + curator table.</p>
+    <div class="grid">
+      
+<article class="card">
+  <img src="figures/01_loci_by_clade_source.png" alt="Loci by clade, stacked by source" loading="lazy" onclick="openModal(this.src)">
+  <h3>Loci by clade, stacked by source</h3>
+</article>
+<article class="card">
+  <img src="figures/02_heatmap_clade_x_type.png" alt="Heatmap: clade × reference type" loading="lazy" onclick="openModal(this.src)">
+  <h3>Heatmap: clade × reference type</h3>
+</article>
+<article class="card">
+  <img src="figures/03_type_mix_per_clade.png" alt="Reference-type mix within clades" loading="lazy" onclick="openModal(this.src)">
+  <h3>Reference-type mix within clades</h3>
+</article>
+<article class="card">
+  <img src="figures/04_classical_inx_across_clades.png" alt="Inx1–7 &amp; shakB across clades" loading="lazy" onclick="openModal(this.src)">
+  <h3>Inx1–7 &amp; shakB across clades</h3>
+</article>
+<article class="card">
+  <img src="figures/05_subfamily_by_clade.png" alt="Tree subfamilies SF1–SF4 by clade" loading="lazy" onclick="openModal(this.src)">
+  <h3>Tree subfamilies SF1–SF4 by clade</h3>
+</article>
+<article class="card">
+  <img src="figures/06_length_by_clade.png" alt="Protein length by clade" loading="lazy" onclick="openModal(this.src)">
+  <h3>Protein length by clade</h3>
+</article>
+<article class="card">
+  <img src="figures/07_length_by_type.png" alt="Protein length by innexin label" loading="lazy" onclick="openModal(this.src)">
+  <h3>Protein length by innexin label</h3>
+</article>
+<article class="card">
+  <img src="figures/08_identity_by_clade.png" alt="Best-hit identity (%) by clade" loading="lazy" onclick="openModal(this.src)">
+  <h3>Best-hit identity (%) by clade</h3>
+</article>
+<article class="card">
+  <img src="figures/09_identity_by_type.png" alt="Best-hit identity (%) by innexin label" loading="lazy" onclick="openModal(this.src)">
+  <h3>Best-hit identity (%) by innexin label</h3>
+</article>
+<article class="card">
+  <img src="figures/10_species_richness.png" alt="Top species by locus count" loading="lazy" onclick="openModal(this.src)">
+  <h3>Top species by locus count</h3>
+</article>
+<article class="card">
+  <img src="figures/11_identity_vs_length.png" alt="Length vs identity scatter" loading="lazy" onclick="openModal(this.src)">
+  <h3>Length vs identity scatter</h3>
+</article>
+<article class="card">
+  <img src="figures/12_dataset_composition.png" alt="Dataset composition" loading="lazy" onclick="openModal(this.src)">
+  <h3>Dataset composition</h3>
+</article>
+<article class="card">
+  <img src="figures/13_exon_by_clade.png" alt="Exon count by clade" loading="lazy" onclick="openModal(this.src)">
+  <h3>Exon count by clade</h3>
+</article>
+<article class="card">
+  <img src="figures/14_tm_by_type.png" alt="TM helices by innexin label (where annotated)" loading="lazy" onclick="openModal(this.src)">
+  <h3>TM helices by innexin label (where annotated)</h3>
+</article>
+    </div>
+  </section>
+
+  <section class="links">
+    <h2>Data tables</h2>
+    <p>
+      <a href="all_innexin_loci_annotated.csv">all_innexin_loci_annotated.csv</a>
+      <a href="clade_summary.csv">clade_summary.csv</a>
+      <a href="reference_type_summary.csv">reference_type_summary.csv</a>
+      <a href="pairwise_clade_comparisons.csv">pairwise_clade_comparisons.csv</a>
+    </p>
+    <p>
+      <a href="../phylogenetic_story/index.html">Phylogeny story</a>
+      <a href="../innexin_subfamilies/index.html">Subfamilies</a>
+      <a href="../family_comparison/index.html">vs connexin</a>
+      <a href="../showcase/index.html">Full showcase</a>
+    </p>
+  </section>
+</main>
+<div id="modal" class="modal" onclick="this.classList.remove('open')"><img id="modal-img" alt=""></div>
+<script>
+function openModal(src){document.getElementById('modal-img').src=src;document.getElementById('modal').classList.add('open')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.getElementById('modal').classList.remove('open')});
+</script>
+</body>
+</html>

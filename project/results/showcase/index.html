@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Gap Junction Thesis Showcase</title>
+<style>
+:root{--blue:#2E86AB;--orange:#E67E22;--green:#27AE60;--ink:#2C3E50;--muted:#5d6d7e;--bg:#f4f7fb;--card:#fff}
+*{box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;margin:0;background:var(--bg);color:var(--ink);line-height:1.55}
+.layout{display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+nav{position:sticky;top:0;height:100vh;overflow:auto;padding:1.25rem 1rem;background:#1a2836;color:#ecf0f1;border-right:1px solid #2c3e50}
+nav h2{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:#95a5a6;margin:0 0 .75rem}
+nav a{display:block;color:#ecf0f1;text-decoration:none;padding:.35rem .5rem;border-radius:6px;font-size:.88rem;margin-bottom:.15rem}
+nav a:hover{background:rgba(255,255,255,.08)}
+nav .switch{margin-top:1.5rem;padding-top:1rem;border-top:1px solid #34495e;font-size:.8rem;color:#95a5a6}
+nav .switch a{color:#5dade2;font-weight:600}
+main{padding:2rem 2.5rem 4rem;max-width:1100px}
+.hero{background:linear-gradient(135deg,var(--blue),var(--orange));color:#fff;padding:2rem 2.25rem;border-radius:16px;margin-bottom:2rem;box-shadow:0 8px 32px rgba(46,134,171,.25)}
+.hero.presenter{background:linear-gradient(135deg,#1a5276,#117a65)}
+.hero h1{margin:0 0 .5rem;font-size:1.85rem;font-weight:700}
+.hero .subtitle{opacity:.95;font-size:1.05rem;margin:0 0 1.25rem}
+.stats{display:flex;flex-wrap:wrap;gap:.75rem}
+.stat{background:rgba(255,255,255,.18);backdrop-filter:blur(4px);padding:.5rem 1rem;border-radius:999px;font-size:.85rem}
+.stat b{font-size:1.1rem;margin-right:.25rem}
+.guide{background:#fff;border-left:4px solid var(--green);padding:1.25rem 1.5rem;border-radius:0 12px 12px 0;margin-bottom:2.5rem;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.guide h2{margin:0 0 .75rem;font-size:1.15rem;color:var(--green)}
+.guide ol{margin:0;padding-left:1.25rem}
+.guide li{margin-bottom:.4rem;color:var(--muted)}
+.guide a{color:var(--blue)}
+section{margin-bottom:3rem;scroll-margin-top:1rem}
+section > h2{font-size:1.45rem;color:var(--blue);border-bottom:2px solid var(--blue);padding-bottom:.4rem;margin:0 0 .5rem}
+.section-intro{color:var(--muted);margin:0 0 1.25rem;font-size:.98rem;max-width:72ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:1.25rem}
+.card{background:var(--card);border-radius:12px;padding:1rem 1.1rem 1.15rem;box-shadow:0 2px 14px rgba(0,0,0,.07);border:1px solid #e8edf3;transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
+.card.key{border-color:var(--green);box-shadow:0 2px 14px rgba(39,174,96,.15)}
+.card img{width:100%;border-radius:8px;cursor:zoom-in;background:#f8f9fa}
+.card h3{margin:.75rem 0 .35rem;font-size:1rem;color:var(--ink)}
+.card h3.peer-title{text-align:center;font-weight:600;margin:.85rem 0 0;font-size:.92rem}
+.card .caption{margin:.5rem 0 0;font-size:.88rem;color:var(--muted)}
+.card .script{margin:.65rem 0 0;padding:.65rem .75rem;background:#eafaf1;border-radius:8px;font-size:.86rem;color:#1e5631;border-left:3px solid var(--green)}
+.badge{display:inline-block;background:var(--green);color:#fff;font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:.2rem .5rem;border-radius:4px;margin-bottom:.35rem}
+.finding-num{display:inline-flex;align-items:center;justify-content:center;width:2rem;height:2rem;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;font-size:.9rem;margin-bottom:.5rem}
+.finding-headline{font-size:1.05rem;font-weight:600;color:var(--blue);margin:.5rem 0 .75rem;line-height:1.35}
+.findings-list{display:flex;flex-direction:column;gap:2rem;max-width:920px}
+.finding-card{background:var(--card);border-radius:14px;padding:1.25rem 1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.08);border:1px solid #e8edf3}
+.finding-card img{width:100%;border-radius:10px;cursor:zoom-in;background:#f8f9fa;margin-top:.5rem}
+details.appendix{margin-top:3rem;background:#fff;border-radius:12px;padding:1rem 1.5rem;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+details.appendix summary{cursor:pointer;font-weight:600;color:var(--muted);padding:.5rem 0}
+details.appendix summary:hover{color:var(--blue)}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:1000;align-items:center;justify-content:center;padding:2rem;cursor:zoom-out}
+.modal.open{display:flex}
+.modal img{max-width:95vw;max-height:90vh;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.5)}
+@media(max-width:900px){.layout{grid-template-columns:1fr}nav{position:relative;height:auto}main{padding:1.25rem}}
+</style></head><body>
+<div class='layout'>
+<nav><h2>Sections</h2>
+<a href='#overview'>Overview</a>
+<a href='#discovery'>Discovery</a>
+<a href='#comparison'>Innexin vs connexin</a>
+<a href='#phylogeny'>Phylogeny</a>
+<a href='#exon_maps'>Exon architecture</a>
+<a href='#domains'>Domains & structure</a>
+<a href='#protein_features'>Protein feature maps</a>
+<a href='#innexin'>Innexin focus</a>
+<a href='#connexin'>Connexin focus</a>
+<a href='#synteny'>Synteny (SynVoy)</a>
+<a href='#cross_clade'>Cross-clade cases</a>
+<a href='#ortholog'>Ortholog support</a>
+<div class='switch'>Story page<br><a href='../gap_junction_path/index.html'>Guided story path →</a><br><a href='../phylogenetic_story/index.html'>Phylogeny story (inx → panx → cnx) →</a><br><a href='../family_comparison/index.html'>Innexin vs connexin →</a><br><a href='../innexin_insights/index.html'>Innexin insights →</a><br><a href='../connexin_insights/index.html'>Connexin insights →</a></div>
+</nav><main>
+<div class='hero'>
+<h1>Gap Junction Comparative Genomics</h1>
+<p class='subtitle'>Innexins · Connexins · Phylogeny · Domains · Synteny</p>
+<div class='stats'>
+<span class='stat'><b>136</b> species</span>
+<span class='stat'><b>487</b> candidates</span>
+<span class='stat'><b>272</b> accepted</span>
+<span class='stat'><b>20</b> curator present spp (<b>142</b> loci)</span>
+</div></div>
+<section id='overview'><h2>Overview</h2><div class='grid'>
+<div class='card'><img src='overview/01_panel_composition.png' alt='01 panel composition' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>01 panel composition</h3></div>
+<div class='card'><img src='overview/02_discovery_funnel.png' alt='02 discovery funnel' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>02 discovery funnel</h3></div>
+<div class='card'><img src='overview/04_annotation_status.png' alt='04 annotation status' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>04 annotation status</h3></div>
+</div></section>
+<section id='discovery'><h2>Discovery</h2><div class='grid'>
+<div class='card'><img src='discovery/01_validation_by_species.png' alt='01 validation by species' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>01 validation by species</h3></div>
+<div class='card'><img src='discovery/02_innexin_candidates.png' alt='02 innexin candidates' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>02 innexin candidates</h3></div>
+<div class='card'><img src='discovery/03_connexin_batches.png' alt='03 connexin batches' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>03 connexin batches</h3></div>
+</div></section>
+<section id='comparison'><h2>Innexin vs connexin</h2><div class='grid'>
+<div class='card'><img src='comparison/01_protein_length_boxplot.png' alt='01 protein length boxplot' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>01 protein length boxplot</h3></div>
+<div class='card'><img src='comparison/02_discovery_scatter.png' alt='02 discovery scatter' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>02 discovery scatter</h3></div>
+<div class='card'><img src='comparison/03_rank_scores.png' alt='03 rank scores' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>03 rank scores</h3></div>
+<div class='card'><img src='comparison/04_exon_count_boxplot.png' alt='04 exon count boxplot' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>04 exon count boxplot</h3></div>
+<div class='card'><img src='comparison/05_exon_vs_tm.png' alt='05 exon vs tm' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>05 exon vs tm</h3></div>
+<div class='card'><img src='comparison/06_acceptance_rates.png' alt='06 acceptance rates' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>06 acceptance rates</h3></div>
+<div class='card'><img src='comparison/07_length_histograms.png' alt='07 length histograms' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>07 length histograms</h3></div>
+<div class='card'><img src='comparison/08_intron_architecture.png' alt='08 intron architecture' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>08 intron architecture</h3></div>
+<div class='card'><img src='comparison/09_ref_vs_discovery.png' alt='09 ref vs discovery' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>09 ref vs discovery</h3></div>
+<div class='card'><img src='comparison/10_rank_breakdown.png' alt='10 rank breakdown' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>10 rank breakdown</h3></div>
+<div class='card'><img src='comparison/11_exon_length_dist.png' alt='11 exon length dist' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>11 exon length dist</h3></div>
+<div class='card'><img src='comparison/12_transcript_complexity.png' alt='12 transcript complexity' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>12 transcript complexity</h3></div>
+</div></section>
+<section id='phylogeny'><h2>Phylogeny</h2><div class='grid'>
+<div class='card'><img src='phylogeny/01_tree_colored.png' alt='01 tree colored' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>01 tree colored</h3></div>
+<div class='card'><img src='phylogeny/02_distance_heatmap.png' alt='02 distance heatmap' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>02 distance heatmap</h3></div>
+<div class='card'><img src='phylogeny/03_innexin_reference_tree.png' alt='03 innexin reference tree' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>03 innexin reference tree</h3></div>
+</div></section>
+<section id='exon_maps'><h2>Exon architecture</h2><div class='grid'>
+<div class='card'><img src='imported/exon_maps/connexin_compressed_exon_map_part1.png' alt='connexin compressed exon map part1' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>connexin compressed exon map part1</h3></div>
+<div class='card'><img src='imported/exon_maps/connexin_compressed_exon_map_part2.png' alt='connexin compressed exon map part2' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>connexin compressed exon map part2</h3></div>
+<div class='card'><img src='imported/exon_maps/connexin_genomic_exon_map_part1.png' alt='connexin genomic exon map part1' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>connexin genomic exon map part1</h3></div>
+<div class='card'><img src='imported/exon_maps/connexin_genomic_exon_map_part2.png' alt='connexin genomic exon map part2' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>connexin genomic exon map part2</h3></div>
+<div class='card'><img src='imported/exon_maps/exon_count_boxplot_by_family.png' alt='exon count boxplot by family' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>exon count boxplot by family</h3></div>
+<div class='card'><img src='imported/exon_maps/innexin_compressed_exon_map.png' alt='innexin compressed exon map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>innexin compressed exon map</h3></div>
+<div class='card'><img src='imported/exon_maps/innexin_genomic_exon_map.png' alt='innexin genomic exon map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>innexin genomic exon map</h3></div>
+<div class='card'><img src='imported/exon_maps/connexin_compressed_exon_map_part1.png' alt='connexin compressed exon map part1' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>connexin compressed exon map part1</h3></div>
+<div class='card'><img src='imported/exon_maps/connexin_compressed_exon_map_part2.png' alt='connexin compressed exon map part2' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>connexin compressed exon map part2</h3></div>
+<div class='card'><img src='imported/exon_maps/connexin_genomic_exon_map_part1.png' alt='connexin genomic exon map part1' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>connexin genomic exon map part1</h3></div>
+<div class='card'><img src='imported/exon_maps/connexin_genomic_exon_map_part2.png' alt='connexin genomic exon map part2' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>connexin genomic exon map part2</h3></div>
+<div class='card'><img src='imported/exon_maps/exon_count_boxplot_by_family.png' alt='exon count boxplot by family' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>exon count boxplot by family</h3></div>
+<div class='card'><img src='imported/exon_maps/innexin_compressed_exon_map.png' alt='innexin compressed exon map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>innexin compressed exon map</h3></div>
+<div class='card'><img src='imported/exon_maps/innexin_genomic_exon_map.png' alt='innexin genomic exon map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>innexin genomic exon map</h3></div>
+</div></section>
+<section id='domains'><h2>Domains & structure</h2><div class='grid'>
+<div class='card'><img src='domains/05_feature_fraction_heatmap.png' alt='05 feature fraction heatmap' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>05 feature fraction heatmap</h3></div>
+<div class='card'><img src='domains/06_tm_vs_length.png' alt='06 tm vs length' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>06 tm vs length</h3></div>
+<div class='card'><img src='domains/07_secstruct_fraction.png' alt='07 secstruct fraction' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>07 secstruct fraction</h3></div>
+<div class='card'><img src='domains/domain_mv_disorder.png' alt='domain mv disorder' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>domain mv disorder</h3></div>
+<div class='card'><img src='domains/domain_mv_pfam_connexin.png' alt='domain mv pfam connexin' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>domain mv pfam connexin</h3></div>
+<div class='card'><img src='domains/domain_mv_tm_topology.png' alt='domain mv tm topology' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>domain mv tm topology</h3></div>
+</div></section>
+<section id='protein_features'><h2>Protein feature maps</h2><div class='grid'>
+<div class='card'><img src='imported/protein_features/GJA1_human_protein_feature_map.png' alt='GJA1 human protein feature map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJA1 human protein feature map</h3></div>
+<div class='card'><img src='imported/protein_features/GJA1_human_rostlab_structure_map.png' alt='GJA1 human structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJA1 human structure map</h3></div>
+<div class='card'><img src='imported/protein_features/GJA1_human_structure_map.png' alt='GJA1 human structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJA1 human structure map</h3></div>
+<div class='card'><img src='imported/protein_features/GJA1_protein_feature_map.png' alt='GJA1 protein feature map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJA1 protein feature map</h3></div>
+<div class='card'><img src='imported/protein_features/GJA1_rostlab_structure_map.png' alt='GJA1 structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJA1 structure map</h3></div>
+<div class='card'><img src='imported/protein_features/GJA1_structure_map.png' alt='GJA1 structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJA1 structure map</h3></div>
+<div class='card'><img src='imported/protein_features/GJB2_protein_feature_map.png' alt='GJB2 protein feature map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJB2 protein feature map</h3></div>
+<div class='card'><img src='imported/protein_features/GJB2_rostlab_structure_map.png' alt='GJB2 structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJB2 structure map</h3></div>
+<div class='card'><img src='imported/protein_features/GJB2_structure_map.png' alt='GJB2 structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJB2 structure map</h3></div>
+<div class='card'><img src='imported/protein_features/shakB_protein_feature_map.png' alt='shakB protein feature map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>shakB protein feature map</h3></div>
+<div class='card'><img src='imported/protein_features/shakB_rostlab_structure_map.png' alt='shakB structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>shakB structure map</h3></div>
+<div class='card'><img src='imported/protein_features/shakB_structure_map.png' alt='shakB structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>shakB structure map</h3></div>
+<div class='card'><img src='imported/protein_features/GJA1_human_protein_feature_map.png' alt='GJA1 human protein feature map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJA1 human protein feature map</h3></div>
+<div class='card'><img src='imported/protein_features/GJA1_human_rostlab_structure_map.png' alt='GJA1 human structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJA1 human structure map</h3></div>
+<div class='card'><img src='imported/protein_features/GJA1_human_structure_map.png' alt='GJA1 human structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJA1 human structure map</h3></div>
+<div class='card'><img src='imported/protein_features/GJA1_protein_feature_map.png' alt='GJA1 protein feature map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJA1 protein feature map</h3></div>
+<div class='card'><img src='imported/protein_features/GJA1_rostlab_structure_map.png' alt='GJA1 structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJA1 structure map</h3></div>
+<div class='card'><img src='imported/protein_features/GJA1_structure_map.png' alt='GJA1 structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJA1 structure map</h3></div>
+<div class='card'><img src='imported/protein_features/GJB2_protein_feature_map.png' alt='GJB2 protein feature map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJB2 protein feature map</h3></div>
+<div class='card'><img src='imported/protein_features/GJB2_rostlab_structure_map.png' alt='GJB2 structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJB2 structure map</h3></div>
+<div class='card'><img src='imported/protein_features/GJB2_structure_map.png' alt='GJB2 structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>GJB2 structure map</h3></div>
+<div class='card'><img src='imported/protein_features/shakB_protein_feature_map.png' alt='shakB protein feature map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>shakB protein feature map</h3></div>
+<div class='card'><img src='imported/protein_features/shakB_rostlab_structure_map.png' alt='shakB structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>shakB structure map</h3></div>
+<div class='card'><img src='imported/protein_features/shakB_structure_map.png' alt='shakB structure map' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>shakB structure map</h3></div>
+</div></section>
+<section id='innexin'><h2>Innexin focus</h2><div class='grid'>
+<div class='card'><img src='innexin/01_length_by_clade.png' alt='01 length by clade' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>01 length by clade</h3></div>
+<div class='card'><img src='innexin/02_exon_by_organism.png' alt='02 exon by organism' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>02 exon by organism</h3></div>
+<div class='card'><img src='innexin/03_gene_span_vs_exons.png' alt='03 gene span vs exons' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>03 gene span vs exons</h3></div>
+<div class='card'><img src='innexin/04_dmel_paralog_lengths.png' alt='04 dmel paralog lengths' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>04 dmel paralog lengths</h3></div>
+<div class='card'><img src='innexin/05_genes_per_species.png' alt='05 genes per species' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>05 genes per species</h3></div>
+<div class='card'><img src='innexin/06_nematode_panel.png' alt='06 nematode panel' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>06 nematode panel</h3></div>
+</div></section>
+<section id='connexin'><h2>Connexin focus</h2><div class='grid'>
+<div class='card'><img src='connexin/01_length_by_clade.png' alt='01 length by clade' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>01 length by clade</h3></div>
+<div class='card'><img src='connexin/02_exon_by_organism.png' alt='02 exon by organism' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>02 exon by organism</h3></div>
+<div class='card'><img src='connexin/03_gene_span_vs_exons.png' alt='03 gene span vs exons' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>03 gene span vs exons</h3></div>
+<div class='card'><img src='connexin/04_human_landscape.png' alt='04 human landscape' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>04 human landscape</h3></div>
+<div class='card'><img src='connexin/05_genes_per_species.png' alt='05 genes per species' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>05 genes per species</h3></div>
+<div class='card'><img src='connexin/06_gja1_trajectory.png' alt='06 gja1 trajectory' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>06 gja1 trajectory</h3></div>
+</div></section>
+<section id='synteny'><h2>Synteny (SynVoy)</h2><div class='grid'>
+<div class='card'><img src='synteny/01_job_summary.png' alt='01 job summary' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>01 job summary</h3></div>
+<div class='card'><img src='synteny/02_annotation_yield.png' alt='02 annotation yield' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>02 annotation yield</h3></div>
+<div class='card'><img src='synteny/03_refpanel_status.png' alt='03 refpanel status' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>03 refpanel status</h3></div>
+<div class='card'><img src='synteny/04_case1_cluster_sharing.png' alt='04 case1 cluster sharing' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>04 case1 cluster sharing</h3></div>
+<div class='card'><img src='synteny/05_goi_heatmap.png' alt='05 goi heatmap' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>05 goi heatmap</h3></div>
+<div class='card'><img src='synteny/06_flanking_goi_scatter.png' alt='06 flanking goi scatter' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>06 flanking goi scatter</h3></div>
+</div></section>
+<section id='cross_clade'><h2>Cross-clade cases</h2><div class='grid'>
+<div class='card'><img src='cross_clade/01_case3_comparison.png' alt='01 case3 comparison' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>01 case3 comparison</h3></div>
+<div class='card'><img src='cross_clade/02_inx2_architecture.png' alt='02 inx2 architecture' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>02 inx2 architecture</h3></div>
+</div></section>
+<section id='ortholog'><h2>Ortholog support</h2><div class='grid'>
+<div class='card'><img src='ortholog/01_case2_support.png' alt='01 case2 support' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>01 case2 support</h3></div>
+<div class='card'><img src='ortholog/02_inx2_panel.png' alt='02 inx2 panel' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>02 inx2 panel</h3></div>
+<div class='card'><img src='ortholog/03_shakB_insects.png' alt='03 shakB insects' loading='lazy' onclick="openModal(this.src)"><h3 class='peer-title'>03 shakB insects</h3></div>
+</div></section>
+<div id='modal' class='modal' onclick='closeModal()'>
+<img id='modal-img' src='' alt='Enlarged figure'></div>
+<script>
+function openModal(src){document.getElementById('modal-img').src=src;
+document.getElementById('modal').classList.add('open')}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()})
+</script></main></div></body></html>

@@ -1,0 +1,47 @@
+locus_id,locus_label,gene_name,family_stem,role,start,end
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),CG14435,CG14435,flank,6838174,6843921
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),Tmf,Tmf,flank,6844341,6847847
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),Cht11,Cht,flank,6847877,6849517
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),CG4558,CG4558,flank,6849770,6851884
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),CG14434,CG14434,flank,6851909,6867194
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),CG43736,CG43736,flank,6863888,6881580
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),CG14431,CG14431,flank,6908277,6968829
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),Setd3,Setd,flank,6958032,6968750
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),CG4586,CG4586,flank,6969918,6972265
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),CG3040,CG3040,flank,6972324,6973393
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),ogre,ogre,innexin_goi,6973620,6991318
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),bou,bou,flank,6986486,6987188
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),Inx7,Inx7,innexin_goi,6991612,6993612
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),Inx2,Inx2,innexin_goi,6998672,7004151
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),cm,cm,flank,7009006,7011145
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),sloth1,sloth,flank,7011357,7012137
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),sloth2,sloth,flank,7011357,7012137
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),CG3032,CG3032,flank,7012239,7013881
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),CG4593,CG4593,flank,7013887,7015009
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),CG12541,CG12541,flank,7021608,7066052
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),CG14427,CG14427,flank,7040603,7041769
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),nullo,nullo,flank,7049476,7050321
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),CG4607,CG4607,flank,7069413,7072689
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),Sxl,Sxl,flank,7074550,7098053
+proximal_X_SF_mixed,Proximal X (ogre SF2 · Inx7 SF3 · Inx2 SF4),CG4615,CG4615,flank,7098578,7102300
+distal_X_SF1,Distal X (shakB SF1),CG1324,CG1324,flank,20734455,20735960
+distal_X_SF1,Distal X (shakB SF1),CG15452,CG15452,flank,20744965,20745965
+distal_X_SF1,Distal X (shakB SF1),shakB,shakB,innexin_goi,20761071,20927050
+distal_X_SF1,Distal X (shakB SF1),CG32507,CG32507,flank,20780150,20781220
+distal_X_SF1,Distal X (shakB SF1),CG15450,CG15450,flank,20822146,20825641
+distal_X_SF1,Distal X (shakB SF1),CG1314,CG1314,flank,20867989,20869397
+distal_X_SF1,Distal X (shakB SF1),I-3,I,flank,20881814,20882626
+distal_X_SF1,Distal X (shakB SF1),CG11227,CG11227,flank,20930972,20933559
+distal_X_SF1,Distal X (shakB SF1),Npc1b,Npc,flank,20934869,20939503
+Inx3_3R_SF3,Inx3 on 3R (SF3),CG1647,CG1647,flank,28820221,28824508
+Inx3_3R_SF3,Inx3 on 3R (SF3),WASp,WASp,flank,28824506,28832024
+Inx3_3R_SF3,Inx3 on 3R (SF3),Apc,Apc,flank,28832301,28844748
+Inx3_3R_SF3,Inx3 on 3R (SF3),spg,spg,flank,28845270,28870439
+Inx3_3R_SF3,Inx3 on 3R (SF3),Inx3,Inx3,innexin_goi,28853606,28859497
+Inx3_3R_SF3,Inx3 on 3R (SF3),CG33203,CG33203,flank,28870606,28887709
+Inx3_3R_SF3,Inx3 on 3R (SF3),Nepl17,Nepl,flank,28872905,28875031
+Inx3_3R_SF3,Inx3 on 3R (SF3),Nepl18,Nepl,flank,28875621,28877805
+Inx3_3R_SF3,Inx3 on 3R (SF3),Nepl19,Nepl,flank,28878024,28880122
+Inx3_3R_SF3,Inx3 on 3R (SF3),Nepl20,Nepl,flank,28880792,28882945
+Inx3_3R_SF3,Inx3 on 3R (SF3),Nepl21,Nepl,flank,28883693,28886015
+Inx3_3R_SF3,Inx3 on 3R (SF3),Doa,Doa,flank,28888073,28922772

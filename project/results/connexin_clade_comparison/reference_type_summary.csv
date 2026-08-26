@@ -1,0 +1,16 @@
+reference_type,subfamily,n_loci,n_clades,clades,n_discovery,n_reference
+GJA1,alpha_GJA,15,5,Amphibian; Bird; Mammal; Other vertebrate; Ray-finned fish,1,14
+GJA3,alpha_GJA,6,2,Bird; Mammal,0,6
+GJA4,alpha_GJA,7,2,Amphibian; Mammal,0,7
+GJA5,alpha_GJA,6,2,Bird; Mammal,0,6
+GJA8,alpha_GJA,5,2,Bird; Mammal,0,5
+GJB1,beta_GJB,8,3,Amphibian; Mammal; Ray-finned fish,0,8
+GJB2,beta_GJB,9,2,Mammal; Other vertebrate,0,9
+GJB3,beta_GJB,4,1,Mammal,0,4
+GJB6,beta_GJB,3,2,Bird; Mammal,0,3
+GJC,gamma_GJC,14,4,Bird; Mammal; Other vertebrate; Ray-finned fish,0,14
+GJD,delta_GJD,9,1,Mammal,0,9
+GJE,epsilon_GJE,2,1,Mammal,0,2
+other GJA,alpha_GJA,6,2,Amphibian; Mammal,0,6
+other GJB,beta_GJB,7,1,Mammal,0,7
+other/unknown,unassigned,26,5,Amphibian; Bird; Cartilaginous fish; Mammal; Ray-finned fish,23,3

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Innexin Insights — Phylogeny, Clades & Structure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #0f2430;
+  --muted: #4a6570;
+  --deep: #0a3a42;
+  --sea: #0f766e;
+  --amber: #c27803;
+  --foam: #f2f8f6;
+  --card: #ffffff;
+  --line: rgba(15, 36, 48, 0.1);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Sora", sans-serif;
+  line-height: 1.6;
+  background:
+    radial-gradient(1000px 480px at 8% -8%, rgba(15, 118, 110, 0.16), transparent 55%),
+    radial-gradient(900px 420px at 92% 4%, rgba(194, 120, 3, 0.12), transparent 50%),
+    linear-gradient(180deg, #e6f1ee 0%, var(--foam) 40%, #eef4f2 100%);
+}
+a { color: var(--sea); }
+
+.hero {
+  position: relative;
+  min-height: 88vh;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  padding: clamp(1.5rem, 4vw, 3.25rem);
+  color: #f5fffb;
+  background:
+    linear-gradient(118deg, rgba(10, 58, 66, 0.94) 0%, rgba(15, 118, 110, 0.78) 52%, rgba(194, 120, 3, 0.5) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cpath d='M0 70h140M70 0v140' stroke='%23fff' stroke-opacity='.07'/%3E%3C/svg%3E");
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -15% -30% 40%;
+  height: 75%;
+  background: radial-gradient(ellipse at center, rgba(245, 255, 251, 0.16), transparent 65%);
+  animation: drift 14s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+@keyframes drift {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(-5%, 4%, 0) scale(1.06); }
+}
+.hero-inner { position: relative; z-index: 1; max-width: 760px; }
+.brand {
+  font-family: "Fraunces", serif;
+  font-size: clamp(2.6rem, 7vw, 4.8rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  margin: 0 0 1rem;
+}
+.hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.05rem, 2.1vw, 1.3rem);
+  font-weight: 500;
+  max-width: 36ch;
+}
+.hero .lede {
+  margin: 0 0 1.6rem;
+  max-width: 48ch;
+  opacity: 0.92;
+}
+.cta a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.8rem 1.15rem;
+  border-radius: 999px;
+  margin-right: 0.45rem;
+  margin-bottom: 0.35rem;
+  background: #f5fffb;
+  color: var(--deep);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  transition: transform 0.2s ease;
+}
+.cta a.ghost {
+  background: transparent;
+  color: #f5fffb;
+  border: 1px solid rgba(245,255,251,0.45);
+  box-shadow: none;
+}
+.cta a:hover { transform: translateY(-2px); }
+
+.wrap {
+  width: min(860px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2.25rem 0 4.5rem;
+}
+
+.verdict {
+  margin-top: -2.2rem;
+  position: relative;
+  z-index: 2;
+  background: rgba(255,255,255,0.94);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.25rem 1.35rem;
+  box-shadow: 0 14px 36px rgba(15, 36, 48, 0.08);
+}
+.verdict h2 {
+  font-family: "Fraunces", serif;
+  font-size: 1.35rem;
+  margin: 0 0 0.55rem;
+}
+.verdict p { margin: 0; color: var(--muted); }
+.verdict strong { color: var(--deep); }
+
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1.75rem 0 0.5rem;
+}
+.toc a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--deep);
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+}
+.toc a:hover { border-color: var(--sea); color: var(--sea); }
+
+.beat {
+  margin: 2.4rem 0;
+  scroll-margin-top: 1rem;
+  animation: rise 0.7s ease both;
+}
+.beat:nth-child(2) { animation-delay: 0.05s; }
+.beat:nth-child(3) { animation-delay: 0.1s; }
+.beat:nth-child(4) { animation-delay: 0.15s; }
+.beat:nth-child(5) { animation-delay: 0.2s; }
+@keyframes rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.beat .eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 0.35rem;
+}
+.beat h2 {
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.45rem, 3vw, 1.85rem);
+  margin: 0 0 0.55rem;
+  letter-spacing: -0.02em;
+}
+.beat .claim {
+  color: var(--muted);
+  margin: 0 0 1rem;
+  max-width: 62ch;
+}
+.figure {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 0.85rem;
+  margin: 0 0 1rem;
+  box-shadow: 0 10px 28px rgba(15, 36, 48, 0.05);
+}
+.figure img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  cursor: zoom-in;
+  background: #f8fafc;
+}
+.figure .cap {
+  margin: 0.7rem 0.15rem 0.1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.take {
+  margin: 0.35rem 0 0;
+  padding: 0.75rem 0.9rem;
+  border-left: 3px solid var(--sea);
+  background: rgba(15, 118, 110, 0.07);
+  border-radius: 0 12px 12px 0;
+  font-size: 0.92rem;
+  color: var(--deep);
+}
+
+.closing {
+  margin-top: 2.5rem;
+  padding: 1.4rem 1.35rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--deep), var(--sea));
+  color: #f5fffb;
+}
+.closing h2 {
+  font-family: "Fraunces", serif;
+  margin: 0 0 0.55rem;
+  font-size: 1.4rem;
+}
+.closing p { margin: 0; opacity: 0.95; max-width: 60ch; }
+.footer {
+  margin-top: 1.75rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.footer a { margin-right: 0.85rem; }
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.88);
+  z-index: 30;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  cursor: zoom-out;
+}
+.modal.open { display: flex; }
+.modal img { max-width: 95vw; max-height: 90vh; border-radius: 8px; }
+
+@media (max-width: 700px) {
+  .hero { min-height: 78vh; }
+  .verdict { margin-top: -1.4rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="brand">Innexin Insights</p>
+    <h1>What clade phylogeny says about gene and protein structure</h1>
+    <p class="lede">Selected plots for how we group innexins across insects, nematodes, and the newly recovered clades.</p>
+    <div class="cta">
+      <a href="#verdict">Start here</a>
+      <a class="ghost" href="../gap_junction_path/index.html">Story path</a>
+      <a class="ghost" href="../innexin_similarity/index.html">Full similarity gallery</a>
+      <a class="ghost" href="../family_comparison/index.html">vs connexin</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="verdict" id="verdict">
+    <h2>Main point</h2>
+    <p>
+      Gene names are not phylogeny.
+      Outside insects, recovered innexins behave like the SF3 / nematode-like radiation (Inx3–Inx7–unc-7/9),
+      not like a full Drosophila Inx1–7 toolkit.
+      At the protein level, tree-guided subfamilies are sequence-separable
+      (~46% within vs ~28% between identity; embeddings agree). Amino-acid composition barely separates them.
+      In Drosophila, genomic clusters also do not match the phylogenetic subfamilies one-to-one.
+    </p>
+  </section>
+
+  <nav class="toc" aria-label="Contents">
+    <a href="#beat1">1. Phylogeny vs clade geography</a>
+    <a href="#beat2">2. Distance in sequence</a>
+    <a href="#beat3">3. Gene structure</a>
+    <a href="#beat4">4. Protein similarity</a>
+    <a href="#beat5">5. Architecture by clade</a>
+  </nav>
+
+  <!-- BEAT 1 -->
+  <article class="beat" id="beat1">
+    <span class="eyebrow">Phylogeny across clades</span>
+    <h2>The tree cuts across animal groups</h2>
+    <p class="claim">
+      If every clade reinvented “Inx1–7 + shakB”, we would see those labels evenly everywhere.
+      Instead, non-insect recoveries pile into SF3-like / unc-7–unc-9 best hits — matching the innexin tree hypothesis.
+    </p>
+
+    <div class="figure">
+      <img src="figures/01_subfamilies_across_clades.png" alt="Tree subfamilies across clades" onclick="openModal(this.src)">
+      <p class="cap">Tree-guided subfamilies (SF1–SF4) mapped onto taxonomic clades via best-hit labels.</p>
+      <p class="take"><strong>Note:</strong> SF3 dominates outside insects; classical insect SF1/SF2/SF4 diversity does not replay one-for-one in rotifers, molluscs or spiders.</p>
+    </div>
+
+    <div class="figure">
+      <img src="figures/02_clade_x_best_hit.png" alt="Clade by best-hit type heatmap" onclick="openModal(this.src)">
+      <p class="cap">Which reference proteins do loci in each clade most resemble?</p>
+      <p class="take"><strong>Note:</strong> Molluscs / rotifers / annelids lean unc-7 and unc-9. That is phylogenetic signal, not proof that their genes “are” nematode unc-9 orthologs.</p>
+    </div>
+  </article>
+
+  <!-- BEAT 2 -->
+  <article class="beat" id="beat2">
+    <span class="eyebrow">Sequence distance</span>
+    <h2>Identity falls with evolutionary distance — without leaving the family</h2>
+    <p class="claim">
+      Closer arthropods keep higher best-hit identity; soft-bodied / early-branching recoveries sit lower (~35–40%) but remain long, cysteine-rich innexin-like products.
+    </p>
+
+    <div class="figure">
+      <img src="figures/03_identity_by_clade.png" alt="Best-hit identity by clade" onclick="openModal(this.src)">
+      <p class="cap">Best-hit identity (%) for discovery + curator loci, split by clade.</p>
+      <p class="take"><strong>Note:</strong> Lower identity in rotifers/molluscs is expected divergence, not “noise”. Non-insect arthropods sit higher — consistent with closer affinity to insect references.</p>
+    </div>
+  </article>
+
+  <!-- BEAT 3 -->
+  <article class="beat" id="beat3">
+    <span class="eyebrow">Gene structure</span>
+    <h2>Genomic neighbourhood and phylogeny tell different stories</h2>
+    <p class="claim">
+      In Drosophila, two X clusters plus Inx3 on 3R organise the genes in space.
+      The tree regroups them: Inx7 sits with nematodes (SF3) even though it is genomically next to ogre/Inx2.
+      <em>D. melanogaster</em> Inx2 and <em>C. elegans</em> inx-2 share a numerical suffix from
+      historical screens, but they are not orthologs —
+      nematode inx-2 groups in SF3 with Dmel Inx3 / Inx7 (and unc-7 / unc-9), while insect Inx2 sits in SF4.
+      Compare SF3 ↔ nematode innexins with the tree and synteny, not by matching names.
+    </p>
+
+    <div class="figure">
+      <img src="figures/04_dmel_gene_architecture.png" alt="Drosophila two clusters with gene names" onclick="openModal(this.src)">
+      <p class="cap">Named Drosophila intervals — proximal X, distal X, and Inx3 on 3R.</p>
+      <p class="take"><strong>Note:</strong> Genomic clustering ≠ subfamily membership. Synteny alone would mis-group Inx7 with SF2/SF4 neighbours.</p>
+    </div>
+
+    <div class="figure">
+      <img src="figures/05_sf3_vs_nematode_synteny.png" alt="SF3 versus nematode innexin comparison" onclick="openModal(this.src)">
+      <p class="cap">Tree-guided comparison: Drosophila Inx3/Inx7 neighbourhoods versus nematode innexins as a group — not “Inx2 vs inx-2”.</p>
+      <p class="take"><strong>Note:</strong> The useful synteny question is SF3 ↔ nematodes.
+        Pairing insect Inx2 with nematode inx-2 because they share a name is the trap this plot is meant to avoid.
+        Full panel: <a href="../innexin_subfamilies/SF3_Inx3_Inx7_vs_nematode_innexins.html">SF3 vs nematodes</a>.</p>
+    </div>
+  </article>
+
+  <!-- BEAT 4 -->
+  <article class="beat" id="beat4">
+    <span class="eyebrow">Protein similarity</span>
+    <h2>Subfamilies separate in sequence space and in embeddings</h2>
+    <p class="claim">
+      MMseqs2 and 3-mer embeddings agree: proteins within a tree subfamily are more alike than proteins from different subfamilies —
+      especially SF3 (nematode-like) versus SF4 (insect Inx2/4–6 expansion).
+    </p>
+
+    <div class="figure">
+      <img src="figures/06_protein_identity_by_subfamily.png" alt="MMseqs identity between subfamilies" onclick="openModal(this.src)">
+      <p class="cap">Mean MMseqs2 % identity between tree-guided subfamilies.</p>
+      <p class="take"><strong>Note:</strong> Within-subfamily ~46% vs between ~28%. SF3↔SF4 ~28% — two different evolutionary experiments inside one protein family.</p>
+    </div>
+
+    <div class="figure">
+      <img src="figures/07_embedding_similarity.png" alt="3-mer embedding cosine between subfamilies" onclick="openModal(this.src)">
+      <p class="cap">3-mer SVD embedding cosine (same-group mean ~0.28 vs different-group ~0.05).</p>
+      <p class="take"><strong>Note:</strong> Local sequence “texture” separates groups even when global AA composition does not — a structural-biochemistry hint that motif grammar differs by subfamily.</p>
+    </div>
+
+    <div class="figure">
+      <img src="figures/08_embedding_pca_by_subfamily.png" alt="Embedding PCA colored by subfamily" onclick="openModal(this.src)">
+      <p class="cap">Proteins in 3-mer embedding space, coloured by subfamily.</p>
+      <p class="take"><strong>Note:</strong> SF clouds are partially overlapping (still one family) but not random — phylogeny leaves a footprint in protein feature space.</p>
+    </div>
+  </article>
+
+  <!-- BEAT 5 -->
+  <article class="beat" id="beat5">
+    <span class="eyebrow">Gene &amp; protein architecture</span>
+    <h2>Length and exon patterns stay innexin-like across clades</h2>
+    <p class="claim">
+      Despite identity drop outside insects, protein lengths remain in a coherent band.
+      Exon counts (where annotated) are higher and lineage-variable (panel median ~5):
+      innexin genes typically keep introns inside the coding region, which allows multiple splice variants from a single locus
+      (e.g. insect <em>shakB</em>) — unlike the usually intron-free connexin ORF.
+    </p>
+
+    <div class="figure">
+      <img src="figures/09_protein_length_by_clade.png" alt="Protein length by clade" onclick="openModal(this.src)">
+      <p class="cap">Protein length distributions by clade (reference + recovered loci).</p>
+      <p class="take"><strong>Note:</strong> Rotifers/molluscs (~370 aa) look length-normal; nematode references trend longer (~420 aa). Structure-length is conserved more than sequence identity.</p>
+    </div>
+
+    <div class="figure">
+      <img src="figures/10_exon_architecture_by_clade.png" alt="Exon count by clade" onclick="openModal(this.src)">
+      <p class="cap">Exon counts by clade where gene models report exons.</p>
+      <p class="take"><strong>Note:</strong> Multi-exon, splice-capable gene structure varies by lineage — another reason orthology should follow the tree, not the name.
+        Flat median = 1 exon in Ctenophora / non-insect Arthropoda is often a TSA / ab initio model (continuous ORF as one exon), not evidence that those innexins lack coding-region introns.</p>
+    </div>
+  </article>
+
+  <section class="closing">
+    <h2>Summary</h2>
+    <p>
+      Innexins diversified by clade-specific duplication: Drosophila holds several phylogenetic subfamilies whose proteins remain separable by identity and embeddings,
+      while newly recovered non-insect innexins mostly join the SF3 / nematode-like radiation — shared gene names understate the tree structure.
+    </p>
+  </section>
+
+  <footer class="footer">
+    <p>Built from clade comparison + MMseqs/embedding similarity (+ Drosophila architecture / SF3 panel).</p>
+    <p>
+      <a href="../innexin_clade_comparison/index.html">Clade comparison</a>
+      <a href="../innexin_similarity/index.html">Similarity analysis</a>
+      <a href="../family_comparison/index.html">vs connexin</a>
+      <a href="../phylogenetic_story/index.html">Phylogeny story</a>
+      <a href="../new_species_gallery/index.html">New species</a>
+    </p>
+  </footer>
+</main>
+
+<div id="modal" class="modal" onclick="this.classList.remove('open')">
+  <img id="modal-img" alt="Enlarged figure">
+</div>
+<script>
+function openModal(src) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('modal').classList.add('open');
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('modal').classList.remove('open');
+});
+</script>
+</body>
+</html>
