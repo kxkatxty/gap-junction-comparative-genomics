@@ -1,0 +1,2 @@
+seqid,start,end,strand,identity,aa_length,cys,stops,verdict,target,el1_cys,el2_cys,el_motif,tm_pred
+MTYJ01000015.1,414125,414583,-,0.4706,153,2,0,weak,candidate_inx_008 48 197,,,unresolved,3

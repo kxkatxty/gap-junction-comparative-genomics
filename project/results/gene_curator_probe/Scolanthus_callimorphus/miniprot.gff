@@ -1,0 +1,4 @@
+##gff-version 3
+##PAF	candidate_inx_008	207	49	201	-	CM066925.1	25745778	18330270	18330702	168	456	0	AS:i:264	ms:i:257	np:i:86	fs:i:0	st:i:0	da:i:396	do:i:201	cg:Z:52M1I12M4I55M2I1M1I24M	cs:Z::5*gtaL:1*gttI*gggS:6*ttcL*gccI:2*tggY*tccA*gccT:1*aagN*gctK*ctgC:2*gcaF*acaK*tcaG*acaV*atgL*gggN*attT*ctgI:1*atgL*gtaI:2*ataV:2*ttcY*attV*acaS*ttaI*gcgI*tttL*aaaE*gagT+L*agcD:1*tacG*gacH*gtgL*cgaK*tccN*ttcL*gccK*gttS:2+KAVQ*gcgV*ttaF:1*ttaV*tttL:1*gttI*ataM:2*ttcL:2*tcgA:1*tatH:1*agcT*gccG:1*aaaQ*ctcS:1*gtcG*aagY:2*tacK*tccR:1*agtY*gacK*caaE:1*aagS*agcM:1*ttcL*ttcM*tgcF*ttcL*ttcA*gtgI*gccF*gtgI*gttL:4*gccL*attA:1*tacF*gtgA+EK:1+G:1*aggA*aaaI*aacQ*attF*cccR:8*tgcA*atcS*gtaI*actV*atgS*acgE*tcaK*gtaK*gggT:1
+CM066925.1	miniprot	mRNA	18330271	18330702	257	-	.	ID=MP000001;Rank=1;Identity=0.3684;Positive=0.5658;Target=candidate_inx_008 50 201
+CM066925.1	miniprot	CDS	18330271	18330702	257	-	0	Parent=MP000001;Rank=1;Identity=0.3684;Target=candidate_inx_008 50 201

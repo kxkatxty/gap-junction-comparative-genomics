@@ -1,0 +1,4 @@
+##gff-version 3
+##PAF	candidate_inx_008	207	47	197	+	NW_026570224.1	3703749	2937632	2938091	213	459	0	AS:i:344	ms:i:344	np:i:102	fs:i:0	st:i:0	da:i:141	do:i:6	cg:Z:54M2D10M1D86M	cs:Z::1*tttL:3*gccE*actA*gtcL:2*gccS:5*ttcY*ataL*ttaI:2*ataY*tcgA*tgtT:1*tctN:1*aaaC*aacK:1*ttaF:1*tctG*cctV*attL:1*atcT:8*tacF:1*atcV*gacS:1*acgI*gtcL*acgE*gtaT-gtgtgc:1*tcgD*cgaT:1*atcH*tccL*agcK*cacN*agtL:1-gcc:1*atcV*atgR*ggtK*attA*ctcV*cggQ:1*ctgF:2*atcL:2*tttM:2*gtcL*aggK:1*tcaA:1*tacH:1*aacT:2*agaQ*attS:2*gagY:1*ttcL*attK*gttR:1*ctaY*cggK:2*gggS*cttM:1*atgL*ttaM:2*ggtA:1*ggcF*gtgI*gttL:4*tccL*atgA*tttY*tatF:2*atcK*gggD*atgG*aaaN*gacA*acgI:2*aacR:3*gaaH*tcgA:4*attS*gtaI*acaV:2
+NW_026570224.1	miniprot	mRNA	2937633	2938091	344	+	.	ID=MP000001;Rank=1;Identity=0.4641;Positive=0.6667;Target=candidate_inx_008 48 197
+NW_026570224.1	miniprot	CDS	2937633	2938091	344	+	0	Parent=MP000001;Rank=1;Identity=0.4641;Target=candidate_inx_008 48 197

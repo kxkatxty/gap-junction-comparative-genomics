@@ -7,8 +7,18 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="${1:-$ROOT/github_share}"
 
 echo "Building github_share → $OUT"
-rm -rf "$OUT"
-mkdir -p "$OUT"
+# Preserve an existing git history (do not wipe .git).
+if [[ -d "$OUT/.git" ]]; then
+  TMP_GIT=$(mktemp -d)
+  mv "$OUT/.git" "$TMP_GIT/"
+  rm -rf "$OUT"
+  mkdir -p "$OUT"
+  mv "$TMP_GIT/.git" "$OUT/"
+  rmdir "$TMP_GIT"
+else
+  rm -rf "$OUT"
+  mkdir -p "$OUT"
+fi
 
 RSYNC=(rsync -a --delete
   --exclude '.DS_Store'
@@ -80,13 +90,43 @@ for name in "${RESULTS_KEEP[@]}"; do
   fi
 done
 
-# Curator summaries only (skip ~12 GB per-species folders)
+# Curator reproducibility pack (small): summaries + per-species hits/products + query pack
 mkdir -p "$OUT/project/results/gene_curator_probe"
 shopt -s nullglob
-for f in "$ROOT/project/results/gene_curator_probe"/*.{md,csv,tsv,txt}; do
+for f in "$ROOT/project/results/gene_curator_probe"/*.{md,csv,tsv,txt,fasta}; do
   cp "$f" "$OUT/project/results/gene_curator_probe/"
 done
+# Per-species: hits.csv + product FASTAs only (skip locate work dirs / large GFF dumps)
+for sp_dir in "$ROOT/project/results/gene_curator_probe"/*/; do
+  [[ -d "$sp_dir" ]] || continue
+  sp=$(basename "$sp_dir")
+  # skip non-species dirs if any
+  [[ -f "$sp_dir/hits.csv" ]] || continue
+  dest="$OUT/project/results/gene_curator_probe/$sp"
+  mkdir -p "$dest"
+  cp "$sp_dir/hits.csv" "$dest/"
+  [[ -f "$sp_dir/present_products.fasta" ]] && cp "$sp_dir/present_products.fasta" "$dest/"
+  [[ -f "$sp_dir/genome_direct_products.fasta" ]] && cp "$sp_dir/genome_direct_products.fasta" "$dest/"
+  # light miniprot GFF if small (<2 MB)
+  if [[ -f "$sp_dir/miniprot.gff" ]]; then
+    sz=$(wc -c < "$sp_dir/miniprot.gff" | tr -d ' ')
+    if [[ "$sz" -lt 2000000 ]]; then
+      cp "$sp_dir/miniprot.gff" "$dest/"
+    fi
+  fi
+done
 shopt -u nullglob
+echo "  + results/gene_curator_probe (summaries + hits/products)"
+
+# --- reference protein panels (small; required for reproducibility) ---
+mkdir -p "$OUT/project/data/references"
+for fam in innexins connexins; do
+  if [[ -d "$ROOT/project/data/references/$fam" ]]; then
+    echo "  + data/references/$fam"
+    "${RSYNC[@]}" "$ROOT/project/data/references/$fam" "$OUT/project/data/references/"
+  fi
+done
+# pannexin refs live under pannexin/ (copied below)
 
 # --- pannexin workspace (sites + scripts; empty data placeholders only) ---
 mkdir -p "$OUT/pannexin/project/results" "$OUT/pannexin/project/metadata" \
@@ -169,20 +209,30 @@ Full reading order: [`project/results/README.md`](project/results/README.md)
 | Path | Contents |
 |------|----------|
 | `project/results/` | HTML result sites and figures |
+| `project/results/gene_curator_probe/` | Summary tables, **query pack**, per-species `hits.csv` + `present_products.fasta`, accepted locus coordinates, tool versions |
+| `project/data/references/innexins/` | Innexin UniProt reference FASTAs (query sources) |
+| `project/data/references/connexins/` | Connexin reference FASTAs |
 | `project/metadata/` | Species panels and summary tables |
 | `pipeline/` | Python site builders |
 | `tools/` | Discovery / download / exon CLIs |
 | `scripts/` | Shell runners |
 | `tests/` | Pytest |
 | `docs/` | Pipeline notes |
-| `pannexin/` | Pannexin path site + builders |
+| `pannexin/` | Pannexin path site + builders + pannexin refs |
+
+## Reproducibility (curator)
+
+- Query pack: [`project/results/gene_curator_probe/batch_queries.fasta`](project/results/gene_curator_probe/batch_queries.fasta)
+- Innexin refs: [`project/data/references/innexins/`](project/data/references/innexins/)
+- Accepted locus coordinates: [`project/results/gene_curator_probe/accepted_curator_loci.csv`](project/results/gene_curator_probe/accepted_curator_loci.csv)
+- Tool versions: [`project/results/gene_curator_probe/TOOL_VERSIONS.md`](project/results/gene_curator_probe/TOOL_VERSIONS.md)
+- Per species: `hits.csv` + `present_products.fasta` under `gene_curator_probe/<Species>/`
 
 ## What was left out (on purpose)
 
-- `project/data/` — genomes and protein dumps  
-- `project/results/*_discovery/` — large per-species search outputs  
-- `project/results/gene_curator_probe/<species>/` — only summary `.md`/`.csv` kept  
-- `SynVoy/` — synteny tool + run data (too large for GitHub)
+- Genome FASTAs and SynVoy run folders (~400 GB)
+- `project/results/*_discovery/` heavy per-species search dumps
+- Curator `locate_*` work directories / BLAST DBs (regenerable from genomes + query pack)
 
 Identities reported on the sites are **MMseqs2** pairwise identities, not BLAST.
 

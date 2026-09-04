@@ -1,0 +1,4 @@
+##gff-version 3
+##PAF	candidate_inx_008	207	47	199	+	LRSR01005694.1	87812	33869	34334	216	465	0	AS:i:374	ms:i:374	np:i:108	fs:i:0	st:i:0	da:i:-1	do:i:156	cg:Z:48M2D22M1D82M	cs:Z::2*tacF:3*agcA*atcL:2*gccS:3*ctgI:1*ttcY*attL*gttI:1*cttV*ataY*tccA*tgtT:3*aagC*cagK:3*tcgG*cccV:2*atcT:6*attV:1*tacF:2-gatttg*ggcS:1*actI:1*tccE*agtT:1*gccD*aacT:1*gatH*acaL*agtK*cacN*atgL*caaK*acgS*ggtV*tccR*ttgK:2-ctt*cgtQ*atcV*ttgF:1*ctcV*gttL:1*gttI*ttcM:1*ctgI*ttcL:1*attL*tccA:3*aaaT:3*attS:2*aaaY:1*tttL*gccK*atgR:1*ctgY*cacK:1*atgL*gggS*ctgM:2*cttM:2*gggA:1*ggcF*gtgI*gtcL:4*gctL*gtgA:1*tatF:2*cttK*ggcD*accG*catN*gatA*acgI:2*acgR:3*gacH*ggcA:4*gttS*gtgI*accV:1*aagE*catK*agaK
+LRSR01005694.1	miniprot	mRNA	33870	34334	374	+	.	ID=MP000001;Rank=1;Identity=0.4645;Positive=0.6968;Target=candidate_inx_008 48 199
+LRSR01005694.1	miniprot	CDS	33870	34334	374	+	0	Parent=MP000001;Rank=1;Identity=0.4645;Target=candidate_inx_008 48 199

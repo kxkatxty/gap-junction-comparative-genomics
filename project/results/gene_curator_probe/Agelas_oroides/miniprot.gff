@@ -1,0 +1,9 @@
+##gff-version 3
+##PAF	recovered_Acartia_tonsa_best	353	248	290	-	OX422184.1	26170762	3861827	3861941	51	126	0	AS:i:53	ms:i:45	np:i:24	fs:i:0	st:i:0	da:i:-1	do:i:156	cg:Z:16M2I13M2I9M	cs:Z::1*ttgE:3*cccA:1*gagC*ataV*gtaL*cagP*tttL*cacN*tacI:2+EK*tttI*attY*cttV*tcaF:1*catW*tgtF*aaaW:1*agaI:1*ataV*attA+IV*tctT:3*ataV:4
+OX422184.1	miniprot	mRNA	3861828	3861941	45	-	.	ID=MP000001;Rank=1;Identity=0.4048;Positive=0.5714;Target=recovered_Acartia_tonsa_best 249 290
+OX422184.1	miniprot	CDS	3861828	3861941	45	-	0	Parent=MP000001;Rank=1;Identity=0.4048;Target=recovered_Acartia_tonsa_best 249 290
+##PAF	recovered_Adineta_vaga_best	465	0	92	-	OX422186.1	12572161	6867250	6921769	96	276	0	AS:i:74	ms:i:129	np:i:43	fs:i:0	st:i:0	da:i:9	do:i:102	cg:Z:26M15659N35M38596V4M3I23M	cs:Z:*gagD*cttA*tatG:1*cctG*cgcG:1*tcgP*cgcQ*tcgP:1*cacL:7*gacP*cacS*cctS:1*agaA*tgcL*gttL~gt15659ag*ggcS*cagS*gaaT:1*aggH*ctaA*cagD*aggD*gctG*gccQ*ataS*actR:2*ataL*ctgM:2*tacI:1*gtaA:1*atgG*caaT*attG*actA:1*tacS:1*acaL*cacK*acaK*cacV*acaP*cacN*atE~gt38593ag-t*catL*caaK*gttL:1+KNP:1*tcgL*aacR*catE:1*tcgT:4*atcV:4*catK*cagS*tcaH*acaE*gtcI*aaaM*caaS:1
+OX422186.1	miniprot	mRNA	6867251	6921769	129	-	.	ID=MP000002;Rank=1;Identity=0.3478;Positive=0.4674;Target=recovered_Adineta_vaga_best 1 92
+OX422186.1	miniprot	CDS	6921692	6921769	54	-	0	Parent=MP000002;Rank=1;Identity=0.4231;Target=recovered_Adineta_vaga_best 1 26
+OX422186.1	miniprot	CDS	6905926	6906032	24	-	0	Parent=MP000002;Rank=1;Identity=0.2500;Target=recovered_Adineta_vaga_best 27 61
+OX422186.1	miniprot	CDS	6867251	6867332	51	-	1	Parent=MP000002;Rank=1;Identity=0.4000;Target=recovered_Adineta_vaga_best 62 92

@@ -1,0 +1,7 @@
+##gff-version 3
+##PAF	candidate_inx_008	207	31	194	+	NW_014577081.1	1051085	711428	711908	291	489	0	AS:i:500	ms:i:500	np:i:128	fs:i:0	st:i:0	da:i:-1	do:i:615	cg:Z:68M2I78M1I14M	cs:Z::3*accE*aagH*cttH*cccE*gctT*aagE*aagS*gagD*atgC*gagR*gacE*aacP*ccgL*aacP:1*gtgF:1*gtaI:2*gttL:2*accS:6*atgL*ctgI:1*ttcV*tggY:1*tcgT:3*tggC:5*acgV:2*atcT:3*ctcI:2*atgV:3*atcV:1*ctgI*tttI:1+ET*atcL*gagD:1*aagG*acgH*acgL*gagK*cagN*ttcL*cagK*gacS:2*cgcK*gtcA:2*atcV:2*atcV*atgL:2*ctcM:16*ttcY:2*cgtK*aacR:5*ggcS*ctgM:7*ggcF*gtcI*atgL:5*gtcA:6*tacG:1*gacA+I*aaaQ:1*agcR:3*gcgH*tcgA:4*gccS:1
+NW_014577081.1	miniprot	mRNA	711429	711908	500	+	.	ID=MP000001;Rank=1;Identity=0.5951;Positive=0.7853;Target=candidate_inx_008 32 194
+NW_014577081.1	miniprot	CDS	711429	711908	500	+	0	Parent=MP000001;Rank=1;Identity=0.5951;Target=candidate_inx_008 32 194
+##PAF	sp|P27716|INX1_DROME	362	107	157	-	NW_014578048.1	115335	64748	64889	72	153	0	AS:i:74	ms:i:74	np:i:28	fs:i:0	st:i:0	da:i:-1	do:i:222	cg:Z:9M3I4M1I21M1D12M	cs:Z::1*ggaY:1*attW*aatV:2*tccV:1+FFQ:1*atcM*aaaA:1+Y*ataT:1*tcaK*atcF*aaaL*cagW*aaaN:1*acaF*ggaE:2*gtaL:1*ttaR*gcaM:1*gcaV*gatM*agaG:1-aaa:1*gtaI:7*cgaK:2
+NW_014578048.1	miniprot	mRNA	64749	64889	74	-	.	ID=MP000002;Rank=1;Identity=0.4706;Positive=0.5490;Target=sp|P27716|INX1_DROME 108 157
+NW_014578048.1	miniprot	CDS	64749	64889	74	-	0	Parent=MP000002;Rank=1;Identity=0.4706;Target=sp|P27716|INX1_DROME 108 157

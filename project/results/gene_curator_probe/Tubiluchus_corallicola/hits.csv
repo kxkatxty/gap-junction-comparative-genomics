@@ -1,0 +1,2 @@
+seqid,start,end,strand,identity,aa_length,cys,stops,verdict,target,el1_cys,el2_cys,el_motif,tm_pred
+JAQGDQ010000010.1,1183335,1183766,+,0.6644,144,1,0,weak,candidate_inx_008 49 194,,,unresolved,3

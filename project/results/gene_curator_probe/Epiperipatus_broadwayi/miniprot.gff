@@ -1,0 +1,22 @@
+##gff-version 3
+##chunked-miniprot-merge
+JAQFVV010000051.1	miniprot	mRNA	6210707	6210849	84	+	.	ID=MP000001;Rank=2;Identity=0.3986;Positive=0.6503;Frameshift=1;Target=recovered_Adineta_vaga_best 8 54
+JAQFVV010000051.1	miniprot	CDS	6210707	6210849	84	+	0	Parent=MP000001;Rank=2;Identity=0.3986;Frameshift=1;Target=recovered_Adineta_vaga_best 8 54
+JAQFVV010000161.1	miniprot	mRNA	1001856	1001999	99	-	.	ID=MP000001;Rank=1;Identity=0.3542;Positive=0.6042;Target=recovered_Adineta_vaga_best 7 54
+JAQFVV010000161.1	miniprot	CDS	1001856	1001999	99	-	0	Parent=MP000001;Rank=1;Identity=0.3542;Target=recovered_Adineta_vaga_best 7 54
+JAQFVV010006209.1	miniprot	mRNA	3102661	3102756	49	+	.	ID=MP000001;Rank=1;Identity=0.4062;Positive=0.5938;Target=candidate_inx_008 60 91
+JAQFVV010006209.1	miniprot	CDS	3102661	3102756	49	+	0	Parent=MP000001;Rank=1;Identity=0.4062;Target=candidate_inx_008 60 91
+JAQFVV010006219.1	miniprot	mRNA	8875106	8875449	85	+	.	ID=MP000002;Rank=2;Identity=0.2939;Positive=0.4150;Frameshift=1;Target=recovered_Adineta_vaga_best 8 105
+JAQFVV010006219.1	miniprot	CDS	8875106	8875449	85	+	0	Parent=MP000002;Rank=2;Identity=0.2939;Frameshift=1;Target=recovered_Adineta_vaga_best 8 105
+JAQFVV010007514.1	miniprot	mRNA	70546	70704	96	-	.	ID=MP000001;Rank=1;Identity=0.3396;Positive=0.4906;Target=recovered_Adineta_vaga_best 8 60
+JAQFVV010007514.1	miniprot	CDS	70546	70704	96	-	0	Parent=MP000001;Rank=1;Identity=0.3396;Target=recovered_Adineta_vaga_best 8 60
+JAQFVV010012669.1	miniprot	mRNA	445720	446154	473	-	.	ID=MP000001;Rank=1;Identity=0.6164;Positive=0.8082;Target=candidate_inx_008 49 194
+JAQFVV010012669.1	miniprot	CDS	445720	446154	473	-	0	Parent=MP000001;Rank=1;Identity=0.6164;Target=candidate_inx_008 49 194
+JAQFVV010012777.1	miniprot	mRNA	14890	15009	73	-	.	ID=MP000001;Rank=1;Identity=0.3000;Positive=0.6000;Target=recovered_Brachionus_koreanus_best 291 330
+JAQFVV010012777.1	miniprot	CDS	14890	15009	73	-	0	Parent=MP000001;Rank=1;Identity=0.3000;Target=recovered_Brachionus_koreanus_best 291 330
+JAQFVV010012777.1	miniprot	mRNA	71144	71263	72	+	.	ID=MP000002;Rank=2;Identity=0.3000;Positive=0.6000;Target=recovered_Brachionus_koreanus_best 291 330
+JAQFVV010012777.1	miniprot	CDS	71144	71263	72	+	0	Parent=MP000002;Rank=2;Identity=0.3000;Target=recovered_Brachionus_koreanus_best 291 330
+JAQFVV010012777.1	miniprot	mRNA	14890	15009	72	-	.	ID=MP000003;Rank=1;Identity=0.2750;Positive=0.6000;Target=recovered_Brachionus_manjavacas_best 291 330
+JAQFVV010012777.1	miniprot	CDS	14890	15009	72	-	0	Parent=MP000003;Rank=1;Identity=0.2750;Target=recovered_Brachionus_manjavacas_best 291 330
+JAQFVV010012777.1	miniprot	mRNA	71144	71263	71	+	.	ID=MP000004;Rank=2;Identity=0.2750;Positive=0.6000;Target=recovered_Brachionus_manjavacas_best 291 330
+JAQFVV010012777.1	miniprot	CDS	71144	71263	71	+	0	Parent=MP000004;Rank=2;Identity=0.2750;Target=recovered_Brachionus_manjavacas_best 291 330

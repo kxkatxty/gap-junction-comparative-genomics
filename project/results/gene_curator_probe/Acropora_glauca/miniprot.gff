@@ -1,0 +1,4 @@
+##gff-version 3
+##PAF	candidate_inx_008	207	49	194	+	OZ187649.1	26581573	780235	780649	207	435	0	AS:i:363	ms:i:363	np:i:98	fs:i:0	st:i:0	da:i:657	do:i:18	cg:Z:62M7I76M	cs:Z::1*gtgI:2*attA:3*actS:3*ttcI:3*gtgI:1*ctaV*ttgY*tcgA*gcgT:1*cagN:1*ttaC*gtcK:1*cttF*cgcK*tcgG*tttV:2*ataT:3*gtgI:2*cttV:1*tacF:1*attV*actS*ctgI*ccgI*atgL*aaaE*gagT*gcgL*cccD*gtgT*acgG*tcgH:1*accK*gtgN:1*cggK+SVRKAVQ:1*attF:1*cttV*gttL:1*gttI*tttM:2*ttcL:2*tcaA:3*aaaT:3*gtaS:5*cgtK*tcaR:1*tcaY*aggK:2*gccS:2*attL*ttcM:2*cttA:1*ggcF*gtgI*attL:2*gctS:1*gctL*gttA:1*tacF:2*caaK:1*agcG*cctN*gaaA*agtI*aacQ:1*acaR:3*gatH:5*gtaS*gttI
+OZ187649.1	miniprot	mRNA	780236	780649	363	+	.	ID=MP000001;Rank=1;Identity=0.4759;Positive=0.6759;Target=candidate_inx_008 50 194
+OZ187649.1	miniprot	CDS	780236	780649	363	+	0	Parent=MP000001;Rank=1;Identity=0.4759;Target=candidate_inx_008 50 194

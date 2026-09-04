@@ -1,0 +1,2 @@
+seqid,start,end,strand,identity,aa_length,cys,stops,verdict,target,el1_cys,el2_cys,el_motif,tm_pred
+NW_026570224.1,2937633,2938091,+,0.4641,153,3,0,weak,candidate_inx_008 48 197,,,unresolved,1

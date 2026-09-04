@@ -1,0 +1,70 @@
+##gff-version 3
+##PAF	candidate_inx_008	207	48	194	+	NT_037436.4	28110227	2940894	2941332	261	438	0	AS:i:469	ms:i:469	np:i:116	fs:i:0	st:i:0	da:i:-1	do:i:348	cg:Z:146M	cs:Z::1*gcaF*atgI*gttI:2*gtgL:2*acgS:3*ctaI:2*ataL*cttI:1*tttV*agcY:1*tcgT:1*gacN:1*tggC:5*ggcV:2*ataT:3*ttgI:2*ctcV:1*tacF*tttY:2*ttaI*tttI:1*ttgE*gaaT*acgL*aatD*aagT*aatG*gcaH*acgL*gacK*cagN*ttcL*cagK*gatS:2*cggK*gtgA:5*atcV*atgL:2*ctgM:16*tttY:2*cgtK*aacR:5*ggtS*ctaM:1*atgL*ctgM:3*atgI*ggcF*gttI:1*ataL:11*gaaG*aagN*gatA*acaI*aaaQ:1*gttR:3*gaaH*acaA:4*ggtS:1
+NT_037436.4	miniprot	mRNA	2940895	2941332	469	+	.	ID=MP000001;Rank=1;Identity=0.5959;Positive=0.7945;Target=candidate_inx_008 49 194
+NT_037436.4	miniprot	CDS	2940895	2941332	469	+	0	Parent=MP000001;Rank=1;Identity=0.5959;Target=candidate_inx_008 49 194
+##PAF	sp|P27716|INX1_DROME	362	0	362	-	NC_004354.4	23542271	6974432	6977407	1086	1086	0	AS:i:1838	ms:i:1967	np:i:362	fs:i:0	st:i:0	da:i:0	do:i:0	cg:Z:83M1028N36M716N52M67N117M81V73M	cs:Z::83~gt1028ag:36~gt716ag:52~gt67ag:117*cgR~gt78ag-t:73
+NC_004354.4	miniprot	mRNA	6974430	6977407	1967	-	.	ID=MP000002;Rank=1;Identity=1.0000;Positive=1.0000;Target=sp|P27716|INX1_DROME 1 362
+NC_004354.4	miniprot	CDS	6977159	6977407	446	-	0	Parent=MP000002;Rank=1;Identity=1.0000;Target=sp|P27716|INX1_DROME 1 83
+NC_004354.4	miniprot	CDS	6976023	6976130	205	-	0	Parent=MP000002;Rank=1;Identity=1.0000;Target=sp|P27716|INX1_DROME 84 119
+NC_004354.4	miniprot	CDS	6975151	6975306	276	-	0	Parent=MP000002;Rank=1;Identity=1.0000;Target=sp|P27716|INX1_DROME 120 171
+NC_004354.4	miniprot	CDS	6974731	6975083	649	-	0	Parent=MP000002;Rank=1;Identity=1.0000;Target=sp|P27716|INX1_DROME 172 288
+NC_004354.4	miniprot	CDS	6974430	6974652	391	-	1	Parent=MP000002;Rank=1;Identity=1.0000;Target=sp|P27716|INX1_DROME 289 362
+NC_004354.4	miniprot	stop_codon	6974430	6974432	0	-	0	Parent=MP000002;Rank=1
+##PAF	sp|Q9V427|INX2_DROME	367	0	367	+	NC_004354.4	23542271	6999128	7000229	1101	1101	0	AS:i:1958	ms:i:1958	np:i:367	fs:i:0	st:i:0	da:i:0	do:i:0	cg:Z:367M	cs:Z::367
+NC_004354.4	miniprot	mRNA	6999129	7000232	1958	+	.	ID=MP000003;Rank=1;Identity=1.0000;Positive=1.0000;Target=sp|Q9V427|INX2_DROME 1 367
+NC_004354.4	miniprot	CDS	6999129	7000232	1958	+	0	Parent=MP000003;Rank=1;Identity=1.0000;Target=sp|Q9V427|INX2_DROME 1 367
+NC_004354.4	miniprot	stop_codon	7000230	7000232	0	+	0	Parent=MP000003;Rank=1
+##PAF	sp|Q9VAS7|INX3_DROME	395	0	395	-	NT_033777.3	32079331	28854463	28857305	1185	1185	0	AS:i:1970	ms:i:2103	np:i:395	fs:i:0	st:i:0	da:i:0	do:i:0	cg:Z:54M1204U69M326N153M65V51M68N66M	cs:Z::54*gG~gt1201ag-gc:69~gt326ag:153*tgW~gt62ag-g:51~gt68ag:66
+NT_033777.3	miniprot	mRNA	28854461	28857305	2103	-	.	ID=MP000004;Rank=1;Identity=1.0000;Positive=1.0000;Target=sp|Q9VAS7|INX3_DROME 1 395
+NT_033777.3	miniprot	CDS	28857143	28857305	281	-	0	Parent=MP000004;Rank=1;Identity=1.0000;Target=sp|Q9VAS7|INX3_DROME 1 54
+NT_033777.3	miniprot	CDS	28855733	28855941	396	-	2	Parent=MP000004;Rank=1;Identity=1.0000;Target=sp|Q9VAS7|INX3_DROME 55 124
+NT_033777.3	miniprot	CDS	28854946	28855406	837	-	0	Parent=MP000004;Rank=1;Identity=1.0000;Target=sp|Q9VAS7|INX3_DROME 125 277
+NT_033777.3	miniprot	CDS	28854730	28854883	246	-	1	Parent=MP000004;Rank=1;Identity=1.0000;Target=sp|Q9VAS7|INX3_DROME 278 329
+NT_033777.3	miniprot	CDS	28854461	28854661	343	-	0	Parent=MP000004;Rank=1;Identity=1.0000;Target=sp|Q9VAS7|INX3_DROME 330 395
+NT_033777.3	miniprot	stop_codon	28854461	28854463	0	-	0	Parent=MP000004;Rank=1
+##PAF	sp|Q9VRX6|INX4_DROME	367	0	367	-	NT_037436.4	28110227	6604680	6605909	1101	1101	0	AS:i:1905	ms:i:1969	np:i:367	fs:i:0	st:i:0	da:i:0	do:i:0	cg:Z:92M59U100M72N174M	cs:Z::92*gD~gt56ag-at:100~gt72ag:174
+NT_037436.4	miniprot	mRNA	6604678	6605909	1969	-	.	ID=MP000005;Rank=1;Identity=1.0000;Positive=1.0000;Target=sp|Q9VRX6|INX4_DROME 1 367
+NT_037436.4	miniprot	CDS	6605633	6605909	501	-	0	Parent=MP000005;Rank=1;Identity=1.0000;Target=sp|Q9VRX6|INX4_DROME 1 92
+NT_037436.4	miniprot	CDS	6605275	6605576	544	-	2	Parent=MP000005;Rank=1;Identity=1.0000;Target=sp|Q9VRX6|INX4_DROME 93 193
+NT_037436.4	miniprot	CDS	6604678	6605202	924	-	0	Parent=MP000005;Rank=1;Identity=1.0000;Target=sp|Q9VRX6|INX4_DROME 194 367
+NT_037436.4	miniprot	stop_codon	6604678	6604680	0	-	0	Parent=MP000005;Rank=1
+##PAF	sp|Q9VWL5|INX5_DROME	419	0	419	-	NC_004354.4	23542271	19168994	19170544	1257	1257	0	AS:i:2165	ms:i:2194	np:i:419	fs:i:0	st:i:0	da:i:0	do:i:0	cg:Z:245M293N174M	cs:Z::245~gt293ag:174
+NC_004354.4	miniprot	mRNA	19168992	19170544	2194	-	.	ID=MP000006;Rank=1;Identity=1.0000;Positive=1.0000;Target=sp|Q9VWL5|INX5_DROME 1 419
+NC_004354.4	miniprot	CDS	19169810	19170544	1288	-	0	Parent=MP000006;Rank=1;Identity=1.0000;Target=sp|Q9VWL5|INX5_DROME 1 245
+NC_004354.4	miniprot	CDS	19168992	19169516	906	-	0	Parent=MP000006;Rank=1;Identity=1.0000;Target=sp|Q9VWL5|INX5_DROME 246 419
+NC_004354.4	miniprot	stop_codon	19168992	19168994	0	-	0	Parent=MP000006;Rank=1
+##PAF	sp|Q9VR82|INX6_DROME	481	0	481	-	NC_004354.4	23542271	20267983	20269500	1443	1443	0	AS:i:2539	ms:i:2568	np:i:481	fs:i:0	st:i:0	da:i:0	do:i:0	cg:Z:227M74N254M	cs:Z::227~gt74ag:254
+NC_004354.4	miniprot	mRNA	20267981	20269500	2568	-	.	ID=MP000007;Rank=1;Identity=1.0000;Positive=1.0000;Target=sp|Q9VR82|INX6_DROME 1 481
+NC_004354.4	miniprot	CDS	20268820	20269500	1206	-	0	Parent=MP000007;Rank=1;Identity=1.0000;Target=sp|Q9VR82|INX6_DROME 1 227
+NC_004354.4	miniprot	CDS	20267981	20268745	1362	-	0	Parent=MP000007;Rank=1;Identity=1.0000;Target=sp|Q9VR82|INX6_DROME 228 481
+NC_004354.4	miniprot	stop_codon	20267981	20267983	0	-	0	Parent=MP000007;Rank=1
+##PAF	sp|Q9V3W6|INX7_DROME	438	0	438	-	NC_004354.4	23542271	6991732	6993413	1314	1314	0	AS:i:2275	ms:i:2339	np:i:438	fs:i:0	st:i:0	da:i:0	do:i:0	cg:Z:78M297N236M73V123M	cs:Z::78~gt297ag:236*aaN~gt70ag-t:123
+NC_004354.4	miniprot	mRNA	6991730	6993413	2339	-	.	ID=MP000008;Rank=1;Identity=1.0000;Positive=1.0000;Target=sp|Q9V3W6|INX7_DROME 1 438
+NC_004354.4	miniprot	CDS	6993180	6993413	404	-	0	Parent=MP000008;Rank=1;Identity=1.0000;Target=sp|Q9V3W6|INX7_DROME 1 78
+NC_004354.4	miniprot	CDS	6992173	6992882	1271	-	0	Parent=MP000008;Rank=1;Identity=1.0000;Target=sp|Q9V3W6|INX7_DROME 79 314
+NC_004354.4	miniprot	CDS	6991730	6992102	664	-	1	Parent=MP000008;Rank=1;Identity=1.0000;Target=sp|Q9V3W6|INX7_DROME 315 438
+NC_004354.4	miniprot	stop_codon	6991730	6991732	0	-	0	Parent=MP000008;Rank=1
+##PAF	sp|P33085|SHAKB_DROME	372	0	372	-	NC_004354.4	23542271	20772583	20784627	1116	1116	0	AS:i:1842	ms:i:2003	np:i:372	fs:i:0	st:i:0	da:i:0	do:i:0	cg:Z:120M8019N51M534V21M1943U55M60N59M381V63M	cs:Z::120~gt8019ag:51*agR~gt531ag-a:21*gG~gt1940ag-gt:55~gt60ag:59*agR~gt378ag-g:63
+NC_004354.4	miniprot	mRNA	20772581	20784627	2003	-	.	ID=MP000009;Rank=1;Identity=1.0000;Positive=1.0000;Target=sp|P33085|SHAKB_DROME 1 372
+NC_004354.4	miniprot	CDS	20784268	20784627	649	-	0	Parent=MP000009;Rank=1;Identity=1.0000;Target=sp|P33085|SHAKB_DROME 1 120
+NC_004354.4	miniprot	CDS	20776094	20776248	286	-	0	Parent=MP000009;Rank=1;Identity=1.0000;Target=sp|P33085|SHAKB_DROME 121 171
+NC_004354.4	miniprot	CDS	20775498	20775562	131	-	1	Parent=MP000009;Rank=1;Identity=1.0000;Target=sp|P33085|SHAKB_DROME 172 193
+NC_004354.4	miniprot	CDS	20773391	20773557	298	-	2	Parent=MP000009;Rank=1;Identity=1.0000;Target=sp|P33085|SHAKB_DROME 194 249
+NC_004354.4	miniprot	CDS	20773152	20773330	313	-	0	Parent=MP000009;Rank=1;Identity=1.0000;Target=sp|P33085|SHAKB_DROME 250 308
+NC_004354.4	miniprot	CDS	20772581	20772773	326	-	1	Parent=MP000009;Rank=1;Identity=1.0000;Target=sp|P33085|SHAKB_DROME 309 372
+NC_004354.4	miniprot	stop_codon	20772581	20772583	0	-	0	Parent=MP000009;Rank=1
+##PAF	sp|O01393|UNC9_CAEEL	386	20	311	+	NC_004354.4	23542271	6999185	7000016	282	924	0	AS:i:313	ms:i:313	np:i:150	fs:i:0	st:i:0	da:i:57	do:i:213	cg:Z:45M4I14M7D4M5D37M2I5M1I6M1I14M23I6M1D51M2D14M1D9M1D55M	cs:Z::1*aacD*aatI*gtcI*tttD*cgcK*atgL*cacN:1*aagY*gccY:1*gtgT*atcA:1*ctgI*atcT*gccV:1*tccA*ctcI:2*accS*tcgA*cgcK:2*atcV:1*gacF:2*gatQ:1*attW:1*gacP*gagA*atcT*ccaF*ctgT*ggcE*gtgP:1+EQYT*gacE*accN:3*atcV*tacQ*tctN:1*tttY*accF*gtgL:1*gagL-aggctaacgggcatcaccgga*cgcH:1*gtgY*gtgI-cagcccggcgtgggc*tccP:1*gtgN*gagY*ggcA:1*gacR:1*gtgN*aagR*tacQ*cacI*aagG:5*tgcP:3*ttcA*ttcL*cagE:1*atcL:5*cgcT*tatI*ctgV:1*aagR+LL:2*gaaQ*ggcS:1+I*cgcH*ctcV*aagQ*atgS:2+Q:1*gatA*ctcC*aacD:1*cctR*attL*gtgL*aacD*gatL:1*tgcS*aagR:1+RALQTIATNVEEALHVKHQVMSG*gatN:1*aaaL:1*atcL:1-gtc*gacN*tacL*ttcI:1*ggcC*aacT*ctgR*aacS*cgcS*cacG*aatA*ttcA*tacV*gccT:1*cgaL*ttcY*ttcI*gtgS*tgcV*gaaK*gccI:1*aacY*tttT:2*gtgI*attV:3*tacF*tttL*gtgL*gacN*ttcT:2*gacG*ggcN*gagR*ttcS*agcK*accW:2*agtL*gatQ:2-aagttc*actN*gagD:1*gagM*ccgN*gatG*gagR*cgcE*attW*gatE*cccE*atgS*gcgG*cggH-gtc:2*aagR:2*aaaL:1*acgD:1-cac*aaaE*tacV*ggtK*ccaV*tccL:1*agtN:1*cagH*accR:1*gacT*ggtV*ctgQ:3*cccM*ctgI:1*attM*gtcF:4*tacF*gtgL:5*ttcY*atcF*atcL:1*agcA*atcG*atgA*tcgT*ggaL*ataC:2*atcF:1*agaW:1*gctY*gttI*gtgS*gcgV*ggtV:1
+NC_004354.4	miniprot	mRNA	6999186	7000016	313	+	.	ID=MP000010;Rank=1;Identity=0.3052;Positive=0.4870;Target=sp|O01393|UNC9_CAEEL 21 311
+NC_004354.4	miniprot	CDS	6999186	7000016	313	+	0	Parent=MP000010;Rank=1;Identity=0.3052;Target=sp|O01393|UNC9_CAEEL 21 311
+##PAF	sp|Q1DH70|SHAKB_AEDAE	372	0	372	-	NC_004354.4	23542271	20772583	20784627	969	1116	0	AS:i:1637	ms:i:1798	np:i:349	fs:i:0	st:i:0	da:i:0	do:i:0	cg:Z:120M8019N51M534V21M1943U55M60N59M381V63M	cs:Z::13*gtcI:3*aaaN:3*ataP:14*tcaA:4*ataV:2*cgcK:17*gatE:8*cagH:3*acgA:8*cagV:1*gtgS*tcgE:5*atcV:5*gatK*ccgN*gcgI:3*cacI:14~gt8019ag:22*atcM:10*gccI:14*gaaD:2*agR~gt531ag-a:10*gtgI:2*ctgF:1*gccS:1*ataV:3*gG~gt1940ag-gt:13*ataM:4*aaaD:2*gatT*tatH:2*accA:21*tttY:3*tccV:3~gt60ag:2*aaaR:25*ttaI:2*tttI:2*ttaT:2*ctaI*ataF:2*gtgI*gttI:11*tttL:1*atgL:2*agR~gt378ag-g:23*ttaR:4*ataL:1*acaS*gttI:5*gtaM:7*ggaH*catN:8*ttaM:7
+NC_004354.4	miniprot	mRNA	20772581	20784627	1798	-	.	ID=MP000011;Rank=1;Identity=0.8683;Positive=0.9382;Target=sp|Q1DH70|SHAKB_AEDAE 1 372
+NC_004354.4	miniprot	CDS	20784268	20784627	565	-	0	Parent=MP000011;Rank=1;Identity=0.8583;Target=sp|Q1DH70|SHAKB_AEDAE 1 120
+NC_004354.4	miniprot	CDS	20776094	20776248	275	-	0	Parent=MP000011;Rank=1;Identity=0.9423;Target=sp|Q1DH70|SHAKB_AEDAE 121 171
+NC_004354.4	miniprot	CDS	20775498	20775562	122	-	1	Parent=MP000011;Rank=1;Identity=0.8182;Target=sp|Q1DH70|SHAKB_AEDAE 172 193
+NC_004354.4	miniprot	CDS	20773391	20773557	263	-	2	Parent=MP000011;Rank=1;Identity=0.8727;Target=sp|Q1DH70|SHAKB_AEDAE 194 249
+NC_004354.4	miniprot	CDS	20773152	20773330	280	-	0	Parent=MP000011;Rank=1;Identity=0.8333;Target=sp|Q1DH70|SHAKB_AEDAE 250 308
+NC_004354.4	miniprot	CDS	20772581	20772773	293	-	1	Parent=MP000011;Rank=1;Identity=0.8730;Target=sp|Q1DH70|SHAKB_AEDAE 309 372
+NC_004354.4	miniprot	stop_codon	20772581	20772583	0	-	0	Parent=MP000011;Rank=1
+##PAF	sp|Q9XYN1|INX2_SCHAM	359	0	357	+	NC_004354.4	23542271	6999128	7000199	837	1071	0	AS:i:1594	ms:i:1594	np:i:326	fs:i:0	st:i:0	da:i:0	do:i:30	cg:Z:357M	cs:Z::13*atcL:1*cagS:6*gtcL:2*atgL:35*ggcA:13*gtgI:1*gagN:2*acgN:1*atcK*accI:1*cgcL*gatE:1*gtgA*cagH:4*tccA:2*gagA:1*gagK:24*gtaI:6*tccT:5*ctcI:4*atgL:5*attV:2*gatE*gagQ*tgcS:1*aacA:4*atcL:5*attA*ggcT:2*aacH*cgcT*cacQ:4*ttcY:3*gtgI:9*attV:5*gtgM:1*ttcL:6*agcT:6*ttgV*aagR:3*ctgM:2*gatE:2*attS:3*gcgS:22*cacF:23*atcV:3*atcV*atgL*tcgT:2*tcgG:1*atcV:2*atcL:1*gttT*gtgA*gcgM:2*aagQ*ctcM:1*catM*ctcY:9*gaaP*agcQ*gagD*gagQ*gtcI:1*ctgT*gtgI*gccS:3*aacQ:5*ctgV:15*gtgL*atcV*tcgA:2*tccA*cgcK*gaaK*atgL*agcE:1*gatK:1
+NC_004354.4	miniprot	mRNA	6999129	7000199	1594	+	.	ID=MP000012;Rank=1;Identity=0.7815;Positive=0.9132;Target=sp|Q9XYN1|INX2_SCHAM 1 357
+NC_004354.4	miniprot	CDS	6999129	7000199	1594	+	0	Parent=MP000012;Rank=1;Identity=0.7815;Target=sp|Q9XYN1|INX2_SCHAM 1 357

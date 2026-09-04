@@ -1,0 +1,7 @@
+##gff-version 3
+##PAF	candidate_inx_008	207	48	194	+	JAQGDQ010000010.1	1569728	1183334	1183766	291	438	0	AS:i:512	ms:i:512	np:i:122	fs:i:0	st:i:0	da:i:51	do:i:582	cg:Z:51M2I93M	cs:Z::1*gtgF:1*gtaI:2*gtcL:2*gccS:3*ctcI:2*gtcL*ctgI:1*ttcV*tggY:1*tcaT:3*tggC:5*acgV:2*atcT:3*ctgI:2*atgV:3*atcV:1*cttI*tttI:1+ET*attL*gagD:1*aaaG*accH*accL*gacK*cagN*tttL*caaK*gacS:2*cgcK*gtgA:2*attV:2*atcV*atgL:2*ttcM:16*ttcY:2*cgcK*aatR:5*gggS*ttgM:7*ggcF*gtcI*atgL:12*gtcG:2*gagI*ggcQ:5*gacH*tcgA:6
+JAQGDQ010000010.1	miniprot	mRNA	1183335	1183766	512	+	.	ID=MP000001;Rank=1;Identity=0.6644;Positive=0.8356;Target=candidate_inx_008 49 194
+JAQGDQ010000010.1	miniprot	CDS	1183335	1183766	512	+	0	Parent=MP000001;Rank=1;Identity=0.6644;Target=candidate_inx_008 49 194
+##PAF	recovered_Adineta_vaga_best	465	9	95	+	JAQGDQ010000200.1	402226	128152	128396	81	259	0	AS:i:91	ms:i:91	np:i:38	fs:i:1	st:i:0	da:i:-1	do:i:33	cg:Z:21M1F1M5I59M	cs:Z::2*ccaL:9*acaS*acaS*acaA*ataL*acaL*acaS*acaS:2-a:1+ADDGQ*acaS*acaR:1*acaE*acaL*acgM:1*aacT*aacI:1*aagA*atcL*aacG*aacT*aacG*acaA*ccaA*cacS:1*cacL*cacK*caaK*caaV*caaP*caaN*catE*catL*catK*catL*caaH*caaK*caaN*caaP:1*caaL*caaR*caaE:1*caaT*caaT*caaN:1*cagP*cagV*tggE:2*agaN*catK:2*tatE*tttI*agcM*ataS*aagS*cttK:2
+JAQGDQ010000200.1	miniprot	mRNA	128153	128396	91	+	.	ID=MP000002;Rank=1;Identity=0.3127;Positive=0.4402;Frameshift=1;Target=recovered_Adineta_vaga_best 10 95
+JAQGDQ010000200.1	miniprot	CDS	128153	128396	91	+	0	Parent=MP000002;Rank=1;Identity=0.3127;Frameshift=1;Target=recovered_Adineta_vaga_best 10 95

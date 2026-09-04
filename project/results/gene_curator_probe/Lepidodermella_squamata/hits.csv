@@ -1,0 +1,3 @@
+seqid,start,end,strand,identity,aa_length,cys,stops,verdict,target,el1_cys,el2_cys,el_motif,tm_pred
+JBLDXI010000033.1,1409302,1410086,-,0.5294,183,2,0,fragmentary,candidate_inx_008 10 194,,,unresolved,2
+JBLDXI010000001.1,2735694,2736122,-,0.4685,143,2,0,weak,candidate_inx_008 48 190,,,unresolved,2

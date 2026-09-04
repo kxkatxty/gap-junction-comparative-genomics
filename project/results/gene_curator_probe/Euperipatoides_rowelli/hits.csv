@@ -1,0 +1,2 @@
+seqid,start,end,strand,identity,aa_length,cys,stops,verdict,target,el1_cys,el2_cys,el_motif,tm_pred
+PXIH01S0042569.1,2699,3133,+,0.6233,145,1,0,weak,candidate_inx_008 49 194,,,unresolved,2

@@ -1,0 +1,4 @@
+##gff-version 3
+##PAF	candidate_inx_008	207	38	194	-	NOWV01000010.1	1104365	602146	602638	228	492	0	AS:i:402	ms:i:402	np:i:112	fs:i:0	st:i:0	da:i:12	do:i:525	cg:Z:65M8D91M	cs:Z::1*attE:2*ttcC*atgR*aacE*aatP*tcaL*gcgP*attL*gaaF*gtcI:2*gtgA*attL:2*gtaS:3*ttcI:2*gttL*gttI:1*tttV*ttaY*tccA*tcaT:3*tggC*caaK:1*ttaF:2*ctgV:2*ataT:6*ttgV:3*attV*aacS*ttaI:1*gctL*attE*aatT*ataL*gaaD-cgaaggcagactgatgttaatagt:1*gagG*gacH*tttL:1*ggtN*atcL*gagK*ggtS*attV*gctR:1*tcaA*ttaV*ttaQ*ttaV*ataF:1*atgV:2*gttI*ttaM:1*gtgI:7*tcaT:3*attS:2*ttgY:3*aaaR:1*tggY*cgtK:2*tttS*ttaM:1*aatL*ttaM:2*actA:1*ggcF*gttI*accL*ataL:2*ggaS*tttL*gttA:1*tatF:2*aggK:1*gttG:1*ggtA*actI:2*aaaR:3*ggaH*actA:3*ggaA*tatS:1
+NOWV01000010.1	miniprot	mRNA	602147	602638	402	-	.	ID=MP000001;Rank=1;Identity=0.4634;Positive=0.6829;Target=candidate_inx_008 39 194
+NOWV01000010.1	miniprot	CDS	602147	602638	402	-	0	Parent=MP000001;Rank=1;Identity=0.4634;Target=candidate_inx_008 39 194

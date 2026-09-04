@@ -1,0 +1,6 @@
+##gff-version 3
+##PAF	recovered_Adineta_vaga_best	465	7	94	-	CM110748.1	7374308	2878202	2897337	102	261	0	AS:i:88	ms:i:128	np:i:51	fs:i:0	st:i:0	da:i:-1	do:i:117	cg:Z:33M6I11M16222V10M2691U3M2I3M2I1M1I13M	cs:Z::1*cctQ:2*cctL:11*tccA*tccL*tccL:2*tccT*cccT*tccH*tccA*tccD*tccD*tccG*tccQ:1*tccR*tccT*cccE+LMNTIN*tccA*tccL*tccG*tccT*tccG*tccA*tccA:1*cccH:1*agaK*caK~gt16219ag-c*tccV:3*attL:1*aaaL*tacH*tgtK:1*gP~gt2688ag-ag*cgaQ:1*aaaR+EQ*gtgT*gttT*tgtN+QP:1+E*gaaQ*accS:2*acgS:2*gttI:3*tcgK:1
+CM110748.1	miniprot	mRNA	2878203	2897337	128	-	.	ID=MP000001;Rank=1;Identity=0.3908;Positive=0.5862;Target=recovered_Adineta_vaga_best 8 94
+CM110748.1	miniprot	CDS	2897204	2897337	85	-	0	Parent=MP000001;Rank=1;Identity=0.3725;Target=recovered_Adineta_vaga_best 8 57
+CM110748.1	miniprot	CDS	2880953	2880984	25	-	1	Parent=MP000001;Rank=1;Identity=0.4545;Target=recovered_Adineta_vaga_best 58 68
+CM110748.1	miniprot	CDS	2878203	2878264	18	-	2	Parent=MP000001;Rank=1;Identity=0.4000;Target=recovered_Adineta_vaga_best 69 94

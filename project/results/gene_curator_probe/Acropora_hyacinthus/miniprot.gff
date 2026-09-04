@@ -1,0 +1,7 @@
+##gff-version 3
+##PAF	candidate_inx_008	207	49	194	-	OZ197756.1	27351320	26356795	26357209	207	435	0	AS:i:363	ms:i:363	np:i:97	fs:i:0	st:i:0	da:i:657	do:i:18	cg:Z:62M7I76M	cs:Z::1*gtgI:2*attA:3*actS:3*ttcI:3*gtgI:1*ctaV*ttgY*tcgA*gcgT:1*cagN:1*ttaC*gtcK:1*cttF*cgcK*tcgG*tttV:2*gtaT:3*gtgI:2*cttV:1*tacF:1*attV*actS*ctgI*ccgI*atgL*aacE*gagT*gcgL*cccD*gtgT*acgG*tcgH:1*accK*gtgN:1*cggK+SVRKAVQ:1*attF:1*cttV*gttL:1*gttI*tttM:2*ttcL:2*tcaA:3*aaaT:3*gtaS:5*cgtK*tcaR:1*tcaY*aggK:2*gccS:2*attL*ttcM:2*cttA:1*ggcF*gtgI*attL:2*gctS:1*gctL*gttA:1*tacF:2*caaK:1*agcG*cctN*gaaA*agtI*aacQ:1*acaR:3*gatH:5*gtaS*gttI
+OZ197756.1	miniprot	mRNA	26356796	26357209	363	-	.	ID=MP000001;Rank=1;Identity=0.4759;Positive=0.6690;Target=candidate_inx_008 50 194
+OZ197756.1	miniprot	CDS	26356796	26357209	363	-	0	Parent=MP000001;Rank=1;Identity=0.4759;Target=candidate_inx_008 50 194
+##PAF	sp|Q1DH70|SHAKB_AEDAE	372	267	312	+	OZ197753.1	29534704	25323916	25324049	54	135	0	AS:i:69	ms:i:69	np:i:31	fs:i:1	st:i:0	da:i:-1	do:i:156	cg:Z:12M1G32M	cs:Z:*gtcI*ttcY*gttI:1*gtgL*tttW:1*ttcW:1*gtcI:1*attL*tT*tttI:1*cgtT*tttT:1*cgtT*cgtI*cttF*cttY:1*catI*cgtI*cttI*cttI*cttF*cgtS*cttP:1*cttM:2*tttY:6*tttR:1*cttV:1
+OZ197753.1	miniprot	mRNA	25323917	25324049	69	+	.	ID=MP000002;Rank=1;Identity=0.4000;Positive=0.6889;Frameshift=1;Target=sp|Q1DH70|SHAKB_AEDAE 268 312
+OZ197753.1	miniprot	CDS	25323917	25324049	69	+	0	Parent=MP000002;Rank=1;Identity=0.4000;Frameshift=1;Target=sp|Q1DH70|SHAKB_AEDAE 268 312

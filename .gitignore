@@ -25,6 +25,9 @@ project/results/**/_cache/
 
 # Huge local data — keep on disk, do not push to GitHub
 project/data/
+# Exception: small UniProt reference panels needed for reproducibility
+!project/data/references/
+!project/data/references/**
 project/logs/
 
 # Genome / sequencing dumps (anywhere)
