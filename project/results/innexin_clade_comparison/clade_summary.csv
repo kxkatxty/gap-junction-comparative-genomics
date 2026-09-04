@@ -1,9 +1,10 @@
 clade,n_loci,n_species,n_reference,n_discovery_old,n_curator_new,median_length_aa,median_identity_pct,top_reference_types
-Annelida,12,1,0,0,12,366,38.8,unc-9:6; unc-7:6
-Arthropoda (non-insect),41,7,0,2,39,353,58.5,other/unknown:19; shakB:9; Inx2:8; unc-9:3; Inx1/ogre:2
-Ctenophora,2,2,0,2,0,214,,other/unknown:2
-Mollusca,39,4,0,0,39,372,37.9,unc-7:20; unc-9:14; Inx2:4; shakB:1
+Annelida,16,1,0,0,16,373,36.5,unc-9:9; unc-7:5; shakB:2
+Arthropoda (non-insect),102,7,0,2,100,356,46.1,Inx2:31; shakB:27; Inx1/ogre:24; Inx3:8; other/unknown:4
+Ctenophora,17,2,0,2,15,297,37.6,Inx1/ogre:4; Inx2:4; Inx3:3; other/unknown:2; unc-7:2
+Insecta,9,1,0,0,9,395,100.0,Inx3:2; Inx1/ogre:1; Inx7:1; Inx2:1; Inx5:1
+Mollusca,59,4,0,0,59,380,36.9,unc-9:28; unc-7:20; Inx7:5; Inx2:4; shakB:2
 Other,1,1,0,0,1,183,52.9,other/unknown:1
 Reference insect,13,4,13,0,0,372,,shakB:3; Inx4/zpg:2; Inx2:2; Inx1/ogre:2; Inx3:1
 Reference nematode,17,2,17,0,0,423,,other/unknown:14; other nematode:1; unc-7:1; unc-9:1
-Rotifera,39,7,0,2,37,370,35.9,unc-9:15; other/unknown:11; unc-7:7; shakB:3; inx-2 (Cele):3
+Rotifera,91,7,0,2,89,376,34.6,unc-9:38; unc-7:25; other/unknown:16; shakB:7; inx-2 (Cele):3

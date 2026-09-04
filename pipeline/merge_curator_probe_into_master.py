@@ -52,15 +52,14 @@ def curator_rows(*, include_known: bool) -> list[dict[str, object]]:
             idx += 1
             length = int(hit["aa_length"])
             verdict = hit["verdict"]
-            if verdict == "present" and length >= 300:
+            # Unify with curator classifier present gate (280 aa). Do not invent
+            # rubric-style scores: leave rank_score empty and mark evidence tier.
+            if verdict == "present" and length >= 280:
                 rank = "curator_present_innexin"
-                score = 55.0
             elif verdict == "present":
                 rank = "weak_manual_review"
-                score = 40.0
             else:
                 rank = "weak_manual_review"
-                score = 25.0
             rows.append(
                 {
                     "family": "innexin",
@@ -79,8 +78,8 @@ def curator_rows(*, include_known: bool) -> list[dict[str, object]]:
                     "reference_coverage": "",
                     "best_reference_hit": hit.get("target", ""),
                     "rank_category": rank,
-                    "rank_score": score,
-                    "validation_flags": f"curator_{verdict}",
+                    "rank_score": "",  # not a discovery rubric score
+                    "validation_flags": f"curator_{verdict};evidence_tier=threshold_classifier",
                     "results_dir": f"project/results/gene_curator_probe/{species}",
                 }
             )

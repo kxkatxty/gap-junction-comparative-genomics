@@ -53,7 +53,7 @@ details.appendix summary:hover{color:var(--blue)}
 </style></head><body>
 <div class='layout'>
 <nav><h2>Key findings</h2>
-<a href='#finding-1' title='Curator recovery: 16 new/rescued species, 116 present innexin loci'>1. Curator recovery: 16 new/rescued species, …</a>
+<a href='#finding-1' title='True rescues: 3 species (≥28 loci, floor); +14 first-pass curator hits'>1. True rescues: 3 species (≥28 loci, floor);…</a>
 <a href='#finding-2' title='Connexins have longer introns than innexins at similar exon counts'>2. Connexins have longer introns than innexin…</a>
 <a href='#finding-3' title='Innexin exon counts differ a lot across species'>3. Innexin exon counts differ a lot across sp…</a>
 <a href='#finding-4' title='Innexin exon counts differ a lot across species'>4. Innexin exon counts differ a lot across sp…</a>
@@ -74,10 +74,11 @@ details.appendix summary:hover{color:var(--blue)}
 <div class='stats'>
 <span class='stat'><b>13</b> findings</span>
 <span class='stat'><b>272</b> accepted candidates</span>
-<span class='stat'><b>16</b> new/rescued spp · <b>116</b> curator loci</span>
+<span class='stat'><b>3</b> rescued spp · <b>≥28</b> loci (floor)</span>
+<span class='stat'><b>14</b> first-pass spp · <b>≥178</b> loci</span>
 </div></div>
 <div class='guide'><h2>Order</h2><ol>
-<li><a href='#finding-1'>Curator recovery: 16 new/rescued species, 116 present innexin loci</a></li>
+<li><a href='#finding-1'>True rescues: 3 species (≥28 loci, floor); +14 first-pass curator hits</a></li>
 <li><a href='#finding-2'>Connexins have longer introns than innexins at similar exon counts</a></li>
 <li><a href='#finding-3'>Innexin exon counts differ a lot across species</a></li>
 <li><a href='#finding-4'>Innexin exon counts differ a lot across species</a></li>
@@ -94,7 +95,7 @@ details.appendix summary:hover{color:var(--blue)}
 <section id='findings'>
 <p class='section-intro'>Selected results in the same order as index.html.</p>
 <div class='findings-list'>
-<article class='finding-card key' id='finding-1'><span class='badge'>Finding 1</span><p class='finding-headline'>Curator recovery: 16 new/rescued species, 116 present innexin loci</p><p class='caption' style='margin-top:0'><em>02 innexin candidates</em></p><img src='discovery/02_innexin_candidates.png' alt='02 innexin candidates' loading='lazy' onclick="openModal(this.src)"><p class='caption'>Genome-direct curator re-probe recovered long innexin-like products across rotifers, molluscs, arthropods and polychaetes. Highlights include rescued Rotaria macrura / Brachionus manjavacas and new spider loci (Amaurobius, Aelurillus, Agelena).</p><p class='script'>The first automated innexin search looked sparse — only 17 candidates. A genome-direct curator pass changed that: 16 new or rescued species and 116 present loci. Rotaria is no longer a blank; spiders and rotifers now carry clear UNC-9/Inx2-like models.</p></article>
+<article class='finding-card key' id='finding-1'><span class='badge'>Finding 1</span><p class='finding-headline'>True rescues: 3 species (≥28 loci, floor); +14 first-pass curator hits</p><p class='caption' style='margin-top:0'><em>02 innexin candidates</em></p><img src='discovery/02_innexin_candidates.png' alt='02 innexin candidates' loading='lazy' onclick="openModal(this.src)"><p class='caption'>Rescue means prior discovery ran and accepted=0 — Rotaria macrura, Brachionus manjavacas, Abra alba — not every species with prior_discovery=not_run. Most curator positives are first-time probes of genomes never run through discovery. Locus counts are floors (Dmel: miniprot-only 3/8 → region locate 7–8/8). Counts near the query-pack size can track queries; region locate can exceed the pack (e.g. Acanthocardia ≥22 with 15 queries).</p><p class='script'>Correct framing: 3 true rescues (prior discovery accepted=0; ≥28 loci). Separately, 14 species were never run through discovery (not_run) and first show curator hits (≥178 loci). Do not call the whole set 'rescued'.</p></article>
 <article class='finding-card key' id='finding-2'><span class='badge'>Finding 2</span><p class='finding-headline'>Connexins have longer introns than innexins at similar exon counts</p><p class='caption' style='margin-top:0'><em>08 intron architecture</em></p><img src='comparison/08_intron_architecture.png' alt='08 intron architecture' loading='lazy' onclick="openModal(this.src)"><p class='caption'>Scatter of exon count vs mean intron length (log scale). Connexin genes occupy a different intron-size regime than innexins.</p><p class='script'>At comparable exon numbers, connexin introns are systematically longer. This supports treating the two families as separate architectural lineages, not just different species panels.</p></article>
 <article class='finding-card key' id='finding-3'><span class='badge'>Finding 3</span><p class='finding-headline'>Innexin exon counts differ a lot across species</p><p class='caption' style='margin-top:0'><em>innexin genomic exon map</em></p><img src='imported/exon_maps/innexin_genomic_exon_map.png' alt='innexin genomic exon map' loading='lazy' onclick="openModal(this.src)"><p class='caption'>C. elegans innexins reach up to 9 exons; Drosophila shakB has only 1 exon; ogre spans 6–8 exons. Same protein family, very different gene structures.</p><p class='script'>Innexin gene architecture is not conserved. Nematode inx genes are multi-exon, Drosophila shakB is a single exon, and ogre is huge. Architecture alone cannot define orthology.</p></article>
 <article class='finding-card key' id='finding-4'><span class='badge'>Finding 4</span><p class='finding-headline'>Innexin exon counts differ a lot across species</p><p class='caption' style='margin-top:0'><em>innexin genomic exon map</em></p><img src='imported/exon_maps/innexin_genomic_exon_map.png' alt='innexin genomic exon map' loading='lazy' onclick="openModal(this.src)"><p class='caption'>C. elegans innexins reach up to 9 exons; Drosophila shakB has only 1 exon; ogre spans 6–8 exons. Same protein family, very different gene structures.</p><p class='script'>Innexin gene architecture is not conserved. Nematode inx genes are multi-exon, Drosophila shakB is a single exon, and ogre is huge. Architecture alone cannot define orthology.</p></article>

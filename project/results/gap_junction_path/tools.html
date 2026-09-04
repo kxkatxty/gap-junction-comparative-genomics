@@ -64,14 +64,25 @@ code {
         score floor ≥ 30; HSP filters ≥ 60 bp, ≥ 20 aa query, ≥ 18% identity (short hits ≥ 35 aa and ≥ 22%);
         locus clustering gap ≤ 8 kb with ±2 kb flanks; large genomes (&gt;4 GB) run per-contig with
         contig ≥ 1 Mb and up to 3 parallel jobs.<br>
-        <strong>Curator probe</strong>: <code>--outs=0.5</code>, 4 threads; keep models with identity ≥ 0.20
-        and length ≥ 280 aa / ≥ 4 Cys (present), ≥ 180 aa (fragmentary), or ≥ 100 aa (weak).
+        <strong>Curator probe</strong> (stricter; preferred for presence calls):
+        identity ≥ 0.20, length ≥ 280 aa, stop-free, Cys≥4 anywhere in the product
+        (whole-protein count — <em>not</em> a 2+2 extracellular-loop motif test).
+        Region locate (tblastn → per-region miniprot) is the default; whole-genome
+        miniprot alone under-recovers on Dmel (3/8). Counts are floors; max values
+        near the query-pack size may track queries rather than genome content.<br>
+        <strong>Why discovery “high confidence” was replaced:</strong>
+        discovery acceptance used reference identity ≥ 15%
+        (<code>MIN_REFERENCE_IDENTITY = 15.0</code> in <code>discover_innexins.py</code>),
+        which is too permissive for presence claims. Curator thresholds are the ones
+        that survived manual locus checks.
       </div>
     </li>
     <li>
       <b>samtools</b>
       <span>FAI indexing and region extraction for translating miniprot models.</span>
-      <div class="params"><code>samtools faidx</code> on genome FASTAs; region pull for CDS spans before Biopython translation.</div>
+      <div class="params"><code>samtools faidx</code> on genome FASTAs; region pull for CDS spans before Biopython translation.
+        Translated products are often alignment spans without initiator Met — report as
+        product/alignment length, not mature protein length.</div>
     </li>
     <li>
       <b>MMseqs2</b> — candidate typing
@@ -79,7 +90,10 @@ code {
       <div class="params">
         <code>easy-search</code>, <code>--search-type 1</code> (protein), <code>-e 1e-5</code>,
         <code>-s 5.7</code>, format <code>query,target,pident,qcov,bits</code>.
-        Keep ranks with reference identity ≥ 15%; protein length window ~150–750 aa (innexin) / similar for connexin.
+        Discovery keep ranks used reference identity ≥ 15% (legacy; do not treat as
+        high-confidence presence). Curator evidence is threshold-classified separately
+        and should not share the same score column as rubric-computed discovery scores
+        (hardcoded merge placeholders 55/40 were placeholders, not computed ranks).
       </div>
     </li>
   </ul>

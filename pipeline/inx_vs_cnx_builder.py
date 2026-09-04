@@ -266,7 +266,7 @@ def plot_copy_number(inx: pd.DataFrame, cnx: pd.DataFrame, path: Path) -> None:
     )
 
     fig.suptitle(
-        "Panel loci per species — not full vertebrate connexin gene repertoires",
+        "Panel loci per species (lower bound / floor) — not full vertebrate connexin gene repertoires",
         fontsize=11.5,
         y=1.02,
     )

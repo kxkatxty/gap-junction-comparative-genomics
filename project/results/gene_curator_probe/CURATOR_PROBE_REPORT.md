@@ -34,6 +34,14 @@ Expectation: bdelloid / monogonont rotifers should carry innexins (sister *Adine
 
 ## Results — *Rotaria macrura*
 
+**Number to publish (resolve discrepancy):**
+
+| Source | Present count | What it means |
+|--------|---------------|---------------|
+| This hand table (2026-08-09) | **3** | Manually verified PRESENT products below |
+| Early automated `hits.csv` / batch summary | **5** | Classifier `present` under miniprot-only pack |
+| Current batch (`tblastn-regions`, expanded queries) | **≥11** (floor) | Do not cite 3 and 5 side-by-side without this table |
+
 | Locus | Identity | Product | Curator verdict |
 |-------|----------|---------|-----------------|
 | OENT01000045.1:119094–122499 | 0.36 vs UNC-9 | **386 aa**, 0 stop, 8 Cys | **PRESENT (missed by filter)** |
@@ -41,6 +49,8 @@ Expectation: bdelloid / monogonont rotifers should carry innexins (sister *Adine
 | OENT01001445.1:20220–22805 | 0.36 vs UNC-9 | **370 aa**, 0 stop, 8 Cys | **PRESENT (missed by filter)** |
 | OENT01000099.1:209084–209674 | 0.88 vs Adineta short | 197 aa | **FRAGMENTARY**; window ORF ~307 aa recoverable |
 | OENT01000318.1:41780–42364 | 0.81 vs Adineta short | 195 aa | **FRAGMENTARY** |
+
+**Note:** translated products above typically **lack initiator Met** — they are miniprot alignment spans, not complete proteins.
 
 **Why the pipeline said zero:** it kept only short models (104–158 aa) and rejected them as `too_short` / `few_tm_helices`.  
 **tblastn had already hit** the same contigs (homology was present); the **gene-model / length filter** dropped the real products.

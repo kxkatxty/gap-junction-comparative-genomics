@@ -1,14 +1,14 @@
 reference_type,subfamily,n_loci,n_clades,clades,n_curator,n_reference
-Inx1/ogre,SF2_Inx1_ogre,4,2,Arthropoda (non-insect); Reference insect,2,2
-Inx2,SF4_Inx2_expansion,14,3,Arthropoda (non-insect); Mollusca; Reference insect,12,2
-Inx3,SF3_Inx3_Inx7_nematode,1,1,Reference insect,0,1
-Inx4/zpg,SF4_Inx2_expansion,2,1,Reference insect,0,2
-Inx5,SF4_Inx2_expansion,1,1,Reference insect,0,1
-Inx6,SF4_Inx2_expansion,1,1,Reference insect,0,1
-Inx7,SF3_Inx3_Inx7_nematode,1,1,Reference insect,0,1
+Inx1/ogre,SF2_Inx1_ogre,31,4,Arthropoda (non-insect); Ctenophora; Insecta; Reference insect,29,2
+Inx2,SF4_Inx2_expansion,43,6,Arthropoda (non-insect); Ctenophora; Insecta; Mollusca; Reference insect; Rotifera,41,2
+Inx3,SF3_Inx3_Inx7_nematode,14,4,Arthropoda (non-insect); Ctenophora; Insecta; Reference insect,13,1
+Inx4/zpg,SF4_Inx2_expansion,5,3,Arthropoda (non-insect); Insecta; Reference insect,3,2
+Inx5,SF4_Inx2_expansion,2,2,Insecta; Reference insect,1,1
+Inx6,SF4_Inx2_expansion,3,3,Arthropoda (non-insect); Insecta; Reference insect,2,1
+Inx7,SF3_Inx3_Inx7_nematode,9,5,Arthropoda (non-insect); Insecta; Mollusca; Reference insect; Rotifera,8,1
 inx-2 (Cele),SF3_Inx3_Inx7_nematode,3,1,Rotifera,3,0
 other nematode,SF3_Inx3_Inx7_nematode,1,1,Reference nematode,0,1
-other/unknown,unassigned,47,5,Arthropoda (non-insect); Ctenophora; Other; Reference nematode; Rotifera,27,14
-shakB,SF1_shakB,16,4,Arthropoda (non-insect); Mollusca; Reference insect; Rotifera,13,3
-unc-7,SF3_Inx3_Inx7_nematode,34,4,Annelida; Mollusca; Reference nematode; Rotifera,33,1
-unc-9,SF3_Inx3_Inx7_nematode,39,5,Annelida; Arthropoda (non-insect); Mollusca; Reference nematode; Rotifera,38,1
+other/unknown,unassigned,37,5,Arthropoda (non-insect); Ctenophora; Other; Reference nematode; Rotifera,17,14
+shakB,SF1_shakB,42,6,Annelida; Arthropoda (non-insect); Insecta; Mollusca; Reference insect; Rotifera,39,3
+unc-7,SF3_Inx3_Inx7_nematode,54,6,Annelida; Arthropoda (non-insect); Ctenophora; Mollusca; Reference nematode; Rotifera,53,1
+unc-9,SF3_Inx3_Inx7_nematode,81,6,Annelida; Arthropoda (non-insect); Ctenophora; Mollusca; Reference nematode; Rotifera,80,1

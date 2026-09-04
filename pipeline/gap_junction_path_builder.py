@@ -601,16 +601,19 @@ a { color:var(--sea) }
     <p>
       Innexins predominate among invertebrate gap-junction channels in this panel (exceptions exist in
       chordates via pannexins). We searched 51 genomes and recovered
-      142 present loci in 20 species (16 of those were new or previously blank). With the reference
-      panel that is 164 loci in 28 species. Typical products are ~350–420 aa, four TM helices, and
-      two conserved cysteines in each extracellular loop (4 per monomer). Coding-region gene models
-      are intron-rich (panel median ~5 exons), so one locus can give several splice isoforms —
-      familiar from Drosophila / mosquito shakB.
+      ≥250 present loci (floor) in 21 species. <strong>True rescues</strong> (prior discovery
+      ran, accepted=0): <strong>3 species</strong> — Rotaria macrura, Brachionus manjavacas,
+      Abra alba (≥28 loci). Most other curator positives are <em>first-pass</em> probes of
+      genomes with <code>prior_discovery=not_run</code>, not rescues. With the reference
+      panel that is 164 loci in 28 species. Typical products are ~350–420 aa <em>alignment
+      spans</em> (miniprot CDS translations; often lack initiator Met — not mature ORFs),
+      four TM helices, and a whole-protein Cys≥4 cleanliness check (not a verified 2+2 EL
+      motif test). Coding-region gene models are intron-rich (panel median ~5 exons).
     </p>
     <div class="facts">
-      <div class="fact"><b>51</b><span>genomes searched</span></div>
-      <div class="fact"><b>20</b><span>species with present loci</span></div>
-      <div class="fact"><b>142</b><span>present innexin loci</span></div>
+      <div class="fact"><b>52</b><span>genomes searched</span></div>
+      <div class="fact"><b>3</b><span>true rescues (accepted=0)</span></div>
+      <div class="fact"><b>≥250</b><span>present loci (floor)</span></div>
       <div class="fact"><b>4</b><span>tree subfamilies (SF1–SF4)</span></div>
     </div>
     <p>
@@ -641,7 +644,7 @@ a { color:var(--sea) }
       <a class="card" href="../new_species_gallery/index.html">
         <div class="kicker">Recoveries</div>
         <h3>New species gallery</h3>
-        <p>16 new/rescued species, 142 present loci.</p>
+        <p>3 true rescues (≥28 loci); 21 spp with present floors (≥250).</p>
         <div class="go">Open →</div>
       </a>
       <a class="card" href="../innexin_subfamilies/index.html">
@@ -990,14 +993,28 @@ code {
         score floor ≥ 30; HSP filters ≥ 60 bp, ≥ 20 aa query, ≥ 18% identity (short hits ≥ 35 aa and ≥ 22%);
         locus clustering gap ≤ 8 kb with ±2 kb flanks; large genomes (&gt;4 GB) run per-contig with
         contig ≥ 1 Mb and up to 3 parallel jobs.<br>
-        <strong>Curator probe</strong>: <code>--outs=0.5</code>, 4 threads; keep models with identity ≥ 0.20
-        and length ≥ 280 aa / ≥ 4 Cys (present), ≥ 180 aa (fragmentary), or ≥ 100 aa (weak).
+        <strong>Curator probe</strong> (stricter; preferred for presence calls):
+        identity ≥ 0.20, length ≥ 280 aa, stop-free; extracellular Cys motif
+        tested via Kyte–Doolittle TM spans (EL1 between TM1–TM2, EL2 between TM3–TM4,
+        ≥2 Cys each, 6 aa edge pad). Motif <strong>pass</strong> → present;
+        motif <strong>fail</strong> with 4+ TM → demoted to fragmentary;
+        motif <strong>unresolved</strong> (&lt;4 TM predicted) falls back to whole-protein Cys≥4.
+        Region locate (tblastn → per-region miniprot) is the default; whole-genome
+        miniprot alone under-recovers on Dmel (3/8). Counts are floors; max values
+        near the query-pack size may track queries rather than genome content.<br>
+        <strong>Why discovery “high confidence” was replaced:</strong>
+        discovery acceptance used reference identity ≥ 15%
+        (<code>MIN_REFERENCE_IDENTITY = 15.0</code> in <code>discover_innexins.py</code>),
+        which is too permissive for presence claims. Curator thresholds are the ones
+        that survived manual locus checks.
       </div>
     </li>
     <li>
       <b>samtools</b>
       <span>FAI indexing and region extraction for translating miniprot models.</span>
-      <div class="params"><code>samtools faidx</code> on genome FASTAs; region pull for CDS spans before Biopython translation.</div>
+      <div class="params"><code>samtools faidx</code> on genome FASTAs; region pull for CDS spans before Biopython translation.
+        Translated products are often alignment spans without initiator Met — report as
+        product/alignment length, not mature protein length.</div>
     </li>
     <li>
       <b>MMseqs2</b> — candidate typing
@@ -1005,7 +1022,10 @@ code {
       <div class="params">
         <code>easy-search</code>, <code>--search-type 1</code> (protein), <code>-e 1e-5</code>,
         <code>-s 5.7</code>, format <code>query,target,pident,qcov,bits</code>.
-        Keep ranks with reference identity ≥ 15%; protein length window ~150–750 aa (innexin) / similar for connexin.
+        Discovery keep ranks used reference identity ≥ 15% (legacy; do not treat as
+        high-confidence presence). Curator evidence is threshold-classified separately
+        and should not share the same score column as rubric-computed discovery scores
+        (hardcoded merge placeholders 55/40 were placeholders, not computed ranks).
       </div>
     </li>
   </ul>

@@ -610,7 +610,8 @@ def key_findings(rows: list[dict]) -> list[str]:
     if non_insect:
         findings.append(
             f"Outside insects, {sf3}/{len(non_insect)} kept loci map (via best-hit) to SF3 "
-            "(Inx3/Inx7 + nematode-like references), consistent with the tree grouping."
+            "(Inx3/Inx7 + nematode-like references). This is a query-pack / best-hit "
+            "composition effect, not independent agreement with the tree."
         )
     # clade with most loci
     if disc:
@@ -624,7 +625,10 @@ def key_findings(rows: list[dict]) -> list[str]:
     for a, b in (("Rotifera", "Mollusca"), ("Arthropoda (non-insect)", "Rotifera"), ("Reference insect", "Reference nematode")):
         ma, mb = med_len(a), med_len(b)
         if ma and mb:
-            findings.append(f"Median protein length: {a} {ma:.0f} aa vs {b} {mb:.0f} aa.")
+            findings.append(
+                f"Median miniprot product/alignment length (often no initiator Met): "
+                f"{a} {ma:.0f} aa vs {b} {mb:.0f} aa — not mature protein lengths."
+            )
     # classical types present in reference
     ref_types = sorted({r["reference_type"] for r in rows if r["source"] == "reference_db"})
     findings.append("Reference DB covers classical labels: " + ", ".join(ref_types) + ".")

@@ -43,10 +43,10 @@ NOTES = {
     "Rotaria_macrura": "Rescued: prior search had candidates but zero accepted loci.",
     "Brachionus_manjavacas": "Rescued: prior accepted=0; curator recovered present models.",
     "Abra_alba": "Rescued: prior accepted=0; now a clear multi-locus molluscan hit.",
-    "Agelena_orientalis": "New spider genome with strong UNC-9/Inx-like identity (~56%).",
-    "Amaurobius_ferox": "New spider expansion — 11 present loci.",
-    "Aelurillus_cypriotus": "New jumping-spider genome; large-genome round.",
-    "Acanthocardia_echinata": "Highest molluscan yield in this batch (14 present loci).",
+    "Agelena_orientalis": "New spider genome; strong UNC-9/Inx-like identity (≥12, miniprot floor).",
+    "Amaurobius_ferox": "New spider expansion — ≥14 present loci (floor; tblastn-regions).",
+    "Aelurillus_cypriotus": "New jumping-spider genome; large-genome round (≥11, miniprot floor).",
+    "Acanthocardia_echinata": "Highest molluscan yield in this batch (≥22 present loci, floor).",
     "Streblospio_benedicti": "First polychaete with a clear multi-locus curator recovery.",
     "Adineta_steineri": "Highest identity among new rotifers (best id ~73%).",
     "Acartia_tonsa": "Copepod with strong best-hit identity (~65%).",
@@ -160,7 +160,7 @@ def _species_card(s: dict) -> str:
   <h3><em>{html.escape(s['name'])}</em></h3>
   <div class="metrics">
     <div class="metric"><b>{s['present']}</b><span>present loci</span></div>
-    <div class="metric"><b>{s['best_aa']}</b><span>best length (aa)</span></div>
+    <div class="metric"><b>{s['best_aa']}</b><span>best align. span (aa)</span></div>
     <div class="metric"><b>{s['best_id']:.0%}</b><span>best identity</span></div>
   </div>
   <div class="idrow"><span>Identity</span>{_bar(s['best_id'])}<b>{s['best_id']:.1%}</b></div>
@@ -172,8 +172,14 @@ def _species_card(s: dict) -> str:
 
 
 def build_html(species: list[dict]) -> str:
-    new = [s for s in species if s["is_new"]]
-    expanded = [s for s in species if not s["is_new"]]
+    rescued = [s for s in species if s["status"] == "rescued"]
+    firstpass = [s for s in species if s["status"] == "new"]
+    new = rescued + firstpass  # gallery cards: first curator hit in this project
+    expanded = [s for s in species if s["status"] == "expanded"]
+    n_rescued = len(rescued)
+    n_loci_rescued = sum(s["present"] for s in rescued)
+    n_first = len(firstpass)
+    n_loci_first = sum(s["present"] for s in firstpass)
     n_new = len(new)
     n_loci_new = sum(s["present"] for s in new)
     n_present = len(species)
@@ -195,7 +201,7 @@ def build_html(species: list[dict]) -> str:
 <section class="clade-block" id="clade-{html.escape(clade.lower())}">
   <div class="clade-head">
     <h2>{html.escape(clade)}</h2>
-    <p>{len(items)} new/rescued species · {sum(s['present'] for s in items)} present loci</p>
+    <p>{len(items)} species · ≥{sum(s['present'] for s in items)} present loci (floor) · rescued vs first-pass tagged on cards</p>
   </div>
   <div class="grid">{cards}</div>
 </section>"""
@@ -521,8 +527,10 @@ a {{ color: var(--sea); }}
 <header class="hero">
   <div class="hero-inner">
     <p class="brand">Curator Recovery</p>
-    <h1>Sixteen genomes where innexin-like loci were newly found or rescued</h1>
-    <p class="lede">A genome-direct curator re-probe across discovery species turned sparse automated hits into present, full-length innexin-like models — especially in rotifers, molluscs, spiders and a polychaete.</p>
+    <h1>Three true rescues — plus first-pass curator hits in genomes never run through discovery</h1>
+    <p class="lede">Rescue = prior discovery ran and accepted=0 (Rotaria, B.&nbsp;manjavacas, Abra). 
+    Species tagged <em>New</em> were <code>not_run</code> — first curator probes, not rescues. 
+    Lengths are miniprot product/alignment spans (often no initiator Met). Counts are floors.</p>
     <div class="cta">
       <a href="#gallery">Browse species</a>
       <a class="ghost" href="../showcase/index.html">Full thesis showcase</a>
@@ -532,24 +540,26 @@ a {{ color: var(--sea); }}
 
 <main class="wrap" id="gallery">
   <div class="stats">
-    <div class="stat"><b>{n_new}</b><span>new / rescued species</span></div>
-    <div class="stat"><b>{n_loci_new}</b><span>present loci in those species</span></div>
-    <div class="stat"><b>{n_clades}</b><span>major clades represented</span></div>
-    <div class="stat"><b>{n_present}</b><span>total present species ({n_loci} loci)</span></div>
+    <div class="stat"><b>{n_rescued}</b><span>true rescues (accepted=0)</span></div>
+    <div class="stat"><b>≥{n_loci_rescued}</b><span>rescued loci (floor)</span></div>
+    <div class="stat"><b>{n_first}</b><span>first-pass (not_run) spp</span></div>
+    <div class="stat"><b>≥{n_loci_first}</b><span>first-pass loci (floor)</span></div>
   </div>
 
   <div class="intro">
     <h2>What “new” means here</h2>
     <p>
-      <strong>New</strong> = curator found ≥1 present locus and the species was not previously run, or prior accepted count was 0 (<em>rescued</em>).
-      <strong>Expanded</strong> = already had accepted loci, but the curator pass recovered additional / stronger models.
-      Present loci are long innexin-like products from the genome-direct probe (not fragmentary-only hits).
+      <strong>Rescued</strong> = prior discovery <em>ran</em> and accepted=0
+      (Rotaria, B.&nbsp;manjavacas, Abra only in this panel).
+      <strong>New</strong> = <code>prior_discovery=not_run</code> — first curator probe, <em>not</em> a rescue.
+      <strong>Expanded</strong> = already had accepted loci; curator recovered additional models.
+      Present counts are floors; product lengths are miniprot alignment spans (often no initiator Met).
     </p>
   </div>
 
   <div class="toolbar">
     <input id="q" type="search" placeholder="Filter by species name…" aria-label="Filter species">
-    <button class="chip active" data-filter="all">All new/rescued</button>
+    <button class="chip active" data-filter="all">All first-hit species</button>
     <button class="chip" data-filter="Rotifera">Rotifera</button>
     <button class="chip" data-filter="Mollusca">Mollusca</button>
     <button class="chip" data-filter="Arthropoda">Arthropoda</button>
@@ -574,7 +584,10 @@ a {{ color: var(--sea); }}
       · Story: <a href="../phylogenetic_story/index.html">phylogenetic story</a>
       · Subfamilies: <a href="../innexin_subfamilies/index.html">innexin subfamilies</a>
     </p>
-    <p>Built from curator batch search over 51 genomes · {n_present} with present loci · {n_new} new/rescued ({n_loci_new} loci).</p>
+    <p>Built from curator batch search · {n_present} with present loci · 
+    <strong>{n_rescued} true rescues</strong> (≥{n_loci_rescued}) · 
+    {n_first} first-pass not_run (≥{n_loci_first}) · 
+    lengths are alignment spans, not mature proteins.</p>
   </footer>
 </main>
 
@@ -630,7 +643,7 @@ def main() -> None:
     OUT_HTML.write_text(build_html(species), encoding="utf-8")
     new = sum(1 for s in species if s["is_new"])
     print(f"Wrote {OUT_HTML}")
-    print(f"Present species={len(species)} new/rescued={new}")
+    print(f"Present species={len(species)} rescued={sum(1 for s in species if s['status']=='rescued')} firstpass={sum(1 for s in species if s['status']=='new')}")
 
 
 if __name__ == "__main__":

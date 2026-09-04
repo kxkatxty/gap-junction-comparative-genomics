@@ -1099,17 +1099,22 @@ KEY_FINDINGS: tuple[dict[str, str], ...] = (
     },
     {
         "rel": "discovery/02_innexin_candidates.png",
-        "headline": "Curator recovery: 16 new/rescued species, 116 present innexin loci",
+        "headline": (
+            "True rescues: 3 species where discovery returned zero accepted "
+            "(≥28 loci, floor); plus first-pass curator hits elsewhere"
+        ),
         "caption": (
-            "Genome-direct curator re-probe recovered long innexin-like products across rotifers, "
-            "molluscs, arthropods and polychaetes. Highlights include rescued Rotaria macrura / "
-            "Brachionus manjavacas and new spider loci (Amaurobius, Aelurillus, Agelena)."
+            "Rescue means prior discovery ran and accepted=0 — Rotaria macrura, "
+            "Brachionus manjavacas, Abra alba — not every species with prior_discovery=not_run. "
+            "Most curator positives are first-time probes of genomes never run through discovery. "
+            "Locus counts are floors (Dmel: miniprot-only 3/8 → region locate 7–8/8). "
+            "Counts near the query-pack size can track queries; region locate can exceed the pack "
+            "(e.g. Acanthocardia ≥22 with 15 queries)."
         ),
         "script": (
-            "The first automated innexin search looked sparse — only 17 candidates. "
-            "A genome-direct curator pass changed that: 16 new or rescued species and 116 present "
-            "loci. Rotaria is no longer a blank; spiders and rotifers now carry clear UNC-9/Inx2-like "
-            "models."
+            "The first automated innexin search looked sparse. Correct framing: only three species "
+            "are true rescues (discovery ran, accepted=0). The rest of the curator yield is "
+            "first-pass probing of not_run genomes, plus floors — not a full paralog census."
         ),
     },
     {
@@ -1308,10 +1313,16 @@ def _gallery_stats() -> dict[str, str]:
         "candidates": "359",
         "accepted": "144",
         "synvoy": "3/3",
-        "curator_present_spp": "20",
-        "curator_present_loci": "142",
-        "curator_new_spp": "16",
-        "curator_new_loci": "116",
+        "curator_present_spp": "21",
+        "curator_present_loci": "250",
+        # True rescue = prior discovery ran and accepted=0 (not the same as first-pass not_run).
+        "curator_rescued_spp": "3",
+        "curator_rescued_loci": "28",
+        "curator_firstpass_spp": "14",
+        "curator_firstpass_loci": "178",
+        # Legacy combined bucket (rescued + first-pass); prefer rescued/firstpass in copy.
+        "curator_new_spp": "17",
+        "curator_new_loci": "206",
     }
     try:
         cand = pd.read_csv(METADATA_DIR / "gap_junction_candidates_master.csv")
@@ -1326,23 +1337,27 @@ def _gallery_stats() -> dict[str, str]:
             stats["curator_present_spp"] = str(len(present_spp))
             stats["curator_present_loci"] = str(int(present_spp["present_loci"].sum()))
 
-            def _is_new_row(row: pd.Series) -> bool:
+            def _prior_accepted(row: pd.Series) -> int | None:
                 prior = str(row.get("prior_discovery") or "")
                 if prior == "not_run":
-                    return True
+                    return None
                 try:
-                    return int(row.get("prior_accepted")) == 0
+                    return int(row.get("prior_accepted"))
                 except (TypeError, ValueError):
-                    return False
+                    return None
 
-            new_spp = present_spp[present_spp.apply(_is_new_row, axis=1)]
-            stats["curator_new_spp"] = str(len(new_spp))
-            stats["curator_new_loci"] = str(int(new_spp["present_loci"].sum()))
-        curator = cand[cand["discovery_batch"] == "gene_curator_probe"]
-        if len(curator) and "curator_new_loci" not in stats:
-            presentish = curator[curator["rank_category"] == "curator_present_innexin"]
-            stats["curator_new_loci"] = str(len(presentish))
-            stats["curator_new_spp"] = str(presentish["species_dir"].nunique())
+            rescued = present_spp[present_spp.apply(lambda r: _prior_accepted(r) == 0, axis=1)]
+            firstpass = present_spp[present_spp.apply(lambda r: _prior_accepted(r) is None, axis=1)]
+            stats["curator_rescued_spp"] = str(len(rescued))
+            stats["curator_rescued_loci"] = str(int(rescued["present_loci"].sum()) if len(rescued) else 0)
+            stats["curator_firstpass_spp"] = str(len(firstpass))
+            stats["curator_firstpass_loci"] = str(int(firstpass["present_loci"].sum()) if len(firstpass) else 0)
+            # Combined "hit for the first time in this project" (rescued + first-pass)
+            stats["curator_new_spp"] = str(len(rescued) + len(firstpass))
+            stats["curator_new_loci"] = str(
+                int(rescued["present_loci"].sum() if len(rescued) else 0)
+                + int(firstpass["present_loci"].sum() if len(firstpass) else 0)
+            )
     except (OSError, pd.errors.EmptyDataError, KeyError, ValueError):
         pass
     return stats
@@ -1494,7 +1509,7 @@ def _render_peer_gallery_html(
         f"<span class='stat'><b>{stats['candidates']}</b> candidates</span>",
         f"<span class='stat'><b>{stats['accepted']}</b> accepted</span>",
         f"<span class='stat'><b>{stats['curator_present_spp']}</b> curator present spp "
-        f"(<b>{stats['curator_present_loci']}</b> loci)</span>",
+        f"(<b>≥{stats['curator_present_loci']}</b> loci, floor)</span>",
         "</div></div>",
     ])
     for sid, label, _intro in GALLERY_SECTIONS:
@@ -1539,9 +1554,17 @@ def _render_presenter_gallery_html(
         "<nav><h2>Key findings</h2>",
     ]
     for i, finding in enumerate(findings, 1):
-        short = finding["headline"][:42] + ("…" if len(finding["headline"]) > 42 else "")
+        rel = finding["rel"]
+        headline = finding["headline"]
+        if rel == "discovery/02_innexin_candidates.png":
+            headline = (
+                f"True rescues: {stats['curator_rescued_spp']} species "
+                f"(≥{stats['curator_rescued_loci']} loci, floor); "
+                f"+{stats['curator_firstpass_spp']} first-pass curator hits"
+            )
+        short = headline[:42] + ("…" if len(headline) > 42 else "")
         parts.append(
-            f"<a href='#finding-{i}' title='{_escape_html(finding['headline'])}'>"
+            f"<a href='#finding-{i}' title='{_escape_html(headline)}'>"
             f"{i}. {_escape_html(short)}</a>"
         )
     parts.append(
@@ -1557,14 +1580,24 @@ def _render_presenter_gallery_html(
         "<div class='stats'>",
         f"<span class='stat'><b>{len(findings)}</b> findings</span>",
         f"<span class='stat'><b>{stats['accepted']}</b> accepted candidates</span>",
-        f"<span class='stat'><b>{stats['curator_new_spp']}</b> new/rescued spp · "
-        f"<b>{stats['curator_new_loci']}</b> curator loci</span>",
+        f"<span class='stat'><b>{stats['curator_rescued_spp']}</b> rescued spp · "
+        f"<b>≥{stats['curator_rescued_loci']}</b> loci (floor)</span>",
+        f"<span class='stat'><b>{stats['curator_firstpass_spp']}</b> first-pass spp · "
+        f"<b>≥{stats['curator_firstpass_loci']}</b> loci</span>",
         "</div></div>",
         "<div class='guide'><h2>Order</h2><ol>",
     ])
     for i, finding in enumerate(findings, 1):
+        rel = finding["rel"]
+        headline = finding["headline"]
+        if rel == "discovery/02_innexin_candidates.png":
+            headline = (
+                f"True rescues: {stats['curator_rescued_spp']} species "
+                f"(≥{stats['curator_rescued_loci']} loci, floor); "
+                f"+{stats['curator_firstpass_spp']} first-pass curator hits"
+            )
         parts.append(
-            f"<li><a href='#finding-{i}'>{_escape_html(finding['headline'])}</a></li>"
+            f"<li><a href='#finding-{i}'>{_escape_html(headline)}</a></li>"
         )
     parts.extend([
         "</ol></div>",
@@ -1575,14 +1608,29 @@ def _render_presenter_gallery_html(
     for i, finding in enumerate(findings, 1):
         rel = finding["rel"]
         fig_title, _ = lookup[rel]
+        headline = finding["headline"]
         caption = finding.get("caption", PRESENTER_FIGURE_CAPTIONS.get(rel, ""))
         script = finding.get("script", PRESENTER_SPEAKER_SCRIPT.get(rel, ""))
+        if rel == "discovery/02_innexin_candidates.png":
+            headline = (
+                f"True rescues: {stats['curator_rescued_spp']} species "
+                f"(≥{stats['curator_rescued_loci']} loci, floor); "
+                f"+{stats['curator_firstpass_spp']} first-pass curator hits"
+            )
+            script = (
+                f"Correct framing: {stats['curator_rescued_spp']} true rescues "
+                f"(prior discovery accepted=0; ≥{stats['curator_rescued_loci']} loci). "
+                f"Separately, {stats['curator_firstpass_spp']} species were never run through "
+                f"discovery (not_run) and first show curator hits "
+                f"(≥{stats['curator_firstpass_loci']} loci). "
+                f"Do not call the whole set 'rescued'."
+            )
         cap_html = f"<p class='caption'>{_escape_html(caption)}</p>" if caption else ""
         script_html = f"<p class='script'>{_escape_html(script)}</p>" if script else ""
         parts.append(
             f"<article class='finding-card key' id='finding-{i}'>"
             f"<span class='badge'>Finding {i}</span>"
-            f"<p class='finding-headline'>{_escape_html(finding['headline'])}</p>"
+            f"<p class='finding-headline'>{_escape_html(headline)}</p>"
             f"<p class='caption' style='margin-top:0'><em>{_escape_html(fig_title)}</em></p>"
             f"<img src='{rel}' alt='{_escape_html(fig_title)}' loading='lazy' "
             f"onclick=\"openModal(this.src)\">"

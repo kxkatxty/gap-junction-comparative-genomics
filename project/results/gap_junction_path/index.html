@@ -200,12 +200,6 @@ a { color:var(--sea) }
       <p>What pannexins are, PANX1–3, N-X-S/T, and links into the pannexin results.</p>
       <div class="go">Open →</div>
     </a>
-    <a class="card" href="../../../pannexin/project/results/panx_vs_inx/index.html" style="margin-top:.8rem">
-      <div class="kicker">Homology check</div>
-      <h3>Pannexin × innexin</h3>
-      <p>Same MMseqs thresholds as innexin×connexin — here cross-family hits are expected.</p>
-      <div class="go">Open →</div>
-    </a>
     <a class="card" href="../../../pannexin/project/results/pannexin_clade_comparison/index.html" style="margin-top:.8rem">
       <div class="kicker">Clade × type</div>
       <h3>Pannexin clade comparison</h3>
@@ -220,16 +214,19 @@ a { color:var(--sea) }
     <p>
       Innexins predominate among invertebrate gap-junction channels in this panel (exceptions exist in
       chordates via pannexins). We searched 51 genomes and recovered
-      142 present loci in 20 species (16 of those were new or previously blank). With the reference
-      panel that is 164 loci in 28 species. Typical products are ~350–420 aa, four TM helices, and
-      two conserved cysteines in each extracellular loop (4 per monomer). Coding-region gene models
-      are intron-rich (panel median ~5 exons), so one locus can give several splice isoforms —
-      familiar from Drosophila / mosquito shakB.
+      ≥250 present loci (floor) in 21 species. <strong>True rescues</strong> (prior discovery
+      ran, accepted=0): <strong>3 species</strong> — Rotaria macrura, Brachionus manjavacas,
+      Abra alba (≥28 loci). Most other curator positives are <em>first-pass</em> probes of
+      genomes with <code>prior_discovery=not_run</code>, not rescues. With the reference
+      panel that is 164 loci in 28 species. Typical products are ~350–420 aa <em>alignment
+      spans</em> (miniprot CDS translations; often lack initiator Met — not mature ORFs),
+      four TM helices, and a whole-protein Cys≥4 cleanliness check (not a verified 2+2 EL
+      motif test). Coding-region gene models are intron-rich (panel median ~5 exons).
     </p>
     <div class="facts">
-      <div class="fact"><b>51</b><span>genomes searched</span></div>
-      <div class="fact"><b>20</b><span>species with present loci</span></div>
-      <div class="fact"><b>142</b><span>present innexin loci</span></div>
+      <div class="fact"><b>52</b><span>genomes searched</span></div>
+      <div class="fact"><b>3</b><span>true rescues (accepted=0)</span></div>
+      <div class="fact"><b>≥250</b><span>present loci (floor)</span></div>
       <div class="fact"><b>4</b><span>tree subfamilies (SF1–SF4)</span></div>
     </div>
     <p>
@@ -260,7 +257,7 @@ a { color:var(--sea) }
       <a class="card" href="../new_species_gallery/index.html">
         <div class="kicker">Recoveries</div>
         <h3>New species gallery</h3>
-        <p>16 new/rescued species, 142 present loci.</p>
+        <p>3 true rescues (≥28 loci); 21 spp with present floors (≥250).</p>
         <div class="go">Open →</div>
       </a>
       <a class="card" href="../innexin_subfamilies/index.html">
